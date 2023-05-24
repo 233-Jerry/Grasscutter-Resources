@@ -240,12 +240,12 @@
             },
             {
               "$type": "SetSpecialCamera",
-              "DKOEEHGAJHA": "default"
+              "PIHDNBBNEFN": "default"
             },
             {
               "$type": "SetSpecialCamera",
               "enable": true,
-              "DKOEEHGAJHA": "Mitakenarukami"
+              "PIHDNBBNEFN": "Mitakenarukami"
             },
             {
               "$type": "SetGlobalValue",
@@ -277,12 +277,12 @@
             },
             {
               "$type": "SetSpecialCamera",
-              "DKOEEHGAJHA": "Mitakenarukami"
+              "PIHDNBBNEFN": "Mitakenarukami"
             },
             {
               "$type": "SetSpecialCamera",
               "enable": true,
-              "DKOEEHGAJHA": "default"
+              "PIHDNBBNEFN": "default"
             },
             {
               "$type": "ChangeEnviroWeather",
@@ -294,7 +294,7 @@
               "$type": "SetAnimatorFloat",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": [
                     "HitBox_ArmL_Mitakenarukami_01",
                     "HitBox_ArmL_Mitakenarukami_02",
@@ -312,7 +312,7 @@
               "$type": "SetAnimatorFloat",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_Palm_Mitakenarukami_02"]
                 }
               ],
@@ -323,7 +323,7 @@
               "$type": "SetAnimatorFloat",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": [
                     "HeadBox_Mitakenarukami",
                     "HitBox_Body_Mitakenarukami"
@@ -337,7 +337,7 @@
               "$type": "SetAnimatorFloat",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_Palm_Mitakenarukami_01"]
                 }
               ],
@@ -368,7 +368,7 @@
             {
               "$type": "SetSpecialCamera",
               "enable": true,
-              "DKOEEHGAJHA": "Mitakenarukami"
+              "PIHDNBBNEFN": "Mitakenarukami"
             },
             {
               "$type": "ChangeEnviroWeather",
@@ -476,14 +476,19 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider", "PushCollider_Occluder"],
+              "pushColliderNames": [
+                "PushCollider",
+                "PushCollider_Occluder",
+                "PushCollider_Extra"
+              ],
               "setEnable": true
             },
             {
               "$type": "EnablePushColliderName",
               "pushColliderNames": [
                 "PushCollider_Mitakenarukami",
-                "PushCollider_Mitakenarukami_Occluder"
+                "PushCollider_Mitakenarukami_Occluder",
+                "PushCollider_Mitakenarukami_Extra"
               ]
             }
           ],
@@ -512,13 +517,18 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider", "PushCollider_Occluder"]
+              "pushColliderNames": [
+                "PushCollider",
+                "PushCollider_Occluder",
+                "PushCollider_Extra"
+              ]
             },
             {
               "$type": "EnablePushColliderName",
               "pushColliderNames": [
                 "PushCollider_Mitakenarukami",
-                "PushCollider_Mitakenarukami_Occluder"
+                "PushCollider_Mitakenarukami_Occluder",
+                "PushCollider_Mitakenarukami_Extra"
               ],
               "setEnable": true
             }
@@ -569,13 +579,18 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider", "PushCollider_Occluder"]
+              "pushColliderNames": [
+                "PushCollider",
+                "PushCollider_Occluder",
+                "PushCollider_Extra"
+              ]
             },
             {
               "$type": "EnablePushColliderName",
               "pushColliderNames": [
                 "PushCollider_Mitakenarukami",
-                "PushCollider_Mitakenarukami_Occluder"
+                "PushCollider_Mitakenarukami_Occluder",
+                "PushCollider_Mitakenarukami_Extra"
               ],
               "setEnable": true
             }
@@ -621,14 +636,19 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider", "PushCollider_Occluder"],
+              "pushColliderNames": [
+                "PushCollider",
+                "PushCollider_Occluder",
+                "PushCollider_Extra"
+              ],
               "setEnable": true
             },
             {
               "$type": "EnablePushColliderName",
               "pushColliderNames": [
                 "PushCollider_Mitakenarukami",
-                "PushCollider_Mitakenarukami_Occluder"
+                "PushCollider_Mitakenarukami_Occluder",
+                "PushCollider_Mitakenarukami_Extra"
               ]
             }
           ]
@@ -788,11 +808,11 @@
       "onKill": [
         {
           "$type": "SetSpecialCamera",
-          "DKOEEHGAJHA": "Mitakenarukami"
+          "PIHDNBBNEFN": "Mitakenarukami"
         },
         {
           "$type": "SetSpecialCamera",
-          "DKOEEHGAJHA": "Mitakenarukami_BurstAtk02"
+          "PIHDNBBNEFN": "Mitakenarukami_BurstAtk02"
         },
         {
           "$type": "CreateGadget",
@@ -891,9 +911,9 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "JGHAOKENLDJ": 2,
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "CEEGCFOCBBN": 2,
+              "JFECABAPELO": 0.0,
               "maxValue": 900.0
             },
             {
@@ -2318,7 +2338,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 },
                 {
                   "$type": "DDBJEPBNOGF",
@@ -3545,23 +3565,23 @@
           "onAdded": [
             {
               "$type": "SetSpecialCamera",
-              "DKOEEHGAJHA": "Mitakenarukami"
+              "PIHDNBBNEFN": "Mitakenarukami"
             },
             {
               "$type": "SetSpecialCamera",
               "enable": true,
-              "DKOEEHGAJHA": "Mitakenarukami_BurstAtk02"
+              "PIHDNBBNEFN": "Mitakenarukami_BurstAtk02"
             }
           ],
           "onRemoved": [
             {
               "$type": "SetSpecialCamera",
-              "DKOEEHGAJHA": "Mitakenarukami_BurstAtk02"
+              "PIHDNBBNEFN": "Mitakenarukami_BurstAtk02"
             },
             {
               "$type": "SetSpecialCamera",
               "enable": true,
-              "DKOEEHGAJHA": "Mitakenarukami"
+              "PIHDNBBNEFN": "Mitakenarukami"
             }
           ]
         },
@@ -4289,8 +4309,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 0.0,
               "maxValue": 25.0
             },
             {
@@ -4364,8 +4384,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 0.0,
               "maxValue": 25.0
             },
             {
@@ -4702,7 +4722,7 @@
             "direction": {
               "$type": "DOCDLGLJKND",
               "JPOJHLOIKLG": 2.5,
-              "MPNLAACKHNA": 2.5,
+              "IDCEIMNEFJC": 2.5,
               "attachPointName": "VajraAttach01",
               "ABIMPICHJNC": "Self"
             },
@@ -5303,7 +5323,7 @@
                 "z": 0.0
               },
               "JPOJHLOIKLG": 2.5,
-              "MPNLAACKHNA": 2.5,
+              "IDCEIMNEFJC": 2.5,
               "attachPointName": "VajraAttach02",
               "ABIMPICHJNC": "Self"
             },
@@ -6440,7 +6460,8 @@
               "$type": "EnablePushColliderName",
               "pushColliderNames": [
                 "PushCollider_Mitakenarukami",
-                "PushCollider_Mitakenarukami_Occluder"
+                "PushCollider_Mitakenarukami_Occluder",
+                "PushCollider_Mitakenarukami_Extra"
               ]
             },
             {
@@ -6477,7 +6498,8 @@
               "$type": "EnablePushColliderName",
               "pushColliderNames": [
                 "PushCollider_Mitakenarukami",
-                "PushCollider_Mitakenarukami_Occluder"
+                "PushCollider_Mitakenarukami_Occluder",
+                "PushCollider_Mitakenarukami_Extra"
               ],
               "setEnable": true
             },
@@ -6764,9 +6786,9 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "gadgetID": 42906110,
               "campID": 4001
@@ -6785,9 +6807,9 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "gadgetID": 42906110,
               "campID": 4001
@@ -6923,9 +6945,9 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "gadgetID": 42906114,
               "campID": 4001
@@ -6944,9 +6966,9 @@
               "$type": "CreateGadget",
               "target": "SelfAttackTarget",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "gadgetID": 42906114,
               "campID": 4001
@@ -7672,7 +7694,11 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider"]
+              "pushColliderNames": [
+                "PushCollider",
+                "PushCollider_Extra",
+                "PushCollider_Occluder"
+              ]
             },
             {
               "$type": "ApplyModifier",
@@ -7762,7 +7788,11 @@
             },
             {
               "$type": "EnablePushColliderName",
-              "pushColliderNames": ["PushCollider"],
+              "pushColliderNames": [
+                "PushCollider",
+                "PushCollider_Extra",
+                "PushCollider_Occluder"
+              ],
               "setEnable": true
             },
             {
@@ -8988,8 +9018,8 @@
           "modifierMixins": [
             {
               "$type": "SendPostionToShaderCutMixin",
-              "CGOLAIBAICO": "Owner",
-              "MGNBNEEEOKG": 20.0,
+              "CIMHCPNEBEO": "Owner",
+              "LAKFAIFNPFJ": 20.0,
               "scale": {
                 "x": 2.0,
                 "y": 2.0,
@@ -9948,7 +9978,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 },
                 {
                   "$type": "DDBJEPBNOGF",

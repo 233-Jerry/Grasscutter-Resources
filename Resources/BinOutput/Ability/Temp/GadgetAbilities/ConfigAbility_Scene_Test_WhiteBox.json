@@ -958,7 +958,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "operation": "AND",
                 "value": 1,
                 "compareType": "Greater"
@@ -974,7 +974,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 4,
                 "compareType": "Lesser"
               },
@@ -989,7 +989,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "modifierName": "Play_Eff"
@@ -1003,7 +1003,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "operation": "XOR",
                 "value": 4,
                 "compareType": "LesserOrEqual"
@@ -1448,7 +1448,7 @@
           "$type": "ExecuteGadgetLua",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 204
             },
@@ -5866,9 +5866,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSource",
-              "GGGMNKHMHKI": "ElectricPowerCollector",
-              "FCKCEEANBLJ": "isTerminal"
+              "ALPLNDNLNME": "ElectricPowerSource",
+              "PMKMBLJNFEP": "ElectricPowerCollector",
+              "CLIDDHEPCPK": "isTerminal"
             }
           ],
           "onAdded": [
@@ -5905,9 +5905,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSource",
-              "GGGMNKHMHKI": "ElectricPowerCollector",
-              "FCKCEEANBLJ": "isTerminal",
+              "ALPLNDNLNME": "ElectricPowerSource",
+              "PMKMBLJNFEP": "ElectricPowerCollector",
+              "CLIDDHEPCPK": "isTerminal",
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
                 "sortType": "Nearest",
@@ -6328,8 +6328,8 @@
         },
         {
           "$type": "GadgetChargeMixin",
-          "GCGEPKJGPED": "Fire",
-          "CBJFEIKJJBA": 0.800000011920929,
+          "JKGEDJALACD": "Fire",
+          "PHJBKJAKMKI": 0.800000011920929,
           "valueSteps": [0.5, 100.0, 200.0, 299.0, 305.0],
           "modifierNameSteps": [
             "Phase1",
@@ -6338,7 +6338,7 @@
             "EndPhase"
           ],
           "globalValueKey": "chargepoint",
-          "MDELAFGPIDD": "ratiopoint"
+          "CPFKNOEDEPJ": "ratiopoint"
         }
       ],
       "modifiers": {
@@ -6648,9 +6648,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "MagneticGearCallBack",
-              "GGGMNKHMHKI": "MagneticGearCallBack",
-              "FCKCEEANBLJ": "isTerminal"
+              "ALPLNDNLNME": "MagneticGearCallBack",
+              "PMKMBLJNFEP": "MagneticGearCallBack",
+              "CLIDDHEPCPK": "isTerminal"
             }
           ],
           "onAdded": [
@@ -6690,9 +6690,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "MagneticGearCallBack",
-              "GGGMNKHMHKI": "MagneticGearCallBack",
-              "FCKCEEANBLJ": "isTerminal",
+              "ALPLNDNLNME": "MagneticGearCallBack",
+              "PMKMBLJNFEP": "MagneticGearCallBack",
+              "CLIDDHEPCPK": "isTerminal",
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
                 "sortType": "Nearest",
@@ -7008,12 +7008,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 204
                 }
               ],
@@ -7022,12 +7022,12 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 204
                 }
               ],
@@ -7050,12 +7050,12 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 204
                 }
               ],
@@ -7073,12 +7073,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 901
                 }
               ],
@@ -7087,12 +7087,12 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 901
                 }
               ],
@@ -7124,12 +7124,12 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 901
                 }
               ],
@@ -7147,7 +7147,7 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
@@ -7155,11 +7155,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 902
                     },
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 903
                     }
                   ]
@@ -7170,7 +7170,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
@@ -7178,11 +7178,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 902
                     },
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 903
                     }
                   ]
@@ -7216,7 +7216,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
@@ -7224,11 +7224,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 902
                     },
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 903
                     }
                   ]
@@ -7272,12 +7272,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 202
                 }
               ],
@@ -7286,12 +7286,12 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 202
                 }
               ],
@@ -7323,12 +7323,12 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 202
                 }
               ],
@@ -7445,12 +7445,12 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "targetPredicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 203
                 }
               ],
@@ -7475,12 +7475,12 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 203
                 }
               ],
@@ -8204,7 +8204,7 @@
             {
               "$type": "DynamicCollisionMixin",
               "tags": ["LEVEL1"],
-              "MOMEADCKAAI": true
+              "PJBIACEBCJH": true
             }
           ]
         },
@@ -8466,7 +8466,7 @@
           "onRemoved": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 301
+              "LDNMJDBDMNC": 301
             }
           ]
         },
@@ -8614,7 +8614,7 @@
                   "strikeType": "Blunt"
                 }
               ],
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },
@@ -8697,7 +8697,7 @@
                   "strikeType": "Blunt"
                 }
               ],
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },

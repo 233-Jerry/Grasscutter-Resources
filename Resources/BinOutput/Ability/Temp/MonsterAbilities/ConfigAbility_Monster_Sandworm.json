@@ -335,10 +335,10 @@
             {
               "$type": "SetLockingV3Config",
               "enable": true,
-              "DKOEEHGAJHA": "Lock01",
-              "HGBDGCIFMHB": 1,
-              "KGHIGPCAHMI": true,
-              "DKADPJBCCOF": "CameraLock01",
+              "PIHDNBBNEFN": "Lock01",
+              "CBIDNCPOHCB": 1,
+              "BNHGFNPGMAC": true,
+              "EMCDHODLGGL": "CameraLock01",
               "radius": 3.0
             }
           ]
@@ -357,9 +357,9 @@
                 }
               ],
               "enable": true,
-              "DKOEEHGAJHA": "default",
-              "HGBDGCIFMHB": 1,
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "default",
+              "CBIDNCPOHCB": 1,
+              "EMCDHODLGGL": ""
             },
             {
               "$type": "SetGlobalValue",
@@ -377,9 +377,9 @@
             {
               "$type": "SetLockingV3Config",
               "enable": true,
-              "DKOEEHGAJHA": "Stage01",
-              "HGBDGCIFMHB": 1,
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "Stage01",
+              "CBIDNCPOHCB": 1,
+              "EMCDHODLGGL": ""
             }
           ]
         },
@@ -390,9 +390,9 @@
             {
               "$type": "SetLockingV3Config",
               "enable": true,
-              "DKOEEHGAJHA": "Stage02",
-              "HGBDGCIFMHB": 1,
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "Stage02",
+              "CBIDNCPOHCB": 1,
+              "EMCDHODLGGL": ""
             }
           ]
         },
@@ -403,9 +403,9 @@
             {
               "$type": "SetLockingV3Config",
               "enable": true,
-              "DKOEEHGAJHA": "FlyingAttack",
-              "HGBDGCIFMHB": 1,
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "FlyingAttack",
+              "CBIDNCPOHCB": 1,
+              "EMCDHODLGGL": ""
             }
           ]
         },
@@ -1352,12 +1352,12 @@
               "$type": "SetNearestPosIndexToGlobalValue",
               "srcTarget": "SelfAttackTarget",
               "globalValueKey": "_MONSTER_SANDWORM_MOVEPOS_POINTER_",
-              "GBHNIKEHDIN": [
+              "BFOPDMHEJAA": [
                 "_MONSTER_SANDWORM_STAGE02MOVEMENT_POS00_00_",
                 "_MONSTER_SANDWORM_STAGE02MOVEMENT_POS01_00_",
                 "_MONSTER_SANDWORM_STAGE02MOVEMENT_POS02_00_"
               ],
-              "HDOGMNILHHD": true
+              "EAAAIJFKIHK": true
             },
             {
               "$type": "SetGlobalValueToOverrideMap",
@@ -2295,7 +2295,7 @@
               "$type": "SetNearestPosIndexToGlobalValue",
               "srcTarget": "SelfAttackTarget",
               "globalValueKey": "_MONSTER_SANDWORM_DRILLRUSH_POINTER_",
-              "GBHNIKEHDIN": [
+              "BFOPDMHEJAA": [
                 "_MONSTER_SANDWORM_DRILLRUSH_REFPOS_00_",
                 "_MONSTER_SANDWORM_DRILLRUSH_REFPOS_01_",
                 "_MONSTER_SANDWORM_DRILLRUSH_REFPOS_02_",
@@ -2306,7 +2306,7 @@
                 "_MONSTER_SANDWORM_DRILLRUSH_REFPOS_07_",
                 "_MONSTER_SANDWORM_INITPOS_"
               ],
-              "HDOGMNILHHD": true
+              "EAAAIJFKIHK": true
             },
             {
               "$type": "DoBlinkByGlobalPos",
@@ -2638,14 +2638,14 @@
               "$type": "SetNearestPosIndexToGlobalValue",
               "srcTarget": "SelfAttackTarget",
               "globalValueKey": "_MONSTER_SANDWORM_TAILSTORMPOS_POINTER_",
-              "GBHNIKEHDIN": [
+              "BFOPDMHEJAA": [
                 "_MONSTER_SANDWORM_TAILSTORMPOS_00_",
                 "_MONSTER_SANDWORM_TAILSTORMPOS_01_",
                 "_MONSTER_SANDWORM_TAILSTORMPOS_02_",
                 "_MONSTER_SANDWORM_TAILSTORMPOS_03_"
               ],
-              "HDOGMNILHHD": true,
-              "EKAPHCKNFNL": true
+              "EAAAIJFKIHK": true,
+              "HIFMJJCCHJP": true
             },
             {
               "$type": "DoBlinkByGlobalPos",
@@ -2737,7 +2737,7 @@
                     "y": 8.0,
                     "z": 36.0
                   },
-                  "NMDDMGFMMJB": true
+                  "HFDNJDDONJC": true
                 },
                 "attackInfo": {
                   "attackTag": "Sandworm_Stage02_TailStormAttack",
@@ -2807,7 +2807,7 @@
               ],
               "key": "_MONSTER_SANDWORM_STAGE02_DIGOUTATTACK_TARGETPOS_",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.0,
@@ -4246,8 +4246,8 @@
           "modifierMixins": [
             {
               "$type": "IgnoreBulletAimPointMixin",
-              "PAJBEGJMNEA": "AimPoint_GroundPoint01",
-              "NFJJNEDNILK": true
+              "INGCJNICAMH": "AimPoint_GroundPoint01",
+              "LJANMNLFNKO": true
             }
           ],
           "onAdded": [
@@ -4258,7 +4258,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": "AimPoint_GroundPoint01"
+              "LNDCOPGMAOA": "AimPoint_GroundPoint01"
             }
           ],
           "onRemoved": [
@@ -4268,7 +4268,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": ""
+              "LNDCOPGMAOA": ""
             }
           ]
         },
@@ -4278,8 +4278,8 @@
           "modifierMixins": [
             {
               "$type": "IgnoreBulletAimPointMixin",
-              "PAJBEGJMNEA": "AimPoint_GroundPoint02",
-              "NFJJNEDNILK": true
+              "INGCJNICAMH": "AimPoint_GroundPoint02",
+              "LJANMNLFNKO": true
             }
           ],
           "onAdded": [
@@ -4290,7 +4290,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": "AimPoint_GroundPoint02"
+              "LNDCOPGMAOA": "AimPoint_GroundPoint02"
             }
           ],
           "onRemoved": [
@@ -4300,7 +4300,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": ""
+              "LNDCOPGMAOA": ""
             }
           ]
         },
@@ -4310,8 +4310,8 @@
           "modifierMixins": [
             {
               "$type": "IgnoreBulletAimPointMixin",
-              "PAJBEGJMNEA": "AimPoint_GroundPoint03",
-              "NFJJNEDNILK": true
+              "INGCJNICAMH": "AimPoint_GroundPoint03",
+              "LJANMNLFNKO": true
             }
           ],
           "onAdded": [
@@ -4322,7 +4322,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": "AimPoint_GroundPoint03"
+              "LNDCOPGMAOA": "AimPoint_GroundPoint03"
             }
           ],
           "onRemoved": [
@@ -4332,7 +4332,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": ""
+              "LNDCOPGMAOA": ""
             }
           ]
         },
@@ -4342,8 +4342,8 @@
           "modifierMixins": [
             {
               "$type": "IgnoreBulletAimPointMixin",
-              "PAJBEGJMNEA": "Body01",
-              "NFJJNEDNILK": true
+              "INGCJNICAMH": "Body01",
+              "LJANMNLFNKO": true
             }
           ],
           "onAdded": [
@@ -4354,7 +4354,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": "Body01"
+              "LNDCOPGMAOA": "Body01"
             }
           ],
           "onRemoved": [
@@ -4370,8 +4370,8 @@
           "modifierMixins": [
             {
               "$type": "IgnoreBulletAimPointMixin",
-              "PAJBEGJMNEA": "Body05",
-              "NFJJNEDNILK": true
+              "INGCJNICAMH": "Body05",
+              "LJANMNLFNKO": true
             }
           ],
           "onAdded": [
@@ -4382,7 +4382,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": "Body05"
+              "LNDCOPGMAOA": "Body05"
             }
           ],
           "onRemoved": [
@@ -4398,8 +4398,8 @@
           "modifierMixins": [
             {
               "$type": "IgnoreBulletAimPointMixin",
-              "PAJBEGJMNEA": "Body08",
-              "NFJJNEDNILK": true
+              "INGCJNICAMH": "Body08",
+              "LJANMNLFNKO": true
             }
           ],
           "onAdded": [
@@ -4410,7 +4410,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": "Body08"
+              "LNDCOPGMAOA": "Body08"
             }
           ],
           "onRemoved": [
@@ -4426,8 +4426,8 @@
           "modifierMixins": [
             {
               "$type": "IgnoreBulletAimPointMixin",
-              "PAJBEGJMNEA": "Body11",
-              "NFJJNEDNILK": true
+              "INGCJNICAMH": "Body11",
+              "LJANMNLFNKO": true
             }
           ],
           "onAdded": [
@@ -4438,7 +4438,7 @@
             },
             {
               "$type": "AttachBulletAimPoint",
-              "BLCCIEIBHPH": "Body11"
+              "LNDCOPGMAOA": "Body11"
             }
           ],
           "onRemoved": [
@@ -4458,7 +4458,7 @@
       "onAbilityStart": [
         {
           "$type": "AttachBulletAimPoint",
-          "BLCCIEIBHPH": "Body06"
+          "LNDCOPGMAOA": "Body06"
         }
       ]
     }

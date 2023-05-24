@@ -275,9 +275,9 @@
           "modifierMixins": [
             {
               "$type": "DamageStatisticsMixin",
-              "ICJPGPDKKBP": "_GARGOYLE_GROUND_ELEMENT_STATISTICS_",
-              "LMFDJFHFBDM": "",
-              "OPPOCAPDAKH": [
+              "IKJKBGMBNMP": "_GARGOYLE_GROUND_ELEMENT_STATISTICS_",
+              "IMMMIIONGOO": "",
+              "BDBLDFOHKBN": [
                 {
                   "$type": "SetGlobalValue",
                   "predicates": [
@@ -675,19 +675,17 @@
           "$type": "AttachToStateIDMixin",
           "stateIDs": ["NormalIdle", "NormalMove", "Turn", "Alert"],
           "modifierName": "Gargoyle_Ground_HeadControlEnable"
+        },
+        {
+          "$type": "AttachToAbilityStateMixin",
+          "abilityStates": ["ElementFrozen", "ElementPetrifaction"],
+          "modifierName": "Gargoyle_Ground_HeadControlDisable_AbilityState"
         }
       ],
       "modifiers": {
         "Gargoyle_Ground_HeadControlEnable": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
-          "modifierMixins": [
-            {
-              "$type": "AttachToAbilityStateMixin",
-              "abilityStates": ["ElementFrozen", "ElementPetrifaction"],
-              "modifierName": "Gargoyle_Ground_HeadControlDisable_AbilityState"
-            }
-          ],
           "onAdded": [
             {
               "$type": "RemoveModifier",
@@ -697,6 +695,13 @@
               "$type": "EnablePartControl",
               "partRootNames": ["Neck"],
               "enable": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "_GARGOYLE_GROUND_HEADCONTROL_STATE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ],
           "onRemoved": [
@@ -717,6 +722,13 @@
             {
               "$type": "EnablePartControl",
               "partRootNames": ["Neck"]
+            },
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "_GARGOYLE_GROUND_HEADCONTROL_STATE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ]
         },
@@ -736,6 +748,14 @@
           "onRemoved": [
             {
               "$type": "ApplyModifier",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_GARGOYLE_GROUND_HEADCONTROL_STATE_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "modifierName": "Gargoyle_Ground_HeadControlEnable_AbilityState"
             }
           ]
@@ -755,7 +775,16 @@
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "ratio": 0.0,
+          "key": "_GARGOYLE_GROUND_HEADCONTROL_STATE_",
+          "maxValue": 0.0,
+          "minValue": 0.0
+        }
+      ]
     }
   },
   {
@@ -972,7 +1001,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_HeadWeakness"]
                 },
                 {
@@ -1106,7 +1135,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_ChestWeakness"]
                 },
                 {
@@ -1169,7 +1198,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_ChestWeakness"]
                 },
                 {

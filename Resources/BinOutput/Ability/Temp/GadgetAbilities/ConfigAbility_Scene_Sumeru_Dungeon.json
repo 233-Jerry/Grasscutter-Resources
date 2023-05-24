@@ -135,7 +135,7 @@
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
               "EHKENKGOAMH": false,
-              "BJBODKLJKED": ""
+              "BFPBGJGLPPL": ""
             }
           ],
           "onAdded": [
@@ -175,7 +175,7 @@
             {
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
-              "BJBODKLJKED": ""
+              "BFPBGJGLPPL": ""
             }
           ],
           "onAdded": [
@@ -200,18 +200,18 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 2.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 6.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ],
           "onThinkInterval": [
@@ -228,18 +228,18 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 6.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 2.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }
@@ -271,11 +271,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DissolveValue",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_DissolveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }
@@ -314,8 +314,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 1.0
             },
             {
@@ -332,7 +332,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },
@@ -342,11 +342,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.5
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -361,12 +361,12 @@
           "$type": "SetMaterialParamFloatByTransform",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 201
             }
           ],
-          "matName": "Mat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "Mat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
@@ -396,8 +396,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 1.0
             },
             {
@@ -414,11 +414,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -448,8 +448,8 @@
           "modifierMixins": [
             {
               "$type": "PlatformMoveMixin",
-              "moveModifiers": ["State_Moving"],
-              "stopModifiers": ["State_Stop"]
+              "AAMIGKCJEDK": ["State_Moving"],
+              "KPBELNBMPBG": ["State_Stop"]
             }
           ]
         },
@@ -511,10 +511,10 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "DFFODFONEJF"
+              "$type": "NNPEGIOOOCJ"
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -530,7 +530,7 @@
             },
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             }
           ]
         }
@@ -666,9 +666,9 @@
               "entityTypes": ["Avatar"]
             }
           ],
-          "NDFMBEFOFCC": true,
+          "CDOJAPAKHBM": true,
           "FIDNIDJEPFD": "FlowerPortal_AvatarCount",
-          "JLKGLCGGLJD": true,
+          "EICDJMDMHPO": true,
           "AIPILJKBJLI": 4.0,
           "PADAIOIPHKO": 0.0
         }
@@ -758,7 +758,7 @@
             {
               "$type": "TurnDirectionToPos",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "topLimit": 1,
                 "sortType": "Nearest",
                 "tag": "SceneLook"
@@ -811,8 +811,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Gadget",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Gadget",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 2.0
             }
           ]
@@ -829,8 +829,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Gadget",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Gadget",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.0
             }
           ]
@@ -847,8 +847,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Gadget",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Gadget",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -872,12 +872,12 @@
         },
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ChangeGadgetState",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 201
                 }
@@ -1506,7 +1506,7 @@
       "onAbilityStart": [
         {
           "$type": "ChangeGadgetState",
-          "MNIDCPKMMNN": 201
+          "LDNMJDBDMNC": 201
         }
       ]
     }
@@ -1537,8 +1537,8 @@
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.0
             }
           ],
@@ -1557,18 +1557,18 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 3.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.5
             }
           ],
           "onThinkInterval": [
@@ -1585,18 +1585,18 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 3.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.5
             }
           ]
         },
@@ -1606,7 +1606,7 @@
           "modifierMixins": [
             {
               "$type": "PlatformMoveMixin",
-              "moveModifiers": ["Moving"]
+              "AAMIGKCJEDK": ["Moving"]
             }
           ],
           "onAdded": [

@@ -486,53 +486,53 @@
             {
               "$type": "ChangeAttackModeBtnMixin",
               "isUnique": true,
-              "DEIFEACBCMI": "StartChannelTrigger",
-              "NIAJKHGFGBO": "EndChannelTrigger"
+              "ECLGAJDLOEI": "StartChannelTrigger",
+              "IDAFKLHJAAK": "EndChannelTrigger"
             },
             {
               "$type": "StateLayersOverrideMixin",
               "stateLayers": {
                 "defaultLayer": {
-                  "$type": "JOPKKFFECKJ",
-                  "FNPGDAEJAPJ": "",
+                  "$type": "MIEECFHHMDO",
+                  "LBIPLCILKBL": "",
                   "stateIDs": {
                     "Channel_BS": {
-                      "$type": "KIEKFPIFIKI",
-                      "ELJMIBJPBCH": {
+                      "$type": "KDAKNKIILFG",
+                      "FOFLHPJNNJE": {
                         "ChannelBS": ["Emo_Avatar_Common_Manekin_Default"]
                       },
                       "moveType": "combatMove",
-                      "CJCIFIEDHHM": true,
-                      "BDFLEJHPFBG": 100.0,
-                      "LLAMHOPNFJG": ["BeHit", "DoSkill", "Jump"],
-                      "CIFLOMFPGND": [
+                      "EIDCJDOMIAD": true,
+                      "DGDPBBPPGGA": 100.0,
+                      "JFPECHOHLHA": ["BeHit", "DoSkill", "Jump"],
+                      "NFNAJLODALF": [
                         {
                           "name": "&CanUseSkill"
                         }
                       ],
-                      "BCGEGECAGLE": [{}],
-                      "MBCNNLAJOHK": "Aim",
-                      "HPDHJBCMFPB": "",
-                      "AFLGOLACEJP": true
+                      "MJMPANKNNNO": [{}],
+                      "NKPBAOGCCFF": "Aim",
+                      "CGABGFFMNBO": "",
+                      "AAPFPIPKIDA": true
                     },
                     "Channel_Loop": {
-                      "$type": "KIEKFPIFIKI",
-                      "ELJMIBJPBCH": {
+                      "$type": "KDAKNKIILFG",
+                      "FOFLHPJNNJE": {
                         "ChannelLoop": []
                       },
                       "moveType": "combatMove",
-                      "CJCIFIEDHHM": true,
-                      "BDFLEJHPFBG": 100.0,
-                      "LLAMHOPNFJG": ["BeHit", "DoSkill", "Jump"],
-                      "CIFLOMFPGND": [
+                      "EIDCJDOMIAD": true,
+                      "DGDPBBPPGGA": 100.0,
+                      "JFPECHOHLHA": ["BeHit", "DoSkill", "Jump"],
+                      "NFNAJLODALF": [
                         {
                           "name": "&CanUseSkill"
                         }
                       ],
-                      "BCGEGECAGLE": [{}],
-                      "MBCNNLAJOHK": "Aim",
-                      "HPDHJBCMFPB": "",
-                      "AFLGOLACEJP": true
+                      "MJMPANKNNNO": [{}],
+                      "NKPBAOGCCFF": "Aim",
+                      "CGABGFFMNBO": "",
+                      "AAPFPIPKIDA": true
                     }
                   }
                 }
@@ -586,8 +586,8 @@
                   "$type": "Predicated",
                   "targetPredicates": [
                     {
-                      "$type": "EOAAPDDINPD",
-                      "LINGOPGJHJP": "Joypad"
+                      "$type": "EPFEBBBIGKM",
+                      "BBJNJKNAKAE": "Joypad"
                     }
                   ],
                   "successActions": [
@@ -749,7 +749,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "HideAndSeek_AliveV2"
             }
           ]
         },
@@ -1380,7 +1381,7 @@
           "$type": "ServerLuaCall",
           "luaCallType": "CurChallengeGroup",
           "funcName": "SLC_HideAndSeek_Skill_HunterNet",
-          "IAJKJLGNLLE": 3,
+          "LIAAKLHNPEN": 3,
           "MPPMFEDKGHC": "PosCacheX",
           "BOKNHLDBKKK": "PosCacheY",
           "CHOIIMHDNHK": "PosCacheZ"
@@ -1593,7 +1594,7 @@
             {
               "$type": "EntityInVisibleMixin",
               "reason": "Gallary",
-              "CJOOANHHLAK": true
+              "PMHBGNJOPCE": true
             }
           ]
         },
@@ -1624,7 +1625,7 @@
                 }
               ],
               "reason": "Gallary",
-              "CJOOANHHLAK": true
+              "PMHBGNJOPCE": true
             },
             {
               "$type": "EntityDitherMixin",
@@ -1670,7 +1671,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "GAEPFOLJGEG",
+                "$type": "DGGJIJFHAPM",
                 "entityType": "Gadget"
               },
               "predicates": [
@@ -1716,7 +1717,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "GAEPFOLJGEG",
+                "$type": "DGGJIJFHAPM",
                 "entityType": "Gadget"
               },
               "predicates": [
@@ -1750,7 +1751,7 @@
               ],
               "luaCallType": "AbilityGroupSourceGroup",
               "funcName": "SLC_HideAndSeek_Invisible_Real_Quit",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1793,7 +1794,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "GAEPFOLJGEG",
+                "$type": "DGGJIJFHAPM",
                 "entityType": "Gadget"
               },
               "predicates": [
@@ -1827,7 +1828,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "GAEPFOLJGEG",
+                "$type": "DGGJIJFHAPM",
                 "entityType": "Gadget"
               },
               "predicates": [
@@ -1861,7 +1862,7 @@
               ],
               "luaCallType": "AbilityGroupSourceGroup",
               "funcName": "SLC_HideAndSeek_Invisible_Real_Quit",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2320,7 +2321,7 @@
                 }
               ],
               "reason": "Gallary",
-              "CJOOANHHLAK": true
+              "PMHBGNJOPCE": true
             },
             {
               "$type": "EntityDitherMixin",
@@ -2387,7 +2388,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "HideAndSeek_GhostV2"
             },
             {
               "$type": "RemoveModifier",
@@ -2508,7 +2510,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "HideAndSeek_AliveV2"
             }
           ]
         },
@@ -4559,7 +4562,7 @@
             {
               "$type": "EntityInVisibleMixin",
               "reason": "Mixin",
-              "CJOOANHHLAK": true
+              "PMHBGNJOPCE": true
             }
           ]
         },

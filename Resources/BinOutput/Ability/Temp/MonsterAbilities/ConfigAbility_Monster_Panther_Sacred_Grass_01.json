@@ -1311,8 +1311,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Grass",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Grass",
+              "JFECABAPELO": 0.0,
               "maxValue": 10.0
             },
             {
@@ -1671,6 +1671,13 @@
             {
               "$type": "CurLocalAvatarMixinV2",
               "modifierName": "Have_Panther_SacredEnergy"
+            },
+            {
+              "$type": "AttachModifierToGlobalValueMixin",
+              "globalValueTarget": "Applier",
+              "globalValueKey": "SacredEntityDie",
+              "valueSteps": [0.5, 1.5],
+              "modifierNameSteps": ["ClearSacredBuff_Panther"]
             }
           ],
           "state": "UnlockFrequencyLimit",
@@ -1688,13 +1695,13 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "DPKKEBLABLP"
+                  "$type": "OLDDCNANBJK"
                 },
                 {
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "CPOOOHCHION"
+                      "$type": "CBBAALCBDJD"
                     }
                   ]
                 }
@@ -1723,7 +1730,36 @@
             }
           ],
           "OOBNPLAILMC": true,
-          "LOOBLCBOIMF": ["Corruption"]
+          "CEBIMAGINGC": ["Corruption"]
+        },
+        "ClearSacredBuff_Panther": {
+          "modifierName": "",
+          "duration": 1.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Panther_SacredEnergy_TargetTeam"
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Have_Panther_SacredEnergy_Team"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Panther_SacredEnergy_TargetTeam"
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Have_Panther_SacredEnergy_Team"
+            }
+          ]
         },
         "Have_Panther_SacredEnergy": {
           "modifierName": "",

@@ -1567,6 +1567,17 @@
           "onRemoved": [
             {
               "$type": "TriggerAbility",
+              "predicates": [
+                {
+                  "$type": "DDBJEPBNOGF",
+                  "predicates": [
+                    {
+                      "$type": "MMGNMMFNPAK",
+                      "modifierName": "UNIQUE_Monster_Konungmathr_None_EyeCore"
+                    }
+                  ]
+                }
+              ],
               "abilityName": "Monster_Konungmathr_None_CoreState"
             }
           ]
@@ -1739,8 +1750,8 @@
       "abilityName": "Monster_Konungmathr_None_PowerOff_Remove",
       "abilityMixins": [
         {
-          "$type": "AttachToStateIDMixin",
-          "stateIDs": ["PowerOff_WakeUp", "PowerOff_Warning"],
+          "$type": "AttachToAIAlertnessMixin",
+          "alertness": [2, 3],
           "modifierName": "Monster_Konungmathr_None_StartUp"
         }
       ],
@@ -1755,6 +1766,23 @@
             },
             {
               "$type": "TriggerAbility",
+              "abilityName": "Monster_Konungmathr_None_CoreState"
+            }
+          ],
+          "LGJBJJBCBEH": [
+            {
+              "$type": "TriggerAbility",
+              "predicates": [
+                {
+                  "$type": "DDBJEPBNOGF",
+                  "predicates": [
+                    {
+                      "$type": "MMGNMMFNPAK",
+                      "modifierName": "UNIQUE_Monster_Konungmathr_None_EyeCore"
+                    }
+                  ]
+                }
+              ],
               "abilityName": "Monster_Konungmathr_None_CoreState"
             }
           ]
@@ -1955,7 +1983,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HeadBox"]
                 },
                 {
@@ -1996,7 +2024,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HeadBox"]
                 },
                 {
@@ -2225,7 +2253,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["LeftFootBox", "RightFootBox"]
                 },
                 {
@@ -2270,7 +2298,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["LeftFootBox", "RightFootBox"]
                 },
                 {
@@ -3481,7 +3509,7 @@
                 "direction": {
                   "$type": "HFKFLHCBMLB",
                   "JPOJHLOIKLG": 1.5,
-                  "MPNLAACKHNA": 1.0
+                  "IDCEIMNEFJC": 1.0
                 },
                 "attachPointName": "LaserControl"
               }

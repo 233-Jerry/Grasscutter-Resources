@@ -31,7 +31,7 @@
               "BlendParam": "Blend",
               "BlendDistance": [0.0, 60.0],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_AkaFesArchaeology_DetectorExist_01",
-              "LEECAKGCHPP": true,
+              "PGDMPHPCBFJ": true,
               "effectPattern": "ArcheoScannerDistance"
             },
             {
@@ -48,18 +48,18 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "CoreMat",
-              "patternName": "_DissolveValue",
+              "EKNGFFBIAPI": "CoreMat",
+              "IMLMHJCMAHE": "_DissolveValue",
               "ratio": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "CoreMat",
-              "patternName": "_DissolveValue",
+              "EKNGFFBIAPI": "CoreMat",
+              "IMLMHJCMAHE": "_DissolveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "AttachEffect",
@@ -102,7 +102,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "sortType": "Nearest",
                 "tag": "AkaFesArchaeology"
               },
@@ -167,12 +167,12 @@
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "CoreMat",
-          "patternName": "_DissolveValue",
+          "EKNGFFBIAPI": "CoreMat",
+          "IMLMHJCMAHE": "_DissolveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "NKFPDCCIPCN": 1,
-          "FBGLLFJHKJJ": 0.5
+          "KNEMMEIDOHF": true,
+          "MOICJOMNODH": 1,
+          "PCGOEPPLKLO": 0.5
         }
       ]
     }
@@ -188,9 +188,9 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_SceneObj_AkaFesArchaeologyNoiseHint_01_Loop",
-              "CPBGPPDHDLI": true,
-              "FMCIPLAPOMC": 13.0
+              "IIBFEAKOPKK": "Eff_SceneObj_AkaFesArchaeologyNoiseHint_01_Loop",
+              "GJOACLDEAKC": true,
+              "DCOCBFOMHPD": 13.0
             }
           ]
         }
@@ -234,7 +234,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 }
               ]
             }
@@ -332,7 +332,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 }
               ]
             }

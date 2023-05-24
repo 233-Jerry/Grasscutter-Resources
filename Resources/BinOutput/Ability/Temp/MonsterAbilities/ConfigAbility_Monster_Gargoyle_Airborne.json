@@ -291,9 +291,9 @@
           "modifierMixins": [
             {
               "$type": "DamageStatisticsMixin",
-              "ICJPGPDKKBP": "_GARGOYLE_AIRBORNE_ELEMENT_STATISTICS_",
-              "LMFDJFHFBDM": "",
-              "OPPOCAPDAKH": [
+              "IKJKBGMBNMP": "_GARGOYLE_AIRBORNE_ELEMENT_STATISTICS_",
+              "IMMMIIONGOO": "",
+              "BDBLDFOHKBN": [
                 {
                   "$type": "SetGlobalValue",
                   "predicates": [
@@ -819,19 +819,17 @@
             "Turn"
           ],
           "modifierName": "Gargoyle_Airborne_HeadControlEnable"
+        },
+        {
+          "$type": "AttachToAbilityStateMixin",
+          "abilityStates": ["ElementFrozen", "ElementPetrifaction"],
+          "modifierName": "Gargoyle_Airborne_HeadControlDisable_AbilityState"
         }
       ],
       "modifiers": {
         "Gargoyle_Airborne_HeadControlEnable": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
-          "modifierMixins": [
-            {
-              "$type": "AttachToAbilityStateMixin",
-              "abilityStates": ["ElementFrozen", "ElementPetrifaction"],
-              "modifierName": "Gargoyle_Airborne_HeadControlDisable_AbilityState"
-            }
-          ],
           "onAdded": [
             {
               "$type": "RemoveModifier",
@@ -841,6 +839,13 @@
               "$type": "EnablePartControl",
               "partRootNames": ["Neck"],
               "enable": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "_GARGOYLE_AIRBORNE_HEADCONTROL_STATE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ],
           "onRemoved": [
@@ -861,6 +866,13 @@
             {
               "$type": "EnablePartControl",
               "partRootNames": ["Neck"]
+            },
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "_GARGOYLE_AIRBORNE_HEADCONTROL_STATE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ]
         },
@@ -880,6 +892,14 @@
           "onRemoved": [
             {
               "$type": "ApplyModifier",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_GARGOYLE_AIRBORNE_HEADCONTROL_STATE_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "modifierName": "Gargoyle_Airborne_HeadControlEnable_AbilityState"
             }
           ]
@@ -899,7 +919,16 @@
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "ratio": 0.0,
+          "key": "_GARGOYLE_AIRBORNE_HEADCONTROL_STATE_",
+          "maxValue": 0.0,
+          "minValue": 0.0
+        }
+      ]
     }
   },
   {
@@ -1126,7 +1155,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_WingLWeakness"]
                 },
                 {
@@ -1271,7 +1300,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_WingRWeakness"]
                 },
                 {
@@ -1416,7 +1445,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_HeadWeakness"]
                 },
                 {
@@ -1549,7 +1578,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_ChestWeakness"]
                 },
                 {

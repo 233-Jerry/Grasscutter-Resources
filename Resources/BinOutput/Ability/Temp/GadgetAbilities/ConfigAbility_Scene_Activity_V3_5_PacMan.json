@@ -103,7 +103,7 @@
             },
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             },
             {
               "$type": "FireEffect",
@@ -186,7 +186,7 @@
             },
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             },
             {
               "$type": "FireEffect",
@@ -351,7 +351,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_OnPlayerGetBuffBall",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 70290840.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -434,7 +434,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_OnPlayerGetBuffBall",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 70290840.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -514,7 +514,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_OnPlayerGetBuffBall",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 70290840.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -835,12 +835,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "GlowMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "GlowMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.5
             }
           ]
         },
@@ -850,12 +850,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "GlowMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "GlowMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 6.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.5
             }
           ]
         }
@@ -933,7 +933,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_02_Light_01",
               "effectTempleteID": -1.0,
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         },
@@ -947,7 +947,7 @@
               "EBBHBMFMOGD": "",
               "type": "Int",
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_02_Light_01",
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ],
           "onRemoved": [
@@ -958,7 +958,7 @@
               "type": "Int",
               "value": 202,
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_02_Light_01",
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         }
@@ -990,7 +990,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_05_Light_01",
               "effectTempleteID": -1.0,
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         },
@@ -1004,7 +1004,7 @@
               "EBBHBMFMOGD": "",
               "type": "Int",
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_05_Light_01",
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ],
           "onRemoved": [
@@ -1015,7 +1015,7 @@
               "type": "Int",
               "value": 202,
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_05_Light_01",
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         }
@@ -1047,7 +1047,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_06_Light_01",
               "effectTempleteID": -1.0,
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         },
@@ -1061,7 +1061,7 @@
               "EBBHBMFMOGD": "",
               "type": "Int",
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_06_Light_01",
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ],
           "onRemoved": [
@@ -1072,7 +1072,7 @@
               "type": "Int",
               "value": 202,
               "healLimitedByCasterMaxHPRatio": "Eff_Level_ActivityPacMan_01_Room_06_Light_01",
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         }
@@ -1134,11 +1134,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Dissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "Dissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             },
             {
               "$type": "EnablePushColliderName",
@@ -1153,11 +1153,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Dissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "Dissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 1.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             },
             {
               "$type": "EnablePushColliderName",

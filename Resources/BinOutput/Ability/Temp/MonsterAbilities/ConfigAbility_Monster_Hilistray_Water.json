@@ -182,7 +182,7 @@
                   "ratio": 10.0
                 },
                 {
-                  "$type": "GDFCOCOIPCB",
+                  "$type": "FENFLPKEFPL",
                   "logic": "Lesser",
                   "ratio": 110.0
                 }
@@ -645,6 +645,12 @@
           "$type": "TriggerCreateGadgetToEquipPart",
           "gadgetID": 42104011,
           "equipPart": "equip01"
+        },
+        {
+          "$type": "EnablePushColliderName",
+          "canBeHandledOnRecover": true,
+          "pushColliderNames": ["PushCollider_Slime"],
+          "setEnable": true
         }
       ]
     }
@@ -690,6 +696,11 @@
             }
           ],
           "onRemoved": [
+            {
+              "$type": "EnablePushColliderName",
+              "canBeHandledOnRecover": true,
+              "pushColliderNames": ["PushCollider_Slime"]
+            },
             {
               "$type": "SetGlobalValue",
               "ratio": 3.0,
@@ -806,6 +817,11 @@
               "maxAngle": 10.0
             }
           }
+        },
+        {
+          "$type": "EnablePushColliderName",
+          "canBeHandledOnRecover": true,
+          "pushColliderNames": ["PushCollider_Slime"]
         }
       ]
     }
@@ -983,7 +999,7 @@
                   "born": {
                     "$type": "FLIPADNBJJF",
                     "direction": {
-                      "$type": "NFGKOJBHMLL"
+                      "$type": "GGOJHCBJDOJ"
                     }
                   },
                   "effectTempleteID": -1.0
@@ -1093,8 +1109,8 @@
           "modifierMixins": [
             {
               "$type": "ReplaceFaceAnimationMixin",
-              "EFKMOIGIIEG": ["Default"],
-              "KNBCAJCEAIM": ["Water_Shrink"]
+              "LAANLBGKEHA": ["Default"],
+              "KEKDGHCJFPA": ["Water_Shrink"]
             }
           ]
         },
@@ -1164,7 +1180,7 @@
             "direction": {
               "$type": "JADOBJDPOLJ",
               "JPOJHLOIKLG": 25.0,
-              "MPNLAACKHNA": 15.0
+              "IDCEIMNEFJC": 15.0
             },
             "IABNJPGBAOH": true,
             "attachPointName": "BubbleAttachPoint"

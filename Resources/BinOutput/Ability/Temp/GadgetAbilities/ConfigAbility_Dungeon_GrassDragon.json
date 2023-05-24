@@ -86,7 +86,7 @@
               ],
               "luaCallType": "FromGroup",
               "funcName": "SLC_UpdateProtectScore",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": -12.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -101,7 +101,7 @@
               ],
               "luaCallType": "FromGroup",
               "funcName": "SLC_UpdateProtectScore",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": -24.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -116,7 +116,7 @@
               ],
               "luaCallType": "FromGroup",
               "funcName": "SLC_UpdateProtectScore",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": -280.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -177,8 +177,8 @@
               "$type": "CustomizeProgressBarMixin",
               "maxValue": 2000.0,
               "ratio": "SGV_GrassDragon_CUR_PROGRESS",
-              "FGHIJEDFCAJ": "MONSTER_APEP_STAGE2_PROCESS",
-              "MPGILBODKDB": ["ProgressPoint1", "ProgressPoint5"]
+              "OGFMEBOAGGD": "MONSTER_APEP_STAGE2_PROCESS",
+              "JIBFPJHBECB": ["ProgressPoint1", "ProgressPoint5"]
             }
           ]
         },
@@ -297,7 +297,7 @@
               "born": {
                 "$type": "ConfigBornBySelf",
                 "direction": {
-                  "$type": "HDCKGANABOM",
+                  "$type": "BLJPEBABLNH",
                   "angleOffset": {
                     "x": 0.0,
                     "y": 180.0,
@@ -534,6 +534,11 @@
         },
         {
           "$type": "AttachToGadgetStateMixin",
+          "gadgetState": 204,
+          "modifierName": "Music_S04"
+        },
+        {
+          "$type": "AttachToGadgetStateMixin",
           "gadgetState": 203,
           "modifierName": "Music_End"
         }
@@ -561,6 +566,17 @@
             {
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Apep_Music_S03",
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Music_S04": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Apep_Music_S04",
               "effectTempleteID": -1.0
             }
           ]

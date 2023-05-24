@@ -460,7 +460,7 @@
               "target": "CurLocalAvatar",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -526,7 +526,7 @@
               "target": "CurLocalAvatar",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -547,7 +547,7 @@
               ]
             }
           ],
-          "HOJBAPLHKIJ": [
+          "DGIIMFGPEEC": [
             {
               "$type": "ApplyModifier",
               "target": "Vehicle",
@@ -579,7 +579,7 @@
               "target": "CurLocalAvatar",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -661,7 +661,7 @@
                   "$type": "Predicated",
                   "targetPredicates": [
                     {
-                      "$type": "IOHEKLMKBLL",
+                      "$type": "PHHIBIFDCJD",
                       "predicates": [
                         {
                           "$type": "ByTargetGlobalValue",
@@ -696,7 +696,7 @@
                     {
                       "$type": "ApplyModifier",
                       "otherTargets": {
-                        "$type": "CDFGNCHMNMA",
+                        "$type": "OMJNAIFHGGH",
                         "tag": "SlushaHookRegion"
                       },
                       "modifierName": "Set_EmptyGadget_SendRefreshSLC"
@@ -807,7 +807,7 @@
               "target": "Vehicle",
               "predicates": [
                 {
-                  "$type": "KADAJLJMIII",
+                  "$type": "DDHBJACPPDM",
                   "target": "Self"
                 },
                 {
@@ -1081,9 +1081,9 @@
                       "ratio": 1.0
                     }
                   ],
-                  "NKFBPGHICNB": "VehicleSkillController",
-                  "BLFJIIIMHNP": "Action3",
-                  "LJPFGNPPLHK": 2.0
+                  "MIIPMMBOCEL": "VehicleSkillController",
+                  "HHBLDNOONPK": "Action3",
+                  "LNDGGJPGLFP": 2.0
                 },
                 {
                   "$type": "SetAnimatorTrigger",
@@ -1137,8 +1137,8 @@
                 }
               ],
               "chargeStateIDs": ["Idle", "Move", "Sprint"],
-              "NKFBPGHICNB": "VehicleSkillController",
-              "BLFJIIIMHNP": "Action3"
+              "MIIPMMBOCEL": "VehicleSkillController",
+              "HHBLDNOONPK": "Action3"
             },
             {
               "$type": "AttachToStateIDMixin",
@@ -1160,9 +1160,9 @@
           "onAdded": [
             {
               "$type": "TriggerInputActionCD",
-              "NKFBPGHICNB": "VehicleSkillController",
-              "BLFJIIIMHNP": "Action3",
-              "LJPFGNPPLHK": 10.0
+              "MIIPMMBOCEL": "VehicleSkillController",
+              "HHBLDNOONPK": "Action3",
+              "LNDGGJPGLFP": 10.0
             },
             {
               "$type": "TriggerAbility",
@@ -1171,7 +1171,7 @@
             },
             {
               "$type": "TriggerVehicleOff",
-              "JDEGPCLIIFE": true
+              "DCCCHKBPCEB": true
             },
             {
               "$type": "SetAnimatorTrigger",
@@ -1420,7 +1420,7 @@
               ],
               "targetPredicates": [
                 {
-                  "$type": "OCBOCJCKJBO",
+                  "$type": "PJGLIDHKMJE",
                   "tag": "_Mark_Sorush_Interact"
                 }
               ],
@@ -1463,7 +1463,7 @@
               ],
               "targetPredicates": [
                 {
-                  "$type": "OCBOCJCKJBO",
+                  "$type": "PJGLIDHKMJE",
                   "tag": "_Mark_Sorush_Interact"
                 }
               ],
@@ -1494,7 +1494,7 @@
           "modifierMixins": [
             {
               "$type": "SkillHighLightMixin",
-              "PNALLHKHKFE": 10201
+              "MLGLNMKMCNI": 10201
             }
           ]
         },
@@ -1551,11 +1551,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "OCBOCJCKJBO",
+                      "$type": "PJGLIDHKMJE",
                       "tag": "_Mark_Sorush_Interact"
                     },
                     {
-                      "$type": "OCBOCJCKJBO",
+                      "$type": "PJGLIDHKMJE",
                       "tag": "_Mark_CrownSorush_Only"
                     }
                   ]
@@ -1603,11 +1603,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "OCBOCJCKJBO",
+                      "$type": "PJGLIDHKMJE",
                       "tag": "_Mark_Sorush_Interact"
                     },
                     {
-                      "$type": "OCBOCJCKJBO",
+                      "$type": "PJGLIDHKMJE",
                       "tag": "_Mark_CrownSorush_Only"
                     }
                   ]
@@ -1640,7 +1640,7 @@
           "modifierMixins": [
             {
               "$type": "SkillHighLightMixin",
-              "PNALLHKHKFE": 10201
+              "MLGLNMKMCNI": 10201
             }
           ]
         },
@@ -1839,8 +1839,8 @@
               "target": "Team",
               "predicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "ratio": -1.0,
@@ -1862,8 +1862,8 @@
               "target": "CurLocalAvatar",
               "predicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "ratio": -1.0,
@@ -2075,8 +2075,8 @@
           "target": "Team",
           "predicates": [
             {
-              "$type": "IFCLFFFHCPN",
-              "ONBJPLCDDGP": true
+              "$type": "NLJIFDHAJJG",
+              "MPPHBAOEHGH": true
             }
           ],
           "ratio": -1.0,
@@ -2098,8 +2098,8 @@
           "target": "CurLocalAvatar",
           "predicates": [
             {
-              "$type": "IFCLFFFHCPN",
-              "ONBJPLCDDGP": true
+              "$type": "NLJIFDHAJJG",
+              "MPPHBAOEHGH": true
             }
           ],
           "ratio": -1.0,
@@ -2132,7 +2132,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "SlushaHookRegion"
               },
               "RotationDampTime": true,
@@ -2143,8 +2143,8 @@
               "target": "Team",
               "predicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "ratio": -1.0,
@@ -2166,8 +2166,8 @@
               "target": "CurLocalAvatar",
               "predicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "ratio": -1.0,
@@ -2248,7 +2248,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "SlushaHookRegion"
               },
               "modifierName": "Set_EmptyGadget_CreateHookpoint"
@@ -2264,7 +2264,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Create_HookPoint",
-              "IAJKJLGNLLE": 3,
+              "LIAAKLHNPEN": 3,
               "MPPMFEDKGHC": "pos_x",
               "BOKNHLDBKKK": "pos_y",
               "CHOIIMHDNHK": "pos_z"
@@ -2330,7 +2330,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "SlushaHookRegion"
               },
               "RotationDampTime": true,
@@ -2341,8 +2341,8 @@
               "target": "Team",
               "predicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "ratio": -1.0,
@@ -2364,8 +2364,8 @@
               "target": "CurLocalAvatar",
               "predicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "ratio": -1.0,
@@ -2421,7 +2421,7 @@
         {
           "$type": "DynamicCollisionMixin",
           "tags": ["SORUSH_WITH_HAT"],
-          "MOMEADCKAAI": true
+          "PJBIACEBCJH": true
         }
       ]
     }
@@ -2463,17 +2463,17 @@
       "abilityMixins": [
         {
           "$type": "VehicleSkillDepotChangeMixin",
-          "NCJGOFKIPIN": [45002003],
-          "MPAIHAKCLJA": 99002001
+          "MOMENHGBPJH": [45002003],
+          "JLPODDPLPIH": 99002001
         },
         {
           "$type": "ModifyCameraAircraftParamMixin",
-          "HNFHDMELLMB": 15.0,
-          "DLAHOOPILEC": {
+          "JKKIOFODBBL": 15.0,
+          "DLJBDNJGNBH": {
             "y": -2.5999999046325684
           },
-          "KCMAEHDJACI": 5.0,
-          "CHNCPCJKDJM": 0.800000011920929
+          "NACFMCENDFF": 5.0,
+          "BDFFKMOAPGM": 0.800000011920929
         },
         {
           "$type": "CurLocalAvatarMixinV2",

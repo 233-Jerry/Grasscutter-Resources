@@ -84,8 +84,8 @@
       "abilityName": "Monster_Formathr_None_WakeUp",
       "abilityMixins": [
         {
-          "$type": "AttachToStateIDMixin",
-          "stateIDs": ["WakeUp"],
+          "$type": "AttachToAIAlertnessMixin",
+          "alertness": [2, 3],
           "modifierName": "Monster_Formathr_None_WakeUp"
         }
       ],
@@ -353,7 +353,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HeadBox"]
                 },
                 {
@@ -1031,7 +1031,7 @@
             "direction": {
               "$type": "HFKFLHCBMLB",
               "JPOJHLOIKLG": 0.800000011920929,
-              "MPNLAACKHNA": 0.5
+              "IDCEIMNEFJC": 0.5
             },
             "attachPointName": "RightDown_Cannon"
           }
@@ -1187,7 +1187,7 @@
             "direction": {
               "$type": "HFKFLHCBMLB",
               "JPOJHLOIKLG": 1.5,
-              "MPNLAACKHNA": 1.0
+              "IDCEIMNEFJC": 1.0
             },
             "attachPointName": "RightUp_Cannon"
           }
@@ -1343,7 +1343,7 @@
             "direction": {
               "$type": "HFKFLHCBMLB",
               "JPOJHLOIKLG": 1.5,
-              "MPNLAACKHNA": 1.0
+              "IDCEIMNEFJC": 1.0
             },
             "attachPointName": "LeftDown_Cannon"
           }
@@ -1499,7 +1499,7 @@
             "direction": {
               "$type": "HFKFLHCBMLB",
               "JPOJHLOIKLG": 1.5,
-              "MPNLAACKHNA": 1.0
+              "IDCEIMNEFJC": 1.0
             },
             "attachPointName": "LeftUp_Cannon"
           }

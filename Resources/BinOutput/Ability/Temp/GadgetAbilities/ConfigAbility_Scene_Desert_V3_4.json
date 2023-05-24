@@ -6,11 +6,11 @@
       "abilityMixins": [
         {
           "$type": "AbnormalClimateMarkMixin",
-          "LPPELJICFJO": "ART/UI/Atlas/ButtonIcon/UI_BtnIcon_Climate_SandStorm",
-          "DAFGLNFAPOD": "UI_WEATHER_SANDSTORM_TITLE",
-          "IGIPBDFNKPH": "UI_WEATHER_SANDSTORM_DESC",
-          "AFCKFNABIPN": "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_SandStorm",
-          "POFBANDIEHB": "ART/UI/Atlas/ClimatePic/UI_Img_Climate_SandStorm"
+          "NKMLFHLDDII": "ART/UI/Atlas/ButtonIcon/UI_BtnIcon_Climate_SandStorm",
+          "KGBDJKCOAJJ": "UI_WEATHER_SANDSTORM_TITLE",
+          "EJMFBOGGCMB": "UI_WEATHER_SANDSTORM_DESC",
+          "OLKJCBOODII": "ART/UI/Atlas/ElementIcons/UI_Icon_Climate_SandStorm",
+          "CEJONMECMEG": "ART/UI/Atlas/ClimatePic/UI_Img_Climate_SandStorm"
         }
       ],
       "isDynamicAbility": true
@@ -84,7 +84,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -143,7 +143,7 @@
                       "entityTypes": ["Avatar"]
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ]
                 }
@@ -186,11 +186,11 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "AKJKDLEAAOE",
+                  "$type": "PDMGNBAMNKK",
                   "target": "Self",
                   "logic": "Lesser",
-                  "EDFIPMFDGNF": "_target_pos",
-                  "KHJOPCAGLCN": 11.0
+                  "BFIBGHIJCEO": "_target_pos",
+                  "BLHBBLJKJCP": 11.0
                 }
               ],
               "successActions": [
@@ -222,11 +222,11 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "AKJKDLEAAOE",
+                  "$type": "PDMGNBAMNKK",
                   "target": "Self",
                   "logic": "Lesser",
-                  "EDFIPMFDGNF": "_target_pos",
-                  "KHJOPCAGLCN": 11.0
+                  "BFIBGHIJCEO": "_target_pos",
+                  "BLHBBLJKJCP": 11.0
                 }
               ],
               "successActions": [
@@ -554,7 +554,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -645,11 +645,11 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "AKJKDLEAAOE",
+                  "$type": "PDMGNBAMNKK",
                   "target": "Self",
                   "logic": "Lesser",
-                  "EDFIPMFDGNF": "_avatar_pos",
-                  "KHJOPCAGLCN": 10.0
+                  "BFIBGHIJCEO": "_avatar_pos",
+                  "BLHBBLJKJCP": 10.0
                 },
                 {
                   "$type": "MMGNMMFNPAK",
@@ -693,11 +693,11 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "AKJKDLEAAOE",
+                  "$type": "PDMGNBAMNKK",
                   "target": "Self",
                   "logic": "Lesser",
-                  "EDFIPMFDGNF": "_avatar_pos",
-                  "KHJOPCAGLCN": 10.0
+                  "BFIBGHIJCEO": "_avatar_pos",
+                  "BLHBBLJKJCP": 10.0
                 },
                 {
                   "$type": "ByTargetGlobalValue",
@@ -915,7 +915,7 @@
                   "target": "AllPlayerAvatars",
                   "predicatesForeach": [
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ],
                   "watcherId": 81298,
@@ -1232,19 +1232,19 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ArrowMat_A",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ArrowMat_A",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 9.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ArrowMat_C",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ArrowMat_C",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetAnimatorInt",
@@ -1332,19 +1332,19 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ArrowMat_A",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ArrowMat_A",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ArrowMat_C",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ArrowMat_C",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 9.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetAnimatorInt",
@@ -1956,7 +1956,7 @@
           "onRemoved": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             }
           ]
         },
@@ -2087,7 +2087,7 @@
           "onRemoved": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 203
+              "LDNMJDBDMNC": 203
             }
           ]
         },
@@ -2284,7 +2284,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "TransparentGadget"
               },
               "predicates": [
@@ -2339,7 +2339,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "TransparentGadget"
               },
               "predicates": [
@@ -2408,7 +2408,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 200
+              "LDNMJDBDMNC": 200
             }
           ]
         }
@@ -2474,7 +2474,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "SandPipeWitheredGadget"
               },
               "predicates": [
@@ -2523,7 +2523,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         }
@@ -2630,19 +2630,19 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "LeafMat",
-              "patternName": "_TopColorScale",
+              "EKNGFFBIAPI": "LeafMat",
+              "IMLMHJCMAHE": "_TopColorScale",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "LeafMat",
-              "patternName": "_StateChangeValue",
+              "EKNGFFBIAPI": "LeafMat",
+              "IMLMHJCMAHE": "_StateChangeValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -2652,19 +2652,19 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "LeafMat",
-              "patternName": "_TopColorScale",
+              "EKNGFFBIAPI": "LeafMat",
+              "IMLMHJCMAHE": "_TopColorScale",
               "ratio": 2.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "LeafMat",
-              "patternName": "_StateChangeValue",
+              "EKNGFFBIAPI": "LeafMat",
+              "IMLMHJCMAHE": "_StateChangeValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }
@@ -2700,18 +2700,18 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "StoneMat",
-              "patternName": "_SecBlendProcess",
+              "EKNGFFBIAPI": "StoneMat",
+              "IMLMHJCMAHE": "_SecBlendProcess",
               "ratio": 0.800000011920929,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetLightColorIntensity",
-              "KIFMOKMJCEP": "Light",
-              "DILMPFMNJLI": true,
-              "PDFAAOIAHAP": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "JOCJPNKMLPC": "Light",
+              "EADDEDLEOLF": true,
+              "OCHDCEIHGMH": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             }
           ]
         },
@@ -2721,19 +2721,19 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "StoneMat",
-              "patternName": "_SecBlendProcess",
+              "EKNGFFBIAPI": "StoneMat",
+              "IMLMHJCMAHE": "_SecBlendProcess",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetLightColorIntensity",
-              "KIFMOKMJCEP": "Light",
-              "NHEJMBBGJMK": 2.0,
-              "DILMPFMNJLI": true,
-              "PDFAAOIAHAP": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "JOCJPNKMLPC": "Light",
+              "JFNJHHCHECA": 2.0,
+              "EADDEDLEOLF": true,
+              "OCHDCEIHGMH": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             }
           ]
         }
@@ -3036,11 +3036,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "WallMat",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "WallMat",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 1.840000033378601,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -3055,11 +3055,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "WallMat",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "WallMat",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }
@@ -3109,9 +3109,9 @@
               "parameter": "Height",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_SandFall_01_Fall",
-              "DBFFJHEOPBL": "EffectHeight"
+              "KBEMIECIEJF": "EffectHeight"
             }
           ]
         },
@@ -3213,9 +3213,9 @@
               "parameter": "Height",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_SandFall_02_Fall",
-              "DBFFJHEOPBL": "EffectHeight"
+              "KBEMIECIEJF": "EffectHeight"
             }
           ]
         },
@@ -3309,7 +3309,7 @@
               "$type": "SetAnimatorFloat",
               "floatID": "Blend",
               "ratio": "Sand_Scale",
-              "FIOIJOEOJAB": 1.0
+              "MINKNEOBHLI": 1.0
             }
           ]
         }
@@ -3325,12 +3325,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.5
             }
           ]
         },
@@ -3341,19 +3341,19 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.5
             },
             {
               "$type": "SetAnimatorFloat",
               "canBeHandledOnRecover": true,
               "floatID": "Blend",
               "ratio": 0.0,
-              "FIOIJOEOJAB": 1.5
+              "MINKNEOBHLI": 1.5
             }
           ]
         },
@@ -3364,12 +3364,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.090000152587891,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.4199999570846558
             }
           ]
         },
@@ -3380,19 +3380,19 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.090000152587891,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.5
             },
             {
               "$type": "SetAnimatorFloat",
               "canBeHandledOnRecover": true,
               "floatID": "Blend",
               "ratio": 1.0,
-              "FIOIJOEOJAB": 1.5
+              "MINKNEOBHLI": 1.5
             }
           ]
         },
@@ -3409,12 +3409,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.090000152587891,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -3427,7 +3427,7 @@
               "canBeHandledOnRecover": true,
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self"
                 }
               ],
@@ -3439,13 +3439,13 @@
               "canBeHandledOnRecover": true,
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self"
                 }
               ],
               "floatID": "Blend",
               "ratio": "Sand_Scale",
-              "FIOIJOEOJAB": 0.5
+              "MINKNEOBHLI": 0.5
             }
           ]
         }
@@ -3490,12 +3490,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ],
           "onBeingHit": [
@@ -3531,12 +3531,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.090000152587891,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ],
           "onBeingHit": [
@@ -3599,9 +3599,9 @@
               "parameter": "Height",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_SandPoolEjector_Active",
-              "DBFFJHEOPBL": "nozzle_Height"
+              "KBEMIECIEJF": "nozzle_Height"
             }
           ]
         },
@@ -3629,9 +3629,9 @@
               "parameter": "Height",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_SandPoolEjector_Active02",
-              "DBFFJHEOPBL": "nozzle_Height"
+              "KBEMIECIEJF": "nozzle_Height"
             }
           ]
         }
@@ -3691,12 +3691,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.6000000238418579
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.6000000238418579
             }
           ]
         },
@@ -3706,12 +3706,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -3725,11 +3725,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.2999999523162842
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.2999999523162842
             }
           ],
           "onRemoved": [
@@ -3762,11 +3762,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ActiveMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ActiveMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.20000000298023224,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.2999999523162842
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.2999999523162842
             }
           ],
           "onRemoved": [
@@ -3917,7 +3917,7 @@
                       "luaCallType": "SpecificGroup",
                       "CallParamList": [133314001],
                       "funcName": "SLC_DijnnEnergyChange_Log",
-                      "IAJKJLGNLLE": 2,
+                      "LIAAKLHNPEN": 2,
                       "MPPMFEDKGHC": 1.0,
                       "BOKNHLDBKKK": 1.0,
                       "CHOIIMHDNHK": 0.0
@@ -3990,7 +3990,7 @@
                       "luaCallType": "SpecificGroup",
                       "CallParamList": [133314001],
                       "funcName": "SLC_DijnnEnergyChange_Log",
-                      "IAJKJLGNLLE": 2,
+                      "LIAAKLHNPEN": 2,
                       "MPPMFEDKGHC": [3.0, "old_energy_level", "SUB"],
                       "BOKNHLDBKKK": 1.0,
                       "CHOIIMHDNHK": 0.0
@@ -4001,7 +4001,7 @@
             },
             {
               "$type": "UpdateWeatherWizardEnergy",
-              "PJCBIDINDFE": 220072,
+              "MEHOBBGMKNM": 220072,
               "globalValueKey": "gv_Energy_Level"
             }
           ]
@@ -4066,7 +4066,7 @@
                       "$type": "ByAny",
                       "predicates": [
                         {
-                          "$type": "IOHEKLMKBLL",
+                          "$type": "PHHIBIFDCJD",
                           "predicates": [
                             {
                               "$type": "ByTargetGlobalValue",
@@ -4082,7 +4082,7 @@
                               "compareType": "MoreThanAndEqual"
                             },
                             {
-                              "$type": "DFFODFONEJF"
+                              "$type": "NNPEGIOOOCJ"
                             }
                           ]
                         },
@@ -4282,7 +4282,7 @@
               "luaCallType": "SpecificGroup",
               "CallParamList": [133314001],
               "funcName": "SLC_DijnnEnergyChange_Log",
-              "IAJKJLGNLLE": 2,
+              "LIAAKLHNPEN": 2,
               "MPPMFEDKGHC": -1.0,
               "BOKNHLDBKKK": 3.0,
               "CHOIIMHDNHK": 0.0
@@ -4297,7 +4297,7 @@
             },
             {
               "$type": "UpdateWeatherWizardEnergy",
-              "PJCBIDINDFE": 220072,
+              "MEHOBBGMKNM": 220072,
               "globalValueKey": "gv_Energy_Level"
             }
           ]
@@ -4393,7 +4393,7 @@
                       "compareType": "MoreThanAndEqual"
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ],
                   "successActions": [
@@ -4537,7 +4537,7 @@
               "luaCallType": "SpecificGroup",
               "CallParamList": [133314001],
               "funcName": "SLC_DijnnEnergyChange_Log",
-              "IAJKJLGNLLE": 2,
+              "LIAAKLHNPEN": 2,
               "MPPMFEDKGHC": -2.0,
               "BOKNHLDBKKK": 4.0,
               "CHOIIMHDNHK": 0.0
@@ -4552,7 +4552,7 @@
             },
             {
               "$type": "UpdateWeatherWizardEnergy",
-              "PJCBIDINDFE": 220072,
+              "MEHOBBGMKNM": 220072,
               "globalValueKey": "gv_Energy_Level"
             }
           ]
@@ -4678,35 +4678,35 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "FallDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "FallDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_01",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_01",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_01_Move",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_01_Move",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -4716,38 +4716,38 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "FallDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "FallDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_01",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_01",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_01_Move",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_01_Move",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -4862,35 +4862,35 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "FallDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "FallDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_02",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_02",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_02_Move",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_02_Move",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -4900,38 +4900,38 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "FallDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "FallDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_02",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_02",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzsg_02_Move",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzsg_02_Move",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -5036,24 +5036,24 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "BreakDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "BreakDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Hssz_01",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Hssz_01",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -5063,26 +5063,26 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "BreakDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "BreakDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Hssz_01",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Hssz_01",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -5187,24 +5187,24 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "BreakDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "BreakDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Hssz_02",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Hssz_02",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -5214,26 +5214,26 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "BreakDown",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "BreakDown",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Hssz_02",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Hssz_02",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -5340,50 +5340,50 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Scale",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Scale",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzpb_01",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzpb_01",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_mat",
+              "EKNGFFBIAPI": "waterfall_mat",
               "CEBKEKBDDMP": "_DissoveValue",
-              "GPAPBBLJGOC": ["_RevertDissove", "_EnableTimeRewind"],
-              "PBIPIDFHMIF": [1.0, 1.0],
-              "CABEPPNBHOO": [0.0, 0.0],
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "CGEPIPGDFOF": ["_RevertDissove", "_EnableTimeRewind"],
+              "OMMBEKDEHMA": [1.0, 1.0],
+              "OFCEJCKKKAC": [0.0, 0.0],
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_splash_mat",
+              "EKNGFFBIAPI": "waterfall_splash_mat",
               "CEBKEKBDDMP": "_DissovValue",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -5393,52 +5393,52 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Scale",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Scale",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzpb_01",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzpb_01",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_mat",
+              "EKNGFFBIAPI": "waterfall_mat",
               "CEBKEKBDDMP": "_DissoveValue",
-              "GPAPBBLJGOC": ["_RevertDissove", "_EnableTimeRewind"],
-              "PBIPIDFHMIF": [1.0, 1.0],
-              "CABEPPNBHOO": [0.0, 0.0],
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "CGEPIPGDFOF": ["_RevertDissove", "_EnableTimeRewind"],
+              "OMMBEKDEHMA": [1.0, 1.0],
+              "OFCEJCKKKAC": [0.0, 0.0],
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_splash_mat",
+              "EKNGFFBIAPI": "waterfall_splash_mat",
               "CEBKEKBDDMP": "_DissovValue",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -5555,50 +5555,50 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Scale",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Scale",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzpb_02",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzpb_02",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_mat",
+              "EKNGFFBIAPI": "waterfall_mat",
               "CEBKEKBDDMP": "_DissoveValue",
-              "GPAPBBLJGOC": ["_RevertDissove", "_EnableTimeRewind"],
-              "PBIPIDFHMIF": [1.0, 1.0],
-              "CABEPPNBHOO": [0.0, 0.0],
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "CGEPIPGDFOF": ["_RevertDissove", "_EnableTimeRewind"],
+              "OMMBEKDEHMA": [1.0, 1.0],
+              "OFCEJCKKKAC": [0.0, 0.0],
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_splash_mat",
+              "EKNGFFBIAPI": "waterfall_splash_mat",
               "CEBKEKBDDMP": "_DissovValue",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -5608,52 +5608,52 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Scale",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Scale",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Lzpb_02",
-              "EBNAMKAGBDG": "",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Lzpb_02",
+              "AIAFJEEDPIN": "",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_mat",
+              "EKNGFFBIAPI": "waterfall_mat",
               "CEBKEKBDDMP": "_DissoveValue",
-              "GPAPBBLJGOC": ["_RevertDissove", "_EnableTimeRewind"],
-              "PBIPIDFHMIF": [1.0, 1.0],
-              "CABEPPNBHOO": [0.0, 0.0],
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "CGEPIPGDFOF": ["_RevertDissove", "_EnableTimeRewind"],
+              "OMMBEKDEHMA": [1.0, 1.0],
+              "OFCEJCKKKAC": [0.0, 0.0],
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             },
             {
               "$type": "SetGVToShaderParamMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "shader_timeback_value_min",
                 "shader_timeback_value_max"
               ],
-              "matName": "waterfall_splash_mat",
+              "EKNGFFBIAPI": "waterfall_splash_mat",
               "CEBKEKBDDMP": "_DissovValue",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -5756,13 +5756,13 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Action",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Action",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -5772,14 +5772,14 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Action",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Action",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -5862,13 +5862,13 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Action",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Action",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -5878,14 +5878,14 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Action",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Action",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -5968,13 +5968,13 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Action",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Action",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -5984,14 +5984,14 @@
           "modifierMixins": [
             {
               "$type": "MapGVToAnimationClipTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "ani_timeback_value_min",
                 "ani_timeback_value_max"
               ],
-              "ADBPBIIOAEB": "Action",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "AKHCHNFFANI": "Action",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -6102,15 +6102,15 @@
           "modifierMixins": [
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Cwcfz_01",
-              "LFCAPJIIBDD": true,
-              "EBNAMKAGBDG": "Eff_Ani_Cwcfz_01",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Cwcfz_01",
+              "JFGFFHMHNBD": true,
+              "AIAFJEEDPIN": "Eff_Ani_Cwcfz_01",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -6120,16 +6120,16 @@
           "modifierMixins": [
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Cwcfz_01",
-              "LFCAPJIIBDD": true,
-              "EBNAMKAGBDG": "Eff_Ani_Cwcfz_01",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Cwcfz_01",
+              "JFGFFHMHNBD": true,
+              "AIAFJEEDPIN": "Eff_Ani_Cwcfz_01",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -6254,15 +6254,15 @@
           "modifierMixins": [
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Cwcfz_02",
-              "LFCAPJIIBDD": true,
-              "EBNAMKAGBDG": "Eff_Ani_Cwcfz_01",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Cwcfz_02",
+              "JFGFFHMHNBD": true,
+              "AIAFJEEDPIN": "Eff_Ani_Cwcfz_01",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -6272,16 +6272,16 @@
           "modifierMixins": [
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Cwcfz_02",
-              "LFCAPJIIBDD": true,
-              "EBNAMKAGBDG": "Eff_Ani_Cwcfz_01",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Cwcfz_02",
+              "JFGFFHMHNBD": true,
+              "AIAFJEEDPIN": "Eff_Ani_Cwcfz_01",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -6406,15 +6406,15 @@
           "modifierMixins": [
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Cwcfz_03",
-              "LFCAPJIIBDD": true,
-              "EBNAMKAGBDG": "Eff_Ani_Cwcfz_01",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Cwcfz_03",
+              "JFGFFHMHNBD": true,
+              "AIAFJEEDPIN": "Eff_Ani_Cwcfz_01",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         },
@@ -6424,16 +6424,16 @@
           "modifierMixins": [
             {
               "$type": "MapGVToEffectParticleSystemTimeMixin",
-              "JPAEENOFDIP": "_timeback_value",
-              "HMIKDPDACFH": true,
-              "HMKAAEHIFOI": [
+              "KMKFBCCHNLM": "_timeback_value",
+              "OMLBFGMBKDJ": true,
+              "CPHBHAIFOGO": [
                 "eff_timeback_value_min",
                 "eff_timeback_value_max"
               ],
-              "OKBAEDDGLPK": "Eff_Property_Ani_Prop_Cwcfz_03",
-              "LFCAPJIIBDD": true,
-              "EBNAMKAGBDG": "Eff_Ani_Cwcfz_01",
-              "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag"
+              "OPGKIFNBMHM": "Eff_Property_Ani_Prop_Cwcfz_03",
+              "JFGFFHMHNBD": true,
+              "AIAFJEEDPIN": "Eff_Ani_Cwcfz_01",
+              "BFMMICGEEBC": "SGV_Broadcast_GV_Tag"
             }
           ]
         }
@@ -6591,39 +6591,39 @@
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6636,40 +6636,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6682,40 +6682,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6728,40 +6728,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6774,40 +6774,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6820,40 +6820,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6866,40 +6866,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6912,40 +6912,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -6958,40 +6958,40 @@
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 1
+              "CNGLFJAADFN": 1
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 6
+              "CNGLFJAADFN": 6
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 7
+              "CNGLFJAADFN": 7
             },
             {
               "$type": "EnableGadgetExtraButton",
-              "HBLHBKIBPFI": 8
+              "CNGLFJAADFN": 8
             },
             {
               "$type": "EnableGadgetExtraButton",
               "enable": true,
-              "HBLHBKIBPFI": 9
+              "CNGLFJAADFN": 9
             }
           ]
         },
@@ -7075,39 +7075,39 @@
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 1
+          "CNGLFJAADFN": 1
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 2
+          "CNGLFJAADFN": 2
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 3
+          "CNGLFJAADFN": 3
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 4
+          "CNGLFJAADFN": 4
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 5
+          "CNGLFJAADFN": 5
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 6
+          "CNGLFJAADFN": 6
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 7
+          "CNGLFJAADFN": 7
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 8
+          "CNGLFJAADFN": 8
         },
         {
           "$type": "EnableGadgetExtraButton",
-          "HBLHBKIBPFI": 9
+          "CNGLFJAADFN": 9
         },
         {
           "$type": "AttachModifier",
@@ -7134,8 +7134,8 @@
         },
         {
           "$type": "BroadcastGVMixin",
-          "LEKMLGOOLOM": "SGV_Broadcast_GV_Tag",
-          "CPFNNGFHEAP": "_timeback_value"
+          "BFMMICGEEBC": "SGV_Broadcast_GV_Tag",
+          "JCGFCLNMKBF": "_timeback_value"
         }
       ],
       "abilitySpecials": {
@@ -7262,7 +7262,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Current_Checkpoint_Correctness",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7277,7 +7277,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Current_Checkpoint_Correctness",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7292,7 +7292,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Current_Checkpoint_Chest_Correctness",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7307,7 +7307,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Current_Checkpoint_Chest_Correctness",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7553,7 +7553,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "TitanMoveMonitorReady",
+              "AEHHOKAPHGO": "TitanMoveMonitorReady",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7567,7 +7567,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "OpenPage",
+          "BLEEBFEBMJA": "OpenPage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7577,7 +7577,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "ClosePage",
+          "BLEEBFEBMJA": "ClosePage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7587,7 +7587,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "v3_0_RobotControl_ButtonDown",
+          "BLEEBFEBMJA": "v3_0_RobotControl_ButtonDown",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7668,16 +7668,16 @@
                   "ratio": 0.0
                 }
               ],
-              "NCFIPJKMNKD": "RobotControlPage",
-              "FKLPGBEEIMF": "ShowReminder",
-              "LODHMJLABGF": 1000080059,
-              "KFMDCCEEGGJ": ""
+              "IOGBGECFIEM": "RobotControlPage",
+              "ICPKBECFKBE": "ShowReminder",
+              "HEIDAMJFCDB": 1000080059,
+              "CGADHNOAGIB": ""
             },
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Has_Opened_State",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7694,23 +7694,23 @@
               "target": "AllPlayerAvatars",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
                 {
                   "$type": "ServerLuaTriggerEvent",
                   "luaCallType": "FromGroup",
-                  "LCMLAHJEBKC": "TitanMove",
+                  "AEHHOKAPHGO": "TitanMove",
                   "MPPMFEDKGHC": 0.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
                 },
                 {
                   "$type": "NotifyUI",
-                  "NCFIPJKMNKD": "RobotControlPage",
-                  "FKLPGBEEIMF": "Close",
-                  "KFMDCCEEGGJ": ""
+                  "IOGBGECFIEM": "RobotControlPage",
+                  "ICPKBECFKBE": "Close",
+                  "CGADHNOAGIB": ""
                 }
               ]
             }
@@ -7739,7 +7739,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "TitanAttackMonitorReady",
+              "AEHHOKAPHGO": "TitanAttackMonitorReady",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7753,7 +7753,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "OpenPage",
+          "BLEEBFEBMJA": "OpenPage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7763,7 +7763,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "ClosePage",
+          "BLEEBFEBMJA": "ClosePage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7848,7 +7848,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "TitanAttackMonitorReady",
+              "AEHHOKAPHGO": "TitanAttackMonitorReady",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7862,7 +7862,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "OpenPage",
+          "BLEEBFEBMJA": "OpenPage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7872,7 +7872,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "ClosePage",
+          "BLEEBFEBMJA": "ClosePage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7882,7 +7882,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "v3_0_RobotControl_ButtonDown",
+          "BLEEBFEBMJA": "v3_0_RobotControl_ButtonDown",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -7963,16 +7963,16 @@
                   "ratio": 0.0
                 }
               ],
-              "NCFIPJKMNKD": "RobotControlPage",
-              "FKLPGBEEIMF": "ShowReminder",
-              "LODHMJLABGF": 1000080060,
-              "KFMDCCEEGGJ": ""
+              "IOGBGECFIEM": "RobotControlPage",
+              "ICPKBECFKBE": "ShowReminder",
+              "HEIDAMJFCDB": 1000080060,
+              "CGADHNOAGIB": ""
             },
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Has_Opened_State",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7989,23 +7989,23 @@
               "target": "AllPlayerAvatars",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
                 {
                   "$type": "ServerLuaTriggerEvent",
                   "luaCallType": "FromGroup",
-                  "LCMLAHJEBKC": "TitanAttack",
+                  "AEHHOKAPHGO": "TitanAttack",
                   "MPPMFEDKGHC": 0.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
                 },
                 {
                   "$type": "NotifyUI",
-                  "NCFIPJKMNKD": "RobotControlPage",
-                  "FKLPGBEEIMF": "Close",
-                  "KFMDCCEEGGJ": ""
+                  "IOGBGECFIEM": "RobotControlPage",
+                  "ICPKBECFKBE": "Close",
+                  "CGADHNOAGIB": ""
                 }
               ]
             }
@@ -8034,7 +8034,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "TitanMoveMonitorReady",
+              "AEHHOKAPHGO": "TitanMoveMonitorReady",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -8048,7 +8048,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "OpenPage",
+          "BLEEBFEBMJA": "OpenPage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8058,7 +8058,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "ClosePage",
+          "BLEEBFEBMJA": "ClosePage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8068,7 +8068,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "v3_0_RobotControl_ButtonDown",
+          "BLEEBFEBMJA": "v3_0_RobotControl_ButtonDown",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8149,16 +8149,16 @@
                   "ratio": 0.0
                 }
               ],
-              "NCFIPJKMNKD": "RobotControlPage",
-              "FKLPGBEEIMF": "ShowReminder",
-              "LODHMJLABGF": 1000080062,
-              "KFMDCCEEGGJ": ""
+              "IOGBGECFIEM": "RobotControlPage",
+              "ICPKBECFKBE": "ShowReminder",
+              "HEIDAMJFCDB": 1000080062,
+              "CGADHNOAGIB": ""
             },
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Has_Opened_State",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 3.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -8175,23 +8175,23 @@
               "target": "AllPlayerAvatars",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
                 {
                   "$type": "ServerLuaTriggerEvent",
                   "luaCallType": "FromGroup",
-                  "LCMLAHJEBKC": "TitanMove",
+                  "AEHHOKAPHGO": "TitanMove",
                   "MPPMFEDKGHC": 0.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
                 },
                 {
                   "$type": "NotifyUI",
-                  "NCFIPJKMNKD": "RobotControlPage",
-                  "FKLPGBEEIMF": "Close",
-                  "KFMDCCEEGGJ": ""
+                  "IOGBGECFIEM": "RobotControlPage",
+                  "ICPKBECFKBE": "Close",
+                  "CGADHNOAGIB": ""
                 }
               ]
             }
@@ -8220,7 +8220,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "TitanLaserMonitorReady",
+              "AEHHOKAPHGO": "TitanLaserMonitorReady",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -8234,7 +8234,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "OpenPage",
+          "BLEEBFEBMJA": "OpenPage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8244,7 +8244,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "ClosePage",
+          "BLEEBFEBMJA": "ClosePage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8329,7 +8329,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "TitanLaserMonitorReady",
+              "AEHHOKAPHGO": "TitanLaserMonitorReady",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -8343,7 +8343,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "OpenPage",
+          "BLEEBFEBMJA": "OpenPage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8353,7 +8353,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "ClosePage",
+          "BLEEBFEBMJA": "ClosePage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8363,12 +8363,12 @@
         },
         {
           "$type": "ShootFromCameraMixin",
-          "PCLPONGKABC": "v3_1_RobotControl_FireBullet",
-          "GNKELMMJCDB": {
+          "BLEEBFEBMJA": "v3_1_RobotControl_FireBullet",
+          "CGOLKCKJGCG": {
             "y": -0.5
           },
-          "IMLOPAADPPC": "GV_ShootPos",
-          "KDNFKADGJMG": "GV_ShootDir",
+          "LLHDJIAJBBP": "GV_ShootPos",
+          "BICAGHIEBDM": "GV_ShootDir",
           "actionList": [
             {
               "$type": "DoWatcherSystemAction",
@@ -8459,16 +8459,16 @@
                   "ratio": 0.0
                 }
               ],
-              "NCFIPJKMNKD": "RobotControlPage",
-              "FKLPGBEEIMF": "ShowReminder",
-              "LODHMJLABGF": 1000080061,
-              "KFMDCCEEGGJ": ""
+              "IOGBGECFIEM": "RobotControlPage",
+              "ICPKBECFKBE": "ShowReminder",
+              "HEIDAMJFCDB": 1000080061,
+              "CGADHNOAGIB": ""
             },
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Set_Has_Opened_State",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 4.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -8498,7 +8498,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "TitanLaserMonitorReady",
+              "AEHHOKAPHGO": "TitanLaserMonitorReady",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -8512,7 +8512,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "OpenPage",
+          "BLEEBFEBMJA": "OpenPage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8522,7 +8522,7 @@
         },
         {
           "$type": "UIInteractMixin",
-          "PCLPONGKABC": "ClosePage",
+          "BLEEBFEBMJA": "ClosePage",
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -8532,12 +8532,12 @@
         },
         {
           "$type": "ShootFromCameraMixin",
-          "PCLPONGKABC": "v3_1_RobotControl_FireBullet",
-          "GNKELMMJCDB": {
+          "BLEEBFEBMJA": "v3_1_RobotControl_FireBullet",
+          "CGOLKCKJGCG": {
             "y": -0.5
           },
-          "IMLOPAADPPC": "GV_ShootPos",
-          "KDNFKADGJMG": "GV_ShootDir",
+          "LLHDJIAJBBP": "GV_ShootPos",
+          "BICAGHIEBDM": "GV_ShootDir",
           "actionList": [
             {
               "$type": "DoWatcherSystemAction",
@@ -8931,7 +8931,7 @@
               "$type": "ChangeGadgetState",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 200
                 }
               ]
@@ -9048,7 +9048,7 @@
               "$type": "ChangeGadgetState",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 200
                 }
               ]
@@ -9177,11 +9177,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "DFFODFONEJF",
+                      "$type": "NNPEGIOOOCJ",
                       "target": "TargetOriginOwner"
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ]
                 }
@@ -9287,11 +9287,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "DFFODFONEJF",
+                      "$type": "NNPEGIOOOCJ",
                       "target": "TargetOriginOwner"
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ]
                 }
@@ -9397,11 +9397,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "DFFODFONEJF",
+                      "$type": "NNPEGIOOOCJ",
                       "target": "TargetOriginOwner"
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ]
                 }
@@ -9507,11 +9507,11 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "DFFODFONEJF",
+                      "$type": "NNPEGIOOOCJ",
                       "target": "TargetOriginOwner"
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ]
                 }
@@ -9823,38 +9823,38 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word01",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word01",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.30000001192092896
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.30000001192092896
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word02",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word02",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.30000001192092896
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.30000001192092896
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word03",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word03",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.30000001192092896
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.30000001192092896
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word04",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word04",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.30000001192092896
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.30000001192092896
             }
           ]
         },
@@ -9869,38 +9869,38 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word01",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word01",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word02",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word02",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word03",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word03",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "word04",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word04",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             }
           ],
           "onRemoved": [
@@ -9933,35 +9933,35 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "word01",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word01",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 0.20000000298023224,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "word02",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word02",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 0.20000000298023224,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "word03",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word03",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 0.20000000298023224,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "word04",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "word04",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 0.20000000298023224,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.4199999570846558
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.4199999570846558
             }
           ],
           "onRemoved": [
@@ -10026,11 +10026,11 @@
                   "ratio": 1.0
                 }
               ],
-              "matName": "WordMat",
-              "patternName": "_Opacity",
+              "EKNGFFBIAPI": "WordMat",
+              "IMLMHJCMAHE": "_Opacity",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -10042,11 +10042,11 @@
                   "ratio": 1.0
                 }
               ],
-              "matName": "WordMat",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "WordMat",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
@@ -10059,8 +10059,8 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "matName": "WordMat",
-              "patternName": "_Opacity",
+              "EKNGFFBIAPI": "WordMat",
+              "IMLMHJCMAHE": "_Opacity",
               "ratio": 0.0
             },
             {
@@ -10074,8 +10074,8 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "matName": "WordMat",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "WordMat",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 1.0
             },
             {
@@ -10100,19 +10100,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "WordMat",
-              "patternName": "_Opacity",
+              "EKNGFFBIAPI": "WordMat",
+              "IMLMHJCMAHE": "_Opacity",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "WordMat",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "WordMat",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 6.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.2000000476837158
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.2000000476837158
             }
           ],
           "onRemoved": [
@@ -10244,14 +10244,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -10262,20 +10262,20 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllDirLights",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "AllDirLights",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllDirLights",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "AllDirLights",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 1.0
             }
           ]
@@ -10286,26 +10286,26 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllDirLights",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "AllDirLights",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllDirLights",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "AllDirLights",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432
             }
           ]
@@ -10330,14 +10330,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -10348,17 +10348,17 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight1",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "DirLight1",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight1",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "DirLight1",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "AttachEffect",
@@ -10378,17 +10378,17 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight1",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "DirLight1",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight2",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "DirLight2",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "AttachEffect",
@@ -10408,17 +10408,17 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight1",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "DirLight1",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight3",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "DirLight3",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "AttachEffect",
@@ -10438,17 +10438,17 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight1",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "DirLight1",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DirLight4",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "DirLight4",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             },
             {
               "$type": "AttachEffect",
@@ -10468,14 +10468,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432
             }
           ]
@@ -10542,7 +10542,7 @@
                       "entityTypes": ["Avatar"]
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ]
                 },
@@ -10550,7 +10550,7 @@
                   "$type": "Predicated",
                   "targetPredicates": [
                     {
-                      "$type": "DFFODFONEJF",
+                      "$type": "NNPEGIOOOCJ",
                       "target": "SelfAttackTarget"
                     },
                     {
@@ -10614,7 +10614,7 @@
               "target": "Team",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Caster",
                   "gadgetState": 202
                 }
@@ -10661,7 +10661,7 @@
               "$type": "ServerLuaCall",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Caster",
                   "gadgetState": 203
                 }
@@ -10694,10 +10694,10 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             }
           ]
         },
@@ -10750,7 +10750,7 @@
               "modifierName": "UNIQUE_AvatarWindBall"
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 203
             }
@@ -10807,14 +10807,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -10825,8 +10825,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 1.0
             }
           ]
@@ -10837,14 +10837,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432
             }
           ]
@@ -10855,14 +10855,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EnableBreath",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EnableBreath",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "AllLights",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "AllLights",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432
             }
           ]
@@ -10959,10 +10959,10 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.900000095367432,
-              "HLDHDOKLCHI": true
+              "KNEMMEIDOHF": true
             }
           ]
         },
@@ -11023,7 +11023,7 @@
               "modifierName": "UNIQUE_AvatarWindBall"
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 203
             }
@@ -11066,7 +11066,7 @@
           "target": "Target",
           "predicates": [
             {
-              "$type": "OCBOCJCKJBO",
+              "$type": "PJGLIDHKMJE",
               "tag": "WindBallProp"
             }
           ],
@@ -11093,7 +11093,7 @@
               "target": "Team",
               "predicates": [
                 {
-                  "$type": "DFFODFONEJF",
+                  "$type": "NNPEGIOOOCJ",
                   "target": "Self"
                 }
               ],
@@ -11528,7 +11528,7 @@
               "failActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 202
+                  "LDNMJDBDMNC": 202
                 },
                 {
                   "$type": "ApplyModifier",
@@ -11582,7 +11582,7 @@
               "failActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 203
+                  "LDNMJDBDMNC": 203
                 },
                 {
                   "$type": "ApplyModifier",
@@ -11636,7 +11636,7 @@
               "failActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 204
+                  "LDNMJDBDMNC": 204
                 },
                 {
                   "$type": "ApplyModifier",
@@ -11690,7 +11690,7 @@
               "failActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 },
                 {
                   "$type": "ApplyModifier",
@@ -11793,9 +11793,9 @@
               "parameter": "Blend",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_Cwfs_Wind_02",
-              "DBFFJHEOPBL": "Wind_Length_1"
+              "KBEMIECIEJF": "Wind_Length_1"
             }
           ],
           "onBeingHit": [
@@ -11820,7 +11820,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 202
+                  "LDNMJDBDMNC": 202
                 },
                 {
                   "$type": "ApplyModifier",
@@ -11854,9 +11854,9 @@
               "parameter": "Blend",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_Cwfs_Wind_02",
-              "DBFFJHEOPBL": "Wind_Length_2"
+              "KBEMIECIEJF": "Wind_Length_2"
             }
           ],
           "onBeingHit": [
@@ -11882,7 +11882,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 203
+                  "LDNMJDBDMNC": 203
                 },
                 {
                   "$type": "ApplyModifier",
@@ -11916,9 +11916,9 @@
               "parameter": "Blend",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_Cwfs_Wind_02",
-              "DBFFJHEOPBL": "Wind_Length_3"
+              "KBEMIECIEJF": "Wind_Length_3"
             }
           ],
           "onBeingHit": [
@@ -11944,7 +11944,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 204
+                  "LDNMJDBDMNC": 204
                 },
                 {
                   "$type": "ApplyModifier",
@@ -11978,9 +11978,9 @@
               "parameter": "Blend",
               "EBBHBMFMOGD": "",
               "type": "Float",
-              "IHBIENGCIKJ": true,
+              "IGOAPBONKFO": true,
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Prop_Cwfs_Wind_02",
-              "DBFFJHEOPBL": "Wind_Length_4"
+              "KBEMIECIEJF": "Wind_Length_4"
             }
           ],
           "onBeingHit": [
@@ -12006,7 +12006,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 },
                 {
                   "$type": "ApplyModifier",
@@ -12081,8 +12081,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "LightMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "LightMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.0
             }
           ]
@@ -12093,8 +12093,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "LightMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "LightMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 8.4399995803833
             }
           ]
@@ -12139,7 +12139,7 @@
               "target": "Target",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -12228,7 +12228,7 @@
               "target": "Target",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -12317,7 +12317,7 @@
               "target": "Target",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -12406,7 +12406,7 @@
               "target": "Target",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -12505,11 +12505,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 5.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -12544,11 +12544,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Light",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Light",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 16.18000030517578,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }
@@ -12651,7 +12651,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Ani_Prop_CWHX_01_Light_02",
               "effectTempleteID": -1.0,
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         }
@@ -12700,10 +12700,10 @@
               "effectTempleteID": -1.0
             },
             {
-              "$type": "FireEffect",
+              "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Ani_Prop_CWHX_01_Light_01",
               "effectTempleteID": -1.0,
-              "isPlatformDependent": true
+              "ACDAFCPPIDD": true
             }
           ]
         }
@@ -12737,17 +12737,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 2.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 2.0
         },
         {
           "$type": "FireEffect",
@@ -12784,14 +12784,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ChessMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ChessMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ChessMat2",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ChessMat2",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 3.0
             }
           ]
@@ -12802,14 +12802,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ChessMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ChessMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 5.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ChessMat2",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ChessMat2",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 15.0
             },
             {
@@ -12823,17 +12823,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 2.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 2.0
         },
         {
           "$type": "FireEffect",
@@ -12870,8 +12870,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ChessMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ChessMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 2.0
             }
           ]
@@ -12882,8 +12882,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "ChessMat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "ChessMat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 15.0
             },
             {
@@ -12923,17 +12923,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 2.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 2.0
         },
         {
           "$type": "FireEffect",
@@ -12975,17 +12975,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 2.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 2.0
         },
         {
           "$type": "FireEffect",
@@ -13027,17 +13027,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 2.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 2.0
         },
         {
           "$type": "FireEffect",
@@ -13079,17 +13079,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 2.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 2.0
         },
         {
           "$type": "FireEffect",
@@ -13131,17 +13131,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "ChessMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "ChessMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 2.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 2.0
         },
         {
           "$type": "FireEffect",
@@ -13264,17 +13264,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "BaseMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "BaseMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "BaseMat",
-          "patternName": "_DitherAlpha",
+          "EKNGFFBIAPI": "BaseMat",
+          "IMLMHJCMAHE": "_DitherAlpha",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 1.0
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 1.0
         }
       ]
     }
@@ -13430,14 +13430,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "EmptyWord",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "EmptyWord",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "OtherWords",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "OtherWords",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316
             }
           ]
@@ -13448,16 +13448,16 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "EmptyWord",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "EmptyWord",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "OtherWords",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "OtherWords",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316
             }
           ]
@@ -13468,14 +13468,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "EmptyWord",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "EmptyWord",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "OtherWords",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "OtherWords",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316
             },
             {
@@ -13515,14 +13515,14 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "EmptyWord",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "EmptyWord",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "OtherWords",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "OtherWords",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316
             }
           ]
@@ -13533,16 +13533,16 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "EmptyWord",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "EmptyWord",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "OtherWords",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "OtherWords",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 3.4000000953674316
             }
           ]
@@ -13612,7 +13612,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 102
+              "LDNMJDBDMNC": 102
             }
           ]
         },
@@ -13623,7 +13623,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             }
           ]
         },
@@ -13634,7 +13634,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 901
+              "LDNMJDBDMNC": 901
             }
           ]
         },
@@ -13655,7 +13655,7 @@
             {
               "$type": "ShowUICombatBar",
               "fore": true,
-              "BIGLEEIEGAI": true
+              "PNALMHDCGMP": true
             },
             {
               "$type": "AttachModifier",
@@ -13694,7 +13694,7 @@
             {
               "$type": "ShowUICombatBar",
               "fore": true,
-              "BIGLEEIEGAI": true
+              "PNALMHDCGMP": true
             },
             {
               "$type": "AttachModifier",
@@ -14052,7 +14052,7 @@
             {
               "$type": "ShowUICombatBar",
               "fore": true,
-              "BIGLEEIEGAI": true
+              "PNALMHDCGMP": true
             },
             {
               "$type": "AttachEffect",
@@ -14099,8 +14099,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "WallMat",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "WallMat",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 1.0
             },
             {
@@ -14116,11 +14116,11 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "WallMat",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "WallMat",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -14146,7 +14146,7 @@
               "luaCallType": "SpecificGroup",
               "CallParamList": [133314001],
               "funcName": "SLC_DijnnEnergyChange_Log",
-              "IAJKJLGNLLE": 2,
+              "LIAAKLHNPEN": 2,
               "MPPMFEDKGHC": -3.0,
               "BOKNHLDBKKK": 5.0,
               "CHOIIMHDNHK": 0.0
@@ -14161,7 +14161,7 @@
             },
             {
               "$type": "UpdateWeatherWizardEnergy",
-              "PJCBIDINDFE": 220072,
+              "MEHOBBGMKNM": 220072,
               "globalValueKey": "gv_Energy_Level"
             }
           ]
@@ -14177,7 +14177,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "DFFODFONEJF"
+              "$type": "NNPEGIOOOCJ"
             }
           ],
           "successActions": [
@@ -14199,7 +14199,7 @@
                   "compareType": "MoreThanAndEqual"
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self"
                 }
               ],
@@ -14211,7 +14211,7 @@
                 },
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 }
               ]
             }
@@ -14306,7 +14306,7 @@
             {
               "$type": "LaserMixin",
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Ani_Prop_LaserGenerator_01_Laser_01",
-              "MNFHHOMPMLF": [
+              "KLHLFFOAECC": [
                 {
                   "$type": "Predicated",
                   "target": "Target",
@@ -14320,7 +14320,7 @@
                       "$type": "DDBJEPBNOGF",
                       "predicates": [
                         {
-                          "$type": "MCODPFDFBAF",
+                          "$type": "LHCAGFAJMNF",
                           "gadgetState": 203
                         }
                       ]
@@ -14335,7 +14335,7 @@
                   ]
                 }
               ],
-              "CLNLAMNCKBI": [
+              "EIKCEHEIJAF": [
                 {
                   "$type": "Predicated",
                   "target": "Target",
@@ -14349,7 +14349,7 @@
                       "$type": "DDBJEPBNOGF",
                       "predicates": [
                         {
-                          "$type": "MCODPFDFBAF",
+                          "$type": "LHCAGFAJMNF",
                           "gadgetState": 203
                         }
                       ]
@@ -14368,7 +14368,7 @@
             {
               "$type": "LaserMixin",
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Ani_Prop_LaserGenerator_01_Laser_02",
-              "MNFHHOMPMLF": [
+              "KLHLFFOAECC": [
                 {
                   "$type": "Predicated",
                   "target": "Target",
@@ -14382,7 +14382,7 @@
                       "$type": "DDBJEPBNOGF",
                       "predicates": [
                         {
-                          "$type": "MCODPFDFBAF",
+                          "$type": "LHCAGFAJMNF",
                           "gadgetState": 203
                         }
                       ]
@@ -14397,7 +14397,7 @@
                   ]
                 }
               ],
-              "CLNLAMNCKBI": [
+              "EIKCEHEIJAF": [
                 {
                   "$type": "Predicated",
                   "target": "Target",
@@ -14411,7 +14411,7 @@
                       "$type": "DDBJEPBNOGF",
                       "predicates": [
                         {
-                          "$type": "MCODPFDFBAF",
+                          "$type": "LHCAGFAJMNF",
                           "gadgetState": 203
                         }
                       ]
@@ -14532,7 +14532,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 203
                     }
@@ -14542,7 +14542,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 }
               ]
             }
@@ -14555,7 +14555,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 203
                     }
@@ -14634,7 +14634,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 203
                     }
@@ -14655,14 +14655,14 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 203
                     }
                   ]
                 }
               ],
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },
@@ -14883,7 +14883,7 @@
             {
               "$type": "LaserMixin",
               "healLimitedByCasterMaxHPRatio": "Eff_Property_Ani_Prop_LaserGenerator_01_Laser_01",
-              "MNFHHOMPMLF": [
+              "KLHLFFOAECC": [
                 {
                   "$type": "Predicated",
                   "target": "Target",
@@ -14897,7 +14897,7 @@
                       "$type": "DDBJEPBNOGF",
                       "predicates": [
                         {
-                          "$type": "MCODPFDFBAF",
+                          "$type": "LHCAGFAJMNF",
                           "gadgetState": 203
                         }
                       ]
@@ -14912,7 +14912,7 @@
                   ]
                 }
               ],
-              "CLNLAMNCKBI": [
+              "EIKCEHEIJAF": [
                 {
                   "$type": "Predicated",
                   "target": "Target",
@@ -14926,7 +14926,7 @@
                       "$type": "DDBJEPBNOGF",
                       "predicates": [
                         {
-                          "$type": "MCODPFDFBAF",
+                          "$type": "LHCAGFAJMNF",
                           "gadgetState": 203
                         }
                       ]
@@ -15036,7 +15036,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 203
                     }
@@ -15063,7 +15063,7 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 203
                     }
@@ -15462,11 +15462,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ],
           "onRemoved": [
@@ -15490,11 +15490,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }

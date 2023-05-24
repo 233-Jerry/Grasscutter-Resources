@@ -301,7 +301,7 @@
                   "entityTypes": ["Monster"]
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Self",
                   "equipAffixDataID": 115305
                 }
@@ -466,7 +466,7 @@
                   "BOJCAKJDAKM": 0.0
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Self",
                   "equipAffixDataID": 115401
                 }
@@ -608,7 +608,7 @@
                   "attackTags": ["Elemental_Art"]
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Self",
                   "equipAffixDataID": 115403
                 }
@@ -1344,7 +1344,7 @@
                   "entityTypes": ["Monster"]
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Self",
                   "equipAffixDataID": 115409
                 }
@@ -1770,7 +1770,7 @@
                   "attackTags": ["ExtraAttack"]
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Self",
                   "equipAffixDataID": 115411
                 },
@@ -2204,7 +2204,7 @@
                   "entityTypes": ["Monster"]
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Caster",
                   "equipAffixDataID": 115501
                 },
@@ -2585,7 +2585,7 @@
                   ]
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Self",
                   "equipAffixDataID": 115503
                 }
@@ -4295,7 +4295,7 @@
             {
               "$type": "GetTeamTotalMaxEnergyToOverridemap",
               "RotationDampTime": true,
-              "GIFHDPEFPCE": "BigTeam",
+              "GAOFGDCAPCM": "BigTeam",
               "overrideMapKey": "Bow_Maria_TeamEnergy"
             },
             {
@@ -5077,7 +5077,7 @@
                   "compareType": "NoneOrEqual"
                 },
                 {
-                  "$type": "HMHMGNOAIFE",
+                  "$type": "KECMNNLAPGO",
                   "target": "Self",
                   "equipAffixDataID": 115511
                 }
@@ -5466,6 +5466,94 @@
           "$type": "RemoveUniqueModifier",
           "RotationDampTime": true,
           "modifierName": "UNIQUE_Bow_Fin_ExtraDamage"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Weapon_Bow_Ibis",
+      "abilitySpecials": {
+        "Mastery": 0.0,
+        "Dura": 0.0,
+        "MaxStack": 0.0,
+        "TriggerCD": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_Bow_Ibis_Handler": {
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": ["ExtraAttack"]
+                },
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_ANIMAL_ENTITY_TYPE",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "UNIQUE_Bow_Ibis_CD"
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_Bow_Ibis_CD": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "TriggerCD",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Weapon_Bow_Ibis_Buff"
+            }
+          ]
+        },
+        "Weapon_Bow_Ibis_Buff": {
+          "stacking": "MultipleAllRefresh",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": "MaxStack"
+          },
+          "modifierName": "",
+          "duration": "Dura",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_ElemMasteryDelta": "Mastery"
+          },
+          "state": "AttackUp",
+          "isLimitedProperties": true
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_Bow_Ibis_Handler"
+        }
+      ],
+      "onRemoved": [
+        {
+          "$type": "RemoveModifier",
+          "modifierName": "Weapon_Bow_Ibis_Buff"
         }
       ],
       "isDynamicAbility": true

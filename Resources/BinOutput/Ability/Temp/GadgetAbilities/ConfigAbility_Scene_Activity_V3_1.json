@@ -139,7 +139,7 @@
             },
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             },
             {
               "$type": "FireEffect",
@@ -213,7 +213,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "entityTypePriority": ["Gadget"],
                 "tag": "_Hunt_Trap"
               },
@@ -274,7 +274,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "entityTypePriority": ["Gadget"],
             "tag": "_Hunt_Trap"
           },
@@ -289,7 +289,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "entityTypePriority": ["Gadget"],
             "tag": "_Hunt_Trap"
           },
@@ -318,7 +318,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "entityTypePriority": ["Gadget"],
             "tag": "_Hunt_Trap"
           },
@@ -606,10 +606,10 @@
         },
         {
           "$type": "ModifyCameraMaxDistanceMixin",
-          "HNFHDMELLMB": 10.0,
-          "MKLEOEDKEGK": true,
-          "MCMIFAIAHHG": 1.5,
-          "IAALLPEDOCO": 1.5
+          "JKKIOFODBBL": 10.0,
+          "JPEGPJPGLHA": true,
+          "IMKHCOMJJFA": 1.5,
+          "CFJPBHHEJLM": 1.5
         }
       ],
       "modifiers": {
@@ -668,8 +668,8 @@
           "modifierMixins": [
             {
               "$type": "TemperatureGrowRateMixin",
-              "ELFNOBENCAN": "_Is_Hunt_Animal_Activity3.1",
-              "MHBBMHELDGI": 0.0010000000474974513
+              "HCJAEENEGGP": "_Is_Hunt_Animal_Activity3.1",
+              "PDIOKPICPKN": 0.0010000000474974513
             }
           ]
         },
@@ -742,7 +742,7 @@
               "$type": "ServerLuaCall",
               "predicates": [
                 {
-                  "$type": "JLPPFNHCLAH"
+                  "$type": "PFMENOBCNGH"
                 }
               ],
               "luaCallType": "AbilityGroupSourceGroup",
@@ -927,7 +927,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "TriggerAbility",
               "abilityName": "SceneObj_Level_Activity_Hunting_Smoke"
@@ -1126,8 +1126,8 @@
           "modifierMixins": [
             {
               "$type": "TemperatureGrowRateMixin",
-              "ELFNOBENCAN": "_Is_Hunt_Animal_Activity3.1",
-              "MHBBMHELDGI": 0.0
+              "HCJAEENEGGP": "_Is_Hunt_Animal_Activity3.1",
+              "PDIOKPICPKN": 0.0
             }
           ],
           "onAdded": [
@@ -1200,7 +1200,7 @@
         },
         {
           "$type": "AddAISpecialAlertTemperature",
-          "DJPIGFHOJGN": 15.0
+          "IODEDINBPGK": 15.0
         },
         {
           "$type": "RemoveModifier",
@@ -1236,7 +1236,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "TriggerAbility",
               "abilityName": "SceneObj_Level_Activity_Hunting_Decoy"
@@ -1286,7 +1286,7 @@
           "onAdded": [
             {
               "$type": "AddAISpecialAlertTemperature",
-              "DJPIGFHOJGN": 15.0
+              "IODEDINBPGK": 15.0
             },
             {
               "$type": "EnableGadgetIntee",
@@ -1502,7 +1502,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "sortType": "Nearest",
             "tag": "_Activity_Exploration"
           },
@@ -1741,7 +1741,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "sortType": "Nearest",
                 "tag": "_Activity_Exploration"
               },
@@ -1799,7 +1799,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "sortType": "Nearest",
             "tag": "_Activity_Exploration"
           },
@@ -1839,7 +1839,7 @@
                   "compareType": "LessAndEqual"
                 }
               ],
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             },
             {
               "$type": "AttachModifier",
@@ -1951,7 +1951,7 @@
         },
         {
           "$type": "ChangeGadgetState",
-          "MNIDCPKMMNN": 201
+          "LDNMJDBDMNC": 201
         }
       ]
     }
@@ -1987,8 +1987,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.0
             },
             {
@@ -2037,12 +2037,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.10000000149011612
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.10000000149011612
             }
           ]
         }
@@ -2717,7 +2717,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 },
                 {
@@ -2751,7 +2751,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 },
                 {
@@ -2806,7 +2806,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 },
                 {
@@ -2904,7 +2904,7 @@
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
               "enable": true,
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             }
           ]
         },
@@ -2916,7 +2916,7 @@
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
               "enable": true,
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             }
           ]
         },
@@ -2928,7 +2928,7 @@
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
               "enable": true,
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             }
           ]
         },
@@ -2940,7 +2940,7 @@
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
               "enable": true,
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             }
           ]
         },
@@ -2961,7 +2961,7 @@
             {
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
-              "HBLHBKIBPFI": 2
+              "CNGLFJAADFN": 2
             }
           ]
         },
@@ -2972,7 +2972,7 @@
             {
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
-              "HBLHBKIBPFI": 3
+              "CNGLFJAADFN": 3
             }
           ]
         },
@@ -2983,7 +2983,7 @@
             {
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
-              "HBLHBKIBPFI": 4
+              "CNGLFJAADFN": 4
             }
           ]
         },
@@ -2994,7 +2994,7 @@
             {
               "$type": "EnableGadgetExtraButton",
               "canBeHandledOnRecover": true,
-              "HBLHBKIBPFI": 5
+              "CNGLFJAADFN": 5
             }
           ]
         }
@@ -3025,7 +3025,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "entityTypePriority": ["Gadget"],
                 "tag": "Wind_Creater"
               },
@@ -3048,7 +3048,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "entityTypePriority": ["Gadget"],
             "tag": "Wind_Creater"
           },
@@ -3070,7 +3070,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
@@ -3091,7 +3091,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
@@ -3112,7 +3112,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ServerLuaCall",
               "predicates": [
@@ -3155,7 +3155,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
@@ -3176,7 +3176,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
@@ -3197,7 +3197,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ServerLuaCall",
               "predicates": [
@@ -3373,7 +3373,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
@@ -3829,7 +3829,7 @@
               "canBeHandledOnRecover": true,
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 }
               ],
@@ -3923,7 +3923,7 @@
           "successActions": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },
@@ -3963,7 +3963,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "State_Opening"
@@ -4047,8 +4047,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_DissolveValue",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_DissolveValue",
               "ratio": 0.0
             },
             {
@@ -4099,7 +4099,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },
@@ -4110,11 +4110,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_DissolveValue",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_DissolveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.5
             }
           ]
         }
@@ -4189,11 +4189,11 @@
                       "ratio": 5.0
                     },
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self"
                     }
                   ],
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 }
               ],
               "failActions": [
@@ -4215,7 +4215,7 @@
                       "ratio": 0.0
                     },
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 201
                     }
@@ -4609,7 +4609,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },
@@ -4628,7 +4628,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             }
           ]
         }
@@ -4885,7 +4885,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         },
@@ -4946,8 +4946,8 @@
       "abilityMixins": [
         {
           "$type": "TemperatureGrowRateMixin",
-          "ELFNOBENCAN": "_Is_Hunt_Animal_Activity3.1",
-          "MHBBMHELDGI": 10.0
+          "HCJAEENEGGP": "_Is_Hunt_Animal_Activity3.1",
+          "PDIOKPICPKN": 10.0
         }
       ]
     }
@@ -5075,7 +5075,7 @@
                   "$type": "ApplyModifier",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 202
                     }
@@ -5116,7 +5116,7 @@
                   "ratio": 201.0
                 }
               ],
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             },
             {
               "$type": "ChangeGadgetState",
@@ -5127,7 +5127,7 @@
                   "ratio": 202.0
                 }
               ],
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             },
             {
               "$type": "ChangeGadgetState",
@@ -5278,7 +5278,7 @@
               "successActions": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 }
               ]
             }
@@ -5298,7 +5298,7 @@
           "onRemoved": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             }
           ]
         },
@@ -5343,7 +5343,7 @@
               "$type": "AttachEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_SpeedPlatform_01",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "x": 0.0,
                   "y": 0.0,
@@ -5558,11 +5558,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": -1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.5
             }
           ]
         },
@@ -5573,11 +5573,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.5
             },
             {
               "$type": "ApplyModifier",
@@ -5613,7 +5613,7 @@
           "modifierMixins": [
             {
               "$type": "PlatformMoveMixin",
-              "moveModifiers": ["State_Moving"]
+              "AAMIGKCJEDK": ["State_Moving"]
             }
           ],
           "onAdded": [
@@ -5633,7 +5633,7 @@
           "modifierMixins": [
             {
               "$type": "PlatformMoveMixin",
-              "moveModifiers": ["State_Moving"]
+              "AAMIGKCJEDK": ["State_Moving"]
             }
           ],
           "onAdded": [

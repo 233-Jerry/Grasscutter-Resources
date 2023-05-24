@@ -826,8 +826,8 @@
               "$type": "SetMaterialParamFloatByTransform",
               "RotationDampTime": true,
               "canBeHandledOnRecover": true,
-              "matName": "BrokenPart",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "BrokenPart",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -1140,8 +1140,8 @@
               "$type": "SetMaterialParamFloatByTransform",
               "RotationDampTime": true,
               "canBeHandledOnRecover": true,
-              "matName": "BrokenPart",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "BrokenPart",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -1167,8 +1167,8 @@
         {
           "$type": "SetMaterialParamFloatByTransform",
           "canBeHandledOnRecover": true,
-          "matName": "GlowPart",
-          "patternName": "_EmissionStrength",
+          "EKNGFFBIAPI": "GlowPart",
+          "IMLMHJCMAHE": "_EmissionStrength",
           "ratio": 3.0
         }
       ]
@@ -1636,7 +1636,7 @@
               "luaCallType": "FromGroup",
               "isTarget": true,
               "funcName": "SLC_SyncState",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1669,7 +1669,7 @@
               "luaCallType": "FromGroup",
               "isTarget": true,
               "funcName": "SLC_SyncState",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1702,7 +1702,7 @@
               "luaCallType": "FromGroup",
               "isTarget": true,
               "funcName": "SLC_SyncState",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1735,7 +1735,7 @@
               "luaCallType": "FromGroup",
               "isTarget": true,
               "funcName": "SLC_SyncState",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 3.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1764,9 +1764,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSource",
-              "GGGMNKHMHKI": "ElectricPowerCollector",
-              "FCKCEEANBLJ": "isTerminal"
+              "ALPLNDNLNME": "ElectricPowerSource",
+              "PMKMBLJNFEP": "ElectricPowerCollector",
+              "CLIDDHEPCPK": "isTerminal"
             }
           ],
           "onAdded": [
@@ -1808,9 +1808,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSource",
-              "GGGMNKHMHKI": "ElectricPowerCollector",
-              "FCKCEEANBLJ": "isTerminal"
+              "ALPLNDNLNME": "ElectricPowerSource",
+              "PMKMBLJNFEP": "ElectricPowerCollector",
+              "CLIDDHEPCPK": "isTerminal"
             }
           ],
           "onAdded": [
@@ -1856,9 +1856,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSource",
-              "GGGMNKHMHKI": "ElectricPowerCollector",
-              "FCKCEEANBLJ": "isTerminal"
+              "ALPLNDNLNME": "ElectricPowerSource",
+              "PMKMBLJNFEP": "ElectricPowerCollector",
+              "CLIDDHEPCPK": "isTerminal"
             }
           ],
           "onAdded": [
@@ -1903,9 +1903,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSourceLv1",
-              "GGGMNKHMHKI": "ElectricPowerCollectorLv1",
-              "FCKCEEANBLJ": "isTerminal",
+              "ALPLNDNLNME": "ElectricPowerSourceLv1",
+              "PMKMBLJNFEP": "ElectricPowerCollectorLv1",
+              "CLIDDHEPCPK": "isTerminal",
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
                 "sortType": "Nearest",
@@ -1985,9 +1985,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSourceLv2",
-              "GGGMNKHMHKI": "ElectricPowerCollectorLv2",
-              "FCKCEEANBLJ": "isTerminal",
+              "ALPLNDNLNME": "ElectricPowerSourceLv2",
+              "PMKMBLJNFEP": "ElectricPowerCollectorLv2",
+              "CLIDDHEPCPK": "isTerminal",
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
                 "sortType": "Nearest",
@@ -2067,9 +2067,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ElectricPowerSourceLv3",
-              "GGGMNKHMHKI": "ElectricPowerCollectorLv3",
-              "FCKCEEANBLJ": "isTerminal",
+              "ALPLNDNLNME": "ElectricPowerSourceLv3",
+              "PMKMBLJNFEP": "ElectricPowerCollectorLv3",
+              "CLIDDHEPCPK": "isTerminal",
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
                 "sortType": "Nearest",

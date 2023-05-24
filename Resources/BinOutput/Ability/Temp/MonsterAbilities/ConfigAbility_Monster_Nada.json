@@ -11,7 +11,7 @@
         },
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "Monster_Nada_CoreState"
         },
         {
@@ -38,18 +38,18 @@
           "modifierMixins": [
             {
               "$type": "ScenePropSyncMixin",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice"
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice"
             },
             {
               "$type": "ScenePropSyncMixin",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire"
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire"
             },
             {
               "$type": "TileAttackManagerMixin",
               "attackID": "Monster_Nada_Tile_Attack_Ice",
               "interval": 0.5,
               "campType": "OwnerCamp",
-              "BLMIEMMEIDA": true,
+              "BKKFHFEMJDC": true,
               "attackInfo": {
                 "attackTag": "Monster_Nada_Tile_Ice",
                 "attenuationTag": "Monster_Nada_Tile_Ice",
@@ -73,7 +73,7 @@
               "attackID": "Monster_Nada_Tile_Attack_Fire",
               "interval": 0.5,
               "campType": "OwnerCamp",
-              "BLMIEMMEIDA": true,
+              "BKKFHFEMJDC": true,
               "attackInfo": {
                 "attackTag": "Monster_Nada_Tile_Fire",
                 "attenuationTag": "Monster_Nada_Tile_Fire",
@@ -313,7 +313,7 @@
                 }
               ],
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "hbmessage303108",
+              "AEHHOKAPHGO": "hbmessage303108",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -594,7 +594,7 @@
         },
         {
           "$type": "DestroyTile",
-          "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+          "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
           "attackPattern": {
             "$type": "ConfigAttackSphere",
             "triggerType": "TriggerNoRepeat",
@@ -606,7 +606,7 @@
         },
         {
           "$type": "DestroyTile",
-          "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+          "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
           "attackPattern": {
             "$type": "ConfigAttackSphere",
             "triggerType": "TriggerNoRepeat",
@@ -626,7 +626,7 @@
         },
         {
           "$type": "SetSpecialCamera",
-          "DKOEEHGAJHA": "default"
+          "PIHDNBBNEFN": "default"
         }
       ]
     }
@@ -649,7 +649,7 @@
         },
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "UNIQUE_Monster_Nada_Stage02_Alert"
         },
         {
@@ -669,8 +669,8 @@
         },
         {
           "$type": "IgnoreBulletAimPointMixin",
-          "PAJBEGJMNEA": "",
-          "NFJJNEDNILK": true
+          "INGCJNICAMH": "",
+          "LJANMNLFNKO": true
         }
       ],
       "abilitySpecials": {
@@ -692,11 +692,11 @@
               "RotationDampTime": true,
               "key": "_MONSTER_NADA_BORN_POS_",
               "born": {
-                "$type": "MIAJPKDCOPA",
+                "$type": "OHBNBLFMECJ",
                 "DAPKLNIFPID": true,
                 "actionPointType": "AureaePoint",
-                "GIAHMPPLHHF": {
-                  "$type": "JIIIIFKFCAM",
+                "PANKEBCONMO": {
+                  "$type": "DMJJPCHLKEC",
                   "actionPointID": 1
                 }
               }
@@ -706,11 +706,11 @@
               "RotationDampTime": true,
               "canBeHandledOnRecover": true,
               "born": {
-                "$type": "MIAJPKDCOPA",
+                "$type": "OHBNBLFMECJ",
                 "DAPKLNIFPID": true,
                 "actionPointType": "AureaePoint",
-                "GIAHMPPLHHF": {
-                  "$type": "JIIIIFKFCAM",
+                "PANKEBCONMO": {
+                  "$type": "DMJJPCHLKEC",
                   "actionPointID": 1
                 }
               }
@@ -1219,7 +1219,7 @@
                         "z": 0.0
                       },
                       "JPOJHLOIKLG": 30.0,
-                      "MPNLAACKHNA": 30.0
+                      "IDCEIMNEFJC": 30.0
                     },
                     "positionKey": "_ENERGYPOS_",
                     "directionKey": ""
@@ -1273,7 +1273,7 @@
                         "z": 0.0
                       },
                       "JPOJHLOIKLG": 30.0,
-                      "MPNLAACKHNA": 30.0
+                      "IDCEIMNEFJC": 30.0
                     },
                     "positionKey": "_ENERGYPOS_",
                     "directionKey": ""
@@ -1737,14 +1737,14 @@
         {
           "$type": "KillSelf",
           "otherTargets": {
-            "$type": "GAEPFOLJGEG",
+            "$type": "DGGJIJFHAPM",
             "entityType": "Gadget"
           }
         },
         {
           "$type": "KillSelf",
           "otherTargets": {
-            "$type": "GAEPFOLJGEG",
+            "$type": "DGGJIJFHAPM",
             "entityType": "Bullet"
           }
         }
@@ -2233,7 +2233,7 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "IOHEKLMKBLL",
+                      "$type": "PHHIBIFDCJD",
                       "predicates": [
                         {
                           "$type": "DDBJEPBNOGF",
@@ -2253,7 +2253,7 @@
                       ]
                     },
                     {
-                      "$type": "IOHEKLMKBLL",
+                      "$type": "PHHIBIFDCJD",
                       "predicates": [
                         {
                           "$type": "IPMDKMAHKDF",
@@ -2272,14 +2272,14 @@
                   ]
                 }
               ],
-              "KNHBDLHGPMB": -1.7000000476837158,
-              "DCMODDIBIFC": -1.7000000476837158,
-              "IKMODDLAJFE": -1.7000000476837158,
-              "KJHHMOMBKBG": -1.7000000476837158,
-              "CJDLANPIJLM": -1.7000000476837158,
-              "OPKBAGMAEMB": -1.7000000476837158,
-              "FLPEDCNDMKG": -1.7000000476837158,
-              "PHHALEBDIDB": -1.7000000476837158
+              "LDMFCEFLLHM": -1.7000000476837158,
+              "OBHBOLOIBBB": -1.7000000476837158,
+              "HMFLAEBNGPD": -1.7000000476837158,
+              "IPCHFJDADHH": -1.7000000476837158,
+              "NDPLEFLEKOM": -1.7000000476837158,
+              "DDGBKABBKKE": -1.7000000476837158,
+              "DPLJDNKNFLL": -1.7000000476837158,
+              "FKEAJLABFHG": -1.7000000476837158
             }
           ],
           "onAdded": [
@@ -3268,9 +3268,9 @@
               "target": "SelfAttackTarget",
               "key": "_MONSTER_NADA_WEAKATK_WAVE03POS_",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "setTarget": false
             },
@@ -3674,9 +3674,9 @@
               "target": "SelfAttackTarget",
               "key": "_MONSTER_NADA_WEAKATK_WAVE03POS_",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "setTarget": false
             },
@@ -4039,7 +4039,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4073,7 +4073,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4107,7 +4107,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4141,7 +4141,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4175,7 +4175,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4209,7 +4209,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4517,7 +4517,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4551,7 +4551,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4585,7 +4585,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4619,7 +4619,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4653,7 +4653,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4687,7 +4687,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4851,7 +4851,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4889,7 +4889,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -4975,7 +4975,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -5013,7 +5013,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -5160,7 +5160,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackBox",
                 "triggerType": "TriggerNoRepeat",
@@ -5287,7 +5287,7 @@
                   "compareType": "NoneOrEqual"
                 }
               ],
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackBox",
                 "triggerType": "TriggerNoRepeat",
@@ -5491,7 +5491,7 @@
               "compareType": "NoneOrEqual"
             }
           ],
-          "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+          "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
           "attackPattern": {
             "$type": "ConfigAttackSphere",
             "triggerType": "TriggerNoRepeat",
@@ -5707,7 +5707,7 @@
               "compareType": "NoneOrEqual"
             }
           ],
-          "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+          "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
           "attackPattern": {
             "$type": "ConfigAttackSphere",
             "triggerType": "TriggerNoRepeat",
@@ -8960,7 +8960,7 @@
             "direction": {
               "$type": "AKNHOGLMAAH",
               "JPOJHLOIKLG": 180.0,
-              "MPNLAACKHNA": 30.0,
+              "IDCEIMNEFJC": 30.0,
               "eularAngles": {
                 "x": 0.10000000149011612,
                 "y": 0.10000000149011612,
@@ -9042,7 +9042,7 @@
             "direction": {
               "$type": "AKNHOGLMAAH",
               "JPOJHLOIKLG": 180.0,
-              "MPNLAACKHNA": 30.0,
+              "IDCEIMNEFJC": 30.0,
               "eularAngles": {
                 "x": 0.10000000149011612,
                 "y": 0.10000000149011612,
@@ -9124,7 +9124,7 @@
             "direction": {
               "$type": "AKNHOGLMAAH",
               "JPOJHLOIKLG": 180.0,
-              "MPNLAACKHNA": 30.0,
+              "IDCEIMNEFJC": 30.0,
               "eularAngles": {
                 "x": 0.10000000149011612,
                 "y": 0.10000000149011612,
@@ -9206,7 +9206,7 @@
             "direction": {
               "$type": "AKNHOGLMAAH",
               "JPOJHLOIKLG": 180.0,
-              "MPNLAACKHNA": 30.0,
+              "IDCEIMNEFJC": 30.0,
               "eularAngles": {
                 "x": 0.10000000149011612,
                 "y": 0.10000000149011612,
@@ -11985,9 +11985,9 @@
               "target": "SelfAttackTarget",
               "key": "_MONSTER_NADA_LASERPOS_",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "setTarget": false
             },
@@ -12064,9 +12064,9 @@
               "target": "SelfAttackTarget",
               "key": "_MONSTER_NADA_LASERPOS_",
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "DAPKLNIFPID": true,
-                "KGKDFLMGEOL": 0.6499999761581421
+                "ANKDEOLLEMK": 0.6499999761581421
               },
               "setTarget": false
             },
@@ -12631,7 +12631,7 @@
                   "attackTags": ["Gagana_ChargeAtk"]
                 },
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["HitBox_Chest"]
                 }
               ],
@@ -12653,8 +12653,8 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Nada_Doom_AS",
               "born": {
-                "$type": "OCLKKNJEBAL",
-                "DDJJJFDHPBG": {
+                "$type": "KMPMGNCLNGA",
+                "LKPBMBMKGNM": {
                   "y": -58.14881896972656
                 }
               },
@@ -14825,15 +14825,15 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "MIAJPKDCOPA",
+            "$type": "OHBNBLFMECJ",
             "offset": {
               "x": 0.0,
               "y": 0.0,
               "z": 0.0
             },
             "actionPointType": "OceanidMovePoint",
-            "GIAHMPPLHHF": {
-              "$type": "IIJCOIGAACG",
+            "PANKEBCONMO": {
+              "$type": "IGHFPGLKIJL",
               "distance": 20.0
             }
           },
@@ -14873,7 +14873,7 @@
                   "z": 0.0
                 },
                 "direction": {
-                  "$type": "HDCKGANABOM"
+                  "$type": "BLJPEBABLNH"
                 }
               },
               "setTarget": false
@@ -15574,7 +15574,7 @@
         },
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "Monster_Nada_Stage02_Quest01_AIAlert"
         }
       ],
@@ -15614,7 +15614,7 @@
           "modifierMixins": [
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 4,
+              "IGIBOHIBOLF": 4,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -15630,7 +15630,7 @@
             },
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 3,
+              "IGIBOHIBOLF": 3,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -15646,7 +15646,7 @@
             },
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 2,
+              "IGIBOHIBOLF": 2,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -15662,7 +15662,7 @@
             },
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 1,
+              "IGIBOHIBOLF": 1,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -15687,7 +15687,7 @@
           "modifierMixins": [
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 1,
+              "IGIBOHIBOLF": 1,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -15878,7 +15878,7 @@
             },
             {
               "$type": "SetSpecialCamera",
-              "DKOEEHGAJHA": "default"
+              "PIHDNBBNEFN": "default"
             },
             {
               "$type": "RemoveModifier",
@@ -15915,7 +15915,7 @@
             },
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -15928,7 +15928,7 @@
             },
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -15943,7 +15943,7 @@
           "onRemoved": [
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -15956,7 +15956,7 @@
             },
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -16029,7 +16029,7 @@
         },
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "Monster_Nada_Stage02_Quest02_ForceTriggerQuestfinish"
         }
       ],
@@ -16058,7 +16058,7 @@
           "modifierMixins": [
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 4,
+              "IGIBOHIBOLF": 4,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -16074,7 +16074,7 @@
             },
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 3,
+              "IGIBOHIBOLF": 3,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -16090,7 +16090,7 @@
             },
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 2,
+              "IGIBOHIBOLF": 2,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -16106,7 +16106,7 @@
             },
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 1,
+              "IGIBOHIBOLF": 1,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -16131,7 +16131,7 @@
           "modifierMixins": [
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 1,
+              "IGIBOHIBOLF": 1,
               "actionList": [
                 {
                   "$type": "ApplyModifier",
@@ -16506,7 +16506,7 @@
       "abilityMixins": [
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "Monster_Nada_Stage01_WandererQuest_AIAlert"
         }
       ],
@@ -20046,7 +20046,7 @@
           "$type": "FollowAttachPointEffectMixin",
           "modifierName": "EmptyFollowEffect",
           "OAKNECNFEIC": "QuestBlank",
-          "HNFLFHNGELN": true
+          "FMAHDKDGAMF": true
         }
       ],
       "modifiers": {
@@ -20076,7 +20076,7 @@
         },
         {
           "$type": "MultiAvatarCountsMixin",
-          "KGBJGNCJAJH": 4,
+          "IGIBOHIBOLF": 4,
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -20086,7 +20086,7 @@
         },
         {
           "$type": "MultiAvatarCountsMixin",
-          "KGBJGNCJAJH": 3,
+          "IGIBOHIBOLF": 3,
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -20096,7 +20096,7 @@
         },
         {
           "$type": "MultiAvatarCountsMixin",
-          "KGBJGNCJAJH": 2,
+          "IGIBOHIBOLF": 2,
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -20106,7 +20106,7 @@
         },
         {
           "$type": "MultiAvatarCountsMixin",
-          "KGBJGNCJAJH": 1,
+          "IGIBOHIBOLF": 1,
           "actionList": [
             {
               "$type": "ApplyModifier",
@@ -20313,7 +20313,7 @@
           "modifierMixins": [
             {
               "$type": "CheckGrapplingHookMixin",
-              "AIJHACIINNN": [
+              "MMEBLFBFKDJ": [
                 {
                   "$type": "AddAvatarSkillInfo",
                   "skillID": 20043
@@ -20339,7 +20339,7 @@
                   "modifierName": "Hook_SwitchAirSkill"
                 }
               ],
-              "FCJEPMALFHE": [
+              "NGGADLNMNDN": [
                 {
                   "$type": "RemoveAvatarSkillInfo",
                   "skillID": 20043
@@ -20365,16 +20365,16 @@
                   "modifierName": "Hook_SwitchAirSkill"
                 }
               ],
-              "EJAOKKAAFAE": "AVATAR_GrapplingHookSkill",
-              "FGGEIEMHHPB": {
-                "IMOJNCIFDAE": 40.0,
-                "LLPCFAIDKOK": 5.0,
-                "HAAJJPHKGDF": 0.699999988079071,
-                "DHADOMMBLCE": 0.800000011920929,
+              "LAPMDOMHNBF": "AVATAR_GrapplingHookSkill",
+              "NELHLDOMAAN": {
+                "HNPPEOECELJ": 40.0,
+                "PMKGKNLIIFC": 5.0,
+                "PAEBFMMDJJF": 0.699999988079071,
+                "GJHOAMJCPJD": 0.800000011920929,
                 "ui": {
-                  "HGLMGCCFJJE": "UI_MarkQuest_GrapplingHook_01",
-                  "LHABEBKDMJM": "UI_MarkQuest_GrapplingHook_02",
-                  "IGJPBMDIGJE": "UI_MarkQuest_GrapplingHook_03"
+                  "JNEEKDFBBML": "UI_MarkQuest_GrapplingHook_01",
+                  "HHFNEIINELF": "UI_MarkQuest_GrapplingHook_02",
+                  "OGHIEHOGMAH": "UI_MarkQuest_GrapplingHook_03"
                 }
               }
             }
@@ -20427,7 +20427,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "GrapplingHook"
             }
           ]
         },
@@ -20634,11 +20635,20 @@
                 "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                }
+              ],
               "successActions": [
                 {
-                  "$type": "ApplyModifier",
+                  "$type": "CopyGlobalValue",
                   "target": "Target",
-                  "modifierName": "UNIQUE_Monster_Nada_CreateGagana_ReconnectGetGVHandler"
+                  "srcTarget": "Target",
+                  "dstTarget": "Self",
+                  "srcKey": "_GAGANA_STATE_HANDLER_",
+                  "dstKey": "_GAGANA_STATE_HANDLER_"
                 },
                 {
                   "$type": "RemoveModifier",
@@ -20659,45 +20669,26 @@
                 "campBasedOn": "CurLocalAvatar",
                 "OBHNBNDMPFN": 1.0
               },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                }
+              ],
               "successActions": [
                 {
-                  "$type": "ApplyModifier",
+                  "$type": "CopyGlobalValue",
                   "target": "Target",
-                  "modifierName": "UNIQUE_Monster_Nada_CreateGagana_ReconnectGetGVHandler"
+                  "srcTarget": "Target",
+                  "dstTarget": "Self",
+                  "srcKey": "_GAGANA_STATE_HANDLER_",
+                  "dstKey": "_GAGANA_STATE_HANDLER_"
                 },
                 {
                   "$type": "RemoveModifier",
                   "modifierName": "UNIQUE_Monster_Nada_ResetGagana_Reconnect_Handler"
                 }
               ]
-            }
-          ]
-        },
-        "UNIQUE_Monster_Nada_CreateGagana_ReconnectGetGVHandler": {
-          "modifierName": "",
-          "isUnique": true,
-          "duration": 0.10000000149011612,
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "ApplyModifier",
-              "target": "Caster",
-              "modifierName": "UNIQUE_Monster_Nada_CreateGagana_ReconnectGetGV"
-            }
-          ]
-        },
-        "UNIQUE_Monster_Nada_CreateGagana_ReconnectGetGV": {
-          "modifierName": "",
-          "isUnique": true,
-          "duration": 0.10000000149011612,
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "CopyGlobalValue",
-              "srcTarget": "Applier",
-              "dstTarget": "Self",
-              "srcKey": "_GAGANA_STATE_HANDLER_",
-              "dstKey": "_GAGANA_STATE_HANDLER_"
             }
           ]
         },
@@ -20845,8 +20836,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Grass",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Grass",
+              "JFECABAPELO": 0.0,
               "maxValue": 100.0
             },
             {
@@ -20888,8 +20879,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Grass",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Grass",
+              "JFECABAPELO": 0.0,
               "maxValue": 200.0
             },
             {
@@ -22491,7 +22482,7 @@
           "onAdded": [
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -22505,7 +22496,7 @@
           "onRemoved": [
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Ice",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -22681,7 +22672,7 @@
           "onAdded": [
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -22695,7 +22686,7 @@
           "onRemoved": [
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "Monster_Nada_Tile_Fire",
+              "CLICIGIMCHD": "Monster_Nada_Tile_Fire",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -23265,40 +23256,40 @@
           "onAdded": [
             {
               "$type": "SetLockingV3Config",
-              "DKOEEHGAJHA": "default",
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "default",
+              "EMCDHODLGGL": ""
             },
             {
               "$type": "SetLockingV3Config",
               "enable": true,
-              "DKOEEHGAJHA": "Doom",
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "Doom",
+              "EMCDHODLGGL": ""
             }
           ],
           "onRemoved": [
             {
               "$type": "SetLockingV3Config",
-              "DKOEEHGAJHA": "Doom",
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "Doom",
+              "EMCDHODLGGL": ""
             },
             {
               "$type": "SetLockingV3Config",
               "enable": true,
-              "DKOEEHGAJHA": "default",
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "default",
+              "EMCDHODLGGL": ""
             }
           ],
           "LGJBJJBCBEH": [
             {
               "$type": "SetLockingV3Config",
-              "DKOEEHGAJHA": "Doom",
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "Doom",
+              "EMCDHODLGGL": ""
             },
             {
               "$type": "SetLockingV3Config",
               "enable": true,
-              "DKOEEHGAJHA": "default",
-              "DKADPJBCCOF": ""
+              "PIHDNBBNEFN": "default",
+              "EMCDHODLGGL": ""
             }
           ]
         },
@@ -23694,7 +23685,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "CharAmuseBaseball"
             }
           ]
         },
@@ -24262,7 +24254,7 @@
               "$type": "ThrowGrapplingHookMixin",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_Line",
               "positionKey": "_GrapplingHook_TargetPos",
-              "AFCGIBECIMO": [
+              "BMKBAMBIADB": [
                 {
                   "$type": "SetGlobalValue",
                   "predicates": [
@@ -24298,7 +24290,7 @@
           "modifierMixins": [
             {
               "$type": "GrapplingHookMoveMixin",
-              "IMBGNLEKCHJ": [
+              "EKKPMHJBBIA": [
                 {
                   "$type": "SetGlobalValue",
                   "predicates": [
@@ -24339,16 +24331,16 @@
                   "modifierName": "UNIQUE_GrapplingHook_Arrived"
                 }
               ],
-              "CKBJBJGIMOL": 5.0,
-              "LPHEDPDAMAH": 1.0,
-              "MELNEPPGLNB": 0.25
+              "DKDNOMFNDMP": 5.0,
+              "GKDLMBBFPGM": 1.0,
+              "JNJMJEGCMDC": 0.25
             },
             {
               "$type": "ModifyCameraMaxDistanceMixin",
-              "HNFHDMELLMB": 10.0,
-              "MKLEOEDKEGK": true,
-              "MCMIFAIAHHG": 0.20000000298023224,
-              "IAALLPEDOCO": 0.699999988079071
+              "JKKIOFODBBL": 10.0,
+              "JPEGPJPGLHA": true,
+              "IMKHCOMJJFA": 0.20000000298023224,
+              "CFJPBHHEJLM": 0.699999988079071
             },
             {
               "$type": "TriggerPostProcessEffectMixin",
@@ -24380,9 +24372,9 @@
                 "positionKey": "_GrapplingHook_TargetPos",
                 "directionKey": ""
               },
-              "MMINCHGDKOD": 15.0,
-              "MLLLIOLDKMP": 10.0,
-              "GFOBFAJACLK": 20.0,
+              "CKMLEGKMALD": 15.0,
+              "IJHEKNHGCPH": 10.0,
+              "OPNJBCEGNNO": 20.0,
               "animatorStateIDs": [
                 "ActivitySkill_GrapplingHook",
                 "Fly",
@@ -24760,7 +24752,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "DHCOOLIODHP",
+            "$type": "BEGAHBLLKPK",
             "topLimit": 1
           },
           "successActions": [

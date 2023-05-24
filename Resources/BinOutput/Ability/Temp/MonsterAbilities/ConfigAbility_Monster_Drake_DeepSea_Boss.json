@@ -48,10 +48,6 @@
               "$type": "AttachActionToModifierMixin",
               "onAdded": [
                 {
-                  "$type": "TriggerSetVisible",
-                  "canBeHandledOnRecover": true
-                },
-                {
                   "$type": "HideUIBillBoard",
                   "canBeHandledOnRecover": true,
                   "hide": true
@@ -59,18 +55,26 @@
               ],
               "onRemoved": [
                 {
-                  "$type": "TriggerSetVisible",
-                  "visible": true
-                },
-                {
                   "$type": "HideUIBillBoard"
                 }
               ]
+            },
+            {
+              "$type": "EntityInVisibleMixin",
+              "reason": "SelfAbility"
             }
           ],
           "onAdded": [
             {
               "$type": "AttachEffect",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_BornBS",
               "effectTempleteID": -1.0
             },
@@ -99,10 +103,10 @@
                   "$type": "SetGlobalPos",
                   "key": "_DRAKE_DEEPSEA_ICE_BORN_POS",
                   "born": {
-                    "$type": "MIAJPKDCOPA",
+                    "$type": "OHBNBLFMECJ",
                     "actionPointType": "StandbyPoint",
-                    "GIAHMPPLHHF": {
-                      "$type": "JIIIIFKFCAM",
+                    "PANKEBCONMO": {
+                      "$type": "DMJJPCHLKEC",
                       "actionPointID": 700500001
                     }
                   }
@@ -113,15 +117,27 @@
                   "$type": "SetGlobalPos",
                   "key": "_DRAKE_DEEPSEA_ICE_BORN_POS",
                   "born": {
-                    "$type": "MIAJPKDCOPA",
+                    "$type": "OHBNBLFMECJ",
                     "actionPointType": "StandbyPoint",
-                    "GIAHMPPLHHF": {
-                      "$type": "JIIIIFKFCAM",
+                    "PANKEBCONMO": {
+                      "$type": "DMJJPCHLKEC",
                       "actionPointID": 500500002
                     }
                   }
                 }
               ]
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "canBeHandledOnRecover": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "value": 1.5
             }
           ]
         }
@@ -131,9 +147,19 @@
           "$type": "ApplyModifier",
           "predicates": [
             {
-              "$type": "ByTargetGlobalValue",
-              "key": "_DRAKE_DEEPSEA_IN_TOWER",
-              "ratio": 1.0
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_DRAKE_DEEPSEA_IN_TOWER",
+                  "ratio": 1.0
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ]
             }
           ],
           "modifierName": "Monster_Drake_DeepSea_TowerBorn"
@@ -153,7 +179,7 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ICE_BORN_POS"
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ICE_BORN_POS"
         }
       ],
       "onAbilityStart": [
@@ -240,10 +266,6 @@
               "$type": "AttachActionToModifierMixin",
               "onAdded": [
                 {
-                  "$type": "TriggerSetVisible",
-                  "canBeHandledOnRecover": true
-                },
-                {
                   "$type": "HideUIBillBoard",
                   "canBeHandledOnRecover": true,
                   "hide": true
@@ -251,18 +273,26 @@
               ],
               "onRemoved": [
                 {
-                  "$type": "TriggerSetVisible",
-                  "visible": true
-                },
-                {
                   "$type": "HideUIBillBoard"
                 }
               ]
+            },
+            {
+              "$type": "EntityInVisibleMixin",
+              "reason": "SelfAbility"
             }
           ],
           "onAdded": [
             {
               "$type": "AttachEffect",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Oceanid_BornBS",
               "effectTempleteID": -1.0
             },
@@ -291,10 +321,10 @@
                   "$type": "SetGlobalPos",
                   "key": "_DRAKE_DEEPSEA_ELECTRIC_BORN_POS",
                   "born": {
-                    "$type": "MIAJPKDCOPA",
+                    "$type": "OHBNBLFMECJ",
                     "actionPointType": "StandbyPoint",
-                    "GIAHMPPLHHF": {
-                      "$type": "JIIIIFKFCAM",
+                    "PANKEBCONMO": {
+                      "$type": "DMJJPCHLKEC",
                       "actionPointID": 700500002
                     }
                   }
@@ -305,15 +335,27 @@
                   "$type": "SetGlobalPos",
                   "key": "_DRAKE_DEEPSEA_ELECTRIC_BORN_POS",
                   "born": {
-                    "$type": "MIAJPKDCOPA",
+                    "$type": "OHBNBLFMECJ",
                     "actionPointType": "StandbyPoint",
-                    "GIAHMPPLHHF": {
-                      "$type": "JIIIIFKFCAM",
+                    "PANKEBCONMO": {
+                      "$type": "DMJJPCHLKEC",
                       "actionPointID": 500500003
                     }
                   }
                 }
               ]
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "canBeHandledOnRecover": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "value": 1.5
             }
           ]
         }
@@ -323,9 +365,19 @@
           "$type": "ApplyModifier",
           "predicates": [
             {
-              "$type": "ByTargetGlobalValue",
-              "key": "_DRAKE_DEEPSEA_IN_TOWER",
-              "ratio": 1.0
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_DRAKE_DEEPSEA_IN_TOWER",
+                  "ratio": 1.0
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ]
             }
           ],
           "modifierName": "Monster_Drake_DeepSea_TowerBorn"
@@ -345,7 +397,7 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ELECTRIC_BORN_POS"
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ELECTRIC_BORN_POS"
         }
       ],
       "onAbilityStart": [
@@ -397,14 +449,14 @@
                 },
                 {
                   "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Free"],
+                  "pushColliderNames": ["PushCollider_Free", "MoveCollider"],
                   "setEnable": true
                 }
               ],
               "onRemoved": [
                 {
                   "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Alert"],
+                  "pushColliderNames": ["PushCollider_Alert", "MoveCollider"],
                   "setEnable": true
                 },
                 {
@@ -738,13 +790,8 @@
         },
         {
           "$type": "AttachToStateIDMixin",
-          "stateIDs": ["JumpWall_StandBy"],
-          "modifierName": "Monster_Drake_DeepSea_JumpWall_JumpToStart_SetTargetPos"
-        },
-        {
-          "$type": "AttachToStateIDMixin",
           "stateIDs": ["JumpWall_JumpToStart_BS"],
-          "modifierName": "Monster_Drake_DeepSea_JumpWall_StartTurn_Ice"
+          "modifierName": "Monster_Drake_DeepSea_JumpWall_JumpToStart_SetTargetPos"
         },
         {
           "$type": "AttachToStateIDMixin",
@@ -758,37 +805,10 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ICE_JUMPWALL_TURN_POS"
-        },
-        {
-          "$type": "AttachToStateIDMixin",
-          "stateIDs": ["JumpWall_WeakBS"],
-          "modifierName": "Monster_Drake_DeepSea_RemoveWallAttackTimer"
-        },
-        {
-          "$type": "DoActionByStateIDMixin",
-          "stateIDs": ["JumpWall_WeakBS"],
-          "enterActions": [
-            {
-              "$type": "ApplyModifier",
-              "modifierName": "Watcher_82122_FallDown_Trigger"
-            }
-          ]
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_JUMPWALL_TURN_POS"
         }
       ],
       "modifiers": {
-        "Watcher_82122_FallDown_Trigger": {
-          "modifierName": "",
-          "duration": 0.33000001311302185,
-          "bonusCriticalHurt": 100.0,
-          "onRemoved": [
-            {
-              "$type": "DoWatcherSystemAction",
-              "watcherId": 82122,
-              "inThreatListOnly": true
-            }
-          ]
-        },
         "Monster_Drake_DeepSea_JumpWall_CheckWallState": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
@@ -799,12 +819,12 @@
               "targetPredicates": [
                 {
                   "$type": "ByTargetGlobalValue",
-                  "key": "_Wall1_State",
-                  "ratio": 1.0
+                  "key": "_ICEPILLAR_ALIVE_",
+                  "ratio": 0.0
                 },
                 {
                   "$type": "ByTargetGlobalValue",
-                  "key": "_DRAKE_TARGET_UPWALL_NUM",
+                  "key": "_IS_ACTIVITY_01_",
                   "ratio": 1.0
                 }
               ],
@@ -814,90 +834,6 @@
                   "triggerID": "WallAlredyBroken"
                 }
               ]
-            },
-            {
-              "$type": "Predicated",
-              "targetPredicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "key": "_Wall2_State",
-                  "ratio": 1.0
-                },
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "key": "_DRAKE_TARGET_UPWALL_NUM",
-                  "ratio": 2.0
-                }
-              ],
-              "successActions": [
-                {
-                  "$type": "SetAnimatorTrigger",
-                  "triggerID": "WallAlredyBroken"
-                }
-              ]
-            },
-            {
-              "$type": "Predicated",
-              "targetPredicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "key": "_Wall3_State",
-                  "ratio": 1.0
-                },
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "key": "_DRAKE_TARGET_UPWALL_NUM",
-                  "ratio": 3.0
-                }
-              ],
-              "successActions": [
-                {
-                  "$type": "SetAnimatorTrigger",
-                  "triggerID": "WallAlredyBroken"
-                }
-              ]
-            }
-          ]
-        },
-        "Monster_Drake_DeepSea_JumpWall_StartTurn_Ice": {
-          "modifierName": "",
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "TurnDirectionToPos",
-              "toPos": {
-                "$type": "ConfigBornByGlobalValue",
-                "positionKey": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
-                "directionKey": ""
-              }
-            }
-          ]
-        },
-        "Monster_Drake_DeepSea_RemoveWallAttackTimer": {
-          "modifierName": "",
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "RemoveModifier",
-              "modifierName": "Monster_Drake_DeepSea_Boss_OnWallTimer"
-            }
-          ]
-        },
-        "Monster_Drake_DeepSea_Boss_OnWallTimer": {
-          "modifierName": "",
-          "duration": 20.0,
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "SetAnimatorBool",
-              "boolID": "JumpWallAttackOver"
-            }
-          ],
-          "onRemoved": [
-            {
-              "$type": "SetAnimatorBool",
-              "boolID": "JumpWallAttackOver",
-              "ratio": true
             }
           ]
         },
@@ -929,47 +865,7 @@
               ]
             }
           ],
-          "onAdded": [
-            {
-              "$type": "ResetAIAttackTarget"
-            },
-            {
-              "$type": "ServerLuaCall",
-              "predicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "key": "_DRAKE_DEEPSEA_IN_TOWER",
-                  "ratio": 0.0,
-                  "compareType": "NoneOrEqual"
-                }
-              ],
-              "luaCallType": "FromGroup",
-              "funcName": "SLC_Deny_Lock_On",
-              "IAJKJLGNLLE": 1,
-              "MPPMFEDKGHC": 1.0,
-              "BOKNHLDBKKK": 0.0,
-              "CHOIIMHDNHK": 0.0
-            }
-          ],
-          "onRemoved": [
-            {
-              "$type": "ServerLuaCall",
-              "predicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "key": "_DRAKE_DEEPSEA_IN_TOWER",
-                  "ratio": 0.0,
-                  "compareType": "NoneOrEqual"
-                }
-              ],
-              "luaCallType": "FromGroup",
-              "funcName": "SLC_Deny_Lock_On",
-              "IAJKJLGNLLE": 1,
-              "MPPMFEDKGHC": 0.0,
-              "BOKNHLDBKKK": 0.0,
-              "CHOIIMHDNHK": 0.0
-            }
-          ]
+          "state": "DenyLockOn"
         },
         "Monster_Drake_DeepSea_JumpWall_JumpToStart_CloseCollider": {
           "modifierName": "",
@@ -981,77 +877,26 @@
               "onAdded": [
                 {
                   "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Alert"]
+                  "pushColliderNames": ["PushCollider_Alert", "MoveCollider"]
                 }
               ],
               "onRemoved": [
                 {
                   "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Alert"],
+                  "pushColliderNames": ["PushCollider_Alert", "MoveCollider"],
                   "setEnable": true
                 }
               ]
             }
           ]
         },
-        "SetDrakeDeepseaIce_Target_ToGadget": {
+        "Monster_Drake_DeepSea_JumpIcePillar_Collider": {
           "modifierName": "",
-          "duration": 8.0,
           "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "SetGlobalValue",
-              "ratio": 1.0,
-              "key": "_DRAKE_DEEPSEA_ICE_TARGET",
-              "maxValue": 0.0,
-              "minValue": 0.0
-            },
-            {
-              "$type": "ApplyModifier",
-              "target": "AllPlayerAvatars",
-              "modifierName": "SetDrakeDeepseaIce_ResetTarget_ToGadgetAvatar"
-            }
-          ],
           "onRemoved": [
             {
-              "$type": "SetGlobalValue",
-              "ratio": 0.0,
-              "key": "_DRAKE_DEEPSEA_ICE_TARGET",
-              "maxValue": 0.0,
-              "minValue": 0.0
-            },
-            {
-              "$type": "ApplyModifier",
-              "target": "AllPlayerAvatars",
-              "modifierName": "SetDrakeDeepseaIce_Target_ToGadgetAvatar"
-            }
-          ]
-        },
-        "SetDrakeDeepseaIce_ResetTarget_ToGadgetAvatar": {
-          "modifierName": "",
-          "duration": 0.5,
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "SetGlobalValue",
-              "ratio": 0.0,
-              "key": "_DRAKE_DEEPSEA_ICE_TARGET",
-              "maxValue": 0.0,
-              "minValue": 0.0
-            }
-          ]
-        },
-        "SetDrakeDeepseaIce_Target_ToGadgetAvatar": {
-          "modifierName": "",
-          "duration": 0.5,
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "SetGlobalValue",
-              "ratio": 1.0,
-              "key": "_DRAKE_DEEPSEA_ICE_TARGET",
-              "maxValue": 0.0,
-              "minValue": 0.0
+              "$type": "RemoveModifier",
+              "modifierName": "Monster_Drake_DeepSea_JumpWall_JumpToStart_CloseCollider"
             }
           ]
         },
@@ -1060,194 +905,105 @@
           "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
+              "$type": "SetAnimatorTrigger",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR200",
+                "campTargetType": "Alliance",
+                "OBHNBNDMPFN": 1.0
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_DRAKE_DEEPSEA_ELECTRIC",
+                  "ratio": 1.0
+                }
+              ],
+              "triggerID": "JumpToIcePillar"
+            },
+            {
               "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "entityTypePriority": ["Gadget"],
+                "sortType": "Nearest",
+                "shapeName": "CircleR60",
+                "campTargetType": "Alliance",
+                "OBHNBNDMPFN": 1.0
+              },
               "targetPredicates": [
                 {
                   "$type": "ByTargetGlobalValue",
-                  "key": "_Wall1_State",
-                  "ratio": 0.0,
-                  "compareType": "NoneOrEqual"
+                  "key": "_ICEPILLAR_CANBEJUMPTO_",
+                  "ratio": 1.0
                 }
               ],
               "successActions": [
                 {
                   "$type": "SetGlobalPos",
-                  "otherTargets": {
-                    "$type": "IDODCGJLHAE",
-                    "value": 9
-                  },
-                  "key": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
+                  "target": "Target",
+                  "key": "_DRAKE_DEEPSEA_JUMPWALL_TURN_POS",
                   "born": {
-                    "$type": "ConfigBornByTarget"
+                    "$type": "ConfigBornByTarget",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
                   },
                   "setTarget": false
                 },
                 {
                   "$type": "SetGlobalPos",
-                  "otherTargets": {
-                    "$type": "IDODCGJLHAE",
-                    "value": 13
-                  },
-                  "key": "_DRAKE_DEEPSEA_ICE_JUMPWALL_TURN_POS",
+                  "target": "Target",
+                  "key": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
                   "born": {
-                    "$type": "ConfigBornByTarget"
+                    "$type": "ConfigBornByTarget",
+                    "offset": {
+                      "x": 10.300000190734863,
+                      "y": 0.0,
+                      "z": 0.0
+                    }
                   },
                   "setTarget": false
                 },
                 {
-                  "$type": "SetGlobalValue",
-                  "ratio": 1.0,
-                  "key": "_DRAKE_TARGET_UPWALL_NUM",
-                  "maxValue": 0.0,
-                  "minValue": 0.0
-                }
-              ],
-              "failActions": [
-                {
-                  "$type": "Predicated",
-                  "targetPredicates": [
-                    {
-                      "$type": "ByTargetGlobalValue",
-                      "key": "_Wall2_State",
-                      "ratio": 0.0,
-                      "compareType": "NoneOrEqual"
+                  "$type": "SetGlobalPos",
+                  "target": "Target",
+                  "key": "_DRAKE_DEEPSEA_JUMPWALL_WEAK_POS",
+                  "born": {
+                    "$type": "ConfigBornByTarget",
+                    "offset": {
+                      "x": 15.0,
+                      "y": 0.0,
+                      "z": 0.0
                     }
-                  ],
-                  "successActions": [
-                    {
-                      "$type": "SetGlobalPos",
-                      "otherTargets": {
-                        "$type": "IDODCGJLHAE",
-                        "value": 10
-                      },
-                      "key": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
-                      "born": {
-                        "$type": "ConfigBornByTarget"
-                      },
-                      "setTarget": false
-                    },
-                    {
-                      "$type": "SetGlobalPos",
-                      "otherTargets": {
-                        "$type": "IDODCGJLHAE",
-                        "value": 14
-                      },
-                      "key": "_DRAKE_DEEPSEA_ICE_JUMPWALL_TURN_POS",
-                      "born": {
-                        "$type": "ConfigBornByTarget"
-                      },
-                      "setTarget": false
-                    },
-                    {
-                      "$type": "SetGlobalValue",
-                      "ratio": 2.0,
-                      "key": "_DRAKE_TARGET_UPWALL_NUM",
-                      "maxValue": 0.0,
-                      "minValue": 0.0
-                    }
-                  ],
-                  "failActions": [
-                    {
-                      "$type": "Predicated",
-                      "targetPredicates": [
-                        {
-                          "$type": "ByTargetGlobalValue",
-                          "key": "_Wall3_State",
-                          "ratio": 0.0,
-                          "compareType": "NoneOrEqual"
-                        }
-                      ],
-                      "successActions": [
-                        {
-                          "$type": "SetGlobalPos",
-                          "otherTargets": {
-                            "$type": "IDODCGJLHAE",
-                            "value": 11
-                          },
-                          "key": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
-                          "born": {
-                            "$type": "ConfigBornByTarget"
-                          },
-                          "setTarget": false
-                        },
-                        {
-                          "$type": "SetGlobalPos",
-                          "otherTargets": {
-                            "$type": "IDODCGJLHAE",
-                            "value": 15
-                          },
-                          "key": "_DRAKE_DEEPSEA_ICE_JUMPWALL_TURN_POS",
-                          "born": {
-                            "$type": "ConfigBornByTarget"
-                          },
-                          "setTarget": false
-                        },
-                        {
-                          "$type": "SetGlobalValue",
-                          "ratio": 3.0,
-                          "key": "_DRAKE_TARGET_UPWALL_NUM",
-                          "maxValue": 0.0,
-                          "minValue": 0.0
-                        }
-                      ],
-                      "failActions": [
-                        {
-                          "$type": "SetAnimatorTrigger",
-                          "triggerID": "DrakeIceJumpWallEnd"
-                        },
-                        {
-                          "$type": "SetGlobalValue",
-                          "ratio": 1.0,
-                          "key": "_ALL_WALL_BROKE",
-                          "maxValue": 0.0,
-                          "minValue": 0.0
-                        },
-                        {
-                          "$type": "SetGlobalValue",
-                          "ratio": 0.0,
-                          "key": "_DRAKE_TARGET_UPWALL_NUM",
-                          "maxValue": 0.0,
-                          "minValue": 0.0
-                        }
-                      ]
-                    }
-                  ]
+                  },
+                  "setTarget": false
                 }
               ]
             },
             {
-              "$type": "Predicated",
-              "targetPredicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "key": "_ALL_WALL_BROKE",
-                  "ratio": 0.0,
-                  "compareType": "NoneOrEqual"
-                }
-              ],
-              "successActions": [
-                {
-                  "$type": "SetAnimatorTrigger",
-                  "triggerID": "DrakeIceJumpWallEnd"
-                },
-                {
-                  "$type": "SetAnimatorTrigger",
-                  "otherTargets": {
-                    "$type": "SelectTargetsByShape",
-                    "shapeName": "CircleR200",
-                    "campTargetType": "Alliance",
-                    "OBHNBNDMPFN": 1.0
-                  },
-                  "predicates": [
-                    {
-                      "$type": "ByTargetGlobalValue",
-                      "key": "_IS_DRAKE_DEEPSEA_ELECTRIC",
-                      "ratio": 1.0
-                    }
-                  ],
-                  "triggerID": "JumpWallAttack"
-                }
-              ]
+              "$type": "TurnDirectionToPos",
+              "toPos": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
+                "directionKey": ""
+              }
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_JumpWall_TurnToWall": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "TurnDirectionToPos",
+              "toPos": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_DRAKE_DEEPSEA_JUMPWALL_TURN_POS",
+                "directionKey": ""
+              }
             }
           ]
         }
@@ -1270,9 +1026,9 @@
           },
           "timeRange": 1.0,
           "maxRange": -1.0,
-          "animatorStateIDs": ["JumpWall_JumpToStart_BS"],
+          "animatorStateIDs": ["JumpWall_JumpToStart_AS"],
           "overrideMoveCollider": "",
-          "HOPBIIFLCOK": true
+          "KGIBEJKAMNA": true
         },
         {
           "$type": "ApplyModifier",
@@ -1300,6 +1056,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_DRAKE_TARGET_UPWALL_NUM",
               "ratio": 1.0
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
             }
           ]
         },
@@ -1312,6 +1074,12 @@
               "$type": "ByTargetGlobalValue",
               "key": "_DRAKE_TARGET_UPWALL_NUM",
               "ratio": 2.0
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
             }
           ]
         },
@@ -1324,8 +1092,32 @@
               "$type": "ByTargetGlobalValue",
               "key": "_DRAKE_TARGET_UPWALL_NUM",
               "ratio": 3.0
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
             }
           ]
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["JumpWall_Idle", "JumpWall_Attack"],
+          "modifierName": "Monster_Drake_DeepSea_OnIcePillar_State_Elite",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "JumpWall_BS",
+          "modifierName": "Monster_Drake_DeepSea_OnIcePillar_State_JumpWallBS",
+          "normalizeStart": 0.30000001192092896
         }
       ],
       "modifiers": {
@@ -1333,41 +1125,10 @@
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
           "thinkInterval": 3.0,
-          "modifierMixins": [
-            {
-              "$type": "AttachActionToModifierMixin",
-              "onAdded": [
-                {
-                  "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Alert"]
-                }
-              ],
-              "onRemoved": [
-                {
-                  "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Alert"],
-                  "setEnable": true
-                }
-              ]
-            }
-          ],
-          "onThinkInterval": [
-            {
-              "$type": "SetAnimatorTrigger",
-              "triggerID": "OnWallAttack"
-            }
-          ]
-        },
-        "UNIQUE_Monster_Drake_DeepSea_JumpWall_Timer": {
-          "modifierName": "",
-          "isUnique": true,
-          "duration": 20.0,
-          "bonusCriticalHurt": 100.0,
-          "thinkInterval": 4.0,
           "onAdded": [
             {
-              "$type": "SetAnimatorTrigger",
-              "triggerID": "OnWallAttack"
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider_Alert", "MoveCollider"]
             }
           ],
           "onThinkInterval": [
@@ -1387,24 +1148,16 @@
               "defaultGlobalValueOnCreate": 0.0,
               "valueSteps": [-0.5, 0.5, 1.5],
               "modifierNameSteps": [
-                "Monster_Drake_DeepSea_OnWall1",
+                "Empty",
                 "Monster_Drake_DeepSea_OnWall1Broken"
               ]
             }
           ]
         },
-        "Monster_Drake_DeepSea_OnWall1": {
-          "modifierName": "",
-          "bonusCriticalHurt": 100.0
-        },
         "Monster_Drake_DeepSea_OnWall1Broken": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
           "onAdded": [
-            {
-              "$type": "RemoveUniqueModifier",
-              "modifierName": "UNIQUE_Monster_Drake_DeepSea_JumpWall_Timer"
-            },
             {
               "$type": "SetAnimatorTrigger",
               "triggerID": "JumpWallWeak"
@@ -1421,24 +1174,16 @@
               "defaultGlobalValueOnCreate": 0.0,
               "valueSteps": [-0.5, 0.5, 1.5],
               "modifierNameSteps": [
-                "Monster_Drake_DeepSea_OnWall2",
+                "Empty",
                 "Monster_Drake_DeepSea_OnWall2Broken"
               ]
             }
           ]
         },
-        "Monster_Drake_DeepSea_OnWall2": {
-          "modifierName": "",
-          "bonusCriticalHurt": 100.0
-        },
         "Monster_Drake_DeepSea_OnWall2Broken": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
           "onAdded": [
-            {
-              "$type": "RemoveUniqueModifier",
-              "modifierName": "UNIQUE_Monster_Drake_DeepSea_JumpWall_Timer"
-            },
             {
               "$type": "SetAnimatorTrigger",
               "triggerID": "JumpWallWeak"
@@ -1455,29 +1200,100 @@
               "defaultGlobalValueOnCreate": 0.0,
               "valueSteps": [-0.5, 0.5, 1.5],
               "modifierNameSteps": [
-                "Monster_Drake_DeepSea_OnWall3",
+                "Empty",
                 "Monster_Drake_DeepSea_OnWall3Broken"
               ]
             }
           ]
-        },
-        "Monster_Drake_DeepSea_OnWall3": {
-          "modifierName": "",
-          "bonusCriticalHurt": 100.0
         },
         "Monster_Drake_DeepSea_OnWall3Broken": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
           "onAdded": [
             {
-              "$type": "RemoveUniqueModifier",
-              "modifierName": "UNIQUE_Monster_Drake_DeepSea_JumpWall_Timer"
-            },
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "JumpWallWeak"
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_OnIcePillar_State": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_ICEPILLAR_ALIVE_",
+              "defaultGlobalValueOnCreate": 0.0,
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "modifierNameSteps": [
+                "Monster_Drake_DeepSea_OnIcePillarBroken",
+                "Empty"
+              ]
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_OnIcePillar_State_Elite": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_ICEPILLAR_ALIVE_",
+              "defaultGlobalValueOnCreate": 0.0,
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "modifierNameSteps": [
+                "Monster_Drake_DeepSea_OnIcePillarBroken_Elite",
+                "Empty"
+              ]
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_OnIcePillar_State_JumpWallBS": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_ICEPILLAR_ALIVE_",
+              "defaultGlobalValueOnCreate": 0.0,
+              "valueSteps": [-0.5, 0.5, 1.5],
+              "modifierNameSteps": [
+                "Monster_Drake_DeepSea_OnIcePillarBroken_Elite",
+                "Empty"
+              ]
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_OnIcePillarBroken": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
             {
               "$type": "SetAnimatorTrigger",
               "triggerID": "JumpWallWeak"
             }
           ]
+        },
+        "Monster_Drake_DeepSea_OnIcePillarBroken_Elite": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "triggerID": "JumpWallWeak"
+            }
+          ]
+        },
+        "Empty": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0
         }
       }
     }
@@ -1494,32 +1310,6 @@
         }
       ],
       "modifiers": {
-        "Monster_Drake_DeepSea_InitialWeakValue": {
-          "modifierName": "",
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "ApplyModifier",
-              "target": "AllPlayerAvatars",
-              "modifierName": "Drake_Initial_Avatar_WeakValue"
-            }
-          ]
-        },
-        "Drake_Initial_Avatar_WeakValue": {
-          "modifierName": "",
-          "duration": 0.30000001192092896,
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "SetGlobalValue",
-              "RotationDampTime": true,
-              "ratio": 1.0,
-              "key": "_DRAKE_NO_WEAK",
-              "maxValue": 0.0,
-              "minValue": 0.0
-            }
-          ]
-        },
         "Monster_Drake_DeepSea_JumpWall_InWeakPose": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
@@ -1533,7 +1323,7 @@
                 },
                 {
                   "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Weak"],
+                  "pushColliderNames": ["PushCollider_Weak", "MoveCollider"],
                   "setEnable": true
                 },
                 {
@@ -1549,7 +1339,7 @@
                 },
                 {
                   "$type": "EnablePushColliderName",
-                  "pushColliderNames": ["PushCollider_Alert"],
+                  "pushColliderNames": ["PushCollider_Alert", "MoveCollider"],
                   "setEnable": true
                 },
                 {
@@ -1571,6 +1361,21 @@
               "modifierName": "Monster_Drake_DeepSea_WeakNoFit"
             },
             {
+              "$type": "TurnDirectionToPos",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "toPos": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_DRAKE_DEEPSEA_JUMPWALL_WEAK_POS",
+                "directionKey": ""
+              }
+            },
+            {
               "$type": "ApplyModifier",
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
@@ -1583,6 +1388,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_IS_DRAKE_DEEPSEA_ICE",
                   "ratio": 1.0
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
                 }
               ],
               "modifierName": "Monster_Drake_DeepSea_ElecWeak_IceSwitchPose"
@@ -1741,7 +1552,7 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ELECTRIC_JUMPWALL_TURN_POS"
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ELECTRIC_JUMPWALL_TURN_POS"
         },
         {
           "$type": "AttachToStateIDMixin",
@@ -1778,6 +1589,14 @@
           "onRemoved": [
             {
               "$type": "DoWatcherSystemAction",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "watcherId": 82122,
               "inThreatListOnly": true
             }
@@ -1893,7 +1712,7 @@
               ],
               "luaCallType": "FromGroup",
               "funcName": "SLC_Deny_Lock_On",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1912,7 +1731,7 @@
               ],
               "luaCallType": "FromGroup",
               "funcName": "SLC_Deny_Lock_On",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2291,6 +2110,12 @@
                   "$type": "ByTargetGlobalValue",
                   "key": "_DRAKE_WALL_1_READY",
                   "ratio": 1.0
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
                 }
               ],
               "successActions": [
@@ -2298,10 +2123,10 @@
                   "$type": "SetGlobalPos",
                   "key": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
                   "born": {
-                    "$type": "MIAJPKDCOPA",
+                    "$type": "OHBNBLFMECJ",
                     "actionPointType": "StandbyPoint",
-                    "GIAHMPPLHHF": {
-                      "$type": "JIIIIFKFCAM",
+                    "PANKEBCONMO": {
+                      "$type": "DMJJPCHLKEC",
                       "actionPointID": 500500004
                     }
                   },
@@ -2311,10 +2136,10 @@
                   "$type": "SetGlobalPos",
                   "key": "_DRAKE_DEEPSEA_ELECTRIC_JUMPWALL_TURN_POS",
                   "born": {
-                    "$type": "MIAJPKDCOPA",
+                    "$type": "OHBNBLFMECJ",
                     "actionPointType": "StandbyPoint",
-                    "GIAHMPPLHHF": {
-                      "$type": "JIIIIFKFCAM",
+                    "PANKEBCONMO": {
+                      "$type": "DMJJPCHLKEC",
                       "actionPointID": 500500007
                     }
                   },
@@ -2342,6 +2167,12 @@
                       "$type": "ByTargetGlobalValue",
                       "key": "_DRAKE_WALL_2_READY",
                       "ratio": 1.0
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 0.0,
+                      "compareType": "NoneOrEqual"
                     }
                   ],
                   "successActions": [
@@ -2349,10 +2180,10 @@
                       "$type": "SetGlobalPos",
                       "key": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
                       "born": {
-                        "$type": "MIAJPKDCOPA",
+                        "$type": "OHBNBLFMECJ",
                         "actionPointType": "StandbyPoint",
-                        "GIAHMPPLHHF": {
-                          "$type": "JIIIIFKFCAM",
+                        "PANKEBCONMO": {
+                          "$type": "DMJJPCHLKEC",
                           "actionPointID": 500500005
                         }
                       },
@@ -2362,10 +2193,10 @@
                       "$type": "SetGlobalPos",
                       "key": "_DRAKE_DEEPSEA_ELECTRIC_JUMPWALL_TURN_POS",
                       "born": {
-                        "$type": "MIAJPKDCOPA",
+                        "$type": "OHBNBLFMECJ",
                         "actionPointType": "StandbyPoint",
-                        "GIAHMPPLHHF": {
-                          "$type": "JIIIIFKFCAM",
+                        "PANKEBCONMO": {
+                          "$type": "DMJJPCHLKEC",
                           "actionPointID": 500500008
                         }
                       },
@@ -2393,6 +2224,12 @@
                           "$type": "ByTargetGlobalValue",
                           "key": "_DRAKE_WALL_3_READY",
                           "ratio": 1.0
+                        },
+                        {
+                          "$type": "ByTargetGlobalValue",
+                          "key": "_IS_ACTIVITY_01_",
+                          "ratio": 0.0,
+                          "compareType": "NoneOrEqual"
                         }
                       ],
                       "successActions": [
@@ -2400,10 +2237,10 @@
                           "$type": "SetGlobalPos",
                           "key": "_DRAKE_DEEPSEA_JUMPWALL_STARTPOS",
                           "born": {
-                            "$type": "MIAJPKDCOPA",
+                            "$type": "OHBNBLFMECJ",
                             "actionPointType": "StandbyPoint",
-                            "GIAHMPPLHHF": {
-                              "$type": "JIIIIFKFCAM",
+                            "PANKEBCONMO": {
+                              "$type": "DMJJPCHLKEC",
                               "actionPointID": 500500006
                             }
                           },
@@ -2413,10 +2250,10 @@
                           "$type": "SetGlobalPos",
                           "key": "_DRAKE_DEEPSEA_ELECTRIC_JUMPWALL_TURN_POS",
                           "born": {
-                            "$type": "MIAJPKDCOPA",
+                            "$type": "OHBNBLFMECJ",
                             "actionPointType": "StandbyPoint",
-                            "GIAHMPPLHHF": {
-                              "$type": "JIIIIFKFCAM",
+                            "PANKEBCONMO": {
+                              "$type": "DMJJPCHLKEC",
                               "actionPointID": 500500009
                             }
                           },
@@ -2480,7 +2317,7 @@
           "animatorStateIDs": ["JumpWall_JumpToStart_AS"],
           "overrideMoveCollider": "",
           "isInAir": true,
-          "HOPBIIFLCOK": true
+          "KGIBEJKAMNA": true
         },
         {
           "$type": "ApplyModifier",
@@ -2521,7 +2358,7 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ICE_FITATTACK_TURN_POS"
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ICE_FITATTACK_TURN_POS"
         }
       ],
       "modifiers": {
@@ -2665,7 +2502,7 @@
                 {
                   "$type": "Predicated",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 4
                   },
                   "targetPredicates": [
@@ -2678,7 +2515,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 4
                       },
                       "key": "_DRAKE_DEEPSEA_FITATTACK_STARTPOS_ICE",
@@ -2690,7 +2527,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 6
                       },
                       "key": "_DRAKE_DEEPSEA_ICE_FITATTACK_TURN_POS",
@@ -2724,7 +2561,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 5
                       },
                       "key": "_DRAKE_DEEPSEA_FITATTACK_STARTPOS_ICE",
@@ -2736,7 +2573,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 3
                       },
                       "key": "_DRAKE_DEEPSEA_ICE_FITATTACK_TURN_POS",
@@ -2772,7 +2609,7 @@
                 {
                   "$type": "Predicated",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 4
                   },
                   "targetPredicates": [
@@ -2785,7 +2622,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 4
                       },
                       "key": "_DRAKE_DEEPSEA_FITATTACK_STARTPOS_ICE",
@@ -2797,7 +2634,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 6
                       },
                       "key": "_DRAKE_DEEPSEA_ICE_FITATTACK_TURN_POS",
@@ -2831,7 +2668,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 5
                       },
                       "key": "_DRAKE_DEEPSEA_FITATTACK_STARTPOS_ICE",
@@ -2843,7 +2680,7 @@
                     {
                       "$type": "SetGlobalPos",
                       "otherTargets": {
-                        "$type": "IDODCGJLHAE",
+                        "$type": "CNBBJDLAEAM",
                         "value": 3
                       },
                       "key": "_DRAKE_DEEPSEA_ICE_FITATTACK_TURN_POS",
@@ -2900,7 +2737,7 @@
           "animatorStateIDs": ["JumpToFit_During"],
           "overrideMoveCollider": "",
           "isInAir": true,
-          "HOPBIIFLCOK": true
+          "KGIBEJKAMNA": true
         }
       ]
     }
@@ -2938,7 +2775,7 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ELECTRIC_FITATTACK_TURN_POS"
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ELECTRIC_FITATTACK_TURN_POS"
         }
       ],
       "modifiers": {
@@ -3065,7 +2902,7 @@
                 {
                   "$type": "SetGlobalPos",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 3
                   },
                   "key": "_DRAKE_DEEPSEA_FITATTACK_STARTPOS_ELECTRIC",
@@ -3077,7 +2914,7 @@
                 {
                   "$type": "SetGlobalPos",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 5
                   },
                   "key": "_DRAKE_DEEPSEA_ELECTRIC_FITATTACK_TURN_POS",
@@ -3091,7 +2928,7 @@
                 {
                   "$type": "SetGlobalPos",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 6
                   },
                   "key": "_DRAKE_DEEPSEA_FITATTACK_STARTPOS_ELECTRIC",
@@ -3103,7 +2940,7 @@
                 {
                   "$type": "SetGlobalPos",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 4
                   },
                   "key": "_DRAKE_DEEPSEA_ELECTRIC_FITATTACK_TURN_POS",
@@ -3138,7 +2975,7 @@
           "animatorStateIDs": ["JumpToFit_During"],
           "overrideMoveCollider": "",
           "isInAir": true,
-          "HOPBIIFLCOK": true
+          "KGIBEJKAMNA": true
         }
       ]
     }
@@ -3163,7 +3000,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 12
               },
               "key": "_DRAKE_DEEPSEA_LASER_AREAD_POS",
@@ -3329,34 +3166,48 @@
       "abilityName": "Monster_Drake_DeepSea_Laser_HitWall",
       "onAbilityStart": [
         {
-          "$type": "TriggerAttackEvent",
-          "attackEvent": {
-            "attackPattern": {
-              "$type": "ConfigAttackSphere",
-              "triggerType": "TriggerNoRepeat",
-              "born": {
-                "$type": "ConfigBornByCollisionPoint"
-              },
-              "radius": 0.5
-            },
-            "attackInfo": {
-              "attackTag": "DrakeLaserAttack",
-              "attenuationTag": "",
-              "attenuationGroup": "default",
-              "attackProperty": {
-                "damagePercentage": 0.0,
-                "damagePercentageRatio": 0.0,
-                "bonusCriticalHurt": 100.0,
-                "strikeType": "Blunt",
-                "enBreak": 5000.0
-              },
-              "hitPattern": {
-                "onHitEffectName": "",
-                "hitImpulseType": "LV0"
-              }
+          "$type": "Predicated",
+          "target": "Target",
+          "targetPredicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_DRAKE_PILLAR_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
             }
-          },
-          "targetType": "AllExceptSelf"
+          ],
+          "successActions": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornByCollisionPoint"
+                  },
+                  "radius": 0.5
+                },
+                "attackInfo": {
+                  "attackTag": "DrakeLaserAttack",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.0,
+                    "damagePercentageRatio": 0.0,
+                    "bonusCriticalHurt": 100.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 5000.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "",
+                    "hitImpulseType": "LV0"
+                  }
+                }
+              },
+              "targetType": "AllExceptSelf"
+            }
+          ]
         }
       ]
     }
@@ -3542,8 +3393,18 @@
               "target": "Target",
               "targetPredicates": [
                 {
-                  "$type": "ByEntityTypes",
-                  "entityTypes": ["Avatar"]
+                  "$type": "ByAny",
+                  "predicates": [
+                    {
+                      "$type": "ByEntityTypes",
+                      "entityTypes": ["Avatar"]
+                    },
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "_DRAKE_PILLAR_",
+                      "ratio": 1.0
+                    }
+                  ]
                 }
               ],
               "failActions": [
@@ -3663,8 +3524,18 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "ByEntityTypes",
-              "entityTypes": ["Avatar"]
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_DRAKE_PILLAR_",
+                  "ratio": 1.0
+                }
+              ]
             }
           ],
           "failActions": [
@@ -3768,7 +3639,7 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ICE_LASER_TURN_POS"
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ICE_LASER_TURN_POS"
         }
       ],
       "modifiers": {
@@ -3840,7 +3711,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 7
               },
               "key": "_DRAKE_DEEPSEA_ICE_JUMPLASER_FINAL_STARTPOS",
@@ -3865,7 +3736,7 @@
               "maxRange": -1.0,
               "animatorStateIDs": ["LaserAttack_Animove"],
               "overrideMoveCollider": "",
-              "HOPBIIFLCOK": true
+              "KGIBEJKAMNA": true
             }
           ]
         },
@@ -3924,7 +3795,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 7
               },
               "key": "_DRAKE_DEEPSEA_LASERATTACK_ICE_POS",
@@ -3936,7 +3807,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 12
               },
               "key": "_DRAKE_DEEPSEA_ICE_LASER_TURN_POS",
@@ -3980,7 +3851,7 @@
           "animatorStateIDs": ["JumpToLaser_During"],
           "overrideMoveCollider": "",
           "isInAir": true,
-          "HOPBIIFLCOK": true
+          "KGIBEJKAMNA": true
         }
       ]
     }
@@ -4135,7 +4006,7 @@
           "angularSpeed": 500.0,
           "attackTrigger": "",
           "attackDistance": 2.0,
-          "GDMKIBFMFKM": "_DRAKE_DEEPSEA_ELECTRIC_LASER_TURN_POS"
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ELECTRIC_LASER_TURN_POS"
         }
       ],
       "modifiers": {
@@ -4146,7 +4017,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 8
               },
               "key": "_DRAKE_DEEPSEA_ELECTRIC_JUMPLASER_FINAL_STARTPOS",
@@ -4171,7 +4042,7 @@
               "maxRange": -1.0,
               "animatorStateIDs": ["LaserAttack_Animove"],
               "overrideMoveCollider": "",
-              "HOPBIIFLCOK": true
+              "KGIBEJKAMNA": true
             }
           ]
         },
@@ -4265,7 +4136,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 8
               },
               "key": "_DRAKE_DEEPSEA_LASERATTACK_ElECTRIC_POS",
@@ -4277,7 +4148,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 12
               },
               "key": "_DRAKE_DEEPSEA_ELECTRIC_LASER_TURN_POS",
@@ -4319,7 +4190,7 @@
           "animatorStateIDs": ["JumpToLaser_During"],
           "overrideMoveCollider": "",
           "isInAir": true,
-          "HOPBIIFLCOK": true
+          "KGIBEJKAMNA": true
         }
       ]
     }
@@ -4328,6 +4199,9 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Monster_Drake_DeepSea_MagicIceBall",
+      "abilitySpecials": {
+        "AttackByEnergy_Ratio": 0.0
+      },
       "modifiers": {
         "Monster_Drake_DeepSea_MagicIceBall": {
           "modifierName": "",
@@ -4357,7 +4231,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -4377,7 +4251,7 @@
                   "target": "Target",
                   "targetPredicates": [
                     {
-                      "$type": "DJJLEAPCAIC",
+                      "$type": "JCGFHKBFMCH",
                       "logic": "Lesser",
                       "ratio": 30.0
                     }
@@ -4416,9 +4290,39 @@
                 {
                   "$type": "AttackByEnergy",
                   "target": "Target",
-                  "EGFNHDHKDKA": 30.0,
-                  "KLIDKBEELMA": 20.0,
-                  "MMLOMIFDCOI": 0.17000000178813934
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 0.0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ],
+                  "PDEPPPOHCAB": 30.0,
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
+                },
+                {
+                  "$type": "AttackByEnergy",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    }
+                  ],
+                  "PDEPPPOHCAB": [
+                    30.0,
+                    30.0,
+                    "AttackByEnergy_Ratio",
+                    "MUL",
+                    "ADD"
+                  ],
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -4440,6 +4344,12 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "Monster_Drake_DeepSea_MagicBall_DecreaseMPAttack"
+        },
+        {
+          "$type": "SetGlobalValueToOverrideMap",
+          "isFromOwner": true,
+          "globalValueKey": "_MONSTER_DRAKE_ATTACKBYENERGYRATIO_",
+          "overrideMapKey": "AttackByEnergy_Ratio"
         }
       ],
       "onAbilityStart": [
@@ -4526,6 +4436,9 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Monster_Drake_DeepSea_MagicElectricBall",
+      "abilitySpecials": {
+        "AttackByEnergy_Ratio": 0.0
+      },
       "modifiers": {
         "Monster_Drake_DeepSea_MagicElectricBall": {
           "modifierName": "",
@@ -4555,7 +4468,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -4575,7 +4488,7 @@
                   "target": "Target",
                   "targetPredicates": [
                     {
-                      "$type": "DJJLEAPCAIC",
+                      "$type": "JCGFHKBFMCH",
                       "logic": "Lesser",
                       "ratio": 30.0
                     }
@@ -4614,9 +4527,39 @@
                 {
                   "$type": "AttackByEnergy",
                   "target": "Target",
-                  "EGFNHDHKDKA": 30.0,
-                  "KLIDKBEELMA": 20.0,
-                  "MMLOMIFDCOI": 0.17000000178813934
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 0.0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ],
+                  "PDEPPPOHCAB": 30.0,
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
+                },
+                {
+                  "$type": "AttackByEnergy",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    }
+                  ],
+                  "PDEPPPOHCAB": [
+                    30.0,
+                    30.0,
+                    "AttackByEnergy_Ratio",
+                    "MUL",
+                    "ADD"
+                  ],
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -4638,6 +4581,12 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "Monster_Drake_DeepSea_MagicBall_DecreaseMPAttack"
+        },
+        {
+          "$type": "SetGlobalValueToOverrideMap",
+          "isFromOwner": true,
+          "globalValueKey": "_MONSTER_DRAKE_ATTACKBYENERGYRATIO_",
+          "overrideMapKey": "AttackByEnergy_Ratio"
         }
       ],
       "onAbilityStart": [
@@ -5007,6 +4956,9 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Monster_Drake_DeepSea_TraceIceBall",
+      "abilitySpecials": {
+        "AttackByEnergy_Ratio": 0.0
+      },
       "modifiers": {
         "Monster_Drake_DeepSea_MagicBall_DecreaseMPAttack": {
           "modifierName": "",
@@ -5020,7 +4972,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -5040,7 +4992,7 @@
                   "target": "Target",
                   "targetPredicates": [
                     {
-                      "$type": "DJJLEAPCAIC",
+                      "$type": "JCGFHKBFMCH",
                       "logic": "Lesser",
                       "ratio": 30.0
                     }
@@ -5079,9 +5031,39 @@
                 {
                   "$type": "AttackByEnergy",
                   "target": "Target",
-                  "EGFNHDHKDKA": 30.0,
-                  "KLIDKBEELMA": 20.0,
-                  "MMLOMIFDCOI": 0.17000000178813934
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 0.0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ],
+                  "PDEPPPOHCAB": 30.0,
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
+                },
+                {
+                  "$type": "AttackByEnergy",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    }
+                  ],
+                  "PDEPPPOHCAB": [
+                    30.0,
+                    30.0,
+                    "AttackByEnergy_Ratio",
+                    "MUL",
+                    "ADD"
+                  ],
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -5187,6 +5169,12 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "Monster_Drake_DeepSea_MagicBall_DecreaseMPAttack"
+        },
+        {
+          "$type": "SetGlobalValueToOverrideMap",
+          "isFromOwner": true,
+          "globalValueKey": "_MONSTER_DRAKE_ATTACKBYENERGYRATIO_",
+          "overrideMapKey": "AttackByEnergy_Ratio"
         }
       ],
       "onAbilityStart": [
@@ -5279,6 +5267,9 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Monster_Drake_DeepSea_TraceElectricBall",
+      "abilitySpecials": {
+        "AttackByEnergy_Ratio": 0.0
+      },
       "modifiers": {
         "Monster_Drake_DeepSea_MagicBall_DecreaseMPAttack": {
           "modifierName": "",
@@ -5292,7 +5283,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 },
                 {
                   "$type": "ByEntityTypes",
@@ -5312,7 +5303,7 @@
                   "target": "Target",
                   "targetPredicates": [
                     {
-                      "$type": "DJJLEAPCAIC",
+                      "$type": "JCGFHKBFMCH",
                       "logic": "Lesser",
                       "ratio": 30.0
                     }
@@ -5351,9 +5342,39 @@
                 {
                   "$type": "AttackByEnergy",
                   "target": "Target",
-                  "EGFNHDHKDKA": 30.0,
-                  "KLIDKBEELMA": 20.0,
-                  "MMLOMIFDCOI": 0.17000000178813934
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 0.0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ],
+                  "PDEPPPOHCAB": 30.0,
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
+                },
+                {
+                  "$type": "AttackByEnergy",
+                  "target": "Target",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "CasterOwner",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    }
+                  ],
+                  "PDEPPPOHCAB": [
+                    30.0,
+                    30.0,
+                    "AttackByEnergy_Ratio",
+                    "MUL",
+                    "ADD"
+                  ],
+                  "DFFBLEKJMKB": 20.0,
+                  "FHPNIPCOPLB": 0.17000000178813934
                 },
                 {
                   "$type": "SetGlobalValue",
@@ -5459,6 +5480,12 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "Monster_Drake_DeepSea_MagicBall_DecreaseMPAttack"
+        },
+        {
+          "$type": "SetGlobalValueToOverrideMap",
+          "isFromOwner": true,
+          "globalValueKey": "_MONSTER_DRAKE_ATTACKBYENERGYRATIO_",
+          "overrideMapKey": "AttackByEnergy_Ratio"
         }
       ],
       "onAbilityStart": [
@@ -6219,6 +6246,13 @@
               "key": "_Watcher_82120_Failed_",
               "ratio": 0.0,
               "compareType": "NoneOrEqual"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
             }
           ]
         }
@@ -6368,7 +6402,7 @@
             {
               "$type": "SetGlobalPos",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 1
               },
               "key": "_DRAKE_DEEPSEA_JUMPSWIM_START_POINT",
@@ -6388,7 +6422,7 @@
               "maxRange": -1.0,
               "animatorStateIDs": ["JumpToSwim_AS"],
               "overrideMoveCollider": "",
-              "HOPBIIFLCOK": true
+              "KGIBEJKAMNA": true
             }
           ],
           "onRemoved": [
@@ -6529,6 +6563,12 @@
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
           "thinkInterval": 1.0,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Drake_DeepSea_SetInitialPosTimer"
+            }
+          ],
           "onThinkInterval": [
             {
               "$type": "Predicated",
@@ -6547,6 +6587,30 @@
                   "modifierName": "UNIQUE_Monster_Drake_DeepSea_FootEff"
                 }
               ]
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_SetInitialPosTimer": {
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "SetGlobalPos",
+              "otherTargets": {
+                "$type": "CNBBJDLAEAM",
+                "value": 12
+              },
+              "key": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "setTarget": false
             }
           ]
         },
@@ -6574,6 +6638,12 @@
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_DRAKE_DEEPSEA_IN_TOWER",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
                   "ratio": 0.0,
                   "compareType": "NoneOrEqual"
                 }
@@ -6681,6 +6751,12 @@
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
           "thinkInterval": 1.0,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Drake_DeepSea_SetInitialPosTimer"
+            }
+          ],
           "onThinkInterval": [
             {
               "$type": "Predicated",
@@ -6699,6 +6775,30 @@
                   "modifierName": "UNIQUE_Monster_Drake_DeepSea_FootEff"
                 }
               ]
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_SetInitialPosTimer": {
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "SetGlobalPos",
+              "otherTargets": {
+                "$type": "CNBBJDLAEAM",
+                "value": 12
+              },
+              "key": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "setTarget": false
             }
           ]
         },
@@ -6726,6 +6826,12 @@
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_DRAKE_DEEPSEA_IN_TOWER",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
                   "ratio": 0.0,
                   "compareType": "NoneOrEqual"
                 }
@@ -7203,6 +7309,12 @@
                   "key": "_DRAKE_ELECTRIC_GO_SWIM",
                   "ratio": 0.0,
                   "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
                 }
               ],
               "modifierName": "Monster_Drake_DeepSea_Ice_GoSwim"
@@ -7307,6 +7419,12 @@
                 {
                   "$type": "ByTargetGlobalValue",
                   "key": "_DRAKE_ICE_GO_SWIM",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
                   "ratio": 0.0,
                   "compareType": "NoneOrEqual"
                 }
@@ -7838,6 +7956,15 @@
       "onAbilityStart": [
         {
           "$type": "FixedMonsterRushMove",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
           "toPos": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -7850,7 +7977,31 @@
           "maxRange": -1.0,
           "animatorStateIDs": ["JumpWall_BS"],
           "overrideMoveCollider": "",
-          "HOPBIIFLCOK": true
+          "KGIBEJKAMNA": true
+        },
+        {
+          "$type": "FixedMonsterRushMove",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ],
+          "toPos": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 6.0
+            }
+          },
+          "timeRange": 0.3400000035762787,
+          "maxRange": -1.0,
+          "animatorStateIDs": ["JumpWall_BS"],
+          "overrideMoveCollider": "",
+          "KGIBEJKAMNA": true
         }
       ]
     }
@@ -8203,6 +8354,1491 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Monster_Drake_DeepSea_ElectricSpearTarget"
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Drake_DeepSea_Ice_Elite_CreateIcePillar",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "_MONSTER_DRAKE_DEEPSEA_CREATEPILLARSTATE_",
+          "defaultGlobalValueOnCreate": 0.0,
+          "valueSteps": [-0.5, 0.5, 1.5],
+          "modifierNameSteps": [
+            "Empty",
+            "UNIQUE_Monster_Drake_DeepSea_CreatePillar"
+          ]
+        }
+      ],
+      "modifiers": {
+        "Monster_Monster_Drake_DeepSea_CreatePillarStart": {
+          "modifierName": "",
+          "duration": 30.0,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "_MONSTER_DRAKE_DEEPSEA_CREATEPILLARSTATE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "UNIQUE_Monster_Drake_DeepSea_CreatePillar": {
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Monster_Drake_DeepSea_CreatePillar_Timer"
+            }
+          ]
+        },
+        "Monster_Monster_Drake_DeepSea_CreatePillar_Timer": {
+          "modifierName": "",
+          "duration": 0.5,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 5.0
+                },
+                "DAPKLNIFPID": true,
+                "direction": {
+                  "$type": "AKNHOGLMAAH",
+                  "eularAngles": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                  }
+                },
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "sightGroupWithOwner": true,
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605050,
+              "campID": 4001,
+              "byServer": true
+            }
+          ]
+        },
+        "Empty": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_LEVEL_02_",
+              "ratio": 1.0
+            }
+          ],
+          "modifierName": "Monster_Monster_Drake_DeepSea_CreatePillarStart"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "SetGlobalValue",
+          "ratio": 1.0,
+          "key": "_MONSTER_DRAKE_DEEPSEA_CREATEPILLARSTATE_",
+          "maxValue": 0.0,
+          "minValue": 0.0
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Drake_DeepSea_IcePillar",
+      "modifiers": {
+        "IcePillar_Effect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_RockPillar",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "_DRAKE_PILLAR_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "IcePillar_AlertTimer": {
+          "modifierName": "",
+          "duration": 0.20000000298023224,
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "WindZoneMixin",
+              "shapeName": "CircleR5H2",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IABNJPGBAOH": true
+              },
+              "PLJPAAFMNAD": -7.5,
+              "LNPFPGALPJH": 0.0,
+              "innerRadius": 0.0,
+              "targetType": "Enemy",
+              "predicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "modifierName": ""
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": -0.5,
+                      "z": 0.0
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 5.0,
+                  "radius": 3.5
+                },
+                "attackInfo": {
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.0,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Rock",
+                    "bonusCriticalHurt": 100.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 10000.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV0",
+                    "hitHaltTime": 0.05000000074505806,
+                    "hitHaltTimeScale": 0.05000000074505806,
+                    "muteHitText": true
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": -0.5,
+                      "z": 0.0
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 5.0,
+                  "radius": 3.5
+                },
+                "attackInfo": {
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.0,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Rock",
+                    "bonusCriticalHurt": 100.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 10000.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV0",
+                    "hitHaltTime": 0.05000000074505806,
+                    "hitHaltTimeScale": 0.05000000074505806,
+                    "muteHitText": true
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_IcePillar_Shield"
+            },
+            {
+              "$type": "ServerMonsterLog",
+              "target": "OriginOwner",
+              "paramList": [9, 0, 1]
+            }
+          ]
+        },
+        "UNIQUE_IcePillar_Shield": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "elementType": "Rock",
+          "bonusCriticalHurt": 200.0,
+          "thinkInterval": 1.0,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Rock",
+              "showDamageText": "",
+              "PNHPNGLLDJN": 360.0,
+              "OIMMEDBLDPJ": 1.0,
+              "damageRatio": 0.0,
+              "onShieldBroken": [
+                {
+                  "$type": "ServerMonsterLog",
+                  "target": "OriginOwner",
+                  "paramList": [9, 1, 1]
+                },
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "UNIQUE_IcePillar_Shield"
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "EnablePushColliderName",
+              "pushColliderNames": ["PushCollider", "PushCollider_Occluder"],
+              "setEnable": true
+            },
+            {
+              "$type": "SetGlobalValue",
+              "target": "OriginOwner",
+              "ratio": 0.0,
+              "key": "_MONSTER_DRAKE_DEEPSEA_CREATEPILLARSTATE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "_ICEPILLAR_CANBEJUMPTO_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "target": "OriginOwner",
+              "ratio": 1.0,
+              "key": "_ICEPILLAR_ALIVE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "entityTypePriority": ["Monster"],
+                "sortType": "Nearest",
+                "shapeName": "CircleR60",
+                "campTargetType": "Alliance",
+                "OBHNBNDMPFN": 1.0
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_DRAKE_DEEPSEA_ELECTRIC",
+                  "ratio": 1.0
+                }
+              ],
+              "ratio": 1.0,
+              "key": "_ICEPILLAR_ALIVE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "ApplyModifier",
+              "target": "AllPlayerAvatars",
+              "modifierName": "UNIQUE_IcePillarFlag"
+            },
+            {
+              "$type": "EnableHitBoxByName",
+              "hitBoxNames": ["Hitbox01", "Hitbox02", "HitBox03"],
+              "setEnable": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "_ICEPILLAR_CANBEJUMPTO_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "target": "OriginOwner",
+              "ratio": 0.0,
+              "key": "_ICEPILLAR_ALIVE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "entityTypePriority": ["Monster"],
+                "sortType": "Nearest",
+                "shapeName": "CircleR60",
+                "campTargetType": "Alliance",
+                "OBHNBNDMPFN": 1.0
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_DRAKE_DEEPSEA_ELECTRIC",
+                  "ratio": 1.0
+                }
+              ],
+              "ratio": 0.0,
+              "key": "_ICEPILLAR_ALIVE_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_RockPillar_Die",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "RemoveModifier",
+              "target": "AllPlayerAvatars",
+              "modifierName": "UNIQUE_IcePillarFlag"
+            },
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "ApplyModifier",
+              "target": "AllPlayerAvatars",
+              "modifierName": "UNIQUE_IcePillarFlag"
+            }
+          ]
+        },
+        "UNIQUE_IcePillarFlag": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 1.0,
+              "key": "_ICEPILLAR_FLAG_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 0.0,
+              "key": "_ICEPILLAR_FLAG_",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "IcePillar_AlertTimer"
+        },
+        {
+          "$type": "EnablePushColliderName",
+          "pushColliderNames": ["PushCollider", "PushCollider_Occluder"]
+        },
+        {
+          "$type": "EnableHitBoxByName",
+          "hitBoxNames": ["Hitbox01", "Hitbox02", "HitBox03"]
+        },
+        {
+          "$type": "AttachModifier",
+          "modifierName": "IcePillar_Effect"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Drake_DeepSea_ElementBurst_JumpToStartPos_Ice",
+      "abilityMixins": [
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["JumpToElementBurst_BS"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_JumpToStart_Ice"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["ElementBurst_BS"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_BS_Turn_Ice"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["ElementBurst_Loop"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_Loop_Ice"
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["JumpToElementBurst_During"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_JumpHidePushCollider"
+        },
+        {
+          "$type": "SteerAttackTraceToPosMixin",
+          "steerStateIDs": ["JumpToElementBurst_During"],
+          "startNormalizedTime": 0.27000001072883606,
+          "angularSpeed": 500.0,
+          "attackTrigger": "",
+          "attackDistance": 2.0,
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ICE_ELEMENTBURST_TURN_POS"
+        }
+      ],
+      "abilitySpecials": {
+        "RandomTimer1": 0.10000000149011612,
+        "RandomTimer2": 0.10000000149011612,
+        "RandomTimer3": 0.10000000149011612
+      },
+      "modifiers": {
+        "Monster_Drake_DeepSea_ElementBurst_JumpHidePushCollider": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "AttachActionToModifierMixin",
+              "onAdded": [
+                {
+                  "$type": "EnablePushColliderName",
+                  "pushColliderNames": ["PushCollider_Alert"]
+                }
+              ],
+              "onRemoved": [
+                {
+                  "$type": "EnablePushColliderName",
+                  "pushColliderNames": ["PushCollider_Alert"],
+                  "setEnable": true
+                }
+              ]
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_BS_Turn_Ice": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "TurnDirectionToPos",
+              "toPos": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_DRAKE_DEEPSEA_ICE_ELEMENTBURST_TURN_POS",
+                "directionKey": ""
+              }
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_Loop_Ice": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceAreaWave01"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceAreaWave02"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceAreaWave01"
+            },
+            {
+              "$type": "RemoveModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceAreaWave02"
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_CreateIceAreaWave01": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 2.25,
+          "onAdded": [
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 1.25,
+              "valueRangeMin": 0.25,
+              "overrideMapKey": "RandomTimer1"
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 1.25,
+              "valueRangeMin": 0.25,
+              "overrideMapKey": "RandomTimer2"
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 1.25,
+              "valueRangeMin": 0.25,
+              "overrideMapKey": "RandomTimer3"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceArea01"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceArea02"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceArea03"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 1.25,
+              "valueRangeMin": 0.25,
+              "overrideMapKey": "RandomTimer1"
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 1.25,
+              "valueRangeMin": 0.25,
+              "overrideMapKey": "RandomTimer2"
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 1.25,
+              "valueRangeMin": 0.25,
+              "overrideMapKey": "RandomTimer3"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceArea01"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceArea02"
+            },
+            {
+              "$type": "AttachModifier",
+              "modifierName": "Monster_Drake_DeepSea_ElementBurst_CreateIceArea03"
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_CreateIceAreaWave02": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 3.0,
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "target": "SelfAttackTarget",
+              "born": {
+                "$type": "MOEKADMAMNK",
+                "DAPKLNIFPID": true,
+                "ANKDEOLLEMK": 0.75
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "CreateGadget",
+              "target": "SelfAttackTarget",
+              "born": {
+                "$type": "MOEKADMAMNK",
+                "DAPKLNIFPID": true,
+                "ANKDEOLLEMK": 0.75
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_CreateIceArea01": {
+          "modifierName": "",
+          "duration": "RandomTimer1",
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 15.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 15.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 15.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_CreateIceArea02": {
+          "modifierName": "",
+          "duration": "RandomTimer2",
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 5.0,
+                  "CPOKKADJBFH": 20.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 5.0,
+                  "CPOKKADJBFH": 20.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 5.0,
+                  "CPOKKADJBFH": 20.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_CreateIceArea03": {
+          "modifierName": "",
+          "duration": "RandomTimer2",
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 10.0,
+                  "CPOKKADJBFH": 25.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 10.0,
+                  "CPOKKADJBFH": 25.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 10.0,
+                  "CPOKKADJBFH": 25.0
+                },
+                "DAPKLNIFPID": true,
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605052,
+              "campID": 4001
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_JumpToStart_Ice": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalPos",
+              "otherTargets": {
+                "$type": "CNBBJDLAEAM",
+                "value": 12
+              },
+              "key": "_DRAKE_DEEPSEA_ICE_ELEMENTBURST_START_POS",
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": -3.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "setTarget": false
+            },
+            {
+              "$type": "SetGlobalPos",
+              "otherTargets": {
+                "$type": "CNBBJDLAEAM",
+                "value": 7
+              },
+              "key": "_DRAKE_DEEPSEA_ICE_ELEMENTBURST_TURN_POS",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "setTarget": false
+            },
+            {
+              "$type": "SetAnimatorTrigger",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR200",
+                "campTargetType": "Alliance",
+                "OBHNBNDMPFN": 1.0
+              },
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_DRAKE_DEEPSEA_ELECTRIC",
+                  "ratio": 1.0
+                }
+              ],
+              "triggerID": "ElementBurst"
+            }
+          ]
+        }
+      },
+      "onAbilityStart": [
+        {
+          "$type": "TurnDirectionToPos",
+          "toPos": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_DRAKE_DEEPSEA_ICE_ELEMENTBURST_START_POS",
+            "directionKey": ""
+          }
+        },
+        {
+          "$type": "FixedMonsterRushMove",
+          "toPos": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_DRAKE_DEEPSEA_ICE_ELEMENTBURST_START_POS",
+            "directionKey": ""
+          },
+          "timeRange": 0.699999988079071,
+          "maxRange": -1.0,
+          "animatorStateIDs": ["JumpToElementBurst_During"],
+          "overrideMoveCollider": "",
+          "isInAir": true,
+          "KGIBEJKAMNA": true
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Drake_DeepSea_ElementBurst_JumpToStartPos_Electric",
+      "abilityMixins": [
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["JumpToElementBurst_BS"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_JumpToStart_Electric"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["ElementBurst_BS"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_BS_Turn_Electric"
+        },
+        {
+          "$type": "AttachToAnimatorStateIDMixin",
+          "stateIDs": ["ElementBurst_Loop"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_Loop_Electric"
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["JumpToElementBurst_During"],
+          "modifierName": "Monster_Drake_DeepSea_ElementBurst_JumpHidePushCollider"
+        },
+        {
+          "$type": "SteerAttackTraceToPosMixin",
+          "steerStateIDs": ["JumpToElementBurst_During"],
+          "startNormalizedTime": 0.27000001072883606,
+          "angularSpeed": 500.0,
+          "attackTrigger": "",
+          "attackDistance": 2.0,
+          "KPCMOPHPPCO": "_DRAKE_DEEPSEA_ELECTRIC_ELEMENTBURST_TURN_POS"
+        }
+      ],
+      "modifiers": {
+        "Monster_Drake_DeepSea_ElementBurst_JumpHidePushCollider": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "AttachActionToModifierMixin",
+              "onAdded": [
+                {
+                  "$type": "EnablePushColliderName",
+                  "pushColliderNames": ["PushCollider_Alert"]
+                }
+              ],
+              "onRemoved": [
+                {
+                  "$type": "EnablePushColliderName",
+                  "pushColliderNames": ["PushCollider_Alert"],
+                  "setEnable": true
+                }
+              ]
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_BS_Turn_Electric": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "TurnDirectionToPos",
+              "toPos": {
+                "$type": "ConfigBornByGlobalValue",
+                "positionKey": "_DRAKE_DEEPSEA_ELECTRIC_ELEMENTBURST_TURN_POS",
+                "directionKey": ""
+              }
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_Loop_Electric": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 3.5,
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "DAPKLNIFPID": true,
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "JPOJHLOIKLG": 180.0
+                },
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605051,
+              "campID": 4001
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "DAPKLNIFPID": true,
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "JPOJHLOIKLG": 180.0
+                },
+                "positionKey": "_DRAKE_DEEPSEA_MIDDLEPOS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42605051,
+              "campID": 4001
+            }
+          ]
+        },
+        "Monster_Drake_DeepSea_ElementBurst_JumpToStart_Electric": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalPos",
+              "otherTargets": {
+                "$type": "CNBBJDLAEAM",
+                "value": 12
+              },
+              "key": "_DRAKE_DEEPSEA_ELEMENTBURST_STARTPOS_ELECTRIC",
+              "born": {
+                "$type": "ConfigBornByTarget",
+                "offset": {
+                  "x": 3.0,
+                  "y": 0.0,
+                  "z": 0.0
+                }
+              },
+              "setTarget": false
+            },
+            {
+              "$type": "SetGlobalPos",
+              "otherTargets": {
+                "$type": "CNBBJDLAEAM",
+                "value": 8
+              },
+              "key": "_DRAKE_DEEPSEA_ELECTRIC_ELEMENTBURST_TURN_POS",
+              "born": {
+                "$type": "ConfigBornByTarget"
+              },
+              "setTarget": false
+            }
+          ]
+        }
+      },
+      "onAbilityStart": [
+        {
+          "$type": "TurnDirectionToPos",
+          "toPos": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_DRAKE_DEEPSEA_ELEMENTBURST_STARTPOS_ELECTRIC",
+            "directionKey": ""
+          }
+        },
+        {
+          "$type": "FixedMonsterRushMove",
+          "toPos": {
+            "$type": "ConfigBornByGlobalValue",
+            "positionKey": "_DRAKE_DEEPSEA_ELEMENTBURST_STARTPOS_ELECTRIC",
+            "directionKey": ""
+          },
+          "timeRange": 0.699999988079071,
+          "maxRange": -1.0,
+          "animatorStateIDs": ["JumpToElementBurst_During"],
+          "overrideMoveCollider": "",
+          "isInAir": true,
+          "KGIBEJKAMNA": true
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Drake_DeepSea_ElementBurst_IceArea",
+      "modifiers": {
+        "IceArea_AlertTimer": {
+          "modifierName": "",
+          "duration": 1.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Ice_AttackAlert",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Ice_Attack",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackSphere",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "IABNJPGBAOH": true
+                  },
+                  "radius": 3.0
+                },
+                "attackInfo": {
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.6700000166893005,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Ice",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 50.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV2",
+                    "hitHaltTimeScale": 0.009999999776482582
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "IceArea_AlertTimer"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Monster_Drake_DeepSea_ElementBurst_ElectricArea",
+      "modifiers": {
+        "ElectricArea_AlertTimer": {
+          "modifierName": "",
+          "duration": 1.5,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Electric_AttackAlert",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Electric_AttackAlert",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 120.0,
+                    "z": 0.0
+                  }
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Electric_AttackAlert",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": -120.0,
+                    "z": 0.0
+                  }
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Electric_Attack",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Electric_Attack",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 120.0,
+                    "z": 0.0
+                  }
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Drake_Deepsea_ElementStorm_Electric_Attack",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": -120.0,
+                    "z": 0.0
+                  }
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ElectricArea_DamageTimer"
+            }
+          ]
+        },
+        "ElectricArea_DamageTimer": {
+          "modifierName": "",
+          "duration": 0.5,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    },
+                    "direction": {
+                      "$type": "JADOBJDPOLJ",
+                      "angleOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                      }
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 8.0,
+                  "BAPAHIOBNCL": 60.0,
+                  "radius": 24.0
+                },
+                "attackInfo": {
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.6660000085830688,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 100.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV2",
+                    "hitHaltTimeScale": 0.009999999776482582
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    },
+                    "direction": {
+                      "$type": "JADOBJDPOLJ",
+                      "angleOffset": {
+                        "x": 0.0,
+                        "y": 120.0,
+                        "z": 0.0
+                      }
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 8.0,
+                  "BAPAHIOBNCL": 60.0,
+                  "radius": 24.0
+                },
+                "attackInfo": {
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.6660000085830688,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 100.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV2",
+                    "hitHaltTimeScale": 0.009999999776482582
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 0.0,
+                      "z": 0.0
+                    },
+                    "direction": {
+                      "$type": "JADOBJDPOLJ",
+                      "angleOffset": {
+                        "x": 0.0,
+                        "y": -120.0,
+                        "z": 0.0
+                      }
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 8.0,
+                  "BAPAHIOBNCL": 60.0,
+                  "radius": 24.0
+                },
+                "attackInfo": {
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.6660000085830688,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 100.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV2",
+                    "hitHaltTimeScale": 0.009999999776482582
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "ElectricArea_AlertTimer"
+        }
+      ]
     }
   }
 ]

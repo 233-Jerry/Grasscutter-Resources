@@ -1805,9 +1805,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ConnectLine",
-              "GGGMNKHMHKI": "ConnectLine",
-              "FCKCEEANBLJ": "isTerminal",
+              "ALPLNDNLNME": "ConnectLine",
+              "PMKMBLJNFEP": "ConnectLine",
+              "CLIDDHEPCPK": "isTerminal",
               "otherTargets": {
                 "$type": "SelectTargetsByShape",
                 "sortType": "Nearest",
@@ -1878,9 +1878,9 @@
           "modifierMixins": [
             {
               "$type": "ConnectLineMixin",
-              "BDFNJIIIOAA": "ConnectLine",
-              "GGGMNKHMHKI": "ConnectLine",
-              "FCKCEEANBLJ": "isTerminal"
+              "ALPLNDNLNME": "ConnectLine",
+              "PMKMBLJNFEP": "ConnectLine",
+              "CLIDDHEPCPK": "isTerminal"
             }
           ],
           "onAdded": [
@@ -2836,8 +2836,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 0.0,
               "maxValue": 100.0
             },
             {
@@ -3425,8 +3425,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 0.0,
               "maxValue": 100.0
             },
             {
@@ -3989,7 +3989,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -5348,14 +5348,14 @@
               "valueRangeMax": 3.0,
               "valueRangeMin": 1.100000023841858,
               "overrideMapKey": "bulletNumLeft",
-              "HLDAMMHLPCO": "Ceil"
+              "LKAGFJBDLOM": "Ceil"
             },
             {
               "$type": "SetRandomOverrideMapValue",
               "valueRangeMax": 3.0,
               "valueRangeMin": 1.100000023841858,
               "overrideMapKey": "bulletNumRight",
-              "HLDAMMHLPCO": "Ceil"
+              "LKAGFJBDLOM": "Ceil"
             },
             {
               "$type": "ApplyModifier",
@@ -5443,14 +5443,14 @@
               "valueRangeMax": 4.0,
               "valueRangeMin": 0.10000000149011612,
               "overrideMapKey": "bulletNumLeft",
-              "HLDAMMHLPCO": "Ceil"
+              "LKAGFJBDLOM": "Ceil"
             },
             {
               "$type": "SetRandomOverrideMapValue",
               "valueRangeMax": 4.0,
               "valueRangeMin": 0.10000000149011612,
               "overrideMapKey": "bulletNumRight",
-              "HLDAMMHLPCO": "Ceil"
+              "LKAGFJBDLOM": "Ceil"
             },
             {
               "$type": "ApplyModifier",
@@ -5587,7 +5587,7 @@
               "$type": "DDBJEPBNOGF",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 204
                 }
@@ -5673,7 +5673,7 @@
                     "y": 3.0,
                     "z": 40.0
                   },
-                  "NMDDMGFMMJB": true
+                  "HFDNJDDONJC": true
                 },
                 "attackInfo": {
                   "attackTag": "",
@@ -5869,7 +5869,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "Predicated",
               "targetPredicates": [
@@ -6098,7 +6098,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "SetGlobalValue",
               "ratio": 0.0,
@@ -6118,7 +6118,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ExecuteGadgetLua",
               "param1": -1
@@ -6135,7 +6135,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ExecuteGadgetLua",
               "param1": 1
@@ -6158,7 +6158,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ExecuteGadgetLua",
               "param2": 1
@@ -6181,7 +6181,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ExecuteGadgetLua",
               "param2": -1
@@ -6204,7 +6204,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "ShootDelay"
@@ -6694,7 +6694,7 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "NBBOACENGHG": 0.0,
+              "JFECABAPELO": 0.0,
               "maxValue": 100.0
             },
             {
@@ -6926,7 +6926,7 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "NBBOACENGHG": 0.0,
+              "JFECABAPELO": 0.0,
               "maxValue": 100.0
             },
             {
@@ -7344,7 +7344,7 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 903
                     }
@@ -7364,17 +7364,17 @@
                   "$type": "ByAny",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 201
                     },
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 204
                     },
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self",
                       "gadgetState": 101
                     }
@@ -7387,7 +7387,7 @@
               "$type": "ExecuteGadgetLua",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 202
                 }
@@ -8959,8 +8959,8 @@
         },
         {
           "$type": "ChargeBarMixin",
-          "DDIGKJFMHED": "Electric",
-          "NBBOACENGHG": 0.0,
+          "DKKFBCEHEJC": "Electric",
+          "JFECABAPELO": 0.0,
           "maxValue": 100.0
         },
         {
@@ -9102,8 +9102,8 @@
         },
         {
           "$type": "ChargeBarMixin",
-          "DDIGKJFMHED": "Electric",
-          "NBBOACENGHG": 0.0,
+          "DKKFBCEHEJC": "Electric",
+          "JFECABAPELO": 0.0,
           "maxValue": 100.0
         },
         {
@@ -9349,8 +9349,8 @@
         },
         {
           "$type": "ChargeBarMixin",
-          "DDIGKJFMHED": "Electric",
-          "NBBOACENGHG": 0.0,
+          "DKKFBCEHEJC": "Electric",
+          "JFECABAPELO": 0.0,
           "maxValue": 100.0
         },
         {
@@ -10177,7 +10177,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "MCODPFDFBAF"
+                  "$type": "LHCAGFAJMNF"
                 }
               ],
               "successActions": [
@@ -10840,8 +10840,8 @@
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "DKAMKACMMKG",
-                      "HCBPEEFEJCJ": "FirstArea",
+                      "$type": "EMLFELPLLDB",
+                      "BKGAFEGLGDB": "FirstArea",
                       "areas": [13]
                     }
                   ]
@@ -11625,7 +11625,7 @@
               "$type": "ExecuteGadgetLua",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 201
                 }
@@ -13224,7 +13224,7 @@
           "target": "Target",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self"
             }
           ],
@@ -14279,12 +14279,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 }
               ],
@@ -14300,12 +14300,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 }
               ],
@@ -14321,12 +14321,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 202
                 }
               ],
@@ -14342,12 +14342,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 202
                 }
               ],
@@ -14363,12 +14363,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 203
                 }
               ],
@@ -14384,12 +14384,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 203
                 }
               ],
@@ -14405,12 +14405,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 204
                 }
               ],
@@ -14426,12 +14426,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 204
                 }
               ],
@@ -14447,12 +14447,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 901
                 }
               ],
@@ -14468,12 +14468,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 901
                 }
               ],
@@ -14489,12 +14489,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 902
                 }
               ],
@@ -14510,12 +14510,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 902
                 }
               ],
@@ -14585,12 +14585,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 }
               ],
@@ -14605,12 +14605,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 202
                 }
               ],
@@ -14625,12 +14625,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 203
                 }
               ],
@@ -14645,12 +14645,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 204
                 }
               ],
@@ -14665,12 +14665,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 901
                 }
               ],
@@ -14685,12 +14685,12 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 902
                 }
               ],
@@ -16102,7 +16102,7 @@
             {
               "$type": "CopyGlobalValue",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "topLimit": 1,
                 "sortType": "Nearest",
                 "tag": "isHPGadget"
@@ -16204,8 +16204,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 100.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 100.0,
               "maxValue": 100.0
             },
             {
@@ -16621,8 +16621,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 0.0,
               "maxValue": 100.0
             },
             {
@@ -16714,11 +16714,11 @@
         },
         {
           "$type": "DigAttachModifierToTargetDistanceMixin",
-          "CLILIPLEMKH": 70800043,
+          "HLJJIEBEGCP": 70800043,
           "distance": 5.0,
-          "ADGCNKJICKH": "",
-          "KLLPDNOGHKK": "",
-          "LELBOBDNPBN": [
+          "EIIBGJDJMPE": "",
+          "PHHPLCGIKKP": "",
+          "KMEDKPNPJJC": [
             {
               "$type": "DebugLog",
               "content": "unfound"
@@ -16728,7 +16728,7 @@
               "param1": 202
             }
           ],
-          "HIFLMOJAIFA": [
+          "LHDOLDDMNGK": [
             {
               "$type": "DebugLog",
               "content": "found"

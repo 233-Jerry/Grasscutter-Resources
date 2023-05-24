@@ -384,7 +384,7 @@
       "onAbilityStart": [
         {
           "$type": "ClearLocalGadgets",
-          "HPHEBMGADLE": [70900344, 70900345, 70900346, 70900347]
+          "GKLKLEGCCCM": [70900344, 70900345, 70900346, 70900347]
         }
       ],
       "isDynamicAbility": true
@@ -5982,7 +5982,7 @@
           "modifierMixins": [
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 2,
+              "IGIBOHIBOLF": 2,
               "actionList": [
                 {
                   "$type": "SetGlobalValue",
@@ -5996,7 +5996,7 @@
             },
             {
               "$type": "AvatarCountsMixin",
-              "KGBJGNCJAJH": 1,
+              "IGIBOHIBOLF": 1,
               "actionList": [
                 {
                   "$type": "SetGlobalValue",
@@ -6216,6 +6216,789 @@
           "modifierName": "Monster_Apep_AvatarRevive_Handler"
         }
       ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelEntity_TowerBuff_NormalAttackTriggerBomb_V37",
+      "abilityMixins": [
+        {
+          "$type": "LocalAvatarsMixin",
+          "modifierName": "LevelEntity_TowerBuff_NormalAttackTriggerBomb_Handler"
+        }
+      ],
+      "modifiers": {
+        "LevelEntity_TowerBuff_NormalAttackTriggerBomb_Handler": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "LevelEntity_TowerBuff_NormalAttackTriggerBomb_CountLayer"
+                }
+              ]
+            }
+          ]
+        },
+        "LevelEntity_TowerBuff_NormalAttackTriggerBomb_CountLayer": {
+          "stacking": "Multiple",
+          "modifierName": "",
+          "duration": 0.10000000149011612,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 1.0,
+              "key": "TowerBuff_NormalAttackTriggerBomb_Layer",
+              "useLimitRange": true,
+              "maxValue": 10.0,
+              "minValue": 0.0
+            }
+          ]
+        }
+      },
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelEntity_TowerBuff_NormalAttackTriggerBomb_V37_Monster",
+      "abilityMixins": [
+        {
+          "$type": "AttachModifierToSelfGlobalValueMixin",
+          "globalValueKey": "TowerBuff_NormalAttackTriggerBomb_Layer",
+          "defaultGlobalValueOnCreate": 0.0,
+          "valueSteps": [-0.5, 0.5, 999.0],
+          "modifierNameSteps": [
+            "DamageTrigger_Empty",
+            "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_DamageTriggerV37"
+          ]
+        }
+      ],
+      "abilitySpecials": {
+        "BombTime": 3.0,
+        "BombDamage": 1.149999976158142,
+        "ElementLevelCo": 0.0
+      },
+      "modifiers": {
+        "DamageTrigger_Empty": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0
+        },
+        "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_DamageTriggerV37": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_DamageV37"
+            }
+          ]
+        },
+        "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_DamageV37": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BombTime",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": ["BombTime", 0.5, "SUB"],
+          "onAdded": [
+            {
+              "$type": "AttachModifier",
+              "modifierName": "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_EffectV37"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValueToOverrideMap",
+              "globalValueKey": "TowerBuff_NormalAttackTriggerBomb_Layer",
+              "overrideMapKey": "TowerBuff_NormalAttackTriggerBomb_Layer"
+            },
+            {
+              "$type": "DamageByAttackValue",
+              "attackInfo": {
+                "attackTag": "",
+                "attenuationTag": "",
+                "attenuationGroup": "default",
+                "attackProperty": {
+                  "damagePercentageRatio": 0.0,
+                  "bonusCriticalHurt": 0.0,
+                  "ignoreAttackerProperty": true,
+                  "enBreak": 0.0,
+                  "damageExtra": [
+                    "ElementLevelCo",
+                    "TowerBuff_NormalAttackTriggerBomb_Layer",
+                    "MUL",
+                    "BombDamage",
+                    "MUL"
+                  ],
+                  "trueDamage": true,
+                  "bonusCritical": true
+                },
+                "hitPattern": {
+                  "onHitEffectName": "None",
+                  "hitImpulseType": "LV3"
+                }
+              }
+            },
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Stages_GainWave_Single_NoneElement",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "TowerBuff_NormalAttackTriggerBomb_Layer",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "modifierName": "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_EffectV37"
+            },
+            {
+              "$type": "FireEffect",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "TowerBuff_NormalAttackTriggerBomb_Layer",
+                  "ratio": 10.0,
+                  "compareType": "MoreThanAndEqual"
+                }
+              ],
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Common_AbyssDebuff_MaxLayer_EndTrigger",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "FireEffect",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "TowerBuff_NormalAttackTriggerBomb_Layer",
+                  "ratio": 9.0,
+                  "compareType": "LessAndEqual"
+                }
+              ],
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Common_AbyssDebuff_MinLayer_EndTrigger",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "OOBNPLAILMC": true
+        },
+        "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_EffectV37": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BombTime",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "TowerBuff_NormalAttackTriggerBomb_Layer",
+              "defaultGlobalValueOnCreate": 0.0,
+              "valueSteps": [0.5, 9.5, 999.0],
+              "modifierNameSteps": ["MinLayer_Effect", "MaxLayer_Effect"]
+            }
+          ]
+        },
+        "MinLayer_Effect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Common_AbyssDebuff_MinLayer",
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "MaxLayer_Effect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Common_AbyssDebuff_MaxLayer",
+              "effectTempleteID": -1.0
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "SetSystemValueToOverrideMap",
+          "key": "ElementLevelCo",
+          "type": "ElementLevelCo"
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "RemoveUniqueModifier",
+          "modifierName": "UNIQUE_LevelEntity_TowerBuff_NormalAttackTriggerBomb_EffectV37"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelEntity_TowerBuff_NormalAttackDamageUp_V37",
+      "abilityMixins": [
+        {
+          "$type": "CurLocalAvatarMixinV2",
+          "modifierName": "LevelEntity_TowerBuff_NormalAttackDamageUp_Handler"
+        }
+      ],
+      "abilitySpecials": {
+        "LevelEntity_TowerBuff_DamageUp": 0.11999999731779099,
+        "BuffTime": 2.0
+      },
+      "modifiers": {
+        "LevelEntity_TowerBuff_NormalAttackDamageUp_Handler": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_Is_TowerBuff_NormalAttackDamageUp_CD",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "AttachModifier",
+                  "modifierName": "LevelEntity_TowerBuff_NormalAttackDamageUp_Effect"
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "modifierName": "LevelEntity_TowerBuff_AreaAttackLowHP_CD"
+                }
+              ]
+            }
+          ]
+        },
+        "LevelEntity_TowerBuff_AreaAttackLowHP_CD": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "duration": 0.05000000074505806,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 1.0,
+              "key": "_Is_TowerBuff_NormalAttackDamageUp_CD",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "RotationDampTime": true,
+              "ratio": 0.0,
+              "key": "_Is_TowerBuff_NormalAttackDamageUp_CD",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "LevelEntity_TowerBuff_NormalAttackDamageUp_Effect": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 5.0
+          },
+          "modifierName": "",
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_AddHurtDelta": "LevelEntity_TowerBuff_DamageUp"
+          },
+          "state": "AttackUp"
+        }
+      },
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "LevelEntity_TowerBuff_MonsterElementBeHurt_V37",
+      "abilityMixins": [
+        {
+          "$type": "LocalAvatarsMixin",
+          "modifierName": "LevelEntity_TowerBuff_ElementBeHurt_Handler"
+        }
+      ],
+      "abilitySpecials": {
+        "BuffTime": 2.0,
+        "Monster_SubHurtDelta": -0.05999999865889549
+      },
+      "modifiers": {
+        "LevelEntity_TowerBuff_ElementBeHurt_Handler": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG",
+                  "CIMNBKFMPGD": "Electric"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_ElectricV37"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG",
+                  "CIMNBKFMPGD": "Fire"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_FireV37"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG",
+                  "CIMNBKFMPGD": "Water"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_WaterV37"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG",
+                  "CIMNBKFMPGD": "Grass"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_GrassV37"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG",
+                  "CIMNBKFMPGD": "Ice"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_IceV37"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG",
+                  "CIMNBKFMPGD": "Wind"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_WindV37"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG",
+                  "CIMNBKFMPGD": "Rock"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_RockV37"
+                }
+              ]
+            },
+            {
+              "$type": "Predicated",
+              "target": "Other",
+              "RotationDampTime": true,
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Monster"]
+                },
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": [
+                    "NormalAttack_01",
+                    "NormalAttack_02",
+                    "NormalAttack_03",
+                    "NormalAttack_04",
+                    "NormalAttack_05",
+                    "NormalAttack_06"
+                  ]
+                },
+                {
+                  "$type": "OIEGBANNLOG"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "Other",
+                  "RotationDampTime": true,
+                  "modifierName": "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_NoneV37"
+                }
+              ]
+            }
+          ]
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_ElectricV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_ElecSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_FireV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_FireSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_WaterV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_WaterSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_GrassV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_GrassSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_IceV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_IceSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_WindV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_WindSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_RockV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_RockSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        },
+        "UNIQUE_LevelEntity_TowerBuff_ElementBeHurt_NoneV37": {
+          "stacking": "MultipleRefreshNoRemove",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 6.0,
+            "enableMixedUnique": true
+          },
+          "modifierName": "",
+          "isUnique": true,
+          "duration": "BuffTime",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_PhysicalSubHurtDelta": "Monster_SubHurtDelta"
+          },
+          "state": "DefenseDown"
+        }
+      },
+      "isDynamicAbility": true
     }
   }
 ]

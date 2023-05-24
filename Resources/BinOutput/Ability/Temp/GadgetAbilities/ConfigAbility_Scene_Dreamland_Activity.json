@@ -16,7 +16,7 @@
                 "$type": "ServerLuaCall",
                 "luaCallType": "FromGroup",
                 "funcName": "SLC_BoatRaceV2_Counter",
-                "IAJKJLGNLLE": 1,
+                "LIAAKLHNPEN": 1,
                 "MPPMFEDKGHC": 2.0,
                 "BOKNHLDBKKK": 0.0,
                 "CHOIIMHDNHK": 0.0
@@ -308,7 +308,7 @@
                 "$type": "ServerLuaCall",
                 "luaCallType": "FromGroup",
                 "funcName": "SLC_BoatRaceV2_Counter",
-                "IAJKJLGNLLE": 1,
+                "LIAAKLHNPEN": 1,
                 "MPPMFEDKGHC": 2.0,
                 "BOKNHLDBKKK": 0.0,
                 "CHOIIMHDNHK": 0.0
@@ -454,7 +454,7 @@
                 "$type": "ServerLuaCall",
                 "luaCallType": "FromGroup",
                 "funcName": "SLC_BoatRaceV2_Counter",
-                "IAJKJLGNLLE": 1,
+                "LIAAKLHNPEN": 1,
                 "MPPMFEDKGHC": 2.0,
                 "BOKNHLDBKKK": 0.0,
                 "CHOIIMHDNHK": 0.0
@@ -533,7 +533,7 @@
                 "$type": "ServerLuaCall",
                 "luaCallType": "FromGroup",
                 "funcName": "SLC_BoatRaceV2_Counter",
-                "IAJKJLGNLLE": 1,
+                "LIAAKLHNPEN": 1,
                 "MPPMFEDKGHC": 2.0,
                 "BOKNHLDBKKK": 0.0,
                 "CHOIIMHDNHK": 0.0
@@ -764,7 +764,7 @@
               "$type": "FireEffect",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["Hitbox1"]
                 }
               ],
@@ -784,7 +784,7 @@
               "$type": "FireEffect",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["Hitbox2"]
                 }
               ],
@@ -908,7 +908,7 @@
               "$type": "FireEffect",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["Hitbox1"]
                 }
               ],
@@ -928,7 +928,7 @@
               "$type": "FireEffect",
               "predicates": [
                 {
-                  "$type": "KLJDNLJCOPG",
+                  "$type": "PMDBFGPNELB",
                   "hitBoxNames": ["Hitbox2"]
                 }
               ],
@@ -1114,7 +1114,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_StandEff"
@@ -1154,7 +1154,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 201
                 },
@@ -1293,7 +1293,7 @@
                 "xzMultiplier": 3.0,
                 "yMultiplier": 5.0
               },
-              "MDMNNJEOPEO": true
+              "MALGOKDCFFK": true
             }
           ],
           "LGJBJJBCBEH": [
@@ -1302,7 +1302,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_Conroller"
@@ -1406,17 +1406,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -1434,7 +1434,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -1456,7 +1456,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -1472,7 +1472,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -1488,7 +1488,7 @@
               "entityTypes": ["Monster"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 202
             }
@@ -1641,7 +1641,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_StandEff"
@@ -1681,7 +1681,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 201
                 },
@@ -1820,7 +1820,7 @@
                 "xzMultiplier": 3.0,
                 "yMultiplier": 5.0
               },
-              "MDMNNJEOPEO": true
+              "MALGOKDCFFK": true
             }
           ],
           "LGJBJJBCBEH": [
@@ -1829,7 +1829,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_Conroller"
@@ -1933,17 +1933,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -1961,7 +1961,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -1983,7 +1983,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -1999,7 +1999,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -2015,7 +2015,7 @@
               "entityTypes": ["Monster"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 202
             }
@@ -2168,7 +2168,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_StandEff"
@@ -2208,7 +2208,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 201
                 },
@@ -2347,7 +2347,7 @@
                 "xzMultiplier": 3.0,
                 "yMultiplier": 5.0
               },
-              "MDMNNJEOPEO": true
+              "MALGOKDCFFK": true
             }
           ],
           "LGJBJJBCBEH": [
@@ -2356,7 +2356,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_Conroller"
@@ -2475,17 +2475,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -2503,7 +2503,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -2525,7 +2525,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -2541,7 +2541,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -2557,7 +2557,7 @@
               "entityTypes": ["Monster"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 202
             }
@@ -2727,7 +2727,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_StandEff"
@@ -2767,7 +2767,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 201
                 },
@@ -2906,7 +2906,7 @@
                 "xzMultiplier": 3.0,
                 "yMultiplier": 5.0
               },
-              "MDMNNJEOPEO": true
+              "MALGOKDCFFK": true
             }
           ],
           "LGJBJJBCBEH": [
@@ -2915,7 +2915,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_Conroller"
@@ -3034,17 +3034,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -3062,7 +3062,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -3084,7 +3084,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -3100,7 +3100,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -3116,7 +3116,7 @@
               "entityTypes": ["Monster"]
             },
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 202
             }
@@ -3198,17 +3198,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "Dither",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "Dither",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ]
     }
@@ -3243,7 +3243,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurGalleryControlGroup",
               "funcName": "SLC_BoatRace_LuaMark",
-              "IAJKJLGNLLE": 3,
+              "LIAAKLHNPEN": 3,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 2.0,
               "CHOIIMHDNHK": "Skiff_SprintValue"
@@ -3398,7 +3398,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurGalleryControlGroup",
               "funcName": "SLC_Exhibition_Repair_Time",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -3454,7 +3454,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_Try_Recover_Engine",
-                  "IAJKJLGNLLE": 1,
+                  "LIAAKLHNPEN": 1,
                   "MPPMFEDKGHC": "AvatarNum",
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
@@ -3678,7 +3678,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_StandEff"
@@ -3866,7 +3866,7 @@
                 "xzMultiplier": 3.0,
                 "yMultiplier": 5.0
               },
-              "MDMNNJEOPEO": true
+              "MALGOKDCFFK": true
             }
           ],
           "LGJBJJBCBEH": [
@@ -3875,7 +3875,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "OIJAOPCOLNF"
+                  "$type": "GIIBDHKGJGL"
                 }
               ],
               "modifierName": "UNIQUE_SuperJump_Conroller"
@@ -4115,7 +4115,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurGalleryControlGroup",
               "funcName": "SLC_Exhibition_Repair_Time",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -4182,7 +4182,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_Try_Recover_Part_Hp",
-                  "IAJKJLGNLLE": 2,
+                  "LIAAKLHNPEN": 2,
                   "MPPMFEDKGHC": 1.0,
                   "BOKNHLDBKKK": "AvatarNum",
                   "CHOIIMHDNHK": 0.0
@@ -4502,7 +4502,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurGalleryControlGroup",
               "funcName": "SLC_Exhibition_Repair_Time",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -4569,7 +4569,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_Try_Recover_Part_Hp",
-                  "IAJKJLGNLLE": 2,
+                  "LIAAKLHNPEN": 2,
                   "MPPMFEDKGHC": 2.0,
                   "BOKNHLDBKKK": "AvatarNum",
                   "CHOIIMHDNHK": 0.0
@@ -4889,7 +4889,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurGalleryControlGroup",
               "funcName": "SLC_Exhibition_Repair_Time",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 3.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -4956,7 +4956,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_Try_Recover_Part_Hp",
-                  "IAJKJLGNLLE": 2,
+                  "LIAAKLHNPEN": 2,
                   "MPPMFEDKGHC": 3.0,
                   "BOKNHLDBKKK": "AvatarNum",
                   "CHOIIMHDNHK": 0.0
@@ -5276,7 +5276,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurGalleryControlGroup",
               "funcName": "SLC_Exhibition_Repair_Time",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 4.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -5343,7 +5343,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_Try_Recover_Part_Hp",
-                  "IAJKJLGNLLE": 2,
+                  "LIAAKLHNPEN": 2,
                   "MPPMFEDKGHC": 4.0,
                   "BOKNHLDBKKK": "AvatarNum",
                   "CHOIIMHDNHK": 0.0
@@ -6006,7 +6006,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Kazuha",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -6067,7 +6067,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Kazuha",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -6128,7 +6128,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Kazuha",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 3.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -6246,7 +6246,7 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE"
+                "$type": "CNBBJDLAEAM"
               },
               "predicatesForeach": [
                 {
@@ -6360,7 +6360,7 @@
             {
               "$type": "AttachModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE"
+                "$type": "CNBBJDLAEAM"
               },
               "predicatesForeach": [
                 {
@@ -6410,7 +6410,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -6447,7 +6447,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Exhi_GadgetUsage",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -6545,7 +6545,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -6582,7 +6582,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Exhi_GadgetUsage",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -6755,7 +6755,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -6792,7 +6792,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Exhi_GadgetUsage",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -6890,7 +6890,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -6927,7 +6927,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Exhi_GadgetUsage",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7020,9 +7020,9 @@
                   "entityTypes": ["Monster"]
                 },
                 {
-                  "$type": "ABMJPDGFMBM",
-                  "PEHEHFMOKPH": true,
-                  "FFPIBLDHCEH": "Rock"
+                  "$type": "FAMNOKKICNL",
+                  "BHJONLEFPFM": true,
+                  "HIPCBHKFEND": "Rock"
                 }
               ],
               "successActions": [
@@ -7047,8 +7047,8 @@
                 {
                   "$type": "HHGDFHDCMJE",
                   "type": "All",
-                  "PEHEHFMOKPH": true,
-                  "FFPIBLDHCEH": "Rock"
+                  "BHJONLEFPFM": true,
+                  "HIPCBHKFEND": "Rock"
                 }
               ],
               "successActions": [
@@ -7471,7 +7471,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Fischl",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7591,7 +7591,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Fischl",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 2.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -7702,7 +7702,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "CurChallengeGroup",
               "funcName": "SLC_DLActivityDungeon_Fischl",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 3.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0

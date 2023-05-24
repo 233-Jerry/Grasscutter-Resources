@@ -22,8 +22,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": -2.0
             }
           ]
@@ -40,11 +40,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ]
         }
@@ -74,8 +74,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": -2.0
             }
           ]
@@ -92,11 +92,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ]
         }
@@ -363,9 +363,9 @@
               "$type": "FireEffect",
               "predicates": [
                 {
-                  "$type": "JDNGEHHHKCH",
-                  "NCDAKGLGBKF": "",
-                  "IHOOLNCOFHK": 38
+                  "$type": "FIKBBKJDOMK",
+                  "CKCDDFGKGNH": "",
+                  "CEPAOCMENAJ": 38
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Tree_SZL_Lnls_Uplevel_Dream",
@@ -375,9 +375,9 @@
               "$type": "FireEffect",
               "predicates": [
                 {
-                  "$type": "JDNGEHHHKCH",
-                  "NCDAKGLGBKF": "",
-                  "IHOOLNCOFHK": 39
+                  "$type": "FIKBBKJDOMK",
+                  "CKCDDFGKGNH": "",
+                  "CEPAOCMENAJ": 39
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Tree_SZL_Lnls_Uplevel",
@@ -408,16 +408,16 @@
               "target": "TargetOriginOwner",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 },
                 {
                   "$type": "ByEntityTypes",
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "IIAPMJAACEB",
+                  "$type": "KLEGOAHHGFB",
                   "CIMNBKFMPGD": "Grass",
-                  "PGGGDEECGDA": 10.0,
+                  "GDMOCONNCOJ": 10.0,
                   "compareType": "MoreThan"
                 }
               ],
@@ -433,16 +433,16 @@
               "target": "Target",
               "targetPredicates": [
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 },
                 {
                   "$type": "ByEntityTypes",
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "IIAPMJAACEB",
+                  "$type": "KLEGOAHHGFB",
                   "CIMNBKFMPGD": "Grass",
-                  "PGGGDEECGDA": 10.0,
+                  "GDMOCONNCOJ": 10.0,
                   "compareType": "MoreThan"
                 }
               ],
@@ -461,7 +461,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         }
@@ -482,9 +482,9 @@
               "entityTypes": ["Avatar"]
             }
           ],
-          "NDFMBEFOFCC": true,
+          "CDOJAPAKHBM": true,
           "FIDNIDJEPFD": "EntityCount",
-          "JLKGLCGGLJD": true,
+          "EICDJMDMHPO": true,
           "AIPILJKBJLI": 4.0,
           "PADAIOIPHKO": 0.0
         },
@@ -687,8 +687,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 12.0
             }
           ],
@@ -697,9 +697,9 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "IIAPMJAACEB",
+                  "$type": "KLEGOAHHGFB",
                   "CIMNBKFMPGD": "Grass",
-                  "PGGGDEECGDA": 10.0,
+                  "GDMOCONNCOJ": 10.0,
                   "compareType": "MoreThan"
                 },
                 {
@@ -737,7 +737,7 @@
           "onAttackLanded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             },
             {
               "$type": "SetGlobalValue",
@@ -750,8 +750,8 @@
           "LGJBJJBCBEH": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 12.0
             },
             {
@@ -770,11 +770,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 3.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -793,13 +793,13 @@
             {
               "$type": "SetSelfAttackTarget",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "topLimit": 1,
-                "ILGDNJDBFPC": 1
+                "OCMFPCDHGBA": 1
               },
               "predicates": [
                 {
-                  "$type": "OCBOCJCKJBO",
+                  "$type": "PJGLIDHKMJE",
                   "tag": "RaioFlowerTarget"
                 }
               ]
@@ -825,7 +825,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "RaioFlowerBeHit",
+              "AEHHOKAPHGO": "RaioFlowerBeHit",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -857,10 +857,10 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF"
+                  "$type": "LHCAGFAJMNF"
                 }
               ],
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             },
             {
               "$type": "SetGlobalValue",
@@ -926,7 +926,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "OCBOCJCKJBO",
+              "$type": "PJGLIDHKMJE",
               "tag": "RaioFlowerTarget"
             }
           ],
@@ -1035,9 +1035,9 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "JDNGEHHHKCH",
-                  "NCDAKGLGBKF": "",
-                  "IHOOLNCOFHK": 38
+                  "$type": "FIKBBKJDOMK",
+                  "CKCDDFGKGNH": "",
+                  "CEPAOCMENAJ": 38
                 }
               ],
               "successActions": [
@@ -1072,9 +1072,9 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "JDNGEHHHKCH",
-                  "NCDAKGLGBKF": "",
-                  "IHOOLNCOFHK": 38
+                  "$type": "FIKBBKJDOMK",
+                  "CKCDDFGKGNH": "",
+                  "CEPAOCMENAJ": 38
                 }
               ],
               "successActions": [
@@ -1253,7 +1253,7 @@
         },
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["Moving"]
+          "AAMIGKCJEDK": ["Moving"]
         }
       ],
       "abilitySpecials": {
@@ -1872,7 +1872,7 @@
         },
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["Moving"]
+          "AAMIGKCJEDK": ["Moving"]
         }
       ],
       "modifiers": {
@@ -2408,19 +2408,19 @@
             },
             {
               "$type": "SetEffectFollowPath",
-              "HNBKMOANEPH": "Point1",
+              "DDMKNBMANFE": "Point1",
               "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_FatuiMaranaWell_01_Idle",
               "EBBHBMFMOGD": "Point1"
             },
             {
               "$type": "SetEffectFollowPath",
-              "HNBKMOANEPH": "Point2",
+              "DDMKNBMANFE": "Point2",
               "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_FatuiMaranaWell_01_Idle",
               "EBBHBMFMOGD": "Point2"
             },
             {
               "$type": "SetEffectFollowPath",
-              "HNBKMOANEPH": "Point3",
+              "DDMKNBMANFE": "Point3",
               "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_FatuiMaranaWell_01_Idle",
               "EBBHBMFMOGD": "Point3"
             },
@@ -2481,8 +2481,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 0.0,
               "maxValue": 80.0
             },
             {
@@ -2573,7 +2573,7 @@
                 {
                   "$type": "ServerLuaTriggerEvent",
                   "luaCallType": "FromGroup",
-                  "LCMLAHJEBKC": "ChargePhase01",
+                  "AEHHOKAPHGO": "ChargePhase01",
                   "MPPMFEDKGHC": 0.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
@@ -2615,7 +2615,7 @@
                 {
                   "$type": "ServerLuaTriggerEvent",
                   "luaCallType": "FromGroup",
-                  "LCMLAHJEBKC": "ChargePhase02",
+                  "AEHHOKAPHGO": "ChargePhase02",
                   "MPPMFEDKGHC": 0.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
@@ -2657,7 +2657,7 @@
                 {
                   "$type": "ServerLuaTriggerEvent",
                   "luaCallType": "FromGroup",
-                  "LCMLAHJEBKC": "ChargePhase03",
+                  "AEHHOKAPHGO": "ChargePhase03",
                   "MPPMFEDKGHC": 0.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
@@ -2673,7 +2673,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "ShowReminder",
+              "AEHHOKAPHGO": "ShowReminder",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2687,7 +2687,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "CloseReminder",
+              "AEHHOKAPHGO": "CloseReminder",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2700,7 +2700,7 @@
           "onAdded": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 203
+              "LDNMJDBDMNC": 203
             }
           ]
         },
@@ -2836,8 +2836,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 0.0
             }
           ]
@@ -2874,8 +2874,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 1.0
             }
           ]
@@ -2889,12 +2889,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -2907,12 +2907,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ],
           "onRemoved": [
@@ -3029,7 +3029,7 @@
           "modifierMixins": [
             {
               "$type": "TriggerWidgetMusicGameMixin",
-              "AJPHMFKDLAE": 1,
+              "EFGPANMDABD": 1,
               "range": 10.0,
               "onSuccess": [
                 {
@@ -3051,14 +3051,14 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Stone",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat_Stone",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Plant",
-              "patternName": "_AnimationProcess",
+              "EKNGFFBIAPI": "Mat_Plant",
+              "IMLMHJCMAHE": "_AnimationProcess",
               "ratio": 0.0
             },
             {
@@ -3085,14 +3085,14 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Stone",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat_Stone",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Plant",
-              "patternName": "_AnimationProcess",
+              "EKNGFFBIAPI": "Mat_Plant",
+              "IMLMHJCMAHE": "_AnimationProcess",
               "ratio": 0.0
             }
           ]
@@ -3111,14 +3111,14 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Stone",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat_Stone",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Plant",
-              "patternName": "_AnimationProcess",
+              "EKNGFFBIAPI": "Mat_Plant",
+              "IMLMHJCMAHE": "_AnimationProcess",
               "ratio": 0.0
             },
             {
@@ -3202,21 +3202,21 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Stone",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat_Stone",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 9.619999885559082,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 2.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Plant",
-              "patternName": "_AnimationProcess",
+              "EKNGFFBIAPI": "Mat_Plant",
+              "IMLMHJCMAHE": "_AnimationProcess",
               "ratio": 2.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 4.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 4.0
             },
             {
               "$type": "AttachEffect",
@@ -3231,14 +3231,14 @@
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Stone",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat_Stone",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Plant",
-              "patternName": "_AnimationProcess",
+              "EKNGFFBIAPI": "Mat_Plant",
+              "IMLMHJCMAHE": "_AnimationProcess",
               "ratio": 0.0
             }
           ]
@@ -3416,12 +3416,12 @@
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Flower",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "Mat_Flower",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 2.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 2.0
             }
           ]
         },
@@ -3605,7 +3605,7 @@
               "$type": "DDBJEPBNOGF",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 202
                 }
@@ -3620,7 +3620,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "pickUp",
+              "AEHHOKAPHGO": "pickUp",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -3678,8 +3678,8 @@
               "$type": "DDBJEPBNOGF",
               "predicates": [
                 {
-                  "$type": "CEHKMDCAFHL",
-                  "CCCHKJJBFLH": ["Sorush"]
+                  "$type": "AJGPEJNPEAH",
+                  "JMJEDLPPBFA": ["Sorush"]
                 }
               ]
             }
@@ -3730,8 +3730,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 0.0
             }
           ]
@@ -3742,8 +3742,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 1.7999999523162842
             }
           ]
@@ -3754,8 +3754,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "Mat",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 1.7999999523162842
             }
           ]
@@ -3780,7 +3780,7 @@
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
               "EHKENKGOAMH": false,
-              "BJBODKLJKED": ""
+              "BFPBGJGLPPL": ""
             }
           ],
           "onRemoved": [
@@ -3827,7 +3827,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "operation": "XOR"
               },
               "modifierName": "UNIQUE_SendLine"
@@ -3857,7 +3857,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier"
                 }
               ],
@@ -3970,7 +3970,7 @@
           "$type": "KillSelf",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             }
           ]
@@ -4043,7 +4043,7 @@
           "$type": "KillSelf",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             }
           ]
@@ -4116,7 +4116,7 @@
           "$type": "KillSelf",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             }
           ]
@@ -4164,11 +4164,11 @@
               "$type": "ChangeGadgetState",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self"
                 }
               ],
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             }
           ]
         },
@@ -4381,7 +4381,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -4418,7 +4418,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -4455,7 +4455,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -4492,7 +4492,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -4529,7 +4529,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -4566,7 +4566,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -4634,7 +4634,7 @@
           "$type": "KillSelf",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             }
           ]
@@ -4770,7 +4770,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -4807,7 +4807,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -4844,7 +4844,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -4881,7 +4881,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -4918,7 +4918,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -4955,7 +4955,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -5023,7 +5023,7 @@
           "$type": "KillSelf",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             }
           ]
@@ -5159,7 +5159,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -5196,7 +5196,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -5233,7 +5233,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND",
                     "value": 1
                   },
@@ -5270,7 +5270,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -5307,7 +5307,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -5344,7 +5344,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 901
                 }
@@ -5412,7 +5412,7 @@
           "$type": "KillSelf",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             }
           ]
@@ -5603,7 +5603,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5639,7 +5639,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5675,7 +5675,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5711,7 +5711,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5747,7 +5747,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5783,7 +5783,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5819,7 +5819,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5855,7 +5855,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5891,7 +5891,7 @@
                 {
                   "$type": "ApplyModifier",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "value": 1
                   },
                   "predicatesForeach": [
@@ -5927,7 +5927,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 201
                 }
@@ -5978,7 +5978,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 201
                 }
@@ -6029,7 +6029,7 @@
               "target": "Applier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Applier",
                   "gadgetState": 201
                 }
@@ -6167,7 +6167,7 @@
             {
               "$type": "OnNotifyAttachEffectMixin",
               "effectName": "Eff_SceneObj_Lens_06",
-              "NCFIPJKMNKD": "XmLensPageContext"
+              "IOGBGECFIEM": "XmLensPageContext"
             }
           ]
         },
@@ -6220,7 +6220,7 @@
           "$type": "KillSelf",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             }
           ]
@@ -6260,8 +6260,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat01",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat01",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 3.0
             },
             {
@@ -6287,7 +6287,7 @@
                 },
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 202
+                  "LDNMJDBDMNC": 202
                 }
               ]
             }
@@ -6315,8 +6315,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat01",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat01",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.5
             }
           ]
@@ -6354,15 +6354,15 @@
           "target": "Target",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self"
             },
             {
               "$type": "DDBJEPBNOGF",
               "predicates": [
                 {
-                  "$type": "CEHKMDCAFHL",
-                  "CCCHKJJBFLH": ["Sorush"]
+                  "$type": "AJGPEJNPEAH",
+                  "JMJEDLPPBFA": ["Sorush"]
                 }
               ]
             }
@@ -6370,7 +6370,7 @@
           "successActions": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 202
+              "LDNMJDBDMNC": 202
             },
             {
               "$type": "ApplyModifier",
@@ -6595,7 +6595,7 @@
                 },
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 903
+                  "LDNMJDBDMNC": 903
                 }
               ],
               "failActions": [
@@ -6679,7 +6679,7 @@
                 },
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 904
+                  "LDNMJDBDMNC": 904
                 }
               ],
               "failActions": [
@@ -7868,7 +7868,7 @@
             },
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 203
+              "LDNMJDBDMNC": 203
             },
             {
               "$type": "DebugLog",
@@ -8501,7 +8501,7 @@
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
               "EHKENKGOAMH": false,
-              "BJBODKLJKED": ""
+              "BFPBGJGLPPL": ""
             }
           ],
           "onAdded": [
@@ -8541,7 +8541,7 @@
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
               "EHKENKGOAMH": false,
-              "BJBODKLJKED": "SceneObj_Area_Xm_Property_Ani_Prop_BouncingMushroom_01_Sequential_Ability"
+              "BFPBGJGLPPL": ""
             }
           ],
           "onAdded": [

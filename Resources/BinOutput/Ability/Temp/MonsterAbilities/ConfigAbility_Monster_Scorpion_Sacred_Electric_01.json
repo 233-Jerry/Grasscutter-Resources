@@ -1680,8 +1680,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "DDIGKJFMHED": "Electric",
-              "NBBOACENGHG": 0.0,
+              "DKKFBCEHEJC": "Electric",
+              "JFECABAPELO": 0.0,
               "maxValue": 10.0
             },
             {
@@ -2035,6 +2035,13 @@
             {
               "$type": "CurLocalAvatarMixinV2",
               "modifierName": "Have_Scorpion_SacredEnergy"
+            },
+            {
+              "$type": "AttachModifierToGlobalValueMixin",
+              "globalValueTarget": "Applier",
+              "globalValueKey": "SacredEntityDie",
+              "valueSteps": [0.5, 1.5],
+              "modifierNameSteps": ["ClearSacredBuff_Scorpion"]
             }
           ],
           "state": "UnlockFrequencyLimit",
@@ -2052,13 +2059,13 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "DPKKEBLABLP"
+                  "$type": "OLDDCNANBJK"
                 },
                 {
                   "$type": "DDBJEPBNOGF",
                   "predicates": [
                     {
-                      "$type": "CPOOOHCHION"
+                      "$type": "CBBAALCBDJD"
                     }
                   ]
                 }
@@ -2087,7 +2094,36 @@
             }
           ],
           "OOBNPLAILMC": true,
-          "LOOBLCBOIMF": ["Corruption"]
+          "CEBIMAGINGC": ["Corruption"]
+        },
+        "ClearSacredBuff_Scorpion": {
+          "modifierName": "",
+          "duration": 1.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Scorpion_SacredEnergy_TargetTeam"
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Have_Scorpion_SacredEnergy_Team"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Scorpion_SacredEnergy_TargetTeam"
+            },
+            {
+              "$type": "RemoveUniqueModifier",
+              "target": "Team",
+              "modifierName": "UNIQUE_Have_Scorpion_SacredEnergy_Team"
+            }
+          ]
         },
         "Have_Scorpion_SacredEnergy": {
           "modifierName": "",

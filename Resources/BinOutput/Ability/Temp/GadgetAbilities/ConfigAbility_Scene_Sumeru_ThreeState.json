@@ -902,17 +902,17 @@
               "$type": "ByAny",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 202
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 300
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 301
                 }
@@ -965,11 +965,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Conversion",
-              "patternName": "_ConversionSpread",
+              "EKNGFFBIAPI": "Conversion",
+              "IMLMHJCMAHE": "_ConversionSpread",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -990,11 +990,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Conversion",
-              "patternName": "_ConversionSpread",
+              "EKNGFFBIAPI": "Conversion",
+              "IMLMHJCMAHE": "_ConversionSpread",
               "ratio": 2.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -1015,11 +1015,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Conversion",
-              "patternName": "_ConversionSpread",
+              "EKNGFFBIAPI": "Conversion",
+              "IMLMHJCMAHE": "_ConversionSpread",
               "ratio": -2.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }
@@ -1063,7 +1063,7 @@
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
               "EHKENKGOAMH": false,
-              "BJBODKLJKED": ""
+              "BFPBGJGLPPL": ""
             }
           ],
           "onAdded": [
@@ -1081,7 +1081,7 @@
             {
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
-              "BJBODKLJKED": ""
+              "BFPBGJGLPPL": ""
             }
           ],
           "onAdded": [
@@ -1176,12 +1176,12 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Lens",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Mat_Lens",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         },
@@ -1212,12 +1212,12 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Lens",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Mat_Lens",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": 2.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "AttachModifier",
@@ -1274,12 +1274,12 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Mat_Lens",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Mat_Lens",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": -1.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ],
           "onRemoved": [
@@ -1302,7 +1302,7 @@
           "modifierMixins": [
             {
               "$type": "UIInteractMixin",
-              "PCLPONGKABC": "OpenPage",
+              "BLEEBFEBMJA": "OpenPage",
               "actionList": [
                 {
                   "$type": "DebugLog",
@@ -1312,17 +1312,17 @@
             },
             {
               "$type": "UIInteractMixin",
-              "PCLPONGKABC": "ClosePage",
+              "BLEEBFEBMJA": "ClosePage",
               "actionList": [
                 {
                   "$type": "ExecuteGadgetLua",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND"
                   },
                   "predicatesForeach": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 201
                     }
                   ]
@@ -1366,7 +1366,7 @@
           "modifierMixins": [
             {
               "$type": "UIInteractMixin",
-              "PCLPONGKABC": "OpenPage",
+              "BLEEBFEBMJA": "OpenPage",
               "actionList": [
                 {
                   "$type": "SetGlobalValue",
@@ -1378,12 +1378,12 @@
                 {
                   "$type": "ExecuteGadgetLua",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND"
                   },
                   "predicatesForeach": [
                     {
-                      "$type": "MCODPFDFBAF"
+                      "$type": "LHCAGFAJMNF"
                     }
                   ],
                   "param1": 201
@@ -1396,17 +1396,17 @@
             },
             {
               "$type": "UIInteractMixin",
-              "PCLPONGKABC": "ClosePage",
+              "BLEEBFEBMJA": "ClosePage",
               "actionList": [
                 {
                   "$type": "ExecuteGadgetLua",
                   "otherTargets": {
-                    "$type": "IDODCGJLHAE",
+                    "$type": "CNBBJDLAEAM",
                     "operation": "AND"
                   },
                   "predicatesForeach": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 201
                     }
                   ]
@@ -1456,13 +1456,13 @@
             {
               "$type": "ExecuteGadgetLua",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "operation": "AND",
                 "value": 1
               },
               "predicatesForeach": [
                 {
-                  "$type": "MCODPFDFBAF"
+                  "$type": "LHCAGFAJMNF"
                 }
               ],
               "param1": 901
@@ -1499,8 +1499,8 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "IFCLFFFHCPN",
-              "ONBJPLCDDGP": true
+              "$type": "NLJIFDHAJJG",
+              "MPPHBAOEHGH": true
             }
           ],
           "successActions": [

@@ -1807,15 +1807,15 @@
           "$type": "DiePatternSwitchMixin",
           "priority": "LevelPlay",
           "dieDisappearEffect": "Eff_Death_Monster_Optimize",
-          "GLJIPDICIHG": true,
-          "KIBIGDAMHOA": true,
-          "JFJPHBCOEHM": true,
-          "OCGODEHJPME": true,
-          "MFJBKFECLNJ": true,
-          "IMEEBMBJPGJ": true,
-          "ICHFPLMNCLC": true,
-          "MBHMAGEPJFH": true,
-          "CFHPDHFKMEP": true
+          "PBDBIECLPMF": true,
+          "KNHKIABOIFF": true,
+          "LGOIFHPIPJM": true,
+          "PPBCINBCJBA": true,
+          "IBLGJHDEEMI": true,
+          "MPPPPECBCJL": true,
+          "JFGNMBLBJEO": true,
+          "NMDIGLHJOIH": true,
+          "HOFJPBPLDIJ": true
         }
       ],
       "isDynamicAbility": true
@@ -2249,7 +2249,7 @@
             },
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_UI_BillBoard_FixedMark_HighScore_ForAster"
+              "IIBFEAKOPKK": "Eff_UI_BillBoard_FixedMark_HighScore_ForAster"
             }
           ]
         }
@@ -2860,7 +2860,7 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_UI_BillBoard_FixedMark_Hint_ForHunting"
+              "IIBFEAKOPKK": "Eff_UI_BillBoard_FixedMark_Hint_ForHunting"
             }
           ]
         }
@@ -2886,7 +2886,7 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_UI_BillBoard_FixedMark_HighScore_ForAster"
+              "IIBFEAKOPKK": "Eff_UI_BillBoard_FixedMark_HighScore_ForAster"
             }
           ]
         }
@@ -2912,7 +2912,7 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_UI_BillBoard_FixedMark_HighAlert"
+              "IIBFEAKOPKK": "Eff_UI_BillBoard_FixedMark_HighAlert"
             }
           ]
         }
@@ -3401,11 +3401,11 @@
           "$type": "FireEffect",
           "predicates": [
             {
-              "$type": "AKJKDLEAAOE",
+              "$type": "PDMGNBAMNKK",
               "target": "Self",
               "logic": "GreaterOrEqual",
-              "EDFIPMFDGNF": "_DropRock_Position",
-              "KHJOPCAGLCN": 12.0
+              "BFIBGHIJCEO": "_DropRock_Position",
+              "BLHBBLJKJCP": 12.0
             }
           ],
           "healLimitedByCasterMaxHPRatio": "Eff_Drop_Rock_Warning",
@@ -3579,15 +3579,15 @@
             {
               "$type": "DiePatternSwitchMixin",
               "dieDisappearEffect": "",
-              "GLJIPDICIHG": true,
-              "KIBIGDAMHOA": true,
-              "JFJPHBCOEHM": true,
-              "OCGODEHJPME": true,
-              "MFJBKFECLNJ": true,
-              "IMEEBMBJPGJ": true,
-              "ICHFPLMNCLC": true,
-              "MBHMAGEPJFH": true,
-              "CFHPDHFKMEP": true
+              "PBDBIECLPMF": true,
+              "KNHKIABOIFF": true,
+              "LGOIFHPIPJM": true,
+              "PPBCINBCJBA": true,
+              "IBLGJHDEEMI": true,
+              "MPPPPECBCJL": true,
+              "JFGNMBLBJEO": true,
+              "NMDIGLHJOIH": true,
+              "HOFJPBPLDIJ": true
             }
           ],
           "state": "LockHP"
@@ -3597,6 +3597,56 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "MonsterAffix_Partner_LockHP"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_Partner_Limbo_70",
+      "modifiers": {
+        "MonsterAffix_Partner_Limbo": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "VelocityForceMixin",
+              "excludeForces": ["WindZoneType"]
+            },
+            {
+              "$type": "RejectAttackMixinV2",
+              "attackTags": [
+                "Qin_VortexSmash",
+                "Sucrose_WindBlackHole",
+                "Faruzan_WindBlackHole"
+              ]
+            },
+            {
+              "$type": "DiePatternSwitchMixin",
+              "dieDisappearEffect": "",
+              "PBDBIECLPMF": true,
+              "KNHKIABOIFF": true,
+              "LGOIFHPIPJM": true,
+              "PPBCINBCJBA": true,
+              "IBLGJHDEEMI": true,
+              "MPPPPECBCJL": true,
+              "JFGNMBLBJEO": true,
+              "NMDIGLHJOIH": true,
+              "HOFJPBPLDIJ": true
+            }
+          ],
+          "properties": {
+            "Actor_HpThresholdRatio": 0.699999988079071
+          },
+          "state": "Limbo"
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "MonsterAffix_Partner_Limbo"
         }
       ],
       "isDynamicAbility": true

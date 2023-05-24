@@ -73,17 +73,17 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "TotalDissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "TotalDissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 2.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "TotalDissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "TotalDissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ]
         },
@@ -118,11 +118,11 @@
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "LockDissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "LockDissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 1.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             },
             {
               "$type": "FireEffect",
@@ -167,21 +167,21 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DoorDissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "DoorDissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 1.75,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DoorDissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "DoorDissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "SetGlobalValue",
@@ -248,7 +248,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "Potarl_DelayTimer"
@@ -267,11 +267,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DoorDissolve",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "DoorDissolve",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 1.75,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             },
             {
               "$type": "SetGlobalValue",
@@ -298,7 +298,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "Potarl_DenyOpen"
@@ -565,7 +565,7 @@
           "$type": "FireEffect",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -582,7 +582,7 @@
           "target": "Target",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             }
@@ -1128,8 +1128,8 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Total",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "Total",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 2.0
             }
           ],
@@ -1145,11 +1145,11 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Dissolve1",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "Dissolve1",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 3.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 3.0
             },
             {
               "$type": "ApplyModifier",
@@ -1168,11 +1168,11 @@
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Dissolve2",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "Dissolve2",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 3.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 3.0
             }
           ]
         },
@@ -1183,11 +1183,11 @@
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Dissolve3",
-              "patternName": "_DissolveVal",
+              "EKNGFFBIAPI": "Dissolve3",
+              "IMLMHJCMAHE": "_DissolveVal",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 3.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 3.0
             }
           ]
         }
@@ -1685,7 +1685,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "TransferFlower_Turn"
@@ -1734,7 +1734,7 @@
             {
               "$type": "EntityDitherMixin",
               "cutOutTime": 2.0,
-              "IFGAMOGCMBA": true
+              "HJCBJOFKJNK": true
             }
           ],
           "onAdded": [
@@ -1933,7 +1933,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "FireMachine_Switch"
@@ -2006,7 +2006,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "FireMachine_Shoot"
@@ -2026,7 +2026,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "FireMachineShoot",
+              "AEHHOKAPHGO": "FireMachineShoot",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2035,7 +2035,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 }
               ],
@@ -2076,7 +2076,7 @@
                   "$type": "Predicated",
                   "targetPredicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "gadgetState": 202
                     }
                   ],
@@ -2126,7 +2126,7 @@
                       "$type": "TriggerBullet",
                       "predicates": [
                         {
-                          "$type": "MCODPFDFBAF",
+                          "$type": "LHCAGFAJMNF",
                           "gadgetState": 204
                         }
                       ],
@@ -2171,8 +2171,8 @@
       "abilityMixins": [
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["State_Moving"],
-          "stopModifiers": ["State_Stop"]
+          "AAMIGKCJEDK": ["State_Moving"],
+          "KPBELNBMPBG": ["State_Stop"]
         }
       ],
       "modifiers": {
@@ -2206,7 +2206,7 @@
         },
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "FakeChest_KillSelf"
@@ -2358,7 +2358,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -2405,7 +2405,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_AddFireMachineColor",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 201.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2605,7 +2605,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -2656,7 +2656,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_AddFireMachineColor",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 202.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2856,7 +2856,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -2903,7 +2903,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_AddFireMachineColor",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 204.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -3727,7 +3727,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "CurTeamAvatars",
@@ -4136,25 +4136,25 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -4216,8 +4216,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0
             },
             {
@@ -4228,19 +4228,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "TriggerAudio",
@@ -4264,41 +4264,41 @@
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onKill": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -4307,7 +4307,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "DFFODFONEJF"
+              "$type": "NNPEGIOOOCJ"
             }
           ],
           "successActions": [
@@ -4327,7 +4327,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_DrawOneLine_LightOn",
-                  "IAJKJLGNLLE": 1,
+                  "LIAAKLHNPEN": 1,
                   "MPPMFEDKGHC": 0.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
@@ -4473,7 +4473,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -4568,7 +4568,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ],
               "successActions": [
@@ -4610,35 +4610,35 @@
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onKill": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -4651,7 +4651,7 @@
               "entityTypes": ["Avatar"]
             },
             {
-              "$type": "DFFODFONEJF"
+              "$type": "NNPEGIOOOCJ"
             }
           ],
           "successActions": [
@@ -4721,19 +4721,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -4774,8 +4774,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0
             },
             {
@@ -4786,19 +4786,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "TriggerAudio",
@@ -4815,41 +4815,41 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onKill": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -4858,7 +4858,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "DFFODFONEJF"
+              "$type": "NNPEGIOOOCJ"
             }
           ],
           "successActions": [
@@ -4878,7 +4878,7 @@
                   "$type": "ServerLuaCall",
                   "predicates": [
                     {
-                      "$type": "MCODPFDFBAF",
+                      "$type": "LHCAGFAJMNF",
                       "target": "Self"
                     }
                   ],
@@ -4940,19 +4940,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -5019,8 +5019,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0
             },
             {
@@ -5031,19 +5031,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "TriggerAudio",
@@ -5067,41 +5067,41 @@
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onKill": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -5110,7 +5110,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "DFFODFONEJF"
+              "$type": "NNPEGIOOOCJ"
             }
           ],
           "successActions": [
@@ -5130,7 +5130,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_DrawOneLine_LightOn",
-                  "IAJKJLGNLLE": 1,
+                  "LIAAKLHNPEN": 1,
                   "MPPMFEDKGHC": 1.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
@@ -5192,19 +5192,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -5266,8 +5266,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0
             },
             {
@@ -5278,19 +5278,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "TriggerAudio",
@@ -5314,41 +5314,41 @@
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onKill": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onFieldEnter": [
@@ -5357,7 +5357,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "DFFODFONEJF"
+              "$type": "NNPEGIOOOCJ"
             }
           ],
           "successActions": [
@@ -5377,7 +5377,7 @@
                   "$type": "ServerLuaCall",
                   "luaCallType": "FromGroup",
                   "funcName": "SLC_DrawOneLine_LightOn",
-                  "IAJKJLGNLLE": 1,
+                  "LIAAKLHNPEN": 1,
                   "MPPMFEDKGHC": 2.0,
                   "BOKNHLDBKKK": 0.0,
                   "CHOIIMHDNHK": 0.0
@@ -5447,25 +5447,25 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             }
           ]
         },
@@ -5475,8 +5475,8 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0
             },
             {
@@ -5487,19 +5487,19 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherRed",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherRed",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DitherBlue",
-              "patternName": "_DissoveValue",
+              "EKNGFFBIAPI": "DitherBlue",
+              "IMLMHJCMAHE": "_DissoveValue",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "TriggerAudio",
@@ -5516,17 +5516,17 @@
       "onAdded": [
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 1.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ],
       "onKill": [
@@ -5536,19 +5536,19 @@
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherBlue",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherBlue",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
-          "matName": "DitherRed",
-          "patternName": "_DissoveValue",
+          "EKNGFFBIAPI": "DitherRed",
+          "IMLMHJCMAHE": "_DissoveValue",
           "ratio": 0.0,
-          "HLDHDOKLCHI": true,
-          "FBGLLFJHKJJ": 0.75
+          "KNEMMEIDOHF": true,
+          "PCGOEPPLKLO": 0.75
         }
       ]
     }
@@ -5560,8 +5560,8 @@
       "abilityMixins": [
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["CityRotateAixs_Move"],
-          "stopModifiers": ["CityRotateAixs_Idle"]
+          "AAMIGKCJEDK": ["CityRotateAixs_Move"],
+          "KPBELNBMPBG": ["CityRotateAixs_Idle"]
         }
       ],
       "modifiers": {
@@ -5684,8 +5684,8 @@
       "abilityMixins": [
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["CityRotateAixs_Move"],
-          "stopModifiers": ["CityRotateAixs_Idle"]
+          "AAMIGKCJEDK": ["CityRotateAixs_Move"],
+          "KPBELNBMPBG": ["CityRotateAixs_Idle"]
         }
       ],
       "modifiers": {
@@ -6248,7 +6248,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "Predicated",
               "target": "Other",
@@ -6380,7 +6380,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "PaperStar_Interacted"
@@ -6454,12 +6454,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "DissolveValue",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "DissolveValue",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -6482,8 +6482,8 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "DissolveValue",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "DissolveValue",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 0.0
             }
           ],
@@ -6491,12 +6491,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "DissolveValue",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "DissolveValue",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -6514,12 +6514,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "DissolveValue",
-              "patternName": "_DitherAlpha",
+              "EKNGFFBIAPI": "DissolveValue",
+              "IMLMHJCMAHE": "_DitherAlpha",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             },
             {
               "$type": "EnableSceneTransformByName",
@@ -6625,12 +6625,12 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Shadow",
-              "patternName": "_Opacity",
+              "EKNGFFBIAPI": "Shadow",
+              "IMLMHJCMAHE": "_Opacity",
               "ratio": "Opacity",
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.75
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.75
             }
           ]
         },
@@ -6642,12 +6642,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Shadow",
-              "patternName": "_Opacity",
+              "EKNGFFBIAPI": "Shadow",
+              "IMLMHJCMAHE": "_Opacity",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.5
             }
           ],
           "onRemoved": [
@@ -6659,12 +6659,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Shadow",
-              "patternName": "_Opacity",
+              "EKNGFFBIAPI": "Shadow",
+              "IMLMHJCMAHE": "_Opacity",
               "ratio": 0.699999988079071,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.5
             },
             {
               "$type": "ApplyModifier",
@@ -6776,8 +6776,8 @@
           "modifierMixins": [
             {
               "$type": "CameraSetReflectionMixin",
-              "FIKKJCIGOAG": "Ignore Raycast",
-              "IECONEPCGHF": "ReflectNode"
+              "HILAMHDEIPB": "Ignore Raycast",
+              "IAHCFMPFAHK": "ReflectNode"
             }
           ],
           "onAdded": [
@@ -7298,7 +7298,7 @@
               "attackID": "TileAttack_FireSource",
               "attachPointName": "attachPointProp",
               "shape": {
-                "$type": "HCNOBIMLCKF",
+                "$type": "HMLMOHKMCOD",
                 "radius": 0.4000000059604645
               }
             }
@@ -7348,7 +7348,7 @@
               "attackID": "TileAttack_FireSource",
               "attachPointName": "attachPointProp",
               "shape": {
-                "$type": "HCNOBIMLCKF",
+                "$type": "HMLMOHKMCOD",
                 "radius": 0.4000000059604645
               }
             }
@@ -7487,7 +7487,7 @@
               "canBeHandledOnRecover": true,
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF"
+                  "$type": "LHCAGFAJMNF"
                 }
               ],
               "operation": {
@@ -7530,11 +7530,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "ChangeColor",
-              "patternName": "_ColorChangeValue",
+              "EKNGFFBIAPI": "ChangeColor",
+              "IMLMHJCMAHE": "_ColorChangeValue",
               "ratio": 6.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 1.5
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 1.5
             }
           ]
         }
@@ -8274,7 +8274,7 @@
         },
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["BirdCageElevator_ReadyDelayer"]
+          "AAMIGKCJEDK": ["BirdCageElevator_ReadyDelayer"]
         }
       ],
       "modifiers": {
@@ -8316,11 +8316,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ],
           "onRemoved": [
@@ -8385,8 +8385,8 @@
                 {
                   "$type": "SetMaterialParamFloatByTransform",
                   "canBeHandledOnRecover": true,
-                  "matName": "Emission",
-                  "patternName": "_EmissionStrength",
+                  "EKNGFFBIAPI": "Emission",
+                  "IMLMHJCMAHE": "_EmissionStrength",
                   "ratio": 0.0
                 }
               ],
@@ -8426,8 +8426,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.0
             },
             {
@@ -8446,7 +8446,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 1
               },
               "ratio": 1.0,
@@ -8467,7 +8467,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 1
               },
               "ratio": 0.0,
@@ -8484,8 +8484,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
@@ -8550,11 +8550,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ],
           "onRemoved": [
@@ -8581,8 +8581,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.0
             },
             {
@@ -8596,7 +8596,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "ratio": 1.0,
@@ -8617,7 +8617,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "ratio": 0.0,
@@ -8634,8 +8634,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
@@ -8666,8 +8666,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Emission",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Emission",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ],
@@ -8712,8 +8712,8 @@
                 {
                   "$type": "SetMaterialParamFloatByTransform",
                   "canBeHandledOnRecover": true,
-                  "matName": "Emission",
-                  "patternName": "_EmissionStrength",
+                  "EKNGFFBIAPI": "Emission",
+                  "IMLMHJCMAHE": "_EmissionStrength",
                   "ratio": 0.0
                 }
               ],

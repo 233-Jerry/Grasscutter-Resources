@@ -198,8 +198,8 @@
               "target": "CurLocalAvatar",
               "targetPredicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "successActions": [
@@ -260,8 +260,8 @@
               "target": "CurLocalAvatar",
               "targetPredicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "successActions": [
@@ -302,8 +302,8 @@
               "target": "CurLocalAvatar",
               "targetPredicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "successActions": [
@@ -344,8 +344,8 @@
               "target": "CurLocalAvatar",
               "targetPredicates": [
                 {
-                  "$type": "IFCLFFFHCPN",
-                  "ONBJPLCDDGP": true
+                  "$type": "NLJIFDHAJJG",
+                  "MPPHBAOEHGH": true
                 }
               ],
               "successActions": [
@@ -441,7 +441,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "CloseIntee"
@@ -481,7 +481,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "CloseIntee"
@@ -1150,7 +1150,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "Baozhu_Intee"
@@ -1340,7 +1340,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "ShipsoulShow"
@@ -1400,7 +1400,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "FireHanabi_Pre"
@@ -1619,7 +1619,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "FireHanabi_Pre"
@@ -2185,7 +2185,7 @@
             {
               "$type": "SetTrampolineAbilityMixin",
               "abilityName": "Avatar_Trampoline_Jump_Controller",
-              "BJBODKLJKED": ""
+              "BFPBGJGLPPL": ""
             }
           ]
         }
@@ -2205,7 +2205,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "Knock"
@@ -2251,6 +2251,36 @@
           "effectTempleteID": -1.0
         }
       ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "SceneObj_Homeworld_Exterior_Common_Thing_Prop_AyuanBlow_01_Ability",
+      "abilityMixins": [
+        {
+          "$type": "HomeworldEnterEditorMixin",
+          "editorModifierNames": ["OnHomeEditor"],
+          "worldModifierNames": ["OnHomeWorld"]
+        }
+      ],
+      "modifiers": {
+        "OnHomeEditor": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0
+        },
+        "OnHomeWorld": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_ScenObj_Homeworld_Exterior_Ly_Thing_Prop_Soundflower_01",
+              "effectTempleteID": -1.0
+            }
+          ]
+        }
+      }
     }
   }
 ]

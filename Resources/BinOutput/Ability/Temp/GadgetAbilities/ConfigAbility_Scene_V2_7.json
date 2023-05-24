@@ -31,7 +31,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "State_Intee_CD"
@@ -218,7 +218,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "CloseIntee"
@@ -258,7 +258,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "modifierName": "CloseIntee"
@@ -519,12 +519,12 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_DissolveValue",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_DissolveValue",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 0.5
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 0.5
             }
           ]
         }
@@ -699,8 +699,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "matName",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "matName",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 1.0
             }
           ]
@@ -717,8 +717,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "matName",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "matName",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.0
             },
             {
@@ -810,8 +810,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "matName",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "matName",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.0
             },
             {
@@ -991,7 +991,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "OCBOCJCKJBO",
+              "$type": "PJGLIDHKMJE",
               "tag": "Tag_Is_Emitter"
             }
           ],
@@ -1016,7 +1016,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "OCBOCJCKJBO",
+              "$type": "PJGLIDHKMJE",
               "tag": "Tag_Is_Emitter"
             }
           ],
@@ -1273,7 +1273,7 @@
           },
           "targetPredicates": [
             {
-              "$type": "OCBOCJCKJBO",
+              "$type": "PJGLIDHKMJE",
               "tag": "Tag_Is_Emitter"
             }
           ],
@@ -1292,7 +1292,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "entityTypePriority": ["Gadget"],
             "tag": "Tag_Is_Emitter"
           },
@@ -1343,7 +1343,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "CDFGNCHMNMA",
+            "$type": "OMJNAIFHGGH",
             "entityTypePriority": ["Gadget"],
             "tag": "Tag_Is_Emitter"
           },
@@ -1526,8 +1526,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "matName",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "matName",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 8.0
             }
           ],
@@ -1582,8 +1582,8 @@
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "matName",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "matName",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 1.5
             },
             {
@@ -1649,8 +1649,8 @@
         {
           "$type": "SetMaterialParamFloatByTransform",
           "canBeHandledOnRecover": true,
-          "matName": "matName",
-          "patternName": "_EmissionIntensity",
+          "EKNGFFBIAPI": "matName",
+          "IMLMHJCMAHE": "_EmissionIntensity",
           "ratio": 1.5
         },
         {
@@ -1935,14 +1935,14 @@
         },
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["State_Moving"]
+          "AAMIGKCJEDK": ["State_Moving"]
         },
         {
           "$type": "AttachModifierToGlobalValueMixin",
           "globalValueKey": "Dir",
           "valueSteps": [-0.5, 0.5, 1.5, 2.5, 3.5, 4.5],
           "modifierNameSteps": ["Dir_0", "Dir_1", "Dir_2", "Dir_3", "Dir_4"],
-          "KLBLHOIAACK": true
+          "HHBFGNCMKLO": true
         }
       ],
       "abilitySpecials": {
@@ -1986,8 +1986,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -1999,10 +1999,10 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "mat",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "mat",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 4.0,
-              "FBGLLFJHKJJ": 2.0
+              "PCGOEPPLKLO": 2.0
             },
             {
               "$type": "ApplyModifier",
@@ -2582,8 +2582,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "201",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "201",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 6.0
             },
             {
@@ -2614,8 +2614,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "202",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "202",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 6.0
             },
             {
@@ -2646,8 +2646,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "203",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "203",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 6.0
             },
             {
@@ -2678,8 +2678,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "204",
-              "patternName": "_EmissionIntensity",
+              "EKNGFFBIAPI": "204",
+              "IMLMHJCMAHE": "_EmissionIntensity",
               "ratio": 6.0
             },
             {
@@ -2696,29 +2696,29 @@
         {
           "$type": "SetMaterialParamFloatByTransform",
           "canBeHandledOnRecover": true,
-          "matName": "201",
-          "patternName": "_EmissionIntensity",
+          "EKNGFFBIAPI": "201",
+          "IMLMHJCMAHE": "_EmissionIntensity",
           "ratio": 1.5
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
           "canBeHandledOnRecover": true,
-          "matName": "202",
-          "patternName": "_EmissionIntensity",
+          "EKNGFFBIAPI": "202",
+          "IMLMHJCMAHE": "_EmissionIntensity",
           "ratio": 1.5
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
           "canBeHandledOnRecover": true,
-          "matName": "203",
-          "patternName": "_EmissionIntensity",
+          "EKNGFFBIAPI": "203",
+          "IMLMHJCMAHE": "_EmissionIntensity",
           "ratio": 1.5
         },
         {
           "$type": "SetMaterialParamFloatByTransform",
           "canBeHandledOnRecover": true,
-          "matName": "204",
-          "patternName": "_EmissionIntensity",
+          "EKNGFFBIAPI": "204",
+          "IMLMHJCMAHE": "_EmissionIntensity",
           "ratio": 1.5
         }
       ]
@@ -2846,10 +2846,10 @@
           "modifierMixins": [
             {
               "$type": "ModifyCameraMaxDistanceMixin",
-              "HNFHDMELLMB": 10.0,
-              "MKLEOEDKEGK": true,
-              "MCMIFAIAHHG": 1.5,
-              "IAALLPEDOCO": 1.5
+              "JKKIOFODBBL": 10.0,
+              "JPEGPJPGLHA": true,
+              "IMKHCOMJJFA": 1.5,
+              "CFJPBHHEJLM": 1.5
             },
             {
               "$type": "TriggerPostProcessEffectMixin",
@@ -2991,8 +2991,8 @@
       "abilityMixins": [
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["State_Moving"],
-          "stopModifiers": ["State_Stop"]
+          "AAMIGKCJEDK": ["State_Moving"],
+          "KPBELNBMPBG": ["State_Stop"]
         },
         {
           "$type": "AttachToGadgetStateMixin",
@@ -4122,7 +4122,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ExecuteGadgetLua",
               "param1": 201
@@ -4135,7 +4135,7 @@
         },
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["State_Moving"]
+          "AAMIGKCJEDK": ["State_Moving"]
         }
       ],
       "modifiers": {
@@ -4638,7 +4638,7 @@
           "target": "Target",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self"
             }
           ],
@@ -4744,7 +4744,7 @@
               "canBeHandledOnRecover": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -4761,7 +4761,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBattle_01_Disappear",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -4810,7 +4810,7 @@
               "canBeHandledOnRecover": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeShop_01",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -4827,7 +4827,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeShop_01_Disappear",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -4876,7 +4876,7 @@
               "canBeHandledOnRecover": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBossBattle_01",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -4893,7 +4893,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeBossBattle_01_Disappear",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -4942,7 +4942,7 @@
               "canBeHandledOnRecover": true,
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -4959,7 +4959,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_RougeCure_01_Disappear",
               "born": {
-                "$type": "GNCLPLECIDL",
+                "$type": "MEPMEMBMILD",
                 "offset": {
                   "y": -2.0
                 }
@@ -5142,8 +5142,8 @@
       "abilityMixins": [
         {
           "$type": "PlatformMoveMixin",
-          "moveModifiers": ["State_Move"],
-          "stopModifiers": ["State_Stop"]
+          "AAMIGKCJEDK": ["State_Move"],
+          "KPBELNBMPBG": ["State_Stop"]
         }
       ],
       "modifiers": {

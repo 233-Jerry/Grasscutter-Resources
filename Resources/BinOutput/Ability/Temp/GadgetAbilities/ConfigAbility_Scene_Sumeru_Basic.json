@@ -22,17 +22,17 @@
           "modifierMixins": [
             {
               "$type": "EnterSceneLookMixin",
-              "HHDGONBLFDB": "SceneLook",
-              "DGDNIDKCAHG": {
+              "EPPCKAFDEFL": "SceneLook",
+              "MJHHPFFBMAB": {
                 "x": 1.690000057220459,
                 "y": 0.41999998688697815,
                 "z": -2.5
               },
-              "EBDAIBLODLB": 50.0,
-              "BHCFKJEIEJL": 0.04500000178813934,
-              "DNENBHLBCHM": 0.07999999821186066,
-              "MLGHKJHBCFP": 0.18000000715255737,
-              "HLLBLDBMIGI": 0.3199999928474426
+              "NANMFGHBACH": 50.0,
+              "JGEHONNMKOL": 0.04500000178813934,
+              "PAPAJIAAPGH": 0.07999999821186066,
+              "CPNDHCOPMEP": 0.18000000715255737,
+              "KNICPOHLPMJ": 0.3199999928474426
             }
           ],
           "onRemoved": [
@@ -271,8 +271,8 @@
               "$type": "AttachModifier",
               "predicates": [
                 {
-                  "$type": "JNOEHGICGIC",
-                  "GMPKPPDODGN": "BODY_BOY"
+                  "$type": "CFMFMIBGCJA",
+                  "PJHJJKLLJMP": "BODY_BOY"
                 }
               ],
               "modifierName": "VoidSearchingTickBoy"
@@ -281,8 +281,8 @@
               "$type": "AttachModifier",
               "predicates": [
                 {
-                  "$type": "JNOEHGICGIC",
-                  "GMPKPPDODGN": "BODY_GIRL"
+                  "$type": "CFMFMIBGCJA",
+                  "PJHJJKLLJMP": "BODY_GIRL"
                 }
               ],
               "modifierName": "VoidSearchingTickGirl"
@@ -311,7 +311,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "topLimit": 1,
                 "sortType": "Nearest",
                 "tag": "IS_VOID_SEARCHING_TARGET"
@@ -352,7 +352,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "topLimit": 1,
                 "sortType": "Nearest",
                 "tag": "IS_VOID_SEARCHING_TARGET"
@@ -430,7 +430,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "topLimit": 1,
                 "sortType": "Nearest",
                 "tag": "IS_VOID_SEARCHING_TARGET"
@@ -471,7 +471,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "topLimit": 1,
                 "sortType": "Nearest",
                 "tag": "IS_VOID_SEARCHING_TARGET"
@@ -584,7 +584,7 @@
             },
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 300
+              "LDNMJDBDMNC": 300
             }
           ]
         },
@@ -601,7 +601,7 @@
             },
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 301
+              "LDNMJDBDMNC": 301
             }
           ],
           "onRemoved": [
@@ -649,13 +649,13 @@
                 },
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 200
+                  "LDNMJDBDMNC": 200
                 }
               ]
             },
             {
               "$type": "DeathZoneMixin",
-              "OEOMBEIOMBK": [
+              "EGPNDAEIKDH": [
                 {
                   "$type": "SetGlobalValue",
                   "ratio": 0.0,
@@ -697,7 +697,7 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "IIAPMJAACEB",
+                  "$type": "KLEGOAHHGFB",
                   "CIMNBKFMPGD": "Fire",
                   "compareType": "MoreThan"
                 }
@@ -712,7 +712,7 @@
                 },
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 300
+                  "LDNMJDBDMNC": 300
                 }
               ]
             }
@@ -748,7 +748,7 @@
                   "ratio": 200.0
                 },
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 200
                 }
               ],
@@ -784,9 +784,9 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "IIAPMJAACEB",
+                  "$type": "KLEGOAHHGFB",
                   "CIMNBKFMPGD": "Grass",
-                  "PGGGDEECGDA": 10.0,
+                  "GDMOCONNCOJ": 10.0,
                   "compareType": "MoreThan"
                 }
               ],
@@ -855,11 +855,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Gadget",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Gadget",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": 0.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ]
         },
@@ -874,11 +874,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Gadget",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Gadget",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": 2.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ]
         },
@@ -889,11 +889,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Gadget",
-              "patternName": "_ConversionStateChange",
+              "EKNGFFBIAPI": "Gadget",
+              "IMLMHJCMAHE": "_ConversionStateChange",
               "ratio": -2.0,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             }
           ]
         },
@@ -910,7 +910,7 @@
               "thinkInterval": 0.5
             }
           ],
-          "DKJICLHJGII": true
+          "DMAFIBHNFAM": true
         },
         "Blank": {
           "modifierName": "",
@@ -945,7 +945,7 @@
           "$type": "ApplyModifier",
           "predicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "gadgetState": 202
             },
             {
@@ -959,7 +959,7 @@
         },
         {
           "$type": "DisableAffectedByWorld",
-          "BHCCOONAGJA": true
+          "MHDJODLDAND": true
         }
       ]
     }
@@ -995,8 +995,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 0.0
             },
             {
@@ -1040,7 +1040,7 @@
                 },
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 200
+                  "LDNMJDBDMNC": 200
                 },
                 {
                   "$type": "DoWatcherSystemAction",
@@ -1075,12 +1075,12 @@
           "onAdded": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "InvisibleMat",
-              "patternName": "_DissoveThreshold",
+              "EKNGFFBIAPI": "InvisibleMat",
+              "IMLMHJCMAHE": "_DissoveThreshold",
               "ratio": 1.0,
-              "HLDHDOKLCHI": true,
-              "NKFPDCCIPCN": 1,
-              "FBGLLFJHKJJ": 1.0
+              "KNEMMEIDOHF": true,
+              "MOICJOMNODH": 1,
+              "PCGOEPPLKLO": 1.0
             }
           ]
         }
@@ -1093,7 +1093,7 @@
               "$type": "DDBJEPBNOGF",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF"
+                  "$type": "LHCAGFAJMNF"
                 }
               ]
             }
@@ -1141,7 +1141,7 @@
       "abilityMixins": [
         {
           "$type": "CheckGrapplingHookMixin",
-          "AIJHACIINNN": [
+          "MMEBLFBFKDJ": [
             {
               "$type": "AddAvatarSkillInfo",
               "RotationDampTime": true,
@@ -1178,7 +1178,7 @@
               "minValue": 0.0
             }
           ],
-          "FCJEPMALFHE": [
+          "NGGADLNMNDN": [
             {
               "$type": "RemoveAvatarSkillInfo",
               "RotationDampTime": true,
@@ -1210,16 +1210,16 @@
               "modifierName": "UNIQUE_GrapplingHookSkill_ExtraTeamAbility"
             }
           ],
-          "EJAOKKAAFAE": "AVATAR_GrapplingHookSkill",
-          "FGGEIEMHHPB": {
-            "IMOJNCIFDAE": 40.0,
-            "LLPCFAIDKOK": 5.0,
-            "HAAJJPHKGDF": 0.699999988079071,
-            "DHADOMMBLCE": 0.800000011920929,
+          "LAPMDOMHNBF": "AVATAR_GrapplingHookSkill",
+          "NELHLDOMAAN": {
+            "HNPPEOECELJ": 40.0,
+            "PMKGKNLIIFC": 5.0,
+            "PAEBFMMDJJF": 0.699999988079071,
+            "GJHOAMJCPJD": 0.800000011920929,
             "ui": {
-              "HGLMGCCFJJE": "UI_MarkQuest_GrapplingHook_01",
-              "LHABEBKDMJM": "UI_MarkQuest_GrapplingHook_02",
-              "IGJPBMDIGJE": "UI_MarkQuest_GrapplingHook_03"
+              "JNEEKDFBBML": "UI_MarkQuest_GrapplingHook_01",
+              "HHFNEIINELF": "UI_MarkQuest_GrapplingHook_02",
+              "OGHIEHOGMAH": "UI_MarkQuest_GrapplingHook_03"
             }
           }
         },
@@ -1375,7 +1375,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "GrapplingHook"
             }
           ]
         },
@@ -1543,7 +1544,7 @@
               "$type": "ThrowGrapplingHookMixin",
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_Grapple_01_Line",
               "positionKey": "_GrapplingHook_TargetPos",
-              "AFCGIBECIMO": [
+              "BMKBAMBIADB": [
                 {
                   "$type": "SetGlobalValue",
                   "predicates": [
@@ -1579,7 +1580,7 @@
           "modifierMixins": [
             {
               "$type": "GrapplingHookMoveMixin",
-              "IMBGNLEKCHJ": [
+              "EKKPMHJBBIA": [
                 {
                   "$type": "SetGlobalValue",
                   "predicates": [
@@ -1599,16 +1600,16 @@
                   "modifierName": "GrapplingHook_ArrivedRushMove"
                 }
               ],
-              "CKBJBJGIMOL": 5.0,
-              "LPHEDPDAMAH": 1.0,
-              "MELNEPPGLNB": 0.5
+              "DKDNOMFNDMP": 5.0,
+              "GKDLMBBFPGM": 1.0,
+              "JNJMJEGCMDC": 0.5
             },
             {
               "$type": "ModifyCameraMaxDistanceMixin",
-              "HNFHDMELLMB": 10.0,
-              "MKLEOEDKEGK": true,
-              "MCMIFAIAHHG": 0.20000000298023224,
-              "IAALLPEDOCO": 0.699999988079071
+              "JKKIOFODBBL": 10.0,
+              "JPEGPJPGLHA": true,
+              "IMKHCOMJJFA": 0.20000000298023224,
+              "CFJPBHHEJLM": 0.699999988079071
             },
             {
               "$type": "TriggerPostProcessEffectMixin",
@@ -1640,9 +1641,9 @@
                 "positionKey": "_GrapplingHook_TargetPos",
                 "directionKey": ""
               },
-              "MMINCHGDKOD": 15.0,
-              "MLLLIOLDKMP": 10.0,
-              "GFOBFAJACLK": 20.0,
+              "CKMLEGKMALD": 15.0,
+              "IJHEKNHGCPH": 10.0,
+              "OPNJBCEGNNO": 20.0,
               "animatorStateIDs": [
                 "ActivitySkill_GrapplingHook",
                 "Fly",
@@ -1952,7 +1953,7 @@
         {
           "$type": "Predicated",
           "otherTargets": {
-            "$type": "DHCOOLIODHP",
+            "$type": "BEGAHBLLKPK",
             "topLimit": 1
           },
           "successActions": [
@@ -2236,7 +2237,7 @@
               "$type": "ApplyModifier",
               "predicates": [
                 {
-                  "$type": "DPKKEBLABLP"
+                  "$type": "OLDDCNANBJK"
                 }
               ],
               "modifierName": "UNIQUE_DynamicAbility_DeathZone_LoseHp"
@@ -2265,7 +2266,7 @@
                   ]
                 },
                 {
-                  "$type": "DPKKEBLABLP"
+                  "$type": "OLDDCNANBJK"
                 }
               ],
               "amountByCasterMaxHPRatio": 1.0,
@@ -2282,7 +2283,7 @@
                   "$type": "KLHDCNCGDGM"
                 },
                 {
-                  "$type": "DPKKEBLABLP"
+                  "$type": "OLDDCNANBJK"
                 }
               ],
               "amountByCasterMaxHPRatio": 1.0,
@@ -2306,7 +2307,7 @@
                   ]
                 },
                 {
-                  "$type": "DPKKEBLABLP"
+                  "$type": "OLDDCNANBJK"
                 }
               ],
               "amountByCasterMaxHPRatio": 1.0,
@@ -2323,7 +2324,7 @@
                   "$type": "KLHDCNCGDGM"
                 },
                 {
-                  "$type": "DPKKEBLABLP"
+                  "$type": "OLDDCNANBJK"
                 }
               ],
               "amountByCasterMaxHPRatio": 1.0,
@@ -2341,7 +2342,7 @@
           "onAdded": [
             {
               "$type": "AddRegionalPlayVarValue",
-              "BLAELADNAEG": "DeathZoneExtraErosion",
+              "CKFEHHBAJAD": "DeathZoneExtraErosion",
               "KHBMAHHMOOI": 10.0
             },
             {
@@ -2383,7 +2384,7 @@
           "onAdded": [
             {
               "$type": "AddRegionalPlayVarValue",
-              "BLAELADNAEG": "DeathZoneExtraErosion",
+              "CKFEHHBAJAD": "DeathZoneExtraErosion",
               "KHBMAHHMOOI": -10.0
             }
           ],
@@ -2407,7 +2408,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "topLimit": 1,
                 "sortType": "Nearest",
                 "tag": "IS_Life_Point"
@@ -2444,7 +2445,7 @@
           "onThinkInterval": [
             {
               "$type": "AddRegionalPlayVarValue",
-              "BLAELADNAEG": "DeathZoneExtraErosion",
+              "CKFEHHBAJAD": "DeathZoneExtraErosion",
               "KHBMAHHMOOI": -10.0
             }
           ]
@@ -2497,7 +2498,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -2888,7 +2889,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -3404,12 +3405,12 @@
           "modifierMixins": [
             {
               "$type": "TriggerWidgetMusicGameMixin",
-              "AJPHMFKDLAE": 7,
+              "EFGPANMDABD": 7,
               "range": 8.0,
               "onSuccess": [
                 {
                   "$type": "ChangeGadgetState",
-                  "MNIDCPKMMNN": 201
+                  "LDNMJDBDMNC": 201
                 }
               ]
             }
@@ -3425,8 +3426,8 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Leaf",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Leaf",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             },
             {
@@ -3457,11 +3458,11 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Leaf",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Leaf",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 3.5,
-              "HLDHDOKLCHI": true,
-              "FBGLLFJHKJJ": 2.0
+              "KNEMMEIDOHF": true,
+              "PCGOEPPLKLO": 2.0
             },
             {
               "$type": "AttachEffect",
@@ -3847,7 +3848,7 @@
           "modifierMixins": [
             {
               "$type": "DeathZoneMixin",
-              "OEOMBEIOMBK": [
+              "EGPNDAEIKDH": [
                 {
                   "$type": "SetGlobalValue",
                   "ratio": 1.0,

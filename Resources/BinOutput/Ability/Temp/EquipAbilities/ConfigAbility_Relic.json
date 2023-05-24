@@ -282,7 +282,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "KKAEFBIJPCC",
+                  "$type": "DNHNGNBPIFM",
                   "elementType": "Fire",
                   "LJFJDLBAMOK": 1,
                   "logic": "GreaterOrEqual"
@@ -296,7 +296,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "KKAEFBIJPCC",
+                  "$type": "DNHNGNBPIFM",
                   "elementType": "Water",
                   "LJFJDLBAMOK": 1,
                   "logic": "GreaterOrEqual"
@@ -310,7 +310,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "KKAEFBIJPCC",
+                  "$type": "DNHNGNBPIFM",
                   "elementType": "Wind",
                   "LJFJDLBAMOK": 1,
                   "logic": "GreaterOrEqual"
@@ -324,7 +324,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "KKAEFBIJPCC",
+                  "$type": "DNHNGNBPIFM",
                   "elementType": "Electric",
                   "LJFJDLBAMOK": 1,
                   "logic": "GreaterOrEqual"
@@ -338,7 +338,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "KKAEFBIJPCC",
+                  "$type": "DNHNGNBPIFM",
                   "elementType": "Ice",
                   "LJFJDLBAMOK": 1,
                   "logic": "GreaterOrEqual"
@@ -352,7 +352,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "KKAEFBIJPCC",
+                  "$type": "DNHNGNBPIFM",
                   "elementType": "Rock",
                   "LJFJDLBAMOK": 1,
                   "logic": "GreaterOrEqual"
@@ -366,7 +366,7 @@
               "RotationDampTime": true,
               "predicates": [
                 {
-                  "$type": "KKAEFBIJPCC",
+                  "$type": "DNHNGNBPIFM",
                   "elementType": "Grass",
                   "LJFJDLBAMOK": 1,
                   "logic": "GreaterOrEqual"
@@ -3801,7 +3801,7 @@
                   "RotationDampTime": true,
                   "targetPredicates": [
                     {
-                      "$type": "DJJLEAPCAIC",
+                      "$type": "JCGFHKBFMCH",
                       "logic": "GreaterOrEqual",
                       "ratio": "EnergyCost"
                     }
@@ -4356,7 +4356,7 @@
               "minValue": 0.0
             }
           ],
-          "NPDIDLGPDJA": [
+          "ILIKOOCMHOH": [
             {
               "$type": "Predicated",
               "target": "Target",
@@ -4549,7 +4549,7 @@
               "modifierName": "Relic_HealAndHolyNova_BallEffect_Team"
             }
           ],
-          "NPDIDLGPDJA": [
+          "ILIKOOCMHOH": [
             {
               "$type": "Predicated",
               "target": "Target",
@@ -4757,7 +4757,7 @@
           "modifierName": "",
           "duration": 20.0,
           "bonusCriticalHurt": 100.0,
-          "NPDIDLGPDJA": [
+          "ILIKOOCMHOH": [
             {
               "$type": "GetHealAmountToGlobalValue",
               "RotationDampTime": true,
@@ -5561,15 +5561,15 @@
             {
               "$type": "SetSameElementCountToGlobalValue",
               "RotationDampTime": true,
-              "GJBAKFJBIJF": true,
+              "GJCHOOAPGJM": true,
               "globalValueKey": "_RELIC_ElemMasteryGathering_Same_Number",
-              "HENPKFNIEAA": "AllTeams"
+              "DNPMLBPMJNF": "AllTeams"
             },
             {
               "$type": "SetSameElementCountToGlobalValue",
               "RotationDampTime": true,
               "globalValueKey": "_RELIC_ElemMasteryGathering_Diff_Number",
-              "HENPKFNIEAA": "AllTeams"
+              "DNPMLBPMJNF": "AllTeams"
             },
             {
               "$type": "SetGlobalValueToOverrideMap",

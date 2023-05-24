@@ -212,7 +212,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             }
           ],
           "OnBeginSecondCharged": [
@@ -253,6 +254,12 @@
               "$type": "SetAnimatorTrigger",
               "RotationDampTime": true,
               "triggerID": "EndChannelTrigger"
+            },
+            {
+              "$type": "ChangePlayMode",
+              "RotationDampTime": true,
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             }
           ],
           "chargeStateIDs": ["Channel_Loop"]
@@ -562,7 +569,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             },
             {
               "$type": "AvatarExitFocus",
@@ -589,7 +597,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "LEMNHMBJBFH": "ActivityAimState"
         }
       ],
       "onKill": [
@@ -610,7 +619,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "LEMNHMBJBFH": "ActivityAimState"
         }
       ],
       "onAvatarOut": [
@@ -1176,7 +1186,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "canBeHandledOnRecover": true
+              "canBeHandledOnRecover": true,
+              "LEMNHMBJBFH": "BounceConjuring"
             }
           ]
         }
@@ -1783,7 +1794,7 @@
                     "z": 0.0
                   },
                   "JPOJHLOIKLG": 3.0,
-                  "MPNLAACKHNA": 3.0
+                  "IDCEIMNEFJC": 3.0
                 },
                 "positionKey": "BallPos",
                 "directionKey": ""
@@ -2520,7 +2531,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             },
             {
               "$type": "AvatarExitFocus",
@@ -2596,7 +2608,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             },
             {
               "$type": "AvatarExitFocus",
@@ -2881,7 +2894,8 @@
                 {
                   "$type": "ChangePlayMode",
                   "RotationDampTime": true,
-                  "muteRemoteAction": true
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "ActivityAimState"
                 }
               ],
               "OnBeginSecondCharged": [
@@ -2907,6 +2921,12 @@
                   "$type": "SetAnimatorTrigger",
                   "RotationDampTime": true,
                   "triggerID": "EndChannelTrigger"
+                },
+                {
+                  "$type": "ChangePlayMode",
+                  "RotationDampTime": true,
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "ActivityAimState"
                 }
               ],
               "chargeStateIDs": ["Channel_Loop"]
@@ -2953,7 +2973,8 @@
                 {
                   "$type": "ChangePlayMode",
                   "RotationDampTime": true,
-                  "muteRemoteAction": true
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "ActivityAimState"
                 }
               ],
               "OnBeginSecondCharged": [
@@ -2979,6 +3000,12 @@
                   "$type": "SetAnimatorTrigger",
                   "RotationDampTime": true,
                   "triggerID": "EndChannelTrigger"
+                },
+                {
+                  "$type": "ChangePlayMode",
+                  "RotationDampTime": true,
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "ActivityAimState"
                 }
               ],
               "chargeStateIDs": ["Channel_Loop"]
@@ -3025,7 +3052,8 @@
                 {
                   "$type": "ChangePlayMode",
                   "RotationDampTime": true,
-                  "muteRemoteAction": true
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "ActivityAimState"
                 }
               ],
               "OnBeginSecondCharged": [
@@ -3051,6 +3079,12 @@
                   "$type": "SetAnimatorTrigger",
                   "RotationDampTime": true,
                   "triggerID": "EndChannelTrigger"
+                },
+                {
+                  "$type": "ChangePlayMode",
+                  "RotationDampTime": true,
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "ActivityAimState"
                 }
               ],
               "chargeStateIDs": ["Channel_Loop"]

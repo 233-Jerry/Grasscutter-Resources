@@ -1608,8 +1608,8 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_UI_BillBoard_FixedMark_Hint_ForHunting",
-              "DHPDAOKAGFI": true
+              "IIBFEAKOPKK": "Eff_UI_BillBoard_FixedMark_Hint_ForHunting",
+              "DMOIJIPGNCI": true
             }
           ]
         }
@@ -2438,7 +2438,7 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_UI_BillBoard_FixedMark_HighScore_ForAster"
+              "IIBFEAKOPKK": "Eff_UI_BillBoard_FixedMark_HighScore_ForAster"
             }
           ]
         }
@@ -4360,7 +4360,7 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_UI_BillBoard_FixedMark_HighAlert"
+              "IIBFEAKOPKK": "Eff_UI_BillBoard_FixedMark_HighAlert"
             }
           ]
         }
@@ -5708,7 +5708,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Change_EnhanceLevel",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": 1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -5719,7 +5719,7 @@
               "$type": "ServerLuaCall",
               "luaCallType": "FromGroup",
               "funcName": "SLC_Change_EnhanceLevel",
-              "IAJKJLGNLLE": 1,
+              "LIAAKLHNPEN": 1,
               "MPPMFEDKGHC": -1.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -6185,7 +6185,7 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_Monster_TowerDefense_Destroy_HeadPoint"
+              "IIBFEAKOPKK": "Eff_Monster_TowerDefense_Destroy_HeadPoint"
             }
           ],
           "onThinkInterval": [
@@ -6253,7 +6253,7 @@
           "modifierMixins": [
             {
               "$type": "BillboardFixedMarkMixin",
-              "AAGLKHDLCIL": "Eff_Monster_TowerDefense_Destroy_HeadPoint"
+              "IIBFEAKOPKK": "Eff_Monster_TowerDefense_Destroy_HeadPoint"
             }
           ],
           "onThinkInterval": [
@@ -6367,9 +6367,9 @@
           "$type": "ServerLuaCall",
           "predicates": [
             {
-              "$type": "ANOHBLKJOMD",
+              "$type": "GIJKJEOKOPG",
               "target": "Self",
-              "LAJAEJPCEMO": "DieAbyss"
+              "JGCDFGHGNIJ": "DieAbyss"
             }
           ],
           "luaCallType": "FromGroup",
@@ -6383,9 +6383,9 @@
           "$type": "ServerLuaCall",
           "predicates": [
             {
-              "$type": "ANOHBLKJOMD",
+              "$type": "GIJKJEOKOPG",
               "target": "Self",
-              "LAJAEJPCEMO": "DieDrawn"
+              "JGCDFGHGNIJ": "DieDrawn"
             }
           ],
           "luaCallType": "FromGroup",
@@ -6399,9 +6399,9 @@
           "$type": "ServerLuaCall",
           "predicates": [
             {
-              "$type": "ANOHBLKJOMD",
+              "$type": "GIJKJEOKOPG",
               "target": "Self",
-              "LAJAEJPCEMO": "DieFall"
+              "JGCDFGHGNIJ": "DieFall"
             }
           ],
           "luaCallType": "FromGroup",
@@ -6415,9 +6415,9 @@
           "$type": "DebugLog",
           "predicates": [
             {
-              "$type": "ANOHBLKJOMD",
+              "$type": "GIJKJEOKOPG",
               "target": "Self",
-              "LAJAEJPCEMO": "DieAbyss"
+              "JGCDFGHGNIJ": "DieAbyss"
             }
           ],
           "content": "TD_V3: 死亡原因-DieAbyss"
@@ -6426,9 +6426,9 @@
           "$type": "DebugLog",
           "predicates": [
             {
-              "$type": "ANOHBLKJOMD",
+              "$type": "GIJKJEOKOPG",
               "target": "Self",
-              "LAJAEJPCEMO": "DieDrawn"
+              "JGCDFGHGNIJ": "DieDrawn"
             }
           ],
           "content": "TD_V3: 死亡原因-DieDrawn"
@@ -6437,9 +6437,9 @@
           "$type": "DebugLog",
           "predicates": [
             {
-              "$type": "ANOHBLKJOMD",
+              "$type": "GIJKJEOKOPG",
               "target": "Self",
-              "LAJAEJPCEMO": "DieFall"
+              "JGCDFGHGNIJ": "DieFall"
             }
           ],
           "content": "TD_V3: 死亡原因-DieFall"
@@ -8858,9 +8858,9 @@
               "muteAllShaderDieEff": true,
               "dieForceDisappearTime": 0.0,
               "dieDisappearEffect": "",
-              "GLJIPDICIHG": true,
-              "KIBIGDAMHOA": true,
-              "JFJPHBCOEHM": true
+              "PBDBIECLPMF": true,
+              "KNHKIABOIFF": true,
+              "LGOIFHPIPJM": true
             }
           ]
         }
@@ -9067,8 +9067,8 @@
               "dieEndTime": 0.10000000149011612,
               "dieForceDisappearTime": 2.0,
               "dieDisappearEffect": "Eff_Monster_Sandworm_01_Stage02_FlyingAttack_MultiBullet_Hit",
-              "GLJIPDICIHG": true,
-              "JFJPHBCOEHM": true
+              "PBDBIECLPMF": true,
+              "LGOIFHPIPJM": true
             }
           ]
         },
@@ -9099,6 +9099,412 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "MonsterAffix_SandwormActivity_KillSelf"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage1_NormalEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage1_NormalEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage1_NormalEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage1_EliteEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage1_EliteEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage1_EliteEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage2_NormalEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage2_NormalEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage2_NormalEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage2_EliteEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage2_EliteEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage2_EliteEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage3_NormalEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage3_NormalEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage3_NormalEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage3_EliteEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage3_EliteEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage3_EliteEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage4_NormalEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage4_NormalEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage4_NormalEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage4_EliteEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage4_EliteEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage4_EliteEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage5_NormalEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage5_NormalEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage5_NormalEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage5_EliteEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage5_EliteEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage5_EliteEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage6_NormalEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage6_NormalEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage6_NormalEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage6_EliteEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage6_EliteEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage6_EliteEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage7_NormalEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage7_NormalEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage7_NormalEntity"
+        }
+      ],
+      "isDynamicAbility": true
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage7_EliteEntity",
+      "abilitySpecials": {
+        "HPRatio": 0.0,
+        "AtkRatio": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage7_EliteEntity": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_MaxHPRatio": "HPRatio",
+            "Actor_AttackRatio": "AtkRatio"
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "modifierName": "UNIQUE_MonsterAffix_PropertiesUp_ForMuqadasPotionV2_Stage7_EliteEntity"
         }
       ],
       "isDynamicAbility": true

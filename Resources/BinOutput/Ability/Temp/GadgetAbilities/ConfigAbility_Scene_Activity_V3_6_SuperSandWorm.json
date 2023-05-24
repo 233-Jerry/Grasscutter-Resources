@@ -46,7 +46,7 @@
                   "entityTypes": ["Avatar"]
                 },
                 {
-                  "$type": "DFFODFONEJF"
+                  "$type": "NNPEGIOOOCJ"
                 }
               ]
             }
@@ -83,7 +83,7 @@
                       "entityTypes": ["Avatar"]
                     },
                     {
-                      "$type": "DFFODFONEJF"
+                      "$type": "NNPEGIOOOCJ"
                     }
                   ]
                 }
@@ -126,11 +126,11 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "AKJKDLEAAOE",
+                  "$type": "PDMGNBAMNKK",
                   "target": "Self",
                   "logic": "Lesser",
-                  "EDFIPMFDGNF": "_target_pos",
-                  "KHJOPCAGLCN": 11.0
+                  "BFIBGHIJCEO": "_target_pos",
+                  "BLHBBLJKJCP": 11.0
                 }
               ],
               "successActions": [
@@ -156,11 +156,11 @@
               "$type": "Predicated",
               "targetPredicates": [
                 {
-                  "$type": "AKJKDLEAAOE",
+                  "$type": "PDMGNBAMNKK",
                   "target": "Self",
                   "logic": "Lesser",
-                  "EDFIPMFDGNF": "_target_pos",
-                  "KHJOPCAGLCN": 11.0
+                  "BFIBGHIJCEO": "_target_pos",
+                  "BLHBBLJKJCP": 11.0
                 }
               ],
               "successActions": [
@@ -713,15 +713,15 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat1",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat1",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.5
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat2",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat2",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 1.5
             },
             {
@@ -743,15 +743,15 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat1",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat1",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 5.0
             },
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Mat2",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Mat2",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 5.0
             },
             {
@@ -784,7 +784,7 @@
             {
               "$type": "SetGlobalValue",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm"
               },
               "ratio": 1.0,
@@ -796,7 +796,7 @@
           "onRemoved": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 203
+              "LDNMJDBDMNC": 203
             }
           ]
         },
@@ -808,7 +808,7 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm_PartcontrolTarget"
               },
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WormCannon_Laser",
@@ -826,7 +826,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm"
               },
               "modifierName": "Lose_HP"
@@ -847,7 +847,7 @@
             {
               "$type": "AttachEffect",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm_PartcontrolTarget"
               },
               "healLimitedByCasterMaxHPRatio": "Eff_SceneObj_WormCannon_Hit",
@@ -880,7 +880,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm"
               },
               "successActions": [
@@ -899,7 +899,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm"
               },
               "successActions": [
@@ -1017,7 +1017,7 @@
       "onFieldEnter": [
         {
           "$type": "ChangeGadgetState",
-          "MNIDCPKMMNN": 201
+          "LDNMJDBDMNC": 201
         }
       ]
     }
@@ -1045,7 +1045,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "ChargingBall_Charging",
+              "AEHHOKAPHGO": "ChargingBall_Charging",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1065,7 +1065,7 @@
       "onFieldEnter": [
         {
           "$type": "ChangeGadgetState",
-          "MNIDCPKMMNN": 201
+          "LDNMJDBDMNC": 201
         }
       ]
     }
@@ -1115,7 +1115,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "ChargingBall_Charging_Big",
+              "AEHHOKAPHGO": "ChargingBall_Charging_Big",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1145,7 +1145,7 @@
       "onFieldEnter": [
         {
           "$type": "ChangeGadgetState",
-          "MNIDCPKMMNN": 201
+          "LDNMJDBDMNC": 201
         },
         {
           "$type": "ReviveStamina",
@@ -1269,7 +1269,7 @@
       "onAbilityStart": [
         {
           "$type": "ChangeGadgetState",
-          "MNIDCPKMMNN": 201
+          "LDNMJDBDMNC": 201
         }
       ]
     }
@@ -1281,7 +1281,7 @@
       "onAbilityStart": [
         {
           "$type": "ChangeGadgetState",
-          "MNIDCPKMMNN": 202
+          "LDNMJDBDMNC": 202
         }
       ]
     }
@@ -1346,7 +1346,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "AbilitySandWorm_Sand_End",
+              "AEHHOKAPHGO": "AbilitySandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1360,7 +1360,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "AbilitySandWorm_Sand_End",
+              "AEHHOKAPHGO": "AbilitySandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1374,7 +1374,7 @@
           "onThinkInterval": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         }
@@ -1419,7 +1419,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "AbilitySandWorm_Sand_End",
+              "AEHHOKAPHGO": "AbilitySandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1433,7 +1433,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "AbilitySandWorm_Sand_End",
+              "AEHHOKAPHGO": "AbilitySandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1447,7 +1447,7 @@
           "onThinkInterval": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         }
@@ -1492,7 +1492,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "AbilitySandWorm_Sand_End",
+              "AEHHOKAPHGO": "AbilitySandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1506,7 +1506,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "AbilitySandWorm_Sand_End",
+              "AEHHOKAPHGO": "AbilitySandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -1520,7 +1520,7 @@
           "onThinkInterval": [
             {
               "$type": "ChangeGadgetState",
-              "MNIDCPKMMNN": 201
+              "LDNMJDBDMNC": 201
             }
           ]
         }
@@ -1545,7 +1545,7 @@
             }
           ],
           "born": {
-            "$type": "PPIKALLAEKG",
+            "$type": "MOEKADMAMNK",
             "offset": {
               "x": 0.0,
               "y": 0.0,
@@ -1632,7 +1632,7 @@
                 }
               ],
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.0,
@@ -1660,7 +1660,7 @@
                 }
               ],
               "born": {
-                "$type": "PPIKALLAEKG",
+                "$type": "MOEKADMAMNK",
                 "IGAGDFFFGAO": {
                   "$type": "FHDJJGOONEI",
                   "OKDPGGJGGCJ": 0.0,
@@ -2205,7 +2205,7 @@
         {
           "$type": "ServerLuaTriggerEvent",
           "luaCallType": "FromGroup",
-          "LCMLAHJEBKC": "AbilitySandWorm_Monster_Die",
+          "AEHHOKAPHGO": "AbilitySandWorm_Monster_Die",
           "MPPMFEDKGHC": 0.0,
           "BOKNHLDBKKK": 0.0,
           "CHOIIMHDNHK": 0.0
@@ -2351,7 +2351,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "MoveSandWorm_Sand_End",
+              "AEHHOKAPHGO": "MoveSandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2416,7 +2416,7 @@
             {
               "$type": "ShowUICombatBar",
               "fore": true,
-              "BIGLEEIEGAI": true
+              "PNALMHDCGMP": true
             },
             {
               "$type": "SetGlobalValue",
@@ -2469,11 +2469,11 @@
             {
               "$type": "SetFollowMove",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm_PartcontrolTarget"
               },
               "EBBHBMFMOGD": "Body08",
-              "EMLMHGJEPIO": true
+              "DOOLAEHAOKP": true
             }
           ],
           "onRemoved": [
@@ -2506,11 +2506,11 @@
             {
               "$type": "SetFollowMove",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm_PartcontrolTarget"
               },
               "EBBHBMFMOGD": "Body08",
-              "EMLMHGJEPIO": true
+              "DOOLAEHAOKP": true
             }
           ],
           "onRemoved": [
@@ -2543,11 +2543,11 @@
             {
               "$type": "SetFollowMove",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "IS_DieSandworm_PartcontrolTarget"
               },
               "EBBHBMFMOGD": "Body08",
-              "EMLMHGJEPIO": true
+              "DOOLAEHAOKP": true
             }
           ],
           "onRemoved": [
@@ -2565,7 +2565,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "DieSandWorm_Sand_End",
+              "AEHHOKAPHGO": "DieSandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0
@@ -2608,7 +2608,7 @@
               "$type": "ChangeGadgetState",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Self",
                   "gadgetState": 201
                 }
@@ -2687,7 +2687,7 @@
             {
               "$type": "ServerLuaTriggerEvent",
               "luaCallType": "FromGroup",
-              "LCMLAHJEBKC": "SmashSandWorm_Sand_End",
+              "AEHHOKAPHGO": "SmashSandWorm_Sand_End",
               "MPPMFEDKGHC": 0.0,
               "BOKNHLDBKKK": 0.0,
               "CHOIIMHDNHK": 0.0

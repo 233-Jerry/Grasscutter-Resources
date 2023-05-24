@@ -61,7 +61,7 @@
                   "gadgetInfo": {
                     "configID": 42610005
                   },
-                  "MJDFCJGFEBD": 1.5
+                  "FABBJMJDMHO": 1.5
                 }
               ]
             },
@@ -102,7 +102,7 @@
                   "gadgetInfo": {
                     "configID": 42610022
                   },
-                  "MJDFCJGFEBD": 1.5
+                  "FABBJMJDMHO": 1.5
                 }
               ]
             },
@@ -143,7 +143,7 @@
                   "gadgetInfo": {
                     "configID": 42610032
                   },
-                  "MJDFCJGFEBD": 1.5
+                  "FABBJMJDMHO": 1.5
                 }
               ]
             },
@@ -184,7 +184,7 @@
                   "gadgetInfo": {
                     "configID": 42610013
                   },
-                  "MJDFCJGFEBD": 1.5
+                  "FABBJMJDMHO": 1.5
                 }
               ]
             },
@@ -225,7 +225,7 @@
                   "gadgetInfo": {
                     "configID": 42610038
                   },
-                  "MJDFCJGFEBD": 1.5
+                  "FABBJMJDMHO": 1.5
                 }
               ]
             }
@@ -686,95 +686,9 @@
           "$type": "AttachToAIAlertnessMixin",
           "alertness": [0],
           "modifierName": "AlertnessTag"
-        },
-        {
-          "$type": "AttachToStateIDMixin",
-          "stateIDs": ["Die", "Weak_Die"],
-          "modifierName": "DieClearMultiBullet"
         }
       ],
       "modifiers": {
-        "DieClearMultiBullet": {
-          "modifierName": "",
-          "bonusCriticalHurt": 100.0,
-          "onAdded": [
-            {
-              "$type": "KillMultiBullet",
-              "predicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "target": "Self",
-                  "key": "Monster_Scorpion_Sacred",
-                  "ratio": 1.0
-                }
-              ],
-              "gadgetInfo": {
-                "configID": 42610005
-              },
-              "MJDFCJGFEBD": 1.5
-            },
-            {
-              "$type": "KillMultiBullet",
-              "predicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "target": "Self",
-                  "key": "Monster_Vulture_Sacred",
-                  "ratio": 1.0
-                }
-              ],
-              "gadgetInfo": {
-                "configID": 42610022
-              },
-              "MJDFCJGFEBD": 1.5
-            },
-            {
-              "$type": "KillMultiBullet",
-              "predicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "target": "Self",
-                  "key": "Monster_Chrysopelea_Sacred",
-                  "ratio": 1.0
-                }
-              ],
-              "gadgetInfo": {
-                "configID": 42610032
-              },
-              "MJDFCJGFEBD": 1.5
-            },
-            {
-              "$type": "KillMultiBullet",
-              "predicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "target": "Self",
-                  "key": "Monster_Gator_Sacred",
-                  "ratio": 1.0
-                }
-              ],
-              "gadgetInfo": {
-                "configID": 42610013
-              },
-              "MJDFCJGFEBD": 1.5
-            },
-            {
-              "$type": "KillMultiBullet",
-              "predicates": [
-                {
-                  "$type": "ByTargetGlobalValue",
-                  "target": "Self",
-                  "key": "Monster_Panther_Sacred",
-                  "ratio": 1.0
-                }
-              ],
-              "gadgetInfo": {
-                "configID": 42610038
-              },
-              "MJDFCJGFEBD": 1.5
-            }
-          ]
-        },
         "AlertnessTag": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
@@ -1011,7 +925,100 @@
             }
           ]
         }
-      }
+      },
+      "onAdded": [
+        {
+          "$type": "SetGlobalValue",
+          "ratio": 0.0,
+          "key": "SacredEntityDie",
+          "maxValue": 0.0,
+          "minValue": 0.0
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "SetGlobalValue",
+          "ratio": 1.0,
+          "key": "SacredEntityDie",
+          "maxValue": 0.0,
+          "minValue": 0.0
+        },
+        {
+          "$type": "KillMultiBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "Monster_Scorpion_Sacred",
+              "ratio": 1.0
+            }
+          ],
+          "gadgetInfo": {
+            "configID": 42610005
+          },
+          "FABBJMJDMHO": 1.5
+        },
+        {
+          "$type": "KillMultiBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "Monster_Vulture_Sacred",
+              "ratio": 1.0
+            }
+          ],
+          "gadgetInfo": {
+            "configID": 42610022
+          },
+          "FABBJMJDMHO": 1.5
+        },
+        {
+          "$type": "KillMultiBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "Monster_Chrysopelea_Sacred",
+              "ratio": 1.0
+            }
+          ],
+          "gadgetInfo": {
+            "configID": 42610032
+          },
+          "FABBJMJDMHO": 1.5
+        },
+        {
+          "$type": "KillMultiBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "Monster_Gator_Sacred",
+              "ratio": 1.0
+            }
+          ],
+          "gadgetInfo": {
+            "configID": 42610013
+          },
+          "FABBJMJDMHO": 1.5
+        },
+        {
+          "$type": "KillMultiBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "Monster_Panther_Sacred",
+              "ratio": 1.0
+            }
+          ],
+          "gadgetInfo": {
+            "configID": 42610038
+          },
+          "FABBJMJDMHO": 1.5
+        }
+      ]
     }
   }
 ]

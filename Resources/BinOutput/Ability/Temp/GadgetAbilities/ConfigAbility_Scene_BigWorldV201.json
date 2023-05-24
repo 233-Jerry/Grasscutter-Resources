@@ -286,7 +286,7 @@
               "$type": "AttachEffect",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 201
                 }
               ],
@@ -301,7 +301,7 @@
               "$type": "AttachEffect",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 203
                 }
               ],
@@ -734,7 +734,7 @@
               "target": "Caster",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF"
+                  "$type": "LHCAGFAJMNF"
                 }
               ],
               "param1": 201
@@ -925,7 +925,7 @@
             {
               "$type": "RemoveModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 1
               },
               "modifierName": "ThunderWave01"
@@ -933,7 +933,7 @@
             {
               "$type": "RemoveModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "modifierName": "ThunderWave01"
@@ -941,7 +941,7 @@
             {
               "$type": "RemoveModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "modifierName": "ThunderWave01"
@@ -949,7 +949,7 @@
             {
               "$type": "RemoveModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 4
               },
               "modifierName": "ThunderWave01"
@@ -971,7 +971,7 @@
               "$type": "ApplyModifier",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "target": "Caster",
                   "gadgetState": 201
                 }
@@ -1025,7 +1025,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 1
               },
               "modifierName": "ThunderWave01"
@@ -1045,7 +1045,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 2
               },
               "modifierName": "ThunderWave01"
@@ -1065,7 +1065,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 3
               },
               "modifierName": "ThunderWave01"
@@ -1085,7 +1085,7 @@
             {
               "$type": "ApplyModifier",
               "otherTargets": {
-                "$type": "IDODCGJLHAE",
+                "$type": "CNBBJDLAEAM",
                 "value": 4
               },
               "modifierName": "ThunderWave01"
@@ -1306,7 +1306,7 @@
           "$type": "Predicated",
           "targetPredicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self"
             }
           ],
@@ -1439,7 +1439,7 @@
           "$type": "Predicated",
           "targetPredicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self"
             }
           ],
@@ -1530,7 +1530,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self"
             },
             {
@@ -1550,7 +1550,7 @@
           "target": "Target",
           "targetPredicates": [
             {
-              "$type": "MCODPFDFBAF",
+              "$type": "LHCAGFAJMNF",
               "target": "Self",
               "gadgetState": 201
             },
@@ -2063,7 +2063,7 @@
             {
               "$type": "Predicated",
               "otherTargets": {
-                "$type": "CDFGNCHMNMA",
+                "$type": "OMJNAIFHGGH",
                 "tag": "AdeptusStove"
               },
               "targetPredicates": [
@@ -2877,7 +2877,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 }
               ],
               "successActions": [
@@ -3033,7 +3033,7 @@
               "$type": "SendEffectTrigger",
               "predicates": [
                 {
-                  "$type": "MCODPFDFBAF",
+                  "$type": "LHCAGFAJMNF",
                   "gadgetState": 202
                 }
               ],
@@ -3431,16 +3431,16 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Point1",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point1",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Point1",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point1",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -3452,16 +3452,16 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Point2",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point2",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Point2",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point2",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -3473,16 +3473,16 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Point3",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point3",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Point3",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point3",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -3494,16 +3494,16 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Point4",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point4",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Point4",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point4",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -3515,16 +3515,16 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Point5",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point5",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Point5",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point5",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]
@@ -3536,16 +3536,16 @@
             {
               "$type": "SetMaterialParamFloatByTransform",
               "canBeHandledOnRecover": true,
-              "matName": "Point6",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point6",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 7.0
             }
           ],
           "onRemoved": [
             {
               "$type": "SetMaterialParamFloatByTransform",
-              "matName": "Point6",
-              "patternName": "_EmissionStrength",
+              "EKNGFFBIAPI": "Point6",
+              "IMLMHJCMAHE": "_EmissionStrength",
               "ratio": 0.0
             }
           ]

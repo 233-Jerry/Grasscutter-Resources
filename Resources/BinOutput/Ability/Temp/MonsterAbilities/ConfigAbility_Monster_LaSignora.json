@@ -10,14 +10,14 @@
           "modifierMixins": [
             {
               "$type": "ScenePropSyncMixin",
-              "CJOEOFHOCOA": "LaSignora_Tile_Ice"
+              "CLICIGIMCHD": "LaSignora_Tile_Ice"
             },
             {
               "$type": "TileAttackManagerMixin",
               "attackID": "TileAtk_LaSignora_Tile_Ice",
               "interval": 0.5,
               "campType": "OwnerCamp",
-              "BLMIEMMEIDA": true,
+              "BKKFHFEMJDC": true,
               "attackInfo": {
                 "attackTag": "LaSignora_Climate_Cold_Tile",
                 "attenuationTag": "TileAtk_LaSignora_Tile_Ice",
@@ -66,11 +66,11 @@
           "$type": "SetGlobalPos",
           "key": "_MONSTER_LASIGNORA_CENTER_POS",
           "born": {
-            "$type": "MIAJPKDCOPA",
+            "$type": "OHBNBLFMECJ",
             "DAPKLNIFPID": true,
             "actionPointType": "AureaePoint",
-            "GIAHMPPLHHF": {
-              "$type": "JIIIIFKFCAM",
+            "PANKEBCONMO": {
+              "$type": "DMJJPCHLKEC",
               "actionPointID": 1
             }
           }
@@ -111,37 +111,37 @@
         {
           "$type": "AttachModifierToGlobalValueMixin",
           "otherTargets": {
-            "$type": "IDODCGJLHAE",
+            "$type": "CNBBJDLAEAM",
             "operation": "AND",
             "value": 1
           },
           "globalValueKey": "_MONSTER_LASIGNORA_CLIMATE_CLEAR",
           "valueSteps": [-0.5, 0.5, 1.5],
           "modifierNameSteps": ["LaSignora_Empty", "LaSignora_Climate_AIClear"],
-          "ENLDLAJPNOK": false
+          "HMNOPBKLKFN": false
         },
         {
           "$type": "AttachModifierToGlobalValueMixin",
           "otherTargets": {
-            "$type": "IDODCGJLHAE",
+            "$type": "CNBBJDLAEAM",
             "operation": "AND",
             "value": 1
           },
           "globalValueKey": "_MONSTER_LASIGNORA_CLIMATE_BLOCK",
           "valueSteps": [-0.5, 0.5, 1.5],
           "modifierNameSteps": ["LaSignora_Climate_Block", "LaSignora_Empty"],
-          "ENLDLAJPNOK": false
+          "HMNOPBKLKFN": false
         },
         {
           "$type": "AttachModifierToGlobalValueMixin",
           "otherTargets": {
-            "$type": "IDODCGJLHAE",
+            "$type": "CNBBJDLAEAM",
             "value": 7
           },
           "globalValueKey": "_MONSTER_LASIGNORA_CLIMATE_BLOCK",
           "valueSteps": [-0.5, 0.5, 1.5],
           "modifierNameSteps": ["LaSignora_Climate_Block", "LaSignora_Empty"],
-          "ENLDLAJPNOK": false
+          "HMNOPBKLKFN": false
         }
       ],
       "modifiers": {
@@ -821,7 +821,7 @@
               "$type": "SetGlobalPos",
               "key": "_MONSTER_LASIGNORA_ROUND_POS_01",
               "born": {
-                "$type": "MIAJPKDCOPA",
+                "$type": "OHBNBLFMECJ",
                 "offset": {
                   "x": 10.0,
                   "y": 0.5,
@@ -829,8 +829,8 @@
                 },
                 "DAPKLNIFPID": true,
                 "actionPointType": "AureaePoint",
-                "GIAHMPPLHHF": {
-                  "$type": "JIIIIFKFCAM",
+                "PANKEBCONMO": {
+                  "$type": "DMJJPCHLKEC",
                   "actionPointID": 1
                 }
               }
@@ -839,7 +839,7 @@
               "$type": "SetGlobalPos",
               "key": "_MONSTER_LASIGNORA_ROUND_POS_02",
               "born": {
-                "$type": "MIAJPKDCOPA",
+                "$type": "OHBNBLFMECJ",
                 "offset": {
                   "x": -10.0,
                   "y": 0.5,
@@ -847,8 +847,8 @@
                 },
                 "DAPKLNIFPID": true,
                 "actionPointType": "AureaePoint",
-                "GIAHMPPLHHF": {
-                  "$type": "JIIIIFKFCAM",
+                "PANKEBCONMO": {
+                  "$type": "DMJJPCHLKEC",
                   "actionPointID": 1
                 }
               }
@@ -857,7 +857,7 @@
               "$type": "SetGlobalPos",
               "key": "_MONSTER_LASIGNORA_ROUND_POS_03",
               "born": {
-                "$type": "MIAJPKDCOPA",
+                "$type": "OHBNBLFMECJ",
                 "offset": {
                   "x": 10.0,
                   "y": 0.5,
@@ -865,8 +865,8 @@
                 },
                 "DAPKLNIFPID": true,
                 "actionPointType": "AureaePoint",
-                "GIAHMPPLHHF": {
-                  "$type": "JIIIIFKFCAM",
+                "PANKEBCONMO": {
+                  "$type": "DMJJPCHLKEC",
                   "actionPointID": 1
                 }
               }
@@ -875,7 +875,7 @@
               "$type": "SetGlobalPos",
               "key": "_MONSTER_LASIGNORA_ROUND_POS_04",
               "born": {
-                "$type": "MIAJPKDCOPA",
+                "$type": "OHBNBLFMECJ",
                 "offset": {
                   "x": -10.0,
                   "y": 0.5,
@@ -883,8 +883,8 @@
                 },
                 "DAPKLNIFPID": true,
                 "actionPointType": "AureaePoint",
-                "GIAHMPPLHHF": {
-                  "$type": "JIIIIFKFCAM",
+                "PANKEBCONMO": {
+                  "$type": "DMJJPCHLKEC",
                   "actionPointID": 1
                 }
               }
@@ -1103,7 +1103,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 }
               ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_ShatteredHeart_Hit",
@@ -1115,7 +1115,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 }
               ],
               "ratio": -1.0,
@@ -1134,7 +1134,7 @@
           "onAdded": [
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "LaSignora_Tile_Ice",
+              "CLICIGIMCHD": "LaSignora_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -1148,7 +1148,7 @@
           "onThinkInterval": [
             {
               "$type": "DestroyTile",
-              "CJOEOFHOCOA": "LaSignora_Tile_Ice",
+              "CLICIGIMCHD": "LaSignora_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -1387,8 +1387,8 @@
         },
         {
           "$type": "DoActionByDamageReceivedMixin",
-          "HJMKGKEHCGC": 0.30000001192092896,
-          "ABEHIPDDHIK": 9999.0,
+          "FKFHNPGEGOO": 0.30000001192092896,
+          "MMHPFDJDEDB": 9999.0,
           "actionQueue": [
             {
               "$type": "ShowReminder",
@@ -1872,7 +1872,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 },
                 {
                   "$type": "DDBJEPBNOGF",
@@ -1900,7 +1900,7 @@
                 {
                   "$type": "BKKNINKONEL",
                   "BOJCAKJDAKM": 0.0,
-                  "HGJHHOKKCBG": true
+                  "BLIJLCDKEKO": true
                 }
               ],
               "modifierName": "LaSignora_Shield_BeHit_Gap"
@@ -2000,7 +2000,7 @@
             },
             {
               "$type": "IgnoreMoveColToRockCol",
-              "HEKJLGGLAJH": true
+              "PFBCHJFGJPC": true
             }
           ],
           "onRemoved": [
@@ -2054,13 +2054,13 @@
         {
           "$type": "TryFindBlinkPointByBorn",
           "born": {
-            "$type": "MIAJPKDCOPA",
+            "$type": "OHBNBLFMECJ",
             "DAPKLNIFPID": true,
             "actionPointType": "AureaePoint",
-            "GIAHMPPLHHF": {
-              "$type": "ABODJPGHPMD",
-              "JEOIBPENIHE": [1, 2, 3, 4, 5],
-              "LCMBKKDDILG": 30.0,
+            "PANKEBCONMO": {
+              "$type": "BAGAEMJMEMJ",
+              "KJLPODIACPP": [1, 2, 3, 4, 5],
+              "DDHLOKDDJHI": 30.0,
               "distance": 30.0
             }
           },
@@ -2164,7 +2164,7 @@
             },
             {
               "$type": "IgnoreMoveColToRockCol",
-              "HEKJLGGLAJH": true
+              "PFBCHJFGJPC": true
             }
           ],
           "onRemoved": [
@@ -2821,7 +2821,7 @@
             },
             {
               "$type": "CreateTile",
-              "CJOEOFHOCOA": "LaSignora_Tile_Ice",
+              "CLICIGIMCHD": "LaSignora_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -3384,7 +3384,7 @@
         },
         {
           "$type": "CreateTile",
-          "CJOEOFHOCOA": "LaSignora_Tile_Ice",
+          "CLICIGIMCHD": "LaSignora_Tile_Ice",
           "attackPattern": {
             "$type": "ConfigAttackBox",
             "triggerType": "TriggerNoRepeat",
@@ -3738,7 +3738,7 @@
             },
             {
               "$type": "CreateTile",
-              "CJOEOFHOCOA": "LaSignora_Tile_Ice",
+              "CLICIGIMCHD": "LaSignora_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
@@ -3836,7 +3836,7 @@
               "$type": "FireEffect",
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_LaSignora_Wrap_FollowBurst",
               "born": {
-                "$type": "HDCGDNFAKPL"
+                "$type": "HIBKAMHIOBJ"
               },
               "effectTempleteID": -1.0,
               "effectTempleteID": true
@@ -3849,13 +3849,13 @@
                   "$type": "ConfigAttackCircle",
                   "triggerType": "TriggerNoRepeat",
                   "born": {
-                    "$type": "HDCGDNFAKPL",
+                    "$type": "HIBKAMHIOBJ",
                     "offset": {
                       "x": 0.0,
                       "y": -1.5,
                       "z": 0.0
                     },
-                    "GMMDIJCKLKK": true
+                    "CPMIJDHPOIE": true
                   },
                   "height": 3.0,
                   "radius": 2.5
@@ -3883,12 +3883,12 @@
             },
             {
               "$type": "CreateTile",
-              "CJOEOFHOCOA": "LaSignora_Tile_Ice",
+              "CLICIGIMCHD": "LaSignora_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",
                 "born": {
-                  "$type": "HDCGDNFAKPL"
+                  "$type": "HIBKAMHIOBJ"
                 },
                 "radius": 2.5
               }
@@ -4295,7 +4295,7 @@
             },
             {
               "$type": "IgnoreMoveColToRockCol",
-              "HEKJLGGLAJH": true
+              "PFBCHJFGJPC": true
             },
             {
               "$type": "AttachModifier",
@@ -4703,7 +4703,7 @@
       "abilityMixins": [
         {
           "$type": "WidgetMpSupportMixin",
-          "MJEDPGMFEMG": [
+          "LMDCPBDNIIO": [
             {
               "$type": "ApplyModifier",
               "target": "Other",
@@ -4942,7 +4942,7 @@
             },
             {
               "$type": "CreateTile",
-              "CJOEOFHOCOA": "LaSignora_Tile_Ice",
+              "CLICIGIMCHD": "LaSignora_Tile_Ice",
               "attackPattern": {
                 "$type": "ConfigAttackSphere",
                 "triggerType": "TriggerNoRepeat",

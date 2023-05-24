@@ -41,11 +41,11 @@
             },
             {
               "$type": "WidgetCDSyncMixin",
-              "BKJMCEBJDAP": true,
-              "KKBCPMOLKNI": true,
+              "MEBOPDNJKEF": true,
+              "ICFMKMFNOGB": true,
               "itemId": 220043,
-              "GGHOHGHJANF": 20040,
-              "LOHIBNPOFHO": 0.5
+              "CAKFGAKFIBJ": 20040,
+              "JHCIIMMELPF": 0.5
             }
           ]
         },
@@ -137,7 +137,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             }
           ]
         },
@@ -412,7 +413,8 @@
         {
           "$type": "ChangePlayMode",
           "RotationDampTime": true,
-          "muteRemoteAction": true
+          "muteRemoteAction": true,
+          "LEMNHMBJBFH": "ActivityAimState"
         }
       ],
       "isDynamicAbility": true
@@ -515,7 +517,7 @@
                   "ratio": 0.0
                 }
               ],
-              "PJCBIDINDFE": 220043
+              "MEHOBBGMKNM": 220043
             },
             {
               "$type": "SetGlobalValue",
@@ -545,8 +547,8 @@
       "abilityMixins": [
         {
           "$type": "AttachToWidgetStateMixin",
-          "IDFNMBKHDDI": [220073],
-          "IIMDEPOLIFJ": [
+          "IBEOMJCAAMG": [220073],
+          "DJGMKFDENDP": [
             {
               "$type": "ApplyModifier",
               "RotationDampTime": true,
@@ -563,7 +565,7 @@
               "modifierName": "ActivityAbility_CatchAnimal_Aim_Handler"
             }
           ],
-          "HKDIGNOIAHC": [
+          "MNBGFLACDNI": [
             {
               "$type": "RemoveModifier",
               "RotationDampTime": true,
@@ -620,11 +622,11 @@
             },
             {
               "$type": "WidgetCDSyncMixin",
-              "BKJMCEBJDAP": true,
-              "KKBCPMOLKNI": true,
+              "MEBOPDNJKEF": true,
+              "ICFMKMFNOGB": true,
               "itemId": 220073,
-              "GGHOHGHJANF": 20049,
-              "LOHIBNPOFHO": 0.5
+              "CAKFGAKFIBJ": 20049,
+              "JHCIIMMELPF": 0.5
             }
           ]
         },
@@ -716,7 +718,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             }
           ]
         },
@@ -969,12 +972,12 @@
                       "$type": "ByAny",
                       "predicates": [
                         {
-                          "$type": "JNOEHGICGIC",
-                          "GMPKPPDODGN": "BODY_MALE"
+                          "$type": "CFMFMIBGCJA",
+                          "PJHJJKLLJMP": "BODY_MALE"
                         },
                         {
-                          "$type": "JNOEHGICGIC",
-                          "GMPKPPDODGN": "BODY_LADY"
+                          "$type": "CFMFMIBGCJA",
+                          "PJHJJKLLJMP": "BODY_LADY"
                         }
                       ]
                     }
@@ -1022,12 +1025,12 @@
                           "$type": "ByAny",
                           "predicates": [
                             {
-                              "$type": "JNOEHGICGIC",
-                              "GMPKPPDODGN": "BODY_BOY"
+                              "$type": "CFMFMIBGCJA",
+                              "PJHJJKLLJMP": "BODY_BOY"
                             },
                             {
-                              "$type": "JNOEHGICGIC",
-                              "GMPKPPDODGN": "BODY_GIRL"
+                              "$type": "CFMFMIBGCJA",
+                              "PJHJJKLLJMP": "BODY_GIRL"
                             }
                           ]
                         }
@@ -1119,7 +1122,8 @@
         {
           "$type": "ChangePlayMode",
           "RotationDampTime": true,
-          "muteRemoteAction": true
+          "muteRemoteAction": true,
+          "LEMNHMBJBFH": "ActivityAimState"
         }
       ],
       "isDynamicAbility": true
@@ -1190,7 +1194,8 @@
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
               "canBeHandledOnRecover": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "FungusFighterBattle"
             }
           ]
         },
@@ -1308,7 +1313,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             }
           ]
         },
@@ -1504,7 +1510,8 @@
         {
           "$type": "ChangePlayMode",
           "RotationDampTime": true,
-          "muteRemoteAction": true
+          "muteRemoteAction": true,
+          "LEMNHMBJBFH": "ActivityAimState"
         }
       ],
       "isDynamicAbility": true
@@ -1686,7 +1693,7 @@
                 }
               ],
               "tauntLevel": "Monster_TauntLevel_6",
-              "FMELGLLBLLD": true
+              "KHLNLLHBBKM": true
             }
           ],
           "onRemoved": [
@@ -1707,7 +1714,7 @@
                 }
               ],
               "careValue": -50000.0,
-              "FMELGLLBLLD": true
+              "KHLNLLHBBKM": true
             }
           ],
           "onThinkInterval": [
@@ -1728,7 +1735,7 @@
                 }
               ],
               "tauntLevel": "Monster_TauntLevel_6",
-              "FMELGLLBLLD": true
+              "KHLNLLHBBKM": true
             }
           ]
         },
@@ -1857,11 +1864,11 @@
             },
             {
               "$type": "WidgetCDSyncMixin",
-              "BKJMCEBJDAP": true,
-              "KKBCPMOLKNI": true,
+              "MEBOPDNJKEF": true,
+              "ICFMKMFNOGB": true,
               "itemId": 220046,
-              "GGHOHGHJANF": 20041,
-              "LOHIBNPOFHO": 0.5
+              "CAKFGAKFIBJ": 20041,
+              "JHCIIMMELPF": 0.5
             }
           ]
         },
@@ -1953,7 +1960,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             }
           ]
         },
@@ -2228,7 +2236,8 @@
         {
           "$type": "ChangePlayMode",
           "RotationDampTime": true,
-          "muteRemoteAction": true
+          "muteRemoteAction": true,
+          "LEMNHMBJBFH": "ActivityAimState"
         }
       ],
       "isDynamicAbility": true
@@ -2498,7 +2507,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "ActivityAimState"
             }
           ]
         },
@@ -2587,7 +2597,7 @@
             {
               "$type": "AvatarShareCDSkillStart",
               "skillID": 20042,
-              "HGGMPNJDMDM": 1
+              "PLNHLFFCJJH": 1
             },
             {
               "$type": "FireEffect",
@@ -2736,7 +2746,8 @@
         {
           "$type": "ChangePlayMode",
           "RotationDampTime": true,
-          "muteRemoteAction": true
+          "muteRemoteAction": true,
+          "LEMNHMBJBFH": "ActivityAimState"
         }
       ],
       "isDynamicAbility": true
@@ -3626,7 +3637,7 @@
         },
         {
           "$type": "AddAISpecialAlertTemperature",
-          "DJPIGFHOJGN": 40.0
+          "IODEDINBPGK": 40.0
         }
       ]
     }
@@ -3705,8 +3716,8 @@
           "modifierMixins": [
             {
               "$type": "TemperatureGrowRateMixin",
-              "ELFNOBENCAN": "_Is_Hunt_Animal_Activity3.1",
-              "MHBBMHELDGI": 0.6000000238418579
+              "HCJAEENEGGP": "_Is_Hunt_Animal_Activity3.1",
+              "PDIOKPICPKN": 0.6000000238418579
             }
           ]
         },
@@ -3718,8 +3729,8 @@
           "modifierMixins": [
             {
               "$type": "TemperatureGrowRateMixin",
-              "ELFNOBENCAN": "_Is_Hunt_Animal_Activity3.1",
-              "MHBBMHELDGI": 0.6000000238418579
+              "HCJAEENEGGP": "_Is_Hunt_Animal_Activity3.1",
+              "PDIOKPICPKN": 0.6000000238418579
             },
             {
               "$type": "TriggerPostProcessEffectMixin",
@@ -3776,7 +3787,8 @@
                   "$type": "ChangePlayMode",
                   "RotationDampTime": true,
                   "canBeHandledOnRecover": true,
-                  "muteRemoteAction": true
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "BoarChuck"
                 }
               ]
             }
@@ -3818,7 +3830,8 @@
                   "$type": "ChangePlayMode",
                   "RotationDampTime": true,
                   "canBeHandledOnRecover": true,
-                  "muteRemoteAction": true
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "BoarHunt"
                 }
               ]
             }
@@ -3860,7 +3873,8 @@
                   "$type": "ChangePlayMode",
                   "RotationDampTime": true,
                   "canBeHandledOnRecover": true,
-                  "muteRemoteAction": true
+                  "muteRemoteAction": true,
+                  "LEMNHMBJBFH": "BoarKingChallenge"
                 }
               ]
             }

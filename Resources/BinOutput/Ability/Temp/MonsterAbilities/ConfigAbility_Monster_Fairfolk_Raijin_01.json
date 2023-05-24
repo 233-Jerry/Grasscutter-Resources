@@ -14,6 +14,13 @@
               "key": "_WATCHER_82118_ThunderPunish_Hit_",
               "ratio": 0.0,
               "compareType": "NoneOrEqual"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
             }
           ]
         }
@@ -41,6 +48,35 @@
               "key": "_IS_RAIJIN",
               "maxValue": 0.0,
               "minValue": 0.0
+            },
+            {
+              "$type": "UseSkillEliteSet",
+              "RotationDampTime": true,
+              "canBeHandledOnRecover": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "skillEliteSetID": 1
+            },
+            {
+              "$type": "UseSkillEliteSet",
+              "RotationDampTime": true,
+              "canBeHandledOnRecover": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "skillEliteSetID": 2
             }
           ]
         },
@@ -53,6 +89,24 @@
               "lifeByOwnerIsAlive": true,
               "gadgetID": 42007010,
               "byServer": true
+            },
+            {
+              "$type": "SetGlobalPos",
+              "key": "_MONSTER_RAIJIN_BORNPOS_",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "DAPKLNIFPID": true,
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "IABNJPGBAOH": true
+              },
+              "setTarget": false
             }
           ]
         }
@@ -676,7 +730,7 @@
               },
               "targetPredicates": [
                 {
-                  "$type": "GDFCOCOIPCB",
+                  "$type": "FENFLPKEFPL",
                   "ratio": 90.0
                 }
               ],
@@ -944,12 +998,12 @@
         },
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "Monster_Raijin_Apply_HalfHp_Limbo"
         },
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "Monster_Raijin_01_CounterAttack_AllowDelay_Handler"
         }
       ],
@@ -1008,10 +1062,28 @@
           "onAdded": [
             {
               "$type": "ApplyModifier",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "modifierName": "UNIQUE_Monster_Raijin_01_HalfHp_Limbo"
             },
             {
               "$type": "ApplyModifier",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "modifierName": "UNIQUE_Monster_Raijin_01_CounterAttack_HalfHP_Check"
             }
           ]
@@ -1394,6 +1466,15 @@
       "onAdded": [
         {
           "$type": "ApplyModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
           "modifierName": "Monster_Raijin_01_CounterAttack"
         }
       ],
@@ -1459,8 +1540,69 @@
           "stateID": "MeleeAttack2_AS",
           "modifierName": "Monster_Raijin_01_MeleeAttack02_AS_Attack",
           "normalizeStart": 0.029999999329447746
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["MeleeAttack2_BS"],
+          "modifierName": "Monster_Raijin_01_MeleeAttack02_CreateEcho01",
+          "predicates": [
+            {
+              "$type": "ByAnimatorFloat",
+              "logic": "Equal",
+              "ratio": 101.0,
+              "parameter": "PoseID"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["MeleeAttack2_BS"],
+          "modifierName": "Monster_Raijin_01_MeleeAttack02_CreateEcho02",
+          "predicates": [
+            {
+              "$type": "ByAnimatorFloat",
+              "logic": "Equal",
+              "ratio": 201.0,
+              "parameter": "PoseID"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ]
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": [
+            "MeleeAttack2_Loop",
+            "MeleeAttack2_OnceLoop",
+            "MeleeAttack2_AS"
+          ],
+          "modifierName": "Monster_Raijin_01_MeleeAttack02_AttackDetect",
+          "predicates": [
+            {
+              "$type": "ByAnimatorFloat",
+              "logic": "Equal",
+              "ratio": 101.0,
+              "parameter": "PoseID"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ]
         }
       ],
+      "abilitySpecials": {
+        "RandomTimer01": 0.20000000298023224
+      },
       "modifiers": {
         "Monster_Raijin_01_MeleeAttack02_AS_Attack": {
           "modifierName": "",
@@ -1484,7 +1626,7 @@
                   "radius": 6.0
                 },
                 "attackInfo": {
-                  "attackTag": "",
+                  "attackTag": "MeleeAttack2",
                   "attenuationTag": "MeleeAttack2",
                   "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
                   "attackProperty": {
@@ -1614,6 +1756,242 @@
                 }
               },
               "targetType": "Enemy"
+            }
+          ]
+        },
+        "Monster_Raijin_01_MeleeAttack02_CreateEcho01": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 1.0,
+                  "y": 0.0,
+                  "z": -10.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 5.0
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007016,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 8.0,
+                  "y": 0.0,
+                  "z": 5.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 5.0
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007016,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -8.0,
+                  "y": 0.0,
+                  "z": 5.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 5.0
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007016,
+              "campID": 4001
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 0.6000000238418579,
+              "valueRangeMin": 0.20000000298023224,
+              "overrideMapKey": "RandomTimer01"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Raijin_01_MeleeAttack02_EchoMeleeAttackTimer"
+            }
+          ]
+        },
+        "Monster_Raijin_01_MeleeAttack02_CreateEcho02": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalPos",
+              "target": "SelfAttackTarget",
+              "key": "_MONSTER_RAIJIN_CREATEECHO_MELEEATTACK_POS_",
+              "born": {
+                "$type": "MGDGOLHGFAP",
+                "DAPKLNIFPID": true,
+                "GKAPKIFBACA": 0.0,
+                "DCKBDJJECJH": 5.0,
+                "JPJIEDIHGFF": 22.5
+              },
+              "setTarget": false
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": 5.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 1.0
+                },
+                "direction": {
+                  "$type": "IHINHODOMIN",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 90.0,
+                    "z": 0.0
+                  },
+                  "JPOJHLOIKLG": 15.0
+                },
+                "positionKey": "_MONSTER_RAIJIN_CREATEECHO_MELEEATTACK_POS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007016,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "offset": {
+                  "x": -5.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IGAGDFFFGAO": {
+                  "$type": "FHDJJGOONEI",
+                  "OKDPGGJGGCJ": 0.0,
+                  "CPOKKADJBFH": 1.0
+                },
+                "direction": {
+                  "$type": "IHINHODOMIN",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": -90.0,
+                    "z": 0.0
+                  },
+                  "JPOJHLOIKLG": 15.0
+                },
+                "positionKey": "_MONSTER_RAIJIN_CREATEECHO_MELEEATTACK_POS_",
+                "directionKey": ""
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007016,
+              "campID": 4001
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 0.6000000238418579,
+              "valueRangeMin": 0.20000000298023224,
+              "overrideMapKey": "RandomTimer01"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Raijin_01_MeleeAttack02_EchoMeleeAttackTimer"
+            }
+          ]
+        },
+        "Monster_Raijin_01_MeleeAttack02_EchoMeleeAttackTimer": {
+          "modifierName": "",
+          "duration": "RandomTimer01",
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42007016
+              },
+              "modifierName": "Monster_Raijin_01_MeleeAttack02_EchoMeleeAttack"
+            }
+          ]
+        },
+        "Monster_Raijin_01_MeleeAttack02_EchoMeleeAttack": {
+          "modifierName": "",
+          "duration": 5.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "MeleeAttack",
+              "MPTriggerOnRemote": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ]
+        },
+        "Monster_Raijin_01_MeleeAttack02_AttackDetect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": ["MeleeAttack2"]
+                },
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "AllTeams",
+                  "modifierName": "Monster_Raijin_01_MeleeAttack02_AttackLanded"
+                }
+              ]
+            }
+          ]
+        },
+        "Monster_Raijin_01_MeleeAttack02_AttackLanded": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ]
         }
@@ -1780,7 +2158,7 @@
         },
         {
           "$type": "AttachToAIAlertnessMixin",
-          "alertness": [2],
+          "alertness": [2, 3],
           "modifierName": "Monster_Raijin_01_DetectCheck"
         },
         {
@@ -2419,6 +2797,20 @@
             {
               "$type": "SetAISkillCDAvailableNow",
               "skillIDs": [1002]
+            },
+            {
+              "$type": "AddChargeBarValue",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "ratio": 4.0,
+              "maxValue": 0.0,
+              "minValue": 0.0
             }
           ]
         },
@@ -2538,6 +2930,10 @@
                 "configID": 42007002
               },
               "modifierName": "ThunderCrystal_KillSelf"
+            },
+            {
+              "$type": "ServerMonsterLog",
+              "paramList": [9, 3, 1]
             }
           ]
         },
@@ -2559,6 +2955,14 @@
               "successActions": [
                 {
                   "$type": "DoWatcherSystemAction",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 0.0,
+                      "compareType": "NoneOrEqual"
+                    }
+                  ],
                   "watcherId": 82119,
                   "inThreatListOnly": true
                 }
@@ -2620,6 +3024,56 @@
             {
               "$type": "ApplyModifier",
               "modifierName": "Monster_Raijin_ChargeBar"
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "canBeHandledOnRecover": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_LEVEL_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "value": 6.5
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "canBeHandledOnRecover": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_LEVEL_02_",
+                  "ratio": 1.0
+                }
+              ],
+              "value": 5.0
+            },
+            {
+              "$type": "SetAISkillCDAvailableNow",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "skillIDs": [602]
             }
           ]
         },
@@ -2654,7 +3108,64 @@
             },
             {
               "$type": "SetAISkillGCD",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "value": 2.0
+            },
+            {
+              "$type": "KillSelf",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42007017
+              }
+            },
+            {
+              "$type": "KillSelf",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42007018
+              }
+            },
+            {
+              "$type": "KillSelf",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42007019
+              }
+            },
+            {
+              "$type": "SetAISkillGCD",
+              "canBeHandledOnRecover": true,
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "value": 1.5
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetAISkillCDAvailableNow",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "skillIDs": [8]
             }
           ]
         },
@@ -2674,8 +3185,8 @@
           "modifierMixins": [
             {
               "$type": "ChargeBarMixin",
-              "JGHAOKENLDJ": 2,
-              "NBBOACENGHG": 0.0,
+              "CEEGCFOCBBN": 2,
+              "JFECABAPELO": 0.0,
               "maxValue": 3.0
             }
           ]
@@ -2749,6 +3260,91 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "Raijin_BeHit_Monitor"
+        }
+      ],
+      "onAbilityStart": [
+        {
+          "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ],
+          "bulletID": 42007015,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Raijin_ElectricStormBullet_Hit",
+      "onAbilityStart": [
+        {
+          "$type": "TriggerAttackEvent",
+          "attackEvent": {
+            "attackPattern": {
+              "$type": "ConfigAttackCircle",
+              "triggerType": "TriggerNoRepeat",
+              "born": {
+                "$type": "ConfigBornByCollisionPoint",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "AKNHOGLMAAH",
+                  "eularAngles": {
+                    "x": 0.10000000149011612,
+                    "y": 0.10000000149011612,
+                    "z": 0.10000000149011612
+                  }
+                }
+              },
+              "height": 10.0,
+              "radius": 0.5
+            },
+            "attackInfo": {
+              "attackTag": "",
+              "attenuationTag": "",
+              "attenuationGroup": "default",
+              "attackProperty": {
+                "damagePercentage": 0.5,
+                "damagePercentageRatio": 0.0,
+                "elementType": "Electric",
+                "bonusCriticalHurt": 25.0,
+                "strikeType": "Blunt",
+                "enBreak": 1.0
+              },
+              "hitPattern": {
+                "onHitEffectName": "default",
+                "hitImpulseType": "LV1",
+                "hitHaltTimeScale": 0.009999999776482582
+              },
+              "forceCameraShake": true,
+              "cameraShake": {
+                "shakeType": "CustomVector",
+                "shakeRange": 0.20000000298023224,
+                "shakeTime": 0.10000000149011612,
+                "shakeDir": {
+                  "y": -1.0
+                }
+              }
+            }
+          },
+          "targetType": "Enemy"
         }
       ]
     }
@@ -2877,6 +3473,9 @@
           "modifierName": "Monster_Raijin_01_FlyBomb_WingEffect"
         }
       ],
+      "abilitySpecials": {
+        "RandomTimer01": 0.0
+      },
       "modifiers": {
         "Monster_Raijin_01_FlyBomb_WingEffect": {
           "modifierName": "",
@@ -3197,13 +3796,6 @@
                   "modifierName": "Monster_Raijin_ThunderCrystal_SoundWaveToTeam"
                 },
                 {
-                  "$type": "AddChargeBarValue",
-                  "target": "OriginOwner",
-                  "ratio": 0.20000000298023224,
-                  "maxValue": 0.0,
-                  "minValue": 0.0
-                },
-                {
                   "$type": "ApplyModifier",
                   "target": "OriginOwner",
                   "modifierName": "Monster_Raijin_ThunderCrystal_ChargeBar_Handler"
@@ -3233,13 +3825,6 @@
                   "modifierName": "Monster_Raijin_ThunderCrystal_SoundWaveToTeam"
                 },
                 {
-                  "$type": "AddChargeBarValue",
-                  "target": "OriginOwner",
-                  "ratio": 0.20000000298023224,
-                  "maxValue": 0.0,
-                  "minValue": 0.0
-                },
-                {
                   "$type": "ApplyModifier",
                   "target": "OriginOwner",
                   "modifierName": "Monster_Raijin_ThunderCrystal_ChargeBar_Handler"
@@ -3258,6 +3843,12 @@
           "duration": 0.10000000149011612,
           "bonusCriticalHurt": 100.0,
           "onAdded": [
+            {
+              "$type": "AddChargeBarValue",
+              "ratio": 0.20000000298023224,
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
             {
               "$type": "ApplyModifier",
               "target": "AllTeams",
@@ -3563,11 +4154,29 @@
           "failActions": [
             {
               "$type": "RemoveModifier",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "CasterOriginOwner",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "modifierName": "Monster_Raijin_ThunderCrystal_BulletEffect"
             },
             {
               "$type": "SetGlobalPos",
               "target": "Owner",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "CasterOriginOwner",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "key": "_MONSTER_RAIJIN_THUNDERCRYSTAL_BORN_POS",
               "born": {
                 "$type": "ConfigBornBySelf",
@@ -3576,6 +4185,15 @@
             },
             {
               "$type": "FireEffect",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "CasterOriginOwner",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderCrystal_Explode",
               "born": {
                 "$type": "ConfigBornBySelf"
@@ -3584,6 +4202,15 @@
             },
             {
               "$type": "TriggerAttackEvent",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "CasterOriginOwner",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "attackEvent": {
                 "attackPattern": {
                   "$type": "ConfigAttackCircle",
@@ -3618,7 +4245,75 @@
             {
               "$type": "ApplyModifier",
               "target": "Owner",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "CasterOriginOwner",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
               "modifierName": "Monster_Raijin_ThunderCrystal_GadgetCreate_Monster"
+            }
+          ]
+        },
+        {
+          "$type": "Predicated",
+          "target": "Target",
+          "targetPredicates": [
+            {
+              "$type": "ByEntityTypes",
+              "entityTypes": ["Level"]
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "CasterOriginOwner",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ],
+          "successActions": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderCrystal_Explode",
+              "born": {
+                "$type": "ConfigBornBySelf"
+              },
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf"
+                  },
+                  "height": 2.0,
+                  "radius": 2.0
+                },
+                "attackInfo": {
+                  "attackTag": "",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.16599999368190765,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 50.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 9999.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV0"
+                  },
+                  "canBeModifiedBy": "OriginOwner"
+                }
+              },
+              "targetType": "Enemy"
             }
           ]
         }
@@ -3629,7 +4324,86 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Monster_Raijin_FireThunderCrystal",
+      "modifiers": {
+        "CreateCrystal_Elite_Timer": {
+          "modifierName": "",
+          "duration": 0.20000000298023224,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 13.5
+                },
+                "DAPKLNIFPID": true,
+                "direction": {
+                  "$type": "AKNHOGLMAAH",
+                  "eularAngles": {
+                    "z": 1.0
+                  }
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007017,
+              "byServer": true
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -11.699999809265137,
+                  "y": 0.0,
+                  "z": -6.75
+                },
+                "DAPKLNIFPID": true,
+                "direction": {
+                  "$type": "AKNHOGLMAAH",
+                  "eularAngles": {
+                    "z": 1.0
+                  }
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007017,
+              "byServer": true
+            },
+            {
+              "$type": "CreateGadget",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 11.699999809265137,
+                  "y": 0.0,
+                  "z": -6.75
+                },
+                "DAPKLNIFPID": true,
+                "direction": {
+                  "$type": "AKNHOGLMAAH",
+                  "eularAngles": {
+                    "z": 1.0
+                  }
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007017,
+              "byServer": true
+            }
+          ]
+        }
+      },
       "onAbilityStart": [
+        {
+          "$type": "KillSelf",
+          "otherTargets": {
+            "$type": "SelectTargetsByChildren",
+            "configID": 42007017
+          }
+        },
         {
           "$type": "SetGlobalDir",
           "target": "SelfAttackTarget",
@@ -3644,6 +4418,15 @@
         },
         {
           "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
           "bulletID": 42007001,
           "born": {
             "$type": "ConfigBornBySelf",
@@ -3665,6 +4448,15 @@
         },
         {
           "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
           "bulletID": 42007001,
           "born": {
             "$type": "ConfigBornBySelf",
@@ -3686,6 +4478,15 @@
         },
         {
           "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
           "bulletID": 42007001,
           "born": {
             "$type": "ConfigBornBySelf",
@@ -3707,6 +4508,15 @@
         },
         {
           "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
           "bulletID": 42007001,
           "born": {
             "$type": "ConfigBornBySelf",
@@ -3728,6 +4538,15 @@
         },
         {
           "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
           "bulletID": 42007001,
           "born": {
             "$type": "ConfigBornBySelf",
@@ -3746,6 +4565,587 @@
               "directionKey": "_THUNDER_CRYSTAL_TARGET_DIR"
             }
           }
+        },
+        {
+          "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ],
+          "bulletID": 42007001,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "direction": {
+              "$type": "IOPNFLFHGID",
+              "PPKEGDJIPMI": {
+                "x": 27.5,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          }
+        },
+        {
+          "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ],
+          "bulletID": 42007001,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "direction": {
+              "$type": "IOPNFLFHGID",
+              "PPKEGDJIPMI": {
+                "x": 27.5,
+                "y": 120.0,
+                "z": 0.0
+              }
+            }
+          }
+        },
+        {
+          "$type": "TriggerBullet",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ],
+          "bulletID": 42007001,
+          "born": {
+            "$type": "ConfigBornBySelf",
+            "offset": {
+              "x": 0.0,
+              "y": 6.5,
+              "z": 0.0
+            },
+            "direction": {
+              "$type": "IOPNFLFHGID",
+              "PPKEGDJIPMI": {
+                "x": 27.5,
+                "y": -120.0,
+                "z": 0.0
+              }
+            }
+          }
+        },
+        {
+          "$type": "ApplyModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            }
+          ],
+          "modifierName": "CreateCrystal_Elite_Timer"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Raijin_Camera_ElectricCrystal",
+      "abilitySpecials": {
+        "RandomTimer": 0.0
+      },
+      "modifiers": {
+        "UNIQUE_Raijin_ElectricCrystal_Detect01": {
+          "modifierName": "",
+          "isUnique": true,
+          "elementType": "Electric",
+          "bonusCriticalHurt": 25.0,
+          "thinkInterval": 20.0,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Electric",
+              "showDamageText": "",
+              "PNHPNGLLDJN": 360.0,
+              "OIMMEDBLDPJ": 1.0,
+              "damageRatio": 0.0,
+              "onShieldBroken": [
+                {
+                  "$type": "ServerMonsterLog",
+                  "target": "OriginOwner",
+                  "paramList": [9, 0, 1]
+                },
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "UNIQUE_Raijin_ElectricCrystal_Detect01"
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_Camera_ElectricCrystal",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 4.5,
+              "valueRangeMin": 0.009999999776482582,
+              "overrideMapKey": "RandomTimer"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_ElectricCrystal_DetectTimer"
+            },
+            {
+              "$type": "ApplyModifier",
+              "target": "OriginOwner",
+              "modifierName": "Raijin_ElectricCrystal_AddCount"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_Camera_ElectricCrystal_Hit",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 4.5,
+              "valueRangeMin": 0.009999999776482582,
+              "overrideMapKey": "RandomTimer"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_ElectricCrystal_DetectTimer"
+            }
+          ]
+        },
+        "UNIQUE_Raijin_ElectricCrystal_Detect02": {
+          "modifierName": "",
+          "isUnique": true,
+          "elementType": "Electric",
+          "bonusCriticalHurt": 75.0,
+          "thinkInterval": 15.0,
+          "modifierMixins": [
+            {
+              "$type": "ElementShieldMixin",
+              "elementType": "Electric",
+              "showDamageText": "",
+              "PNHPNGLLDJN": 360.0,
+              "OIMMEDBLDPJ": 1.0,
+              "damageRatio": 0.0,
+              "onShieldBroken": [
+                {
+                  "$type": "ServerMonsterLog",
+                  "target": "OriginOwner",
+                  "paramList": [9, 1, 1]
+                },
+                {
+                  "$type": "RemoveModifier",
+                  "modifierName": "UNIQUE_Raijin_ElectricCrystal_Detect02"
+                }
+              ]
+            }
+          ],
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_Camera_ElectricCrystal",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 4.5,
+              "valueRangeMin": 0.009999999776482582,
+              "overrideMapKey": "RandomTimer"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_ElectricCrystal_DetectTimer"
+            },
+            {
+              "$type": "ApplyModifier",
+              "target": "OriginOwner",
+              "modifierName": "Raijin_ElectricCrystal_AddCount"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onBeingHit": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_Camera_ElectricCrystal_Hit",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 4.5,
+              "valueRangeMin": 0.009999999776482582,
+              "overrideMapKey": "RandomTimer"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_ElectricCrystal_DetectTimer"
+            }
+          ]
+        },
+        "Raijin_ElectricCrystal_DetectTimer": {
+          "modifierName": "",
+          "duration": "RandomTimer",
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_ElectricCrystal_Detect"
+            }
+          ]
+        },
+        "Raijin_ElectricCrystal_Detect": {
+          "modifierName": "",
+          "duration": 8.0,
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 0.20000000298023224,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_Camera_ElectricCrystal_DetectAlert",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "Predicated",
+              "otherTargets": {
+                "$type": "SelectTargetsByShape",
+                "shapeName": "CircleR10H3",
+                "campTargetType": "Enemy",
+                "OBHNBNDMPFN": 1.0
+              },
+              "targetPredicates": [
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "TargetTeam",
+                  "modifierName": "Monster_Raijin_ThunderCrystal_SoundWaveToTeam"
+                },
+                {
+                  "$type": "ApplyModifier",
+                  "target": "OriginOwner",
+                  "modifierName": "Monster_Raijin_ThunderCrystal_ChargeBar_Handler"
+                }
+              ]
+            }
+          ]
+        },
+        "Monster_Raijin_ThunderCrystal_SoundWaveToTeam": {
+          "stacking": "MultipleRefresh",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 1.0
+          },
+          "modifierName": "",
+          "duration": 0.10000000149011612,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Raijin_ThunderCrystal_SoundWaveEffectHandler"
+            },
+            {
+              "$type": "AddGlobalValue",
+              "ratio": 0.20000000298023224,
+              "key": "_MONSTER_RAIJIN_IN_WAVE_TIME",
+              "useLimitRange": true,
+              "maxValue": 4.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "Monster_Raijin_ThunderCrystal_SoundWaveEffectHandler": {
+          "modifierName": "",
+          "duration": 0.5,
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "AttachModifierToSelfGlobalValueMixin",
+              "globalValueKey": "_MONSTER_RAIJIN_IN_WAVE_TIME",
+              "defaultGlobalValueOnCreate": 0.0,
+              "valueSteps": [
+                -0.5, 0.10000000149011612, 1.600000023841858,
+                3.0999999046325684, 4.0
+              ],
+              "modifierNameSteps": [
+                "Monster_Raijin_ThunderCrystal_SoundWaveEffectNone",
+                "Monster_Raijin_ThunderCrystal_SoundWaveEffectOne",
+                "Monster_Raijin_ThunderCrystal_SoundWaveEffectTwo",
+                "Monster_Raijin_ThunderCrystal_SoundWaveEffectLock"
+              ]
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "_MONSTER_RAIJIN_IN_WAVE_TIME",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ],
+          "LGJBJJBCBEH": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "_MONSTER_RAIJIN_IN_WAVE_TIME",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "Monster_Raijin_ThunderCrystal_ChargeBar_Handler": {
+          "stacking": "MultipleRefresh",
+          "stackingOption": {
+            "abilitySpecialName": "",
+            "maxModifierNumForMultipleType": 1.0
+          },
+          "modifierName": "",
+          "duration": 0.10000000149011612,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AddChargeBarValue",
+              "ratio": 0.20000000298023224,
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "ApplyModifier",
+              "target": "AllTeams",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_MONSTER_RAIJIN_IN_WAVE_TIME",
+                  "ratio": 0.0,
+                  "compareType": "MoreThan"
+                }
+              ],
+              "modifierName": "Monster_Raijin_ThunderCrystal_ChargeBarLink"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "UNIQUE_Monster_Raijin_ThunderCrystal_ChargeBar_ValueResetElite"
+            }
+          ]
+        },
+        "UNIQUE_Monster_Raijin_ThunderCrystal_ChargeBar_ValueResetElite": {
+          "stacking": "RefreshUniqueDurability",
+          "modifierName": "",
+          "isUnique": true,
+          "duration": 0.5,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 0.0,
+              "key": "_HAS_TEAM_BE_LOCKED",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            },
+            {
+              "$type": "Predicated",
+              "target": "AllTeams",
+              "targetPredicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+                  "ratio": 1.0
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "SetGlobalValue",
+                  "ratio": 1.0,
+                  "key": "_HAS_TEAM_BE_LOCKED",
+                  "maxValue": 0.0,
+                  "minValue": 0.0
+                }
+              ]
+            },
+            {
+              "$type": "SetChargeBarValue",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_HAS_TEAM_BE_LOCKED",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ],
+              "ratio": 0.0
+            }
+          ]
+        },
+        "Monster_Raijin_ThunderCrystal_ChargeBarLink": {
+          "modifierName": "",
+          "duration": 0.5,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ChargeLink",
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "IABNJPGBAOH": true,
+                "attachPointName": "RootNode",
+                "ABIMPICHJNC": "Applier"
+              },
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Monster_Raijin_ThunderCrystal_SoundWaveEffectNone": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0
+        },
+        "Monster_Raijin_ThunderCrystal_SoundWaveEffectOne": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_SoundWave_Mark_Waning1",
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Monster_Raijin_ThunderCrystal_SoundWaveEffectTwo": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_SoundWave_Mark_Waning2",
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Monster_Raijin_ThunderCrystal_SoundWaveEffectLock": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "Raijin_ElectricCrystal_AddCount": {
+          "modifierName": "",
+          "duration": 1.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "ratio": 1.0,
+              "key": "_MONSTER_RAIJIN_ELITE_CRYSTALCOUNT_",
+              "useLimitRange": true,
+              "maxValue": 3.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "Raijin_ElectricCrystal_ReduceCount": {
+          "modifierName": "",
+          "duration": 1.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "AddGlobalValue",
+              "ratio": -1.0,
+              "key": "_MONSTER_RAIJIN_ELITE_CRYSTALCOUNT_",
+              "useLimitRange": true,
+              "maxValue": 3.0,
+              "minValue": 0.0
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Owner",
+              "key": "_IS_LEVEL_02_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            }
+          ],
+          "modifierName": "UNIQUE_Raijin_ElectricCrystal_Detect01"
+        },
+        {
+          "$type": "ApplyModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Owner",
+              "key": "_IS_LEVEL_02_",
+              "ratio": 1.0
+            }
+          ],
+          "modifierName": "UNIQUE_Raijin_ElectricCrystal_Detect02"
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "FireEffect",
+          "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_Camera_ElectricCrystal_Die",
+          "effectTempleteID": -1.0
+        },
+        {
+          "$type": "ApplyModifier",
+          "target": "OriginOwner",
+          "modifierName": "Raijin_ElectricCrystal_ReduceCount"
         }
       ]
     }
@@ -3811,7 +5211,7 @@
                   "radius": 4.0
                 },
                 "attackInfo": {
-                  "attackTag": "",
+                  "attackTag": "SummonThunder",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
@@ -3912,7 +5312,7 @@
                   "radius": 4.0
                 },
                 "attackInfo": {
-                  "attackTag": "",
+                  "attackTag": "SummonThunder",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
@@ -3956,7 +5356,7 @@
                   "radius": 4.0
                 },
                 "attackInfo": {
-                  "attackTag": "",
+                  "attackTag": "SummonThunder",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
@@ -4057,7 +5457,7 @@
                   "radius": 4.0
                 },
                 "attackInfo": {
-                  "attackTag": "",
+                  "attackTag": "SummonThunder",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
@@ -4101,7 +5501,7 @@
                   "radius": 4.0
                 },
                 "attackInfo": {
-                  "attackTag": "",
+                  "attackTag": "SummonThunder",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
@@ -4122,12 +5522,73 @@
               "targetType": "Enemy"
             }
           ]
+        },
+        "Monster_Raijin_SummonThunder_AttackDetected01": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": ["SummonThunder"]
+                },
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "AllTeams",
+                  "modifierName": "SummonThunder_AttackLanded01"
+                }
+              ]
+            }
+          ]
+        },
+        "SummonThunder_AttackLanded01": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
         }
       },
       "onAdded": [
         {
           "$type": "ApplyModifier",
           "modifierName": "Monster_Raijin_SummonThunder_Gadget"
+        },
+        {
+          "$type": "AttachModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "OriginOwner",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            },
+            {
+              "$type": "ByAnimatorFloat",
+              "target": "OriginOwner",
+              "logic": "Equal",
+              "ratio": 101.0,
+              "parameter": "PoseID"
+            }
+          ],
+          "modifierName": "Monster_Raijin_SummonThunder_AttackDetected01"
         }
       ]
     }
@@ -4171,7 +5632,7 @@
                   "radius": 4.0
                 },
                 "attackInfo": {
-                  "attackTag": "",
+                  "attackTag": "SummonThunder",
                   "attenuationTag": "",
                   "attenuationGroup": "default",
                   "attackProperty": {
@@ -4192,12 +5653,73 @@
               "targetType": "Enemy"
             }
           ]
+        },
+        "Monster_Raijin_SummonThunder_AttackDetected": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": ["SummonThunder"]
+                },
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "AllTeams",
+                  "modifierName": "SummonThunder_AttackLanded"
+                }
+              ]
+            }
+          ]
+        },
+        "SummonThunder_AttackLanded": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
         }
       },
       "onAdded": [
         {
           "$type": "ApplyModifier",
           "modifierName": "Monster_Raijin_SummonThunder_Children"
+        },
+        {
+          "$type": "AttachModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "OriginOwner",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            },
+            {
+              "$type": "ByAnimatorFloat",
+              "target": "OriginOwner",
+              "logic": "Equal",
+              "ratio": 101.0,
+              "parameter": "PoseID"
+            }
+          ],
+          "modifierName": "Monster_Raijin_SummonThunder_AttackDetected"
         }
       ]
     }
@@ -4236,6 +5758,13 @@
               "target": "Self",
               "key": "_WATCHER_82113_",
               "ratio": 1.0
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
             }
           ]
         },
@@ -4247,6 +5776,13 @@
               "$type": "ByTargetGlobalValue",
               "target": "Self",
               "key": "_WATCHER_82112_",
+              "ratio": 0.0,
+              "compareType": "NoneOrEqual"
+            },
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
               "ratio": 0.0,
               "compareType": "NoneOrEqual"
             }
@@ -4919,6 +6455,9 @@
           "normalizeStart": 0.07000000029802322
         }
       ],
+      "abilitySpecials": {
+        "RandomTimer01": 0.0
+      },
       "modifiers": {
         "Monster_Raijin_FireThunderSpear_Charge_Delay1": {
           "modifierName": "",
@@ -5032,6 +6571,74 @@
             {
               "$type": "ApplyModifier",
               "modifierName": "Monster_Raijin_FireThunderSpear_Charge_Delay4"
+            },
+            {
+              "$type": "CreateGadget",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 12.5,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": -30.0,
+                    "z": 0.0
+                  }
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007016,
+              "campID": 4001
+            },
+            {
+              "$type": "CreateGadget",
+              "predicates": [
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 1.0
+                }
+              ],
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -12.5,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 30.0,
+                    "z": 0.0
+                  }
+                }
+              },
+              "GKJDJDACPMC": true,
+              "gadgetID": 42007016,
+              "campID": 4001
+            },
+            {
+              "$type": "SetRandomOverrideMapValue",
+              "valueRangeMax": 0.800000011920929,
+              "valueRangeMin": 0.4000000059604645,
+              "overrideMapKey": "RandomTimer01"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Monster_Raijin_01_Echo_FireThunderSpear_Timer"
             }
           ]
         },
@@ -5144,6 +6751,38 @@
                   "maxAngle": 45.0
                 }
               }
+            }
+          ]
+        },
+        "Monster_Raijin_01_Echo_FireThunderSpear_Timer": {
+          "modifierName": "",
+          "duration": "RandomTimer01",
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "otherTargets": {
+                "$type": "SelectTargetsByChildren",
+                "configID": 42007016
+              },
+              "modifierName": "Monster_Raijin_01_Echo_FireThunderSpear"
+            }
+          ]
+        },
+        "Monster_Raijin_01_Echo_FireThunderSpear": {
+          "modifierName": "",
+          "duration": 4.75,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetAnimatorTrigger",
+              "triggerID": "ThunderSpear",
+              "MPTriggerOnRemote": true
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
             }
           ]
         }
@@ -5321,13 +6960,180 @@
               "modifierName": "Monster_Raijin_FireThunderPunish_Monster"
             }
           ]
+        },
+        "Monster_Raijin_FireThunderPunish_Warning_Elite": {
+          "modifierName": "",
+          "duration": 2.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007018,
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "DAPKLNIFPID": true,
+                "positionKey": "_MONSTER_RAIJIN_ELECTRICCAGEPOS1_",
+                "directionKey": ""
+              },
+              "trackTarget": "Self",
+              "GKJDJDACPMC": true
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007018,
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "DAPKLNIFPID": true,
+                "positionKey": "_MONSTER_RAIJIN_ELECTRICCAGEPOS2_",
+                "directionKey": ""
+              },
+              "trackTarget": "Self",
+              "GKJDJDACPMC": true
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007019,
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "DAPKLNIFPID": true,
+                "positionKey": "_MONSTER_RAIJIN_ELECTRICCAGEPOS3_",
+                "directionKey": ""
+              },
+              "trackTarget": "Self",
+              "GKJDJDACPMC": true
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007019,
+              "born": {
+                "$type": "ConfigBornByGlobalValue",
+                "DAPKLNIFPID": true,
+                "positionKey": "_MONSTER_RAIJIN_ELECTRICCAGEPOS4_",
+                "directionKey": ""
+              },
+              "trackTarget": "Self",
+              "GKJDJDACPMC": true
+            }
+          ]
         }
       },
+      "onAdded": [
+        {
+          "$type": "SetGlobalPos",
+          "key": "_MONSTER_RAIJIN_ELECTRICCAGEPOS1_",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": -22.5
+            },
+            "positionKey": "_MONSTER_RAIJIN_BORNPOS_",
+            "directionKey": ""
+          },
+          "setTarget": false
+        },
+        {
+          "$type": "SetGlobalPos",
+          "key": "_MONSTER_RAIJIN_ELECTRICCAGEPOS2_",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 22.5
+            },
+            "positionKey": "_MONSTER_RAIJIN_BORNPOS_",
+            "directionKey": ""
+          },
+          "setTarget": false
+        },
+        {
+          "$type": "SetGlobalPos",
+          "key": "_MONSTER_RAIJIN_ELECTRICCAGEPOS3_",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "offset": {
+              "x": 12.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "positionKey": "_MONSTER_RAIJIN_BORNPOS_",
+            "directionKey": ""
+          },
+          "setTarget": false
+        },
+        {
+          "$type": "SetGlobalPos",
+          "key": "_MONSTER_RAIJIN_ELECTRICCAGEPOS4_",
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "offset": {
+              "x": -12.5,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "positionKey": "_MONSTER_RAIJIN_BORNPOS_",
+            "directionKey": ""
+          },
+          "setTarget": false
+        }
+      ],
       "onAbilityStart": [
         {
           "$type": "ApplyModifier",
           "target": "SelfAttackTarget",
+          "predicates": [
+            {
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "PHHIBIFDCJD",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "Self",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    },
+                    {
+                      "$type": "ByAnimatorFloat",
+                      "target": "Self",
+                      "logic": "Equal",
+                      "ratio": 201.0,
+                      "parameter": "PoseID"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            }
+          ],
           "modifierName": "Monster_Raijin_FireThunderPunish_Warning_ToTarget"
+        },
+        {
+          "$type": "ApplyModifier",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            },
+            {
+              "$type": "ByAnimatorFloat",
+              "logic": "Equal",
+              "ratio": 101.0,
+              "parameter": "PoseID"
+            }
+          ],
+          "modifierName": "Monster_Raijin_FireThunderPunish_Warning_Elite"
         }
       ]
     }
@@ -5440,6 +7246,135 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Monster_Raijin_FireThunderPunish_Gadget"
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Raijin_ElectricCage_Surround_01",
+      "modifiers": {
+        "ElectricCage_Alert": {
+          "modifierName": "",
+          "duration": 1.5,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderPunish_Warning",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "ElectricCage_Damage"
+            }
+          ]
+        },
+        "ElectricCage_Damage": {
+          "modifierName": "",
+          "duration": 20.0,
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 0.5,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderPunishLoop",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "KillSelf"
+            }
+          ],
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": ["Fairfolk_Raijin_ThunderPunish"]
+                },
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "AllTeams",
+                  "modifierName": "ElectricCage_AttackLanded"
+                }
+              ]
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": -7.0,
+                      "z": 0.0
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 16.0,
+                  "radius": 4.0
+                },
+                "attackInfo": {
+                  "attackTag": "Fairfolk_Raijin_ThunderPunish",
+                  "attenuationTag": "",
+                  "attenuationGroup": "default",
+                  "attackProperty": {
+                    "damagePercentage": 0.2770000100135803,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 1.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV1"
+                  },
+                  "canBeModifiedBy": "OriginOwner"
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ]
+        },
+        "ElectricCage_AttackLanded": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "ElectricCage_Alert"
+        }
+      ]
     }
   },
   {
@@ -5639,6 +7574,38 @@
         },
         {
           "$type": "CreateGadget",
+          "predicates": [
+            {
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "PHHIBIFDCJD",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "Self",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    },
+                    {
+                      "$type": "ByAnimatorFloat",
+                      "target": "Self",
+                      "logic": "Equal",
+                      "ratio": 201.0,
+                      "parameter": "PoseID"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            }
+          ],
           "born": {
             "$type": "ConfigBornByGlobalValue",
             "positionKey": "_MONSTER_RAIJIN_THUNDERNET_POS",
@@ -5648,6 +7615,38 @@
         },
         {
           "$type": "CreateGadget",
+          "predicates": [
+            {
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "PHHIBIFDCJD",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "Self",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    },
+                    {
+                      "$type": "ByAnimatorFloat",
+                      "target": "Self",
+                      "logic": "Equal",
+                      "ratio": 201.0,
+                      "parameter": "PoseID"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            }
+          ],
           "born": {
             "$type": "ConfigBornByGlobalValue",
             "offset": {
@@ -5663,6 +7662,38 @@
         },
         {
           "$type": "CreateGadget",
+          "predicates": [
+            {
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "PHHIBIFDCJD",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "Self",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    },
+                    {
+                      "$type": "ByAnimatorFloat",
+                      "target": "Self",
+                      "logic": "Equal",
+                      "ratio": 201.0,
+                      "parameter": "PoseID"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            }
+          ],
           "born": {
             "$type": "ConfigBornByGlobalValue",
             "offset": {
@@ -5678,7 +7709,78 @@
         },
         {
           "$type": "ApplyModifier",
+          "predicates": [
+            {
+              "$type": "ByAny",
+              "predicates": [
+                {
+                  "$type": "PHHIBIFDCJD",
+                  "predicates": [
+                    {
+                      "$type": "ByTargetGlobalValue",
+                      "target": "Self",
+                      "key": "_IS_ACTIVITY_01_",
+                      "ratio": 1.0
+                    },
+                    {
+                      "$type": "ByAnimatorFloat",
+                      "target": "Self",
+                      "logic": "Equal",
+                      "ratio": 201.0,
+                      "parameter": "PoseID"
+                    }
+                  ]
+                },
+                {
+                  "$type": "ByTargetGlobalValue",
+                  "target": "Self",
+                  "key": "_IS_ACTIVITY_01_",
+                  "ratio": 0.0,
+                  "compareType": "NoneOrEqual"
+                }
+              ]
+            }
+          ],
           "modifierName": "Monster_Raijin_ThunderNetLink_Delay"
+        },
+        {
+          "$type": "CreateGadget",
+          "predicates": [
+            {
+              "$type": "ByTargetGlobalValue",
+              "target": "Self",
+              "key": "_IS_ACTIVITY_01_",
+              "ratio": 1.0
+            },
+            {
+              "$type": "ByAnimatorFloat",
+              "target": "Self",
+              "logic": "Equal",
+              "ratio": 101.0,
+              "parameter": "PoseID"
+            }
+          ],
+          "born": {
+            "$type": "ConfigBornByGlobalValue",
+            "offset": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "direction": {
+              "$type": "AKNHOGLMAAH",
+              "JPOJHLOIKLG": 180.0,
+              "eularAngles": {
+                "x": 0.10000000149011612,
+                "y": 0.10000000149011612,
+                "z": 0.10000000149011612
+              }
+            },
+            "positionKey": "_MONSTER_RAIJIN_BORNPOS_",
+            "directionKey": ""
+          },
+          "GKJDJDACPMC": true,
+          "gadgetID": 42007020
         }
       ]
     }
@@ -5797,6 +7899,783 @@
         {
           "$type": "ApplyModifier",
           "modifierName": "Monster_Raijin_ThunderNet_Gadget"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Raijin_ElectricWallPos",
+      "modifiers": {
+        "Raijin_ElectricWallPos_CreateElectricWall": {
+          "modifierName": "",
+          "duration": 1.2999999523162842,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007021,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": -24.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  }
+                },
+                "IABNJPGBAOH": true,
+                "attachPointName": "RootNode"
+              },
+              "trackTarget": "Self"
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007021,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "offset": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 24.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 0.0,
+                    "y": 180.0,
+                    "z": 0.0
+                  }
+                },
+                "IABNJPGBAOH": true,
+                "attachPointName": "RootNode"
+              },
+              "trackTarget": "Self"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007021,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "offset": {
+                  "x": 24.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IABNJPGBAOH": true,
+                "attachPointName": "RootNode"
+              },
+              "trackTarget": "Self"
+            },
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007021,
+              "born": {
+                "$type": "ConfigBornByAttachPoint",
+                "offset": {
+                  "x": -24.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "IABNJPGBAOH": true,
+                "attachPointName": "RootNode"
+              },
+              "trackTarget": "Self"
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Raijin_ElectricWallPos_CreateElectricWall"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Raijin_ElectricWall",
+      "modifiers": {
+        "Raijin_ElectricWall_Damage": {
+          "modifierName": "",
+          "duration": 4.800000190734863,
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 0.15000000596046448,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderNetFollowRotation",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackBox",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 2.5,
+                      "z": 0.0
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "size": {
+                    "x": 16.0,
+                    "y": 5.0,
+                    "z": 1.0
+                  }
+                },
+                "attackInfo": {
+                  "attackTag": "Monster_Raijin_ThunderNet_Damage",
+                  "attenuationTag": "Monster_Raijin_ThunderNet_Damage",
+                  "attenuationGroup": "Monster_Effigy_Elite_Rock_StoneBall",
+                  "attackProperty": {
+                    "damagePercentage": 1.0,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 9999.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV1"
+                  },
+                  "canBeModifiedBy": "OriginOwner"
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ],
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderNet_Die",
+              "effectTempleteID": -1.0
+            }
+          ],
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": ["Monster_Raijin_ThunderNet_Damage"]
+                },
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "AllTeams",
+                  "modifierName": "ElectricWall_AttackLanded"
+                }
+              ]
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackBox",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": 2.5,
+                      "z": 0.0
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "size": {
+                    "x": 16.0,
+                    "y": 5.0,
+                    "z": 1.0
+                  }
+                },
+                "attackInfo": {
+                  "attackTag": "Monster_Raijin_ThunderNet_Damage",
+                  "attenuationTag": "Monster_Raijin_ThunderNet_Damage",
+                  "attenuationGroup": "Monster_Effigy_Elite_Rock_StoneBall",
+                  "attackProperty": {
+                    "damagePercentage": 1.0,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 9999.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV0"
+                  },
+                  "canBeModifiedBy": "OriginOwner"
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ]
+        },
+        "ElectricWall_AttackLanded": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "ApplyModifier",
+          "modifierName": "Raijin_ElectricWall_Damage"
+        }
+      ]
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Raijin_Echo_CommonState",
+      "abilityMixins": [
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["MeleeAttack", "MeleeAttack_BS", "MeleeAttack_AS"],
+          "modifierName": "Raijin_Echo_MeleeAttack_AttackDetect"
+        },
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "MeleeAttack_AS",
+          "modifierName": "Raijin_Echo_MeleeAttack_AS",
+          "normalizeStart": 0.029999999329447746
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["MeleeAttack"],
+          "modifierName": "Raijin_Echo_MeleeAttack_Loop"
+        },
+        {
+          "$type": "AttachToStateIDMixin",
+          "stateIDs": ["ThunderSpear"],
+          "modifierName": "Raijin_Echo_ThunderSpear"
+        },
+        {
+          "$type": "AttachToNormalizedTimeMixin",
+          "stateID": "ThunderSpear",
+          "modifierName": "Raijin_Echo_FireThunderSpear_Charge",
+          "normalizeStart": 0.07000000029802322
+        }
+      ],
+      "modifiers": {
+        "Raijin_Echo_MeleeAttack_AS": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": -0.5,
+                      "z": 0.0
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 5.0,
+                  "radius": 6.0
+                },
+                "attackInfo": {
+                  "attackTag": "MeleeAttack2",
+                  "attenuationTag": "MeleeAttack2",
+                  "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
+                  "attackProperty": {
+                    "damagePercentage": 0.2770000100135803,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 101.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV3"
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ]
+        },
+        "Raijin_Echo_MeleeAttack_Loop": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "thinkInterval": 0.10000000149011612,
+          "onAdded": [
+            {
+              "$type": "AttachEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_MeleeAttack_During",
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 5.0,
+                  "radius": 5.5
+                },
+                "attackInfo": {
+                  "attackTag": "MeleeAttack2",
+                  "attenuationTag": "MeleeAttack2",
+                  "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
+                  "attackProperty": {
+                    "damagePercentage": 0.2770000100135803,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 101.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV3"
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ],
+          "onThinkInterval": [
+            {
+              "$type": "TriggerAttackEvent",
+              "attackEvent": {
+                "attackPattern": {
+                  "$type": "ConfigAttackCircle",
+                  "triggerType": "TriggerNoRepeat",
+                  "born": {
+                    "$type": "ConfigBornBySelf",
+                    "offset": {
+                      "x": 0.0,
+                      "y": -0.5,
+                      "z": 0.0
+                    },
+                    "IABNJPGBAOH": true
+                  },
+                  "height": 5.0,
+                  "radius": 6.0
+                },
+                "attackInfo": {
+                  "attackTag": "MeleeAttack2",
+                  "attenuationTag": "MeleeAttack2",
+                  "attenuationGroup": "Skirmisher_Fat_SprayGun_Ice",
+                  "attackProperty": {
+                    "damagePercentage": 0.2770000100135803,
+                    "damagePercentageRatio": 0.0,
+                    "elementType": "Electric",
+                    "bonusCriticalHurt": 25.0,
+                    "strikeType": "Blunt",
+                    "enBreak": 101.0
+                  },
+                  "hitPattern": {
+                    "onHitEffectName": "default",
+                    "hitImpulseType": "LV3"
+                  }
+                }
+              },
+              "targetType": "Enemy"
+            }
+          ]
+        },
+        "Raijin_Echo_MeleeAttack_AttackDetect": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAttackLanded": [
+            {
+              "$type": "Predicated",
+              "target": "Target",
+              "targetPredicates": [
+                {
+                  "$type": "LCCMCDGDKGI",
+                  "attackTags": ["MeleeAttack2"]
+                },
+                {
+                  "$type": "ByEntityTypes",
+                  "entityTypes": ["Avatar"]
+                },
+                {
+                  "$type": "ByAnimatorFloat",
+                  "target": "CasterOriginOwner",
+                  "logic": "Equal",
+                  "ratio": 101.0,
+                  "parameter": "PoseID"
+                }
+              ],
+              "successActions": [
+                {
+                  "$type": "ApplyModifier",
+                  "target": "AllTeams",
+                  "modifierName": "Raijin_Echo_MeleeAttack_AttackLanded"
+                }
+              ]
+            }
+          ]
+        },
+        "Raijin_Echo_MeleeAttack_AttackLanded": {
+          "stacking": "Unique",
+          "modifierName": "",
+          "duration": 3.0,
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "SetGlobalValue",
+              "ratio": 1.0,
+              "key": "TEAM_BE_DETECTED_BY_RAIJIN",
+              "maxValue": 0.0,
+              "minValue": 0.0
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Charge": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderCrystal_Charge",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -4.0,
+                  "y": 3.200000047683716,
+                  "z": 1.0
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Charge_Delay1"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Charge_Delay2"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Charge_Delay3"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Charge_Delay4"
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Charge_Delay1": {
+          "modifierName": "",
+          "duration": 0.20000000298023224,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderCrystal_Charge",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -2.0,
+                  "y": 2.700000047683716,
+                  "z": 2.0
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Charge_Delay2": {
+          "modifierName": "",
+          "duration": 0.4000000059604645,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderCrystal_Charge",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 2.200000047683716,
+                  "z": 3.0
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Charge_Delay3": {
+          "modifierName": "",
+          "duration": 0.6000000238418579,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderCrystal_Charge",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 2.0,
+                  "y": 2.700000047683716,
+                  "z": 2.0
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Charge_Delay4": {
+          "modifierName": "",
+          "duration": 0.800000011920929,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "FireEffect",
+              "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_ThunderCrystal_Charge",
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 4.0,
+                  "y": 3.200000047683716,
+                  "z": 1.0
+                },
+                "IABNJPGBAOH": true
+              },
+              "effectTempleteID": -1.0
+            }
+          ]
+        },
+        "Raijin_Echo_ThunderSpear": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_ThunderSpear_TriggerSpearTimer"
+            }
+          ]
+        },
+        "Raijin_Echo_ThunderSpear_TriggerSpearTimer": {
+          "modifierName": "",
+          "duration": 2.5999999046325684,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007004,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -4.0,
+                  "y": 3.200000047683716,
+                  "z": 1.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 7.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "JPOJHLOIKLG": 5.0
+                },
+                "IABNJPGBAOH": true
+              }
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Delay1"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Delay2"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Delay3"
+            },
+            {
+              "$type": "ApplyModifier",
+              "modifierName": "Raijin_Echo_FireThunderSpear_Delay4"
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Delay1": {
+          "modifierName": "",
+          "duration": 0.20000000298023224,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007004,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": -2.0,
+                  "y": 2.700000047683716,
+                  "z": 2.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 7.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "JPOJHLOIKLG": 5.0
+                },
+                "IABNJPGBAOH": true
+              }
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Delay2": {
+          "modifierName": "",
+          "duration": 0.4000000059604645,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007004,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 0.0,
+                  "y": 2.200000047683716,
+                  "z": 3.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 3.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "JPOJHLOIKLG": 5.0
+                },
+                "IABNJPGBAOH": true
+              }
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Delay3": {
+          "modifierName": "",
+          "duration": 0.6000000238418579,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007004,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 2.0,
+                  "y": 2.700000047683716,
+                  "z": 2.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 5.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "JPOJHLOIKLG": 5.0
+                },
+                "IABNJPGBAOH": true
+              }
+            }
+          ]
+        },
+        "Raijin_Echo_FireThunderSpear_Delay4": {
+          "modifierName": "",
+          "duration": 0.800000011920929,
+          "bonusCriticalHurt": 100.0,
+          "onRemoved": [
+            {
+              "$type": "TriggerBullet",
+              "bulletID": 42007004,
+              "born": {
+                "$type": "ConfigBornBySelf",
+                "offset": {
+                  "x": 4.0,
+                  "y": 3.200000047683716,
+                  "z": 3.0
+                },
+                "direction": {
+                  "$type": "JADOBJDPOLJ",
+                  "angleOffset": {
+                    "x": 7.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "JPOJHLOIKLG": 5.0
+                },
+                "IABNJPGBAOH": true
+              }
+            }
+          ]
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "FireEffect",
+          "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_EchoBS",
+          "effectTempleteID": -1.0
+        }
+      ],
+      "onKill": [
+        {
+          "$type": "FireEffect",
+          "healLimitedByCasterMaxHPRatio": "Eff_Monster_Raijin_EchoAS",
+          "effectTempleteID": -1.0
         }
       ]
     }
