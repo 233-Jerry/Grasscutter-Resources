@@ -1055,6 +1055,19 @@
             }
           ]
         },
+        "HitBox_Initializer_Handler": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "onAdded": [
+            {
+              "$type": "EnableHitBoxByName",
+              "RotationDampTime": true,
+              "canBeHandledOnRecover": true,
+              "hitBoxNames": ["HitBox"],
+              "setEnable": true
+            }
+          ]
+        },
         "ElectricFairy_Initializer_Handler": {
           "modifierName": "",
           "bonusCriticalHurt": 100.0,
@@ -1081,6 +1094,11 @@
           "$type": "ApplyModifier",
           "RotationDampTime": true,
           "modifierName": "PushCollider_Initializer_Handler"
+        },
+        {
+          "$type": "ApplyModifier",
+          "RotationDampTime": true,
+          "modifierName": "HitBox_Initializer_Handler"
         },
         {
           "$type": "ApplyModifier",

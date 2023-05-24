@@ -282,13 +282,6 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Avatar_PlayerBoy_CreateCrouchThrow",
-      "onAdded": [
-        {
-          "$type": "AttachEffect",
-          "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Dummy_Throw",
-          "effectTempleteID": -1.0
-        }
-      ],
       "onAbilityStart": [
         {
           "$type": "FireAISoundEvent",
@@ -602,13 +595,6 @@
     "Default": {
       "$type": "ConfigAbility",
       "abilityName": "Avatar_PlayerBoy_CreateFindCatThrow",
-      "onAdded": [
-        {
-          "$type": "AttachEffect",
-          "healLimitedByCasterMaxHPRatio": "Eff_Ambor_Dummy_Throw",
-          "effectTempleteID": -1.0
-        }
-      ],
       "onAbilityStart": [
         {
           "$type": "CreateGadget",
@@ -1023,7 +1009,8 @@
           ],
           "onRemoved": [
             {
-              "$type": "ChangePlayMode"
+              "$type": "ChangePlayMode",
+              "LEMNHMBJBFH": "GlidingChallengeState"
             },
             {
               "$type": "RemoveAvatarSkillInfo",
@@ -1236,7 +1223,8 @@
             {
               "$type": "ChangePlayMode",
               "RotationDampTime": true,
-              "muteRemoteAction": true
+              "muteRemoteAction": true,
+              "LEMNHMBJBFH": "FleurFairFall"
             }
           ]
         },
@@ -2177,6 +2165,40 @@
           ]
         }
       }
+    }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Team_Yoimiya_EndlessStamina",
+      "modifiers": {
+        "UNIQUE_Yoimiya_EndlessStaminaBuff": {
+          "modifierName": "",
+          "isUnique": true,
+          "bonusCriticalHurt": 100.0,
+          "modifierMixins": [
+            {
+              "$type": "CurLocalAvatarMixinV2",
+              "modifierName": "Yoimiya_EndlessStaminaBuff"
+            }
+          ]
+        },
+        "Yoimiya_EndlessStaminaBuff": {
+          "modifierName": "",
+          "bonusCriticalHurt": 100.0,
+          "properties": {
+            "Actor_CostStaminaRatio": -2.0
+          }
+        }
+      },
+      "onAdded": [
+        {
+          "$type": "AttachModifier",
+          "target": "Team",
+          "modifierName": "UNIQUE_Yoimiya_EndlessStaminaBuff"
+        }
+      ],
+      "isDynamicAbility": true
     }
   }
 ]

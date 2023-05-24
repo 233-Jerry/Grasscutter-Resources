@@ -2334,5 +2334,24 @@
       ],
       "isDynamicAbility": true
     }
+  },
+  {
+    "Default": {
+      "$type": "ConfigAbility",
+      "abilityName": "Avatar_Trampoline_Jump_SLC",
+      "onAbilityStart": [
+        {
+          "$type": "ServerLuaCall",
+          "target": "Other",
+          "luaCallType": "CurChallengeGroup",
+          "isTarget": true,
+          "funcName": "SLC_On_Mushroom_BeJumped",
+          "MPPMFEDKGHC": 0.0,
+          "BOKNHLDBKKK": 0.0,
+          "CHOIIMHDNHK": 0.0
+        }
+      ],
+      "isDynamicAbility": true
+    }
   }
 ]
