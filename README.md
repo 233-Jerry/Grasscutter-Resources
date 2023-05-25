@@ -1,11 +1,11 @@
 # Grasscutter Resources
-> <em>Resource Anime Game v3.6</em><br/>
+> <em>Resource Anime Game v3.7</em><br/>
 
-- ExcelBinOutput - 3.6 Dimbreath
-- BinOutput - 3.6 Dimbreath
-- Scripts - 3.6 GIO & Dump Manual by Community ***for natural spawn and many other things***
-- TextMap - 3.6 Dimbreath ***for language translations items,etc are used for gm-books***
-- QuestEncryptionKeys - 3.6 GI-cutscenes ***Used for cutscenes that require a key***
+- ExcelBinOutput - 3.7 Dimbreath (except `QuestExcelConfigData` 3.6?)
+- BinOutput - 3.7 Dimbreath
+- Scripts - 3.3-3.6 GIO & (3.7-?) Manual by Community (like hiro) ***for natural spawn and many other things***
+- TextMap - 3.7 Dimbreath ***for language translations items,etc are used for gm-books***
+- QuestEncryptionKeys - 3.7 GI-cutscenes ***Used for cutscenes that require a key***
 
 ## What is difference between GIO and GC?
 - GIO is a leaked full file from official server which was released last month (maybe 28/10/2022) which is available from CBT1-4.0 so it's possible that version 3.3+ some animations/characters are still in beta (aka beta old) so data won't be accurate anymore if it's already release because of the many revisions.
