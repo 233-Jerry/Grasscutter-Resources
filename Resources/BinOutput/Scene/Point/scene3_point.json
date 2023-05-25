@@ -20230,6 +20230,68 @@
       "HEDEIJAKDKM": "UI_Icon_Intee_Talk",
       "forbidSimpleUnlock": true
     },
+    "890": {
+      "$type": "DungeonEntry",
+      "gadgetId": 70950059,
+      "areaId": 2,
+      "pos": {
+        "x": 1818.7220458984375,
+        "y": 195.2447967529297,
+        "z": -1543.2760009765625
+      },
+      "rot": {
+        "y": 38.91154098510742
+      },
+      "tranPos": {
+        "x": 1823.213623046875,
+        "y": 194.70835876464844,
+        "z": -1537.7100830078125
+      },
+      "tranRot": {
+        "y": 218.8462677001953
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "cutsceneList": [531002],
+      "mapVisibility": "OnUnlocked",
+      "FPMAMOLMEPM": "",
+      "dungeonIds": [4065, 4066, 4067, 4068],
+      "dungeonQuestConditionList": {},
+      "size": {
+        "x": 5.0,
+        "y": 5.0,
+        "z": 5.0
+      },
+      "titleTextID": "UI_DUNGEON_ENTRY_EffigyV4",
+      "HEDEIJAKDKM": "UI_Icon_Intee_Talk",
+      "dungeonEntryType": "ActivityEffigyV4",
+      "forbidSimpleUnlock": true,
+      "NLHABCHIMMO": true
+    },
+    "891": {
+      "$type": "DungeonExit",
+      "gadgetId": 70010001,
+      "areaId": 2,
+      "pos": {
+        "x": 1823.375,
+        "y": 194.76190185546875,
+        "z": -1537.6519775390625
+      },
+      "rot": {
+        "y": 36.77817916870117
+      },
+      "tranPos": {
+        "x": 1818.17333984375,
+        "y": 194.7618865966797,
+        "z": -1539.142578125
+      },
+      "unlocked": true,
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "entryPointId": 890
+    },
     "90": {
       "$type": "DungeonExit",
       "gadgetId": 70010001,
@@ -20249,6 +20311,66 @@
       "ADNDKHDKAEC": "",
       "BEDBEJAACAH": "",
       "entryPointId": 89
+    },
+    "907": {
+      "$type": "DungeonEntry",
+      "gadgetId": 70950059,
+      "areaId": 8,
+      "pos": {
+        "x": -1085.6650390625,
+        "y": 281.172607421875,
+        "z": 1084.428955078125
+      },
+      "rot": {
+        "y": 180.0
+      },
+      "tranPos": {
+        "x": -1085.6654052734375,
+        "y": 279.6663513183594,
+        "z": 1080.48291015625
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "cutsceneList": [531002],
+      "mapVisibility": "OnUnlocked",
+      "FPMAMOLMEPM": "",
+      "dungeonIds": [9201, 9202, 9203, 9204, 9205, 9206, 9207],
+      "dungeonQuestConditionList": {},
+      "size": {
+        "x": 5.0,
+        "y": 5.0,
+        "z": 5.0
+      },
+      "titleTextID": "UI_ACTIVITY_MUQADAS_MARK_TITLE",
+      "HEDEIJAKDKM": "UI_Icon_Intee_Talk",
+      "dungeonEntryType": "ActivityMuqadasPotion",
+      "forbidSimpleUnlock": true,
+      "fireFieldEvent": true,
+      "NLHABCHIMMO": true
+    },
+    "908": {
+      "$type": "DungeonExit",
+      "gadgetId": 70010001,
+      "areaId": 8,
+      "pos": {
+        "x": -1085.5479736328125,
+        "y": 279.8078918457031,
+        "z": 1081.094970703125
+      },
+      "tranPos": {
+        "x": -1085.547607421875,
+        "y": 280.1102600097656,
+        "z": 1082.5657958984375
+      },
+      "tranRot": {
+        "y": 180.0
+      },
+      "unlocked": true,
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "entryPointId": 907
     },
     "91": {
       "$type": "TransPointNormal",
@@ -20275,6 +20397,151 @@
       "BEDBEJAACAH": "",
       "FPMAMOLMEPM": ""
     },
+    "913": {
+      "$type": "DungeonEntry",
+      "gadgetId": 70950059,
+      "areaId": 1,
+      "pos": {
+        "x": 2367.635009765625,
+        "y": 264.29229736328125,
+        "z": -1444.39599609375
+      },
+      "rot": {
+        "y": 200.0
+      },
+      "tranPos": {
+        "x": 2366.40283203125,
+        "y": 263.46771240234375,
+        "z": -1447.95458984375
+      },
+      "tranRot": {
+        "y": 20.000011444091797
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "cutsceneList": [531002],
+      "mapVisibility": "OnUnlocked",
+      "FPMAMOLMEPM": "",
+      "dungeonIds": [8901, 8902],
+      "dungeonQuestConditionList": {},
+      "size": {
+        "x": 5.0,
+        "y": 5.0,
+        "z": 5.0
+      },
+      "titleTextID": "UI_UGC_TITLE",
+      "HEDEIJAKDKM": "UI_Icon_Intee_Talk",
+      "dungeonEntryType": "ActivityUGCV2",
+      "forbidSimpleUnlock": true,
+      "NLHABCHIMMO": true
+    },
+    "914": {
+      "$type": "DungeonExit",
+      "gadgetId": 70010001,
+      "areaId": 1,
+      "pos": {
+        "x": 2366.403076171875,
+        "y": 263.46771240234375,
+        "z": -1447.9549560546875
+      },
+      "rot": {
+        "y": 20.000009536743164
+      },
+      "tranPos": {
+        "x": 2366.403076171875,
+        "y": 263.46771240234375,
+        "z": -1447.9549560546875
+      },
+      "tranRot": {
+        "y": 20.0
+      },
+      "unlocked": true,
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "entryPointId": 913
+    },
+    "916": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 1,
+      "pos": {
+        "x": 2221.68798828125,
+        "y": 230.08309936523438,
+        "z": -799.3411254882812
+      },
+      "tranPos": {
+        "x": 2221.688232421875,
+        "y": 230.08311462402344,
+        "z": -799.3411254882812
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyDiceDungeon",
+      "showOnLockedArea": true
+    },
+    "917": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 1,
+      "pos": {
+        "x": 2223.14599609375,
+        "y": 230.0885009765625,
+        "z": -789.5302124023438
+      },
+      "tranPos": {
+        "x": 2222.712158203125,
+        "y": 230.0884552001953,
+        "z": -789.7160034179688
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGcgPickAgent",
+      "showOnLockedArea": true
+    },
+    "918": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 7,
+      "pos": {
+        "x": -520.9921264648438,
+        "y": 207.8704071044922,
+        "z": 237.18080139160156
+      },
+      "tranPos": {
+        "x": -520.9921264648438,
+        "y": 207.87042236328125,
+        "z": 237.18081665039062
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGcgPickAgent",
+      "showOnLockedArea": true
+    },
+    "919": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 11,
+      "pos": {
+        "x": -2594.7041015625,
+        "y": 217.65589904785156,
+        "z": -3835.908935546875
+      },
+      "tranPos": {
+        "x": -2594.7041015625,
+        "y": 217.65589904785156,
+        "z": -3835.90869140625
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGcgPickAgent",
+      "showOnLockedArea": true
+    },
     "92": {
       "$type": "TransPointNormal",
       "gadgetId": 70110002,
@@ -20299,6 +20566,26 @@
       "ADNDKHDKAEC": "",
       "BEDBEJAACAH": "",
       "FPMAMOLMEPM": ""
+    },
+    "920": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 21,
+      "pos": {
+        "x": -2043.698974609375,
+        "y": 204.45120239257812,
+        "z": 2590.47900390625
+      },
+      "tranPos": {
+        "x": -2043.69873046875,
+        "y": 204.45115661621094,
+        "z": 2590.479248046875
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGcgPickAgent",
+      "showOnLockedArea": true
     },
     "924": {
       "$type": "DungeonEntry",
@@ -20420,6 +20707,180 @@
       },
       "closeTime": 24.0
     },
+    "936": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 1,
+      "pos": {
+        "x": 2213.037109375,
+        "y": 232.16529846191406,
+        "z": -786.0125732421875
+      },
+      "tranPos": {
+        "x": 2221.031982421875,
+        "y": 232.16529846191406,
+        "z": -780.9965209960938
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
+    "937": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 1,
+      "pos": {
+        "x": -519.4237060546875,
+        "y": 207.83090209960938,
+        "z": 242.83819580078125
+      },
+      "rot": {
+        "y": 226.23719787597656
+      },
+      "tranPos": {
+        "x": 2204.77392578125,
+        "y": 231.83389282226562,
+        "z": -780.7982788085938
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
+    "938": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 7,
+      "pos": {
+        "x": -2592.241943359375,
+        "y": 219.2301025390625,
+        "z": -3839.889892578125
+      },
+      "rot": {
+        "x": 0.00654935697093606,
+        "y": 172.29690551757812,
+        "z": 0.03900181129574776
+      },
+      "tranPos": {
+        "x": -22.399999618530273,
+        "y": 212.1121063232422,
+        "z": 10.987822532653809
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
+    "939": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 7,
+      "pos": {
+        "x": -2053.847900390625,
+        "y": 203.82569885253906,
+        "z": 2589.85498046875
+      },
+      "tranPos": {
+        "x": 8.472128868103027,
+        "y": 212.02259826660156,
+        "z": 7.984890937805176
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
+    "940": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 11,
+      "pos": {
+        "x": -2593.966064453125,
+        "y": 220.0,
+        "z": -3845.300048828125
+      },
+      "tranPos": {
+        "x": -15.842296600341797,
+        "y": 219.88983154296875,
+        "z": -6.284368515014648
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
+    "941": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 11,
+      "pos": {
+        "x": -2583.493896484375,
+        "y": 216.6999969482422,
+        "z": -3846.451904296875
+      },
+      "rot": {
+        "y": 342.3492126464844
+      },
+      "tranPos": {
+        "x": -4.562716007232666,
+        "y": 216.37677001953125,
+        "z": -4.398761749267578
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
+    "942": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 21,
+      "pos": {
+        "x": -2053.0,
+        "y": 206.3000030517578,
+        "z": 2604.06201171875
+      },
+      "tranPos": {
+        "x": -21.8906307220459,
+        "y": 205.92080688476562,
+        "z": 10.157389640808105
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
+    "943": {
+      "$type": "SceneBuildingPoint",
+      "gadgetId": 70010001,
+      "areaId": 21,
+      "pos": {
+        "x": -2030.0550537109375,
+        "y": 207.3000030517578,
+        "z": 2588.3330078125
+      },
+      "rot": {
+        "y": 333.8212890625
+      },
+      "tranPos": {
+        "x": 1.003415822982788,
+        "y": 206.7227325439453,
+        "z": -5.605799198150635
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "buildingType": "JourneyGearGameEntry",
+      "showOnLockedArea": true
+    },
     "95": {
       "$type": "TransPointNormal",
       "gadgetId": 70110002,
@@ -20494,6 +20955,70 @@
       "ADNDKHDKAEC": "",
       "BEDBEJAACAH": "",
       "FPMAMOLMEPM": ""
+    },
+    "972": {
+      "$type": "DungeonEntry",
+      "gadgetId": 70010006,
+      "areaId": 1,
+      "pos": {
+        "x": 2220.662109375,
+        "y": 220.0,
+        "z": -798.9484252929688
+      },
+      "rot": {
+        "y": 120.0
+      },
+      "tranPos": {
+        "x": 2220.66162109375,
+        "y": 230.0,
+        "z": -798.9479370117188
+      },
+      "tranRot": {
+        "y": 120.00000762939453
+      },
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "cutsceneList": [531002],
+      "mapVisibility": "Never",
+      "FPMAMOLMEPM": "",
+      "dungeonIds": [3070, 3071, 3072, 3073],
+      "dungeonQuestConditionList": {},
+      "size": {
+        "x": 5.0,
+        "y": 5.0,
+        "z": 5.0
+      },
+      "titleTextID": "",
+      "HEDEIJAKDKM": "UI_Icon_Intee_Talk",
+      "forbidSimpleUnlock": true,
+      "fireFieldEvent": true
+    },
+    "973": {
+      "$type": "DungeonExit",
+      "gadgetId": 70010001,
+      "areaId": 1,
+      "pos": {
+        "x": 2220.662109375,
+        "y": 230.0,
+        "z": -798.9478759765625
+      },
+      "rot": {
+        "y": 120.0
+      },
+      "tranPos": {
+        "x": 2220.662109375,
+        "y": 230.0,
+        "z": -798.9478759765625
+      },
+      "tranRot": {
+        "y": 120.0
+      },
+      "unlocked": true,
+      "alias": "",
+      "ADNDKHDKAEC": "",
+      "BEDBEJAACAH": "",
+      "entryPointId": 972
     },
     "98": {
       "$type": "SceneBuildingPoint",
@@ -21027,14 +21552,14 @@
       "alias": "",
       "ADNDKHDKAEC": "",
       "BEDBEJAACAH": "",
-      "KOICADNMFFJ": 10.0,
-      "HEIBEKPJABL": 25.0,
-      "HKLCENIKEJE": 3.0,
-      "MNDAKNFAENF": 5.0,
-      "KEFCJJPADDL": 3.0,
-      "GOCDAPOIMDE": 5.0,
+      "GFHJNOMKDLL": 10.0,
+      "PLIPGOLNLBB": 25.0,
+      "JOBCDMOPHBH": 3.0,
+      "KADLGKCKIKL": 5.0,
+      "PMFAMLNBCGA": 3.0,
+      "GKLOIPFIENB": 5.0,
       "attenuation": 2.0,
-      "AAEEHFCBOAE": {
+      "OKCPHCLOIMP": {
         "x": 600.0,
         "y": 200.0,
         "z": 600.0
