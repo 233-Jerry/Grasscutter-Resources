@@ -12,7 +12,7 @@
     "useGrassDisplacement": true,
     "clearAnimatorOnSetLightDeactive": true,
     "clearAIOnSetLightDeactive": true,
-    "NCCLLKFLJGL": true
+    "PDBFEDBCJCA": true
   },
   "model": {
     "bornEffect": "",
@@ -40,17 +40,17 @@
       "dieForceDisappearTime": 4.5,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "MeleeAttack01Normal": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -86,7 +86,7 @@
       },
       "MeleeAttack01Decay": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -122,7 +122,7 @@
       },
       "MeleeAttack02Normal": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -155,7 +155,7 @@
       },
       "MeleeAttack02Decay": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -188,7 +188,7 @@
       },
       "RamNormal": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -225,7 +225,7 @@
       },
       "RamEndNormal": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -236,7 +236,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 2.0
         },
         "attackInfo": {
@@ -260,7 +260,7 @@
       },
       "RamDecay": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -297,7 +297,7 @@
       },
       "RamEndDecay": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -308,7 +308,7 @@
             }
           },
           "height": 2.5,
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 2.5
         },
         "attackInfo": {
@@ -332,7 +332,7 @@
       },
       "QuakeNormal01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -341,7 +341,7 @@
               "y": 0.0,
               "z": 0.5
             },
-            "DAPKLNIFPID": true
+            "KNOFKKLIOHF": true
           },
           "height": 1.2000000476837158,
           "radius": 2.0
@@ -367,7 +367,7 @@
       },
       "QuakeNormal02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -376,7 +376,7 @@
               "y": 0.0,
               "z": 0.699999988079071
             },
-            "DAPKLNIFPID": true
+            "KNOFKKLIOHF": true
           },
           "height": 1.2000000476837158,
           "radius": 3.0
@@ -402,7 +402,7 @@
       },
       "QuakeDecay01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -411,7 +411,7 @@
               "y": 0.0,
               "z": 0.5
             },
-            "DAPKLNIFPID": true
+            "KNOFKKLIOHF": true
           },
           "height": 1.5,
           "radius": 2.0
@@ -533,7 +533,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "BeHitThrow": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -546,7 +546,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KCFDJAALIHK": true
+          "CJDFBFFLADE": true
         },
         "Struggle": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -937,8 +937,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -1353,8 +1353,8 @@
           "forward": 0.30000001192092896,
           "back": 0.30000001192092896
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       },
       "specification": {
         "321": {
@@ -1368,8 +1368,8 @@
             "left": 0.0,
             "right": 0.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         }
       }
     }
@@ -1468,11 +1468,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "OOFDCONLBHL": 1.0
+    "NDDNHKDJBIJ": "FourDirection",
+    "DOAOLLAIJDF": 1.0
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

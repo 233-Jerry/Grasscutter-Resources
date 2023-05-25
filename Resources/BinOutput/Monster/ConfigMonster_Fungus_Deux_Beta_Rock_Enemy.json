@@ -10,8 +10,8 @@
     "checkInSurface": true,
     "scale": 1.2999999523162842,
     "clearAIOnSetLightDeactive": true,
-    "KJCBJDCKPND": true,
-    "NCCLLKFLJGL": true
+    "KJDCLBDPAAK": true,
+    "PDBFEDBCJCA": true
   },
   "model": {
     "bornEffect": "",
@@ -45,17 +45,17 @@
       "dieForceDisappearTime": 1.5,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AE_MeleeAttack": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "height": 1.399999976158142,
           "radius": 1.75
@@ -80,7 +80,7 @@
       },
       "AE_Earthquake": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "height": 1.399999976158142,
           "radius": 6.0
@@ -101,7 +101,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 0.0,
+              "IDBIEBFJKNL": 0.0,
               "hitImpulseY": 1360.0
             }
           },
@@ -188,7 +188,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "BeHitThrowAir": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -198,7 +198,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "BurstUnavailable"
             }
@@ -218,7 +218,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "BurstUnavailable"
             }
@@ -250,7 +250,7 @@
             "ReturnToBorn_Loop": [],
             "ReturnToBorn_AS": ["Audio_Monster_Fungus_Deux_ReturnToBorn_AS"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "NormalAttack": {
@@ -263,7 +263,7 @@
             ],
             "MeleeAttack_AS": []
           },
-          "BFDKJHMDDML": 0.800000011920929,
+          "ONHHCMFDHJG": 0.800000011920929,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "UnionBurst": {
@@ -271,8 +271,8 @@
           "animatorStates": {
             "TeamShield": ["Monster_Fungus_Deux_BVB_Rock_TeamShield"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -284,8 +284,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -339,7 +339,7 @@
     "defendArea": {
       "defendRange": 50.0
     },
-    "FDMKMDGHLPD": {
+    "BMAFBGDKMJC": {
       "enable": true
     },
     "skills": {
@@ -386,7 +386,7 @@
     },
     "skillGCD": 2.5999999046325684,
     "target": {
-      "IEJMCKOJJPM": ["COMMAND", "POINT", "THREAT"]
+      "EOBHJPNDEFI": ["COMMAND", "POINT", "THREAT"]
     },
     "meleeChargeTactic": {
       "enable": true,
@@ -399,7 +399,7 @@
         "stopDistance": 2.299999952316284
       }
     },
-    "FAGIGGFKCEN": {
+    "ODBEBKMPJDJ": {
       "enable": true,
       "defaultSetting": {
         "speedLevel": 1
@@ -420,7 +420,7 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "CNPDANKMFNL": "AirBlend3D",
-    "NGNIGPNNLAI": "SlimeType"
+    "KPMKGBPGNFA": "AirBlend3D",
+    "NDLFNFNMEGN": "SlimeType"
   }
 }

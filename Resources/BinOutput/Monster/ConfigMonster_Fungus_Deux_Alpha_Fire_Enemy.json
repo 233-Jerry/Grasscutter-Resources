@@ -10,8 +10,8 @@
     "checkInSurface": true,
     "scale": 1.2999999523162842,
     "clearAIOnSetLightDeactive": true,
-    "KJCBJDCKPND": true,
-    "NCCLLKFLJGL": true
+    "KJDCLBDPAAK": true,
+    "PDBFEDBCJCA": true
   },
   "model": {
     "bornEffect": "",
@@ -45,12 +45,12 @@
       "dieForceDisappearTime": 1.5,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AE_FlameImpact": {
@@ -82,7 +82,7 @@
       },
       "AE_FlameFountain_P1": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "height": 1.0,
           "radius": 2.299999952316284
@@ -178,7 +178,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "BeHitThrowAir": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -188,7 +188,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "BurstUnavailable"
             }
@@ -207,7 +207,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "BurstUnavailable"
             }
@@ -239,7 +239,7 @@
             "ReturnToBorn_Loop": [],
             "ReturnToBorn_AS": ["Audio_Monster_Fungus_Deux_ReturnToBorn_AS"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "NormalAttack": {
@@ -252,7 +252,7 @@
             "FlameFountain_BS_2": [],
             "FlameFountain_Attack": []
           },
-          "BFDKJHMDDML": 0.800000011920929,
+          "ONHHCMFDHJG": 0.800000011920929,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "UnionBurst": {
@@ -265,7 +265,7 @@
             "FireStrike": [],
             "FireStrike_AS": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -277,8 +277,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -332,7 +332,7 @@
     "defendArea": {
       "defendRange": 50.0
     },
-    "FDMKMDGHLPD": {
+    "BMAFBGDKMJC": {
       "enable": true
     },
     "skills": {
@@ -378,7 +378,7 @@
       }
     },
     "target": {
-      "IEJMCKOJJPM": ["COMMAND", "POINT", "THREAT"]
+      "EOBHJPNDEFI": ["COMMAND", "POINT", "THREAT"]
     },
     "meleeChargeTactic": {
       "enable": true,
@@ -391,7 +391,7 @@
         "stopDistance": 2.5
       }
     },
-    "FAGIGGFKCEN": {
+    "ODBEBKMPJDJ": {
       "enable": true,
       "defaultSetting": {
         "speedLevel": 1
@@ -412,7 +412,7 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "CNPDANKMFNL": "AirBlend3D",
-    "NGNIGPNNLAI": "SlimeType"
+    "KPMKGBPGNFA": "AirBlend3D",
+    "NDLFNFNMEGN": "SlimeType"
   }
 }

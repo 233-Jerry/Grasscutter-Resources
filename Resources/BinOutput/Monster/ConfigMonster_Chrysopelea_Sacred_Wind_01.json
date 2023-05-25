@@ -12,34 +12,34 @@
     "scale": 2.0,
     "useGrassDisplacement": true,
     "clearAIOnSetLightDeactive": true,
-    "KJCBJDCKPND": true,
-    "NCCLLKFLJGL": true,
-    "JDFHDFOFPOB": [
+    "KJDCLBDPAAK": true,
+    "PDBFEDBCJCA": true,
+    "MEPFFEGJFDK": [
       {
-        "KIHPGIAEOLJ": "EffectMesh01Point",
-        "BNBLJKAAHKN": "EffectMesh01"
+        "IDDJIECGJGH": "EffectMesh01Point",
+        "FCLMCFLEPND": "EffectMesh01"
       },
       {
-        "KIHPGIAEOLJ": "EffectMesh02Point",
-        "BNBLJKAAHKN": "EffectMesh02"
+        "IDDJIECGJGH": "EffectMesh02Point",
+        "FCLMCFLEPND": "EffectMesh02"
       },
       {
-        "KIHPGIAEOLJ": "EffectMesh03Point",
-        "BNBLJKAAHKN": "EffectMesh03"
+        "IDDJIECGJGH": "EffectMesh03Point",
+        "FCLMCFLEPND": "EffectMesh03"
       },
       {
-        "KIHPGIAEOLJ": "EffectMesh04Point",
-        "BNBLJKAAHKN": "EffectMesh04"
+        "IDDJIECGJGH": "EffectMesh04Point",
+        "FCLMCFLEPND": "EffectMesh04"
       }
     ]
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 45.0,
-    "FJOGFHEFPHN": 10.0,
-    "IAEPDEOMGCO": 2.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 45.0,
+    "NOLJNGPPCHB": 10.0,
+    "ADODDIBIFEC": 2.0,
+    "DOKDABBOIFA": [
       "Standby",
       "WalkForward",
       "WalkBack",
@@ -54,7 +54,7 @@
     "elementDrop": "RootNode",
     "bulletAim": "AimPoint",
     "selectedPoints": ["AimPoint"],
-    "BFDKBAEPAGA": true
+    "MMJALAAAMCG": true
   },
   "model": {
     "bornEffect": "Eff_Monster_Common_Born",
@@ -81,17 +81,17 @@
       "dieForceDisappearTime": 1.7999999523162842,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AtkNo": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -101,7 +101,7 @@
               "z": -0.5
             }
           },
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 1.5
         },
         "attackInfo": {
@@ -124,7 +124,7 @@
       },
       "SacredAttack01_Hit": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -162,7 +162,7 @@
       },
       "SacredAttack03_Hit1": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -200,7 +200,7 @@
       },
       "SacredAttack03_Hit2": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -239,7 +239,7 @@
       },
       "SacredAttack03_Hit3": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -308,7 +308,7 @@
       },
       "SacredAttack06": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -319,7 +319,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 6.0
         },
         "attackInfo": {
@@ -546,11 +546,11 @@
             "Weak_BS": ["Audio_Monster_Chrysopelea_Sacred_Weak_BS"]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "LCIGFDMOEAA": true
+          "JHGBJONMLIO": true
         },
         "Weak_Loop": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -558,11 +558,11 @@
             "Weak_Loop": []
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "LCIGFDMOEAA": true
+          "JHGBJONMLIO": true
         },
         "Weak_AS": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -570,11 +570,11 @@
             "Weak_AS": ["Audio_Monster_Chrysopelea_Sacred_Weak_AS"]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "LCIGFDMOEAA": true
+          "JHGBJONMLIO": true
         },
         "Die": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -615,8 +615,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -629,8 +629,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -643,8 +643,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -657,8 +657,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -671,8 +671,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -684,8 +684,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -698,8 +698,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -712,8 +712,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -726,11 +726,11 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "Sacred_Enhance": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -741,8 +741,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.009999999776482582,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.009999999776482582,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         }
@@ -837,7 +837,7 @@
         "publicCDGroup": "",
         "ignoreGCD": true,
         "triggerGCD": false,
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["Sacred_Enhance"],
         "flagTargetReachable": "11",
         "flagSelfOnTemplateCollider": "11",
@@ -1052,13 +1052,13 @@
         "castCondition": {
           "pose": [201],
           "globalValues": ["SacredEnergy_Recover_Chrysopelea"],
-          "LBJLGICBKKC": "SELF"
+          "DKEJDBCLMDO": "SELF"
         },
         "cd": 20.0,
         "publicCDGroup": "",
         "ignoreGCD": true,
         "triggerGCD": false,
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["Sacred_Enhance"],
         "flagTargetReachable": "11",
         "flagSelfOnTemplateCollider": "11",
@@ -1078,7 +1078,7 @@
         "publicCDGroup": "",
         "ignoreGCD": true,
         "triggerGCD": false,
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["Sacred_Enhance"],
         "flagTargetReachable": "11",
         "flagSelfOnTemplateCollider": "11",
@@ -1135,18 +1135,18 @@
           "forward": 0.20000000298023224,
           "back": 0.20000000298023224
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     },
-    "DNAHDMGDMCH": {
+    "BGOENHJHGED": {
       "enable": true,
       "defaultSetting": {
         "speedLevel": 1,
         "fleeAngle": 75.0,
         "fleeDistanceMin": 4.0,
         "fleeDistanceMax": 6.0,
-        "PPIBDEEBFPN": 0.5
+        "GOFKNBLHIGH": 0.5
       }
     }
   },
@@ -1202,12 +1202,12 @@
     "EINCMKOBBEG": {
       "excludeForces": ["RetreatAirType"]
     },
-    "BCBPBHLKCPB": "FourDirection",
-    "OOFDCONLBHL": 2.0,
-    "MGFACNKNOFC": true
+    "NDDNHKDJBIJ": "FourDirection",
+    "DOAOLLAIJDF": 2.0,
+    "LIIPFJFJPCP": true
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

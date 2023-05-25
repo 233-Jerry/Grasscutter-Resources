@@ -12,11 +12,11 @@
     "useGrassDisplacement": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 10.0,
-    "FJOGFHEFPHN": 20.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 10.0,
+    "NOLJNGPPCHB": 20.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -51,22 +51,22 @@
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
       "useRagDoll": true,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf"
           },
-          "fanAngle": 210.0,
+          "KEKBKGCEMOH": 210.0,
           "radius": 3.0
         },
         "attackInfo": {
@@ -98,7 +98,7 @@
       },
       "JumpAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -138,7 +138,7 @@
       },
       "TailSweep_1": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -178,7 +178,7 @@
       },
       "TailSweep_2": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -220,7 +220,7 @@
       },
       "CrushAtk_FinalHit_1": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -261,7 +261,7 @@
       },
       "CrushAtk_FinalHit_2": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -505,7 +505,7 @@
             "Die_RagDoll_02": [],
             "AirDie": []
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -522,8 +522,8 @@
               "Audio_Monster_Wyrm_Rock_NormalAtk"
             ]
           },
-          "BFDKJHMDDML": 0.800000011920929,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.800000011920929,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "JumpAtk": {
@@ -534,9 +534,9 @@
               "Audio_Monster_Wyrm_Rock_JumpAtk"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.800000011920929,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.800000011920929,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "TailSweep": {
@@ -547,9 +547,9 @@
               "Audio_Monster_Wyrm_Rock_Tailsweep"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RollState": {
@@ -561,8 +561,8 @@
             ],
             "Roll_Loop": []
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["RollEndTrigger"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -574,8 +574,8 @@
               "Audio_Monster_Wyrm_Rock_Roll_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "RollEndTrigger"]
         },
         "CrushAtk": {
@@ -590,8 +590,8 @@
               "Audio_Monster_Wyrm_Rock_Crushatk_Finalhit"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "CrushAtk_NoHit": {
@@ -602,8 +602,8 @@
               "Audio_Monster_Wyrm_Rock_Crushatk_Nohit"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "CrushAtk_Failed": {
@@ -616,8 +616,8 @@
             "CrushAtk_FailedLoop": [],
             "CrushAtk_FailedAS": ["Audio_Monster_Wyrm_Rock_Crushatk_Failed_AS"]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "DigIn": {
@@ -628,9 +628,9 @@
               "Audio_Monster_Wyrm_Rock_Digin"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "DigOut": {
@@ -641,9 +641,9 @@
               "Audio_Monster_Wyrm_Rock_Digout"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "DigOutTrigger"]
         }
       }
@@ -656,7 +656,7 @@
       "x": 0.10000000149011612
     },
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.3199999928474426,
+    "ILBGGMJLJNG": 0.3199999928474426,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -911,8 +911,8 @@
           "left": 2.0,
           "right": 2.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -950,11 +950,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "ForwardBackward",
-    "NGNIGPNNLAI": "SlimeType"
+    "NDDNHKDJBIJ": "ForwardBackward",
+    "NDLFNFNMEGN": "SlimeType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

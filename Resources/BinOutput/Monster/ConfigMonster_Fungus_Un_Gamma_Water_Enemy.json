@@ -11,8 +11,8 @@
     "checkInSurface": true,
     "scale": 1.2999999523162842,
     "clearAIOnSetLightDeactive": true,
-    "KJCBJDCKPND": true,
-    "NCCLLKFLJGL": true
+    "KJDCLBDPAAK": true,
+    "PDBFEDBCJCA": true
   },
   "model": {
     "bornEffect": "",
@@ -46,12 +46,12 @@
       "dieForceDisappearTime": 1.5,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     }
   },
   "abilities": [
@@ -150,7 +150,7 @@
             }
           ],
           "BHEPAJIOBDN": true,
-          "EAPMAKKDOBD": "BlendMove3D"
+          "MEKNIEJNAOE": "BlendMove3D"
         },
         "BeHit": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -160,7 +160,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "BeHitThrowAir": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -168,12 +168,12 @@
             "HitThrow": ["Audio_Monster_Fungus_Un_Gamma_Water_Hit"],
             "HitThrowDrop": []
           },
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "BurstUnavailable"
             }
           ],
-          "KCFDJAALIHK": true
+          "CJDFBFFLADE": true
         },
         "BeHitThrow": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -183,7 +183,7 @@
               "Audio_Monster_Fungus_Un_Gamma_Water_HitToGround"
             ]
           },
-          "KCFDJAALIHK": true
+          "CJDFBFFLADE": true
         },
         "Struggle": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -192,7 +192,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "BurstUnavailable"
             }
@@ -225,7 +225,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "JumpProcess": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -238,7 +238,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["DoSkill", "Launch"],
           "BHEPAJIOBDN": true,
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "Land_AS": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -249,7 +249,7 @@
           "resetAnimatorTriggerOnEnter": ["Land", "BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "Land"],
           "BHEPAJIOBDN": true,
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "ReturnToBorn": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -264,7 +264,7 @@
               "Audio_Monster_Fungus_Un_Gamma_Water_ReturnToBorn_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "NormalAttack": {
@@ -278,7 +278,7 @@
             ],
             "Shoot_AS": []
           },
-          "BFDKJHMDDML": 0.800000011920929,
+          "ONHHCMFDHJG": 0.800000011920929,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "UnionBurst": {
@@ -289,7 +289,7 @@
               "Audio_Monster_Fungus_Activity_Un_Gamma_Water_SprayBlooming"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -301,8 +301,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -349,7 +349,7 @@
       "enable": true,
       "floatingPoses": [201, 501, 551]
     },
-    "FDMKMDGHLPD": {
+    "BMAFBGDKMJC": {
       "enable": true
     },
     "skills": {
@@ -371,7 +371,7 @@
         "castCondition": {
           "pose": [501],
           "pickRangeMax": 6.099999904632568,
-          "BHMJOMJEPHD": [
+          "ADAOFNIBFPM": [
             {
               "min": 0.44999998807907104,
               "max": 2.4000000953674316
@@ -402,7 +402,7 @@
     },
     "skillGCD": 0.699999988079071,
     "target": {
-      "IEJMCKOJJPM": ["COMMAND", "POINT", "THREAT"]
+      "EOBHJPNDEFI": ["COMMAND", "POINT", "THREAT"]
     },
     "meleeChargeTactic": {
       "enable": true,
@@ -428,7 +428,7 @@
         "chaseStopDistance": 5.900000095367432,
         "yOffsetMin": 0.5,
         "yOffsetMax": 2.0,
-        "OMOIAACMNOO": [
+        "BCHDCEEODLF": [
           {
             "min": 0.44999998807907104,
             "max": 3.0
@@ -436,10 +436,10 @@
         ]
       }
     },
-    "FAGIGGFKCEN": {
+    "ODBEBKMPJDJ": {
       "enable": true,
       "defaultSetting": {
-        "spacial": true
+        "JLKJBHOGMDJ": true
       }
     }
   },
@@ -457,18 +457,18 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "DIJHPKAMMJO": [
+    "NNHFDAAGPKH": [
       {
-        "FDAIJOFPDJK": 5.0,
-        "GGADDPBCBOJ": "DownToGroundAndWaterOnlyInAir",
-        "DOPIAKHBNGO": ""
+        "ECDGCEMEBLI": 5.0,
+        "DNHIAIFFPMG": "DownToGroundAndWaterOnlyInAir",
+        "IOCPMMICNCF": ""
       }
     ],
-    "BCBPBHLKCPB": "ForwardBackward",
-    "CNPDANKMFNL": "AirBlend3D",
-    "NGNIGPNNLAI": "SlimeType",
-    "NNLKBABJEBN": ["Launch_Loop"],
-    "BKJIBMNNDEG": ["Drop_Loop"],
-    "MGFACNKNOFC": true
+    "NDDNHKDJBIJ": "ForwardBackward",
+    "KPMKGBPGNFA": "AirBlend3D",
+    "NDLFNFNMEGN": "SlimeType",
+    "GOGECBGJLPK": ["Launch_Loop"],
+    "MJICKBCLPLK": ["Drop_Loop"],
+    "LIIPFJFJPCP": true
   }
 }

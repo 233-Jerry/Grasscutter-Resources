@@ -11,7 +11,7 @@
     "useGrassDisplacement": true,
     "clearAnimatorOnSetLightDeactive": true,
     "clearAIOnSetLightDeactive": true,
-    "NCCLLKFLJGL": true
+    "PDBFEDBCJCA": true
   },
   "model": {
     "bornEffect": "",
@@ -39,17 +39,17 @@
       "dieForceDisappearTime": 1.5,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "MeleeAttackNormal": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -82,7 +82,7 @@
       },
       "MeleeAttackDecay": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -211,7 +211,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "BeHitThrow": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -262,7 +262,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "Dance": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -388,7 +388,7 @@
               "Audio_Monster_Fungus_Deux_ReturnToBorn_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -400,8 +400,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -695,8 +695,8 @@
     "returnToBornTactic": {
       "enable": true,
       "defaultSetting": {
-        "spacial": true,
-        "KLHLJGGBMEL": 3.25
+        "CCIEIGCKFIO": "Spacial",
+        "PENDEAKLPGI": 3.25
       }
     },
     "wanderTactic": {
@@ -719,7 +719,7 @@
         "turnSpeedOverrideRun": 1.0
       }
     },
-    "APPJMEDOGGE": {
+    "MKBGHBIKGBL": {
       "enable": true,
       "condition": {
         "pose": [101, 111, 121]
@@ -832,11 +832,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "CNPDANKMFNL": "AirBlend3D",
-    "NGNIGPNNLAI": "SlimeType"
+    "KPMKGBPGNFA": "AirBlend3D",
+    "NDLFNFNMEGN": "SlimeType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

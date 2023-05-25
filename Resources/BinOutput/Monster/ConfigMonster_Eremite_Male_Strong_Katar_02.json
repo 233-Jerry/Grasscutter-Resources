@@ -13,15 +13,15 @@
     "scale": 1.100000023841858,
     "useGrassDisplacement": true,
     "clearAIOnSetLightDeactive": true,
-    "KJCBJDCKPND": true,
-    "NCCLLKFLJGL": true
+    "KJDCLBDPAAK": true,
+    "PDBFEDBCJCA": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 30.0,
-    "FJOGFHEFPHN": 10.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 30.0,
+    "NOLJNGPPCHB": 10.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -58,17 +58,17 @@
       "dieDisappearEffect": "",
       "dieShaderData": "EremiteSandDie",
       "dieShaderEnableDurationTime": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAttack01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -79,7 +79,7 @@
             }
           },
           "height": 1.2000000476837158,
-          "fanAngle": 230.0,
+          "KEKBKGCEMOH": 230.0,
           "radius": 4.0
         },
         "attackInfo": {
@@ -104,7 +104,7 @@
       },
       "NormalAttack02": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -142,7 +142,7 @@
       },
       "NormalAttack03": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -180,7 +180,7 @@
       },
       "MeleeAttack01_01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -215,7 +215,7 @@
       },
       "MeleeAttack01_02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -226,7 +226,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 180.0,
+          "KEKBKGCEMOH": 180.0,
           "radius": 3.5
         },
         "attackInfo": {
@@ -261,7 +261,7 @@
       },
       "SlamAttack01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -310,8 +310,8 @@
         {
           "summonTag": 25110101,
           "name": "Gator_Eremite_Rock_01",
-          "DAKPGBBDGKK": true,
-          "KOKLMCBCHDP": true
+          "GMCBKCPPPAM": true,
+          "OPCBBFKNJGC": true
         }
       ]
     }
@@ -407,7 +407,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["Recover"],
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
@@ -455,7 +455,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "BeHit"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "AirDie"
             }
@@ -470,7 +470,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "BeHit"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "AirDie",
               "normalizeEnd": 0.6200000047683716
@@ -517,8 +517,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_Alert"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BKLKHCBEHNL": true
         },
@@ -530,8 +530,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_SheathWeapon"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["SheathWeaponTrigger"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "SheathWeaponTrigger"]
         },
@@ -543,8 +543,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_Improve"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["ForceImprove"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ForceImprove"]
         },
@@ -554,8 +554,8 @@
             "Weak_BS": ["Audio_Monster_Eremite_male_Strong_Katar_Rock_Weak_BS"],
             "Weak_AS": ["Audio_Monster_Eremite_male_Strong_Katar_Rock_Weak_AS"]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["Weak", "Recover"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Weak", "Recover"]
         },
@@ -588,8 +588,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_NormalAtk01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -601,8 +601,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_NormalAtk02"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -614,8 +614,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_NormalAtk03_End"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -627,8 +627,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_NormalAtk03"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -641,8 +641,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_MeleeAttack01_BS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -653,8 +653,8 @@
               "Monster_Eremite_Male_Strong_Katar_MeleeAtk01_Loop"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "DefendAttack_AS": {
@@ -665,8 +665,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_MeleeAttack01_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ImproveNormalAtk01": {
@@ -677,7 +677,7 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_NormalAtk01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -700,7 +700,7 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_MeleeAttack01_BS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -711,7 +711,7 @@
               "Monster_Eremite_Male_Strong_Katar_MeleeAtk01_Loop"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -723,7 +723,7 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_MeleeAttack01_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -735,8 +735,8 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_SlamAttack01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -748,7 +748,7 @@
               "Audio_Monster_Eremite_male_Strong_Katar_Rock_DefendBS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "DefendHit"],
           "BHEPAJIOBDN": true
         },
@@ -1042,8 +1042,8 @@
           "left": 3.0,
           "right": 3.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       },
       "specification": {
         "201": {
@@ -1059,8 +1059,8 @@
             "left": 3.0,
             "right": 3.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         },
         "102": {
           "rangeMin": 0.0,
@@ -1075,8 +1075,8 @@
             "left": 3.0,
             "right": 3.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         }
       }
     }
@@ -1130,12 +1130,12 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StoopType",
-    "MGFACNKNOFC": true
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StoopType",
+    "LIIPFJFJPCP": true
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

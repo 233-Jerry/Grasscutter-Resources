@@ -13,15 +13,15 @@
     "useGrassDisplacement": true,
     "clearAnimatorOnSetLightDeactive": true,
     "clearAIOnSetLightDeactive": true,
-    "NCCLLKFLJGL": true
+    "PDBFEDBCJCA": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 45.0,
-    "FJOGFHEFPHN": 10.0,
-    "IAEPDEOMGCO": 2.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 45.0,
+    "NOLJNGPPCHB": 10.0,
+    "ADODDIBIFEC": 2.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "TurnBack",
       "Attack_04_Jump_Hit",
@@ -73,17 +73,17 @@
       "dieEndTime": 0.30000001192092896,
       "dieForceDisappearTime": 1.2000000476837158,
       "dieDisappearEffect": "Eff_Death_Common_Animal",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AtkNo": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -93,7 +93,7 @@
               "z": -0.5
             }
           },
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 1.5
         },
         "attackInfo": {
@@ -116,7 +116,7 @@
       },
       "Atk02_1": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -127,7 +127,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 3.0
         },
         "attackInfo": {
@@ -151,7 +151,7 @@
       },
       "Atk02_2": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -162,7 +162,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 3.0
         },
         "attackInfo": {
@@ -186,9 +186,9 @@
       },
       "Panther_HitScene": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "MJLCPIAKNCP": "OnlyHitScene",
+          "NLBIEJFCKKN": "OnlyHitScene",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -331,7 +331,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "BeHit": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -434,7 +434,7 @@
               "Audio_Monster_Panther_TreeJump_BS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Tree_Jump_Loop": {
@@ -442,7 +442,7 @@
           "animatorStates": {
             "Tree_Jump_Loop": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -530,7 +530,7 @@
           },
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "Attack_04": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -586,7 +586,7 @@
       "y": -0.4000000059604645
     },
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.25,
+    "ILBGGMJLJNG": 0.25,
     "size": "Big"
   },
   "initialPoses": {
@@ -972,6 +972,6 @@
     "EINCMKOBBEG": {
       "excludeForces": ["RetreatAirType"]
     },
-    "BCBPBHLKCPB": "FourDirection"
+    "NDDNHKDJBIJ": "FourDirection"
   }
 }

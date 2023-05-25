@@ -39,17 +39,17 @@
       "dieForceDisappearTime": 1.0,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "DigOutAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -93,7 +93,7 @@
       },
       "DigOutAtkS": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -137,7 +137,7 @@
       },
       "Atk02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -181,7 +181,7 @@
       },
       "Atk02S": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -367,7 +367,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
         "NormalIdle": {
@@ -398,8 +398,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.05000000074505806,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["DoSkill", "DigInFarTrigger"],
           "BHEPAJIOBDN": true
         },
@@ -420,8 +420,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.05000000074505806,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["DoSkill", "DigInFarTrigger"],
           "BHEPAJIOBDN": true
         },
@@ -444,7 +444,7 @@
               "Audio_Monster_Mimik_Fel_HitThrowToGround"
             ]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "InterruptTrigger"]
         },
@@ -465,7 +465,7 @@
             "SwimDie": ["Audio_Monster_Mimik_Fel_Die"],
             "AirDie": ["Audio_Monster_Mimik_Fel_Die"]
           },
-          "AAEKKGMOKFK": true
+          "EBKFBAFIBPF": true
         },
         "Life_Warning": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -473,8 +473,8 @@
             "Alert": [],
             "Warning": []
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -483,7 +483,7 @@
           "animatorStates": {
             "SnowBall_BS": ["Audio_Monster_Mimik_Fel_Giant_SnowBall_BS"]
           },
-          "BFDKJHMDDML": 0.75,
+          "ONHHCMFDHJG": 0.75,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -495,7 +495,7 @@
               "Audio_Monster_Mimik_Fel_Giant_SnowBall_Shoot"
             ]
           },
-          "BFDKJHMDDML": 0.75,
+          "ONHHCMFDHJG": 0.75,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -504,7 +504,7 @@
           "animatorStates": {
             "SnowBall_AS": ["Audio_Monster_Mimik_Fel_Giant_SnowBall_AS"]
           },
-          "BFDKJHMDDML": 0.75,
+          "ONHHCMFDHJG": 0.75,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -516,7 +516,7 @@
               "Audio_Monster_Mimik_Fel_MeleeAttack_Shrink_BS"
             ]
           },
-          "BFDKJHMDDML": 0.75,
+          "ONHHCMFDHJG": 0.75,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "MeleeAttack01_AS": {
@@ -527,7 +527,7 @@
               "Audio_Monster_Mimik_Fel_MeleeAttack_BS"
             ]
           },
-          "BFDKJHMDDML": 0.75,
+          "ONHHCMFDHJG": 0.75,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "MeleeAttack01_Shrink_BS": {
@@ -538,7 +538,7 @@
               "Audio_Monster_Mimik_Fel_MeleeAttack_Shrink_BS"
             ]
           },
-          "BFDKJHMDDML": 0.75,
+          "ONHHCMFDHJG": 0.75,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "MeleeAttack01_Shrink_AS": {
@@ -549,7 +549,7 @@
               "Audio_Monster_Mimik_Fel_MeleeAttack_Shrink_AS"
             ]
           },
-          "BFDKJHMDDML": 0.75,
+          "ONHHCMFDHJG": 0.75,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "SummonFruit": {
@@ -560,7 +560,7 @@
               "Audio_Monster_Mimik_Fel_Giant_Summon"
             ]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "SummonFruit_Shrink": {
@@ -568,7 +568,7 @@
           "animatorStates": {
             "Summon_Shrink": ["Audio_Monster_Mimik_Fel_Giant_Summon"]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "AbsorbFruit": {
@@ -583,7 +583,7 @@
               "Audio_Monster_Mimik_Fel_AbsorbFruit_AS"
             ]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "AbsorbFruit_Loop": {
@@ -591,7 +591,7 @@
           "animatorStates": {
             "AbsorbFruit_Loop": []
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ForwardShoot02": {
@@ -608,7 +608,7 @@
               "Audio_Monster_Mimik_Fel_Giant_ForwardShoot02_AS"
             ]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "UpperShoot01": {
@@ -623,7 +623,7 @@
             ],
             "UpperShoot01_AS": ["Audio_Monster_Mimik_Fel_Giant_UpperShoot01_AS"]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ForwardShoot01_Shrink": {
@@ -640,7 +640,7 @@
               "Audio_Monster_Mimik_Fel_Shrink_ForwardShoot01_AS"
             ]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "UpperShoot02_Shrink": {
@@ -657,7 +657,7 @@
               "Audio_Monster_Mimik_Fel_Shrink_UpperShoot02_AS"
             ]
           },
-          "BFDKJHMDDML": 0.05000000074505806,
+          "ONHHCMFDHJG": 0.05000000074505806,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Down": {
@@ -674,7 +674,7 @@
             "ShrinkedDown_AS": ["Audio_Monster_Mimik_Fel_Shrink_Down_AS"]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 10.0,
+          "ONHHCMFDHJG": 10.0,
           "resetAnimatorTriggerOnEnter": ["BreakTrigger"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "BreakTrigger"]
         },
@@ -686,7 +686,7 @@
             "Break_AS": ["Audio_Monster_Mimik_Fel_Giant_Down_AS"]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 10.0,
+          "ONHHCMFDHJG": 10.0,
           "resetAnimatorTriggerOnExit": ["DoSkill", "BreakTrigger"]
         },
         "Shrink": {
@@ -695,7 +695,7 @@
             "Shrink": ["Audio_Monster_Mimik_Fel_Giant_Shrink"]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 10.0,
+          "ONHHCMFDHJG": 10.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
         "Move": {
@@ -707,7 +707,7 @@
             "Move_AS": ["Audio_Monster_Mimik_Fel_Giant_Move_AS"]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 10.0,
+          "ONHHCMFDHJG": 10.0,
           "resetAnimatorTriggerOnExit": ["DoSkill", "MoveTrigger"]
         },
         "ReturnToBorn": {
@@ -724,7 +724,7 @@
               "Monster_Mimik_UnderGround_DigOut"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RecoverFruit": {
@@ -735,7 +735,7 @@
               "Audio_Monster_Mimik_Fel_Giant_RecoverFruits"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -744,28 +744,28 @@
   "partControl": {
     "parts": [
       {
-        "$type": "FMMCPGCNMJF",
+        "$type": "LMGPLBHAAOO",
         "angularSpeed": 3600.0,
-        "NCHJLODGJLP": "Fruit01",
-        "AGAOMJIIDOI": "",
-        "CJBHHMJAEJF": 360.0,
-        "HFCEMLCNHGD": 0.0
+        "MPMJINCGNKM": "Fruit01",
+        "NHFJENBBICJ": "",
+        "CLOJKGCOOGD": 360.0,
+        "CBBPMEDMBLF": 0.0
       },
       {
-        "$type": "FMMCPGCNMJF",
+        "$type": "LMGPLBHAAOO",
         "angularSpeed": 3600.0,
-        "NCHJLODGJLP": "Fruit02",
-        "AGAOMJIIDOI": "",
-        "CJBHHMJAEJF": 360.0,
-        "HFCEMLCNHGD": 0.0
+        "MPMJINCGNKM": "Fruit02",
+        "NHFJENBBICJ": "",
+        "CLOJKGCOOGD": 360.0,
+        "CBBPMEDMBLF": 0.0
       },
       {
-        "$type": "FMMCPGCNMJF",
+        "$type": "LMGPLBHAAOO",
         "angularSpeed": 3600.0,
-        "NCHJLODGJLP": "Fruit03",
-        "AGAOMJIIDOI": "",
-        "CJBHHMJAEJF": 360.0,
-        "HFCEMLCNHGD": 0.0
+        "MPMJINCGNKM": "Fruit03",
+        "NHFJENBBICJ": "",
+        "CLOJKGCOOGD": 360.0,
+        "CBBPMEDMBLF": 0.0
       }
     ]
   },
@@ -775,7 +775,7 @@
     "offset": {
       "y": 1.5
     },
-    "OELDMANLPDM": 0.20000000298023224,
+    "ILBGGMJLJNG": 0.20000000298023224,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -1028,7 +1028,7 @@
         "castCondition": {
           "pose": [1010, 1012],
           "needReInitCD": true,
-          "GLGHHKAGENB": 5.0
+          "HEPALKLMIGG": 5.0
         },
         "cd": 2.0,
         "initialCD": 2.0,
@@ -1122,11 +1122,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "NGNIGPNNLAI": "StrongHumanoidType",
-    "LHHNPKNFGMD": true
+    "NDLFNFNMEGN": "StrongHumanoidType",
+    "GLHELMHJCDA": true
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {
@@ -1190,23 +1190,23 @@
   },
   "cameraAdjust": {
     "default": {
-      "$type": "DHCOKBEICGK",
+      "$type": "LEACENCFDHG",
       "priority": 1.0,
-      "OPKMFLHBCEL": 30.0,
-      "HLJEJHJHEBG": 35.0,
-      "MOINKIAMCKG": 1.4500000476837158,
-      "EBDAIBLODLB": 45.0,
-      "LGLGNMPNADH": 8.0,
-      "EIHIEHJLINB": 10.0,
-      "ELCNGKOAJFN": false,
-      "KONIGEOBEPA": 79.0,
-      "IKNIHFEDDIJ": 99.0,
-      "LJGAGFHBAPE": 50.0,
-      "FDEEGAFACDO": 40.0,
-      "AOEIECPJILN": 100.0,
-      "JLKGEFGDOEO": 145.0,
-      "EJLANJKCDJO": "CircleR30",
-      "AINPPNDKHBG": "CircleR35"
+      "LHHABPAOPNK": 30.0,
+      "JJGKEGBHGJL": 35.0,
+      "BBBIJABMHLH": 1.4500000476837158,
+      "NANMFGHBACH": 45.0,
+      "FMLELPIHIPP": 8.0,
+      "PNHBKGDJCNJ": 10.0,
+      "JFIDJKPKEBP": false,
+      "NAOGLDNJPDH": 79.0,
+      "IHCMGDDAOFJ": 99.0,
+      "FNNDCOJEGEB": 50.0,
+      "AECBNPJEMGK": 40.0,
+      "DKPAJDPNFAL": 100.0,
+      "OPLKFDAMLCP": 145.0,
+      "BEEPGHCGFAN": "CircleR30",
+      "GFKCBMBABDO": "CircleR35"
     }
   }
 }

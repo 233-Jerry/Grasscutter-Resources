@@ -34,19 +34,19 @@
       "dieEndTime": 2.0,
       "dieForceDisappearTime": 8.0,
       "dieDisappearEffect": "",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "Monster_Cicin_IceExplode": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -158,7 +158,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "BFDKJHMDDML": 1.2000000476837158,
+          "ONHHCMFDHJG": 1.2000000476837158,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
           "BKLKHCBEHNL": true
@@ -171,7 +171,7 @@
             "Run_Standby": []
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 1.2000000476837158,
+          "ONHHCMFDHJG": 1.2000000476837158,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -211,7 +211,7 @@
           "animatorStates": {
             "Warning": ["Monster_Slime_Warning"]
           },
-          "BFDKJHMDDML": 1.2000000476837158,
+          "ONHHCMFDHJG": 1.2000000476837158,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "HasOwnerWarning": {
@@ -219,7 +219,7 @@
           "animatorStates": {
             "HasOwnerWarning": []
           },
-          "BFDKJHMDDML": 1.2000000476837158,
+          "ONHHCMFDHJG": 1.2000000476837158,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "NormalAtk": {
@@ -227,9 +227,9 @@
           "animatorStates": {
             "NormalAtk": ["Monster_Cicin_Ice_NormalAtk"]
           },
-          "BFDKJHMDDML": 1.2000000476837158,
+          "ONHHCMFDHJG": 1.2000000476837158,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         },
         "Blink": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -237,10 +237,10 @@
             "BlinkToMaster_BS": ["Monster_Cicin_Ice_BlinkToMaster"],
             "BlinkToMaster_AS": ["Monster_Cicin_Ice_BlinkToMasterAS"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "BlinkTrigger"],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         },
         "RushAtk": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -249,7 +249,7 @@
             "RushToTarget_Loop": [],
             "RushToTarget_AS": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "RushAtkTrigger"]
         },
         "SPRushAtk": {
@@ -261,7 +261,7 @@
             "SPRushAtk_Prepare": [],
             "SPRushAtk_BlinkBack": ["Monster_Cicin_Ice_BlinkToSPRush"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "SPRushAtkTrigger"]
         },
         "Fury": {
@@ -269,9 +269,9 @@
           "animatorStates": {
             "Fury": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "FuryTrigger"],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         },
         "IceExplode": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -279,14 +279,14 @@
             "RushAtk_IceExplode": ["Monster_Cicin_IceExplode"],
             "BlinkToMaster_IceExplode": ["Monster_Cicin_IceExplode"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
             "ReachTarget",
             "SPRushPrepareTrigger"
           ],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         }
       }
     }
@@ -411,13 +411,13 @@
         "speedLevel": 1,
         "fadeoutBeginTime": 0.75,
         "fadeoutEndTime": 2.25,
-        "spacial": true
+        "CCIEIGCKFIO": "Spacial"
       }
     },
     "followScriptedPathTactic": {
       "enable": true,
       "defaultSetting": {
-        "spacial": true
+        "CCIEIGCKFIO": "Spacial"
       }
     },
     "spacialChaseTactic": {
@@ -527,12 +527,12 @@
     "EINCMKOBBEG": {
       "excludeForces": ["WindZoneType", "AirflowType"]
     },
-    "DMJNLOIEHNP": false,
-    "KCNKFNLDDOD": true,
-    "NGNIGPNNLAI": "SlimeType"
+    "NPDGPNFCOPI": false,
+    "AOKNEHKHDNL": true,
+    "NDLFNFNMEGN": "SlimeType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

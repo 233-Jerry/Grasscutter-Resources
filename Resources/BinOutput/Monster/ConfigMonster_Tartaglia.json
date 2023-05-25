@@ -14,9 +14,9 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "FCDMCPDGFCL": [
+    "DOKDABBOIFA": [
       "NormalIdle",
       "NormalIdle_Bow",
       "NormalIdle_Blade",
@@ -42,23 +42,23 @@
       "dieEndTime": 4.0,
       "dieForceDisappearTime": 6.0,
       "dieDisappearEffect": "",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "Tartaglia_ExtraAttack": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf"
           },
           "height": 1.5,
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 2.5
         },
         "attackInfo": {
@@ -91,13 +91,13 @@
       },
       "Tartaglia_DefendAttack01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf"
           },
           "height": 1.0,
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 3.200000047683716
         },
         "attackInfo": {
@@ -130,13 +130,13 @@
       },
       "Tartaglia_DefendAttack02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf"
           },
           "height": 2.0,
-          "fanAngle": 30.0,
+          "KEKBKGCEMOH": 30.0,
           "radius": 7.5
         },
         "attackInfo": {
@@ -305,7 +305,7 @@
           "animatorStates": {
             "Born": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
         "NormalIdle": {
@@ -364,7 +364,7 @@
             "ClearUp": ["Monster_Tartaglia_ClearUp", "Audio_Tartaglia_Recover"],
             "Transform": ["Audio_Tartaglia_Transform"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "Die": {
@@ -386,7 +386,7 @@
               "Audio_Tartaglia_NormalAtk_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "NormalAttack_Flexible": {
@@ -412,7 +412,7 @@
               "Audio_Tartaglia_RangeAtk_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "RangeAttack_Steer": {
@@ -420,7 +420,7 @@
           "animatorStates": {
             "RangeAttackLoop02": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "RangeAttack_Flexible": {
@@ -438,7 +438,7 @@
               "Audio_Tartaglia_ComboAtk"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "ComboAttack_Flexible": {
@@ -461,7 +461,7 @@
               "Audio_Tartaglia_CoverAtk_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "CoverAttack_Flexible": {
@@ -479,7 +479,7 @@
               "Audio_Tartaglia_PowerAtk_BS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "PowerAttack": {
@@ -490,7 +490,7 @@
               "Audio_Tartaglia_PowerAtk"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "PowerAttack_Flexible": {
@@ -508,7 +508,7 @@
               "Audio_Tartaglia_RushMove"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "ExtraAttack": {
@@ -519,7 +519,7 @@
               "Audio_Tartaglia_ExtraAtk"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "ChangePosition": {
@@ -538,7 +538,7 @@
               "Audio_Tartaglia_ChangePosition03"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill"]
         },
         "ChangePosition_Flexible": {
@@ -577,7 +577,7 @@
               "Audio_Tartaglia_DefendAtk02"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": [
             "DefendTrigger",
             "DefendAttackTrigger",
@@ -590,7 +590,7 @@
           "animatorStates": {
             "Recover": ["Monster_Tartaglia_Recover", "Audio_Tartaglia_Recover"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "ShakeTrigger", "DoSkill", "RecoverTrigger"]
         }
       }
@@ -600,7 +600,7 @@
     "$type": "NCBABGPMMPL",
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.3499999940395355,
+    "ILBGGMJLJNG": 0.3499999940395355,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -970,8 +970,8 @@
           "forward": 0.0,
           "back": 0.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -1017,8 +1017,8 @@
     "EINCMKOBBEG": {
       "excludeForces": ["RetreatAirType", "WindZoneType", "AirflowType"]
     },
-    "BCBPBHLKCPB": "LeftRight",
-    "AIPJBCHAEPE": "Walk",
-    "LHHNPKNFGMD": true
+    "NDDNHKDJBIJ": "LeftRight",
+    "NPIIMMNHGIM": "Walk",
+    "GLHELMHJCDA": true
   }
 }

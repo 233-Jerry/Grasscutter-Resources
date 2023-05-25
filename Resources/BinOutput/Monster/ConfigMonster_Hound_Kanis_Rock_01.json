@@ -14,11 +14,11 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 45.0,
-    "FJOGFHEFPHN": 10.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 45.0,
+    "NOLJNGPPCHB": 10.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/MoveForward",
@@ -55,17 +55,17 @@
       "dieForceDisappearTime": 0.4000000059604645,
       "dieDisappearEffect": "Eff_Death_Abyss_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "WavePawR": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -74,9 +74,9 @@
               "y": -0.30000001192092896,
               "z": 0.75
             },
-            "HOPPHMEKHLG": {
-              "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+            "FACALEEMIKJ": {
+              "$type": "NJPCBGIJLLM",
+              "JMADJAJODCO": {
                 "x": 0.0,
                 "y": 35.0,
                 "z": 0.0
@@ -84,7 +84,7 @@
             }
           },
           "height": 1.7999999523162842,
-          "fanAngle": 200.0,
+          "KEKBKGCEMOH": 200.0,
           "radius": 2.0
         },
         "attackInfo": {
@@ -108,7 +108,7 @@
       },
       "WavePawL": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -117,9 +117,9 @@
               "y": -0.30000001192092896,
               "z": 0.75
             },
-            "HOPPHMEKHLG": {
-              "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+            "FACALEEMIKJ": {
+              "$type": "NJPCBGIJLLM",
+              "JMADJAJODCO": {
                 "x": 0.0,
                 "y": -70.0,
                 "z": 0.0
@@ -127,7 +127,7 @@
             }
           },
           "height": 1.7999999523162842,
-          "fanAngle": 220.0,
+          "KEKBKGCEMOH": 220.0,
           "radius": 2.0
         },
         "attackInfo": {
@@ -151,7 +151,7 @@
       },
       "Biting": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -329,7 +329,7 @@
           },
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "BeHit": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -461,7 +461,7 @@
           "animatorStates": {
             "Alert_Crystallization_01": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
@@ -470,7 +470,7 @@
           "animatorStates": {
             "Alert_Crystallization_02": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         }
@@ -481,7 +481,7 @@
     "$type": "NCBABGPMMPL",
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.25,
+    "ILBGGMJLJNG": 0.25,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -804,7 +804,7 @@
         "ignoreGCD": true,
         "triggerGCD": false,
         "triggerCDOnStart": true,
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["Activated"],
         "flagTargetReachable": "10",
         "flagSelfOnTemplateCollider": "11",
@@ -877,14 +877,14 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "AOFJJIKKGME": true,
-    "KCNKFNLDDOD": true,
-    "BCBPBHLKCPB": "ForwardBackward",
-    "NGNIGPNNLAI": "SlimeType",
-    "OOFDCONLBHL": 2.0
+    "JBMEJFICKCK": true,
+    "AOKNEHKHDNL": true,
+    "NDDNHKDJBIJ": "ForwardBackward",
+    "NDLFNFNMEGN": "SlimeType",
+    "DOAOLLAIJDF": 2.0
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

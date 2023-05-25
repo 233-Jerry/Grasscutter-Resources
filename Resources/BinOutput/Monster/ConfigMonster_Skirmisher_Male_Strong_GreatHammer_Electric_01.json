@@ -14,11 +14,11 @@
     "useGrassDisplacement": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 20.0,
-    "FJOGFHEFPHN": 5.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 20.0,
+    "NOLJNGPPCHB": 5.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -56,19 +56,19 @@
       "dieShaderData": "AvatarDie",
       "useRagDoll": true,
       "ragDollDieEndTimeDelay": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "TrippleAtk01": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -144,7 +144,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 120.0,
+              "IDBIEBFJKNL": 120.0,
               "hitImpulseY": 800.0
             },
             "canBeDefenceHalt": true
@@ -164,7 +164,7 @@
       },
       "TrippleAtk03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -175,7 +175,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 3.5
         },
         "attackInfo": {
@@ -210,9 +210,9 @@
       },
       "ImprovedTrippleAtk01": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -290,7 +290,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 120.0,
+              "IDBIEBFJKNL": 120.0,
               "hitImpulseY": 800.0
             },
             "canBeDefenceHalt": true
@@ -310,7 +310,7 @@
       },
       "ImprovedTrippleAtk03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -321,7 +321,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 3.75
         },
         "attackInfo": {
@@ -601,7 +601,7 @@
           "animatorStates": {
             "AirDie": []
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -633,8 +633,8 @@
               "Audio_Monster_Strong_GreatHammer_Electric_Improve"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["ForceImprove"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ForceImprove"]
         },
@@ -646,7 +646,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_RushAtk_BS"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -657,8 +657,8 @@
               "Audio_Monster_Strong_GreatHammer_Electric_Walk_Footstep"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -669,7 +669,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_RushAtk_AS"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["ImproveEnd"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
@@ -682,7 +682,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_RushAtk_Smash"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -695,7 +695,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_RushAtk_Smash"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -707,7 +707,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_TrippleAtk"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -719,7 +719,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_ImprovedRushAtk_BS"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -730,8 +730,8 @@
               "Audio_Monster_Strong_GreatHammer_Electric_Walk_Footstep"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -742,7 +742,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_ImprovedRushAtk_AS"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["ImproveEnd"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
@@ -755,7 +755,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_ImprovedRushAtk_Smash"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "RushAtk"],
           "BHEPAJIOBDN": true
         },
@@ -767,7 +767,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_ImprovedRushAtk_Smash"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -779,7 +779,7 @@
               "Audio_Monster_Strong_GreatHammer_Electric_ImprovedTrippleAtk"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -790,8 +790,8 @@
             "Weak_Loop": [],
             "Weak_AS": ["Audio_Monster_Strong_GreatHammer_Electric_Weak_AS"]
           },
-          "BFDKJHMDDML": 0.009999999776482582,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.009999999776482582,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["WeakStart"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "WeakStart", "Recover"]
         },
@@ -1351,8 +1351,8 @@
           "stop": 0.5,
           "back": 0.5
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -1400,11 +1400,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StoopType"
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StoopType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

@@ -17,11 +17,11 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 45.0,
-    "FJOGFHEFPHN": 30.0,
-    "FCDMCPDGFCL": ["NormalIdle/Standby", "NormalMove/Walk", "NormalMove/Run"]
+    "FENNMBOFDEC": 45.0,
+    "NOLJNGPPCHB": 30.0,
+    "DOKDABBOIFA": ["NormalIdle/Standby", "NormalMove/Walk", "NormalMove/Run"]
   },
   "dither": {
     "showDitherDuration": 2.0,
@@ -47,17 +47,17 @@
       "dieForceDisappearTime": 5.0,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -68,7 +68,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 5.0
         },
         "attackInfo": {
@@ -91,7 +91,7 @@
       },
       "NormalAtk02_01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -124,7 +124,7 @@
       },
       "NormalAtk02_02": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -160,7 +160,7 @@
       },
       "ComboAtk01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -171,7 +171,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 180.0,
+          "KEKBKGCEMOH": 180.0,
           "radius": 6.0
         },
         "attackInfo": {
@@ -194,7 +194,7 @@
       },
       "ComboAtk02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -205,7 +205,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 180.0,
+          "KEKBKGCEMOH": 180.0,
           "radius": 6.0
         },
         "attackInfo": {
@@ -228,7 +228,7 @@
       },
       "ComboAtk03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -271,9 +271,9 @@
       },
       "Glide_HitScene": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "MJLCPIAKNCP": "OnlyHitScene",
+          "NLBIEJFCKKN": "OnlyHitScene",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -506,7 +506,7 @@
           },
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "ScaleShot": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -600,7 +600,7 @@
     "$type": "NCBABGPMMPL",
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 2.0,
+    "ILBGGMJLJNG": 2.0,
     "showDistance": 0.0,
     "ANGKJBLILKJ": true,
     "size": "Grand"
@@ -987,8 +987,8 @@
     "EINCMKOBBEG": {
       "muteAll": true
     },
-    "AOFJJIKKGME": true,
-    "AIPJBCHAEPE": "Walk",
-    "LHHNPKNFGMD": true
+    "JBMEJFICKCK": true,
+    "NPIIMMNHGIM": "Walk",
+    "GLHELMHJCDA": true
   }
 }

@@ -34,17 +34,17 @@
       "dieForceDisappearTime": 4.0,
       "dieDisappearEffect": "",
       "dieDisappearEffectDelay": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AtkL01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -55,7 +55,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 7.0
         },
         "attackInfo": {
@@ -86,7 +86,7 @@
       },
       "AtkL02": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -120,7 +120,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 900.0,
+              "IDBIEBFJKNL": 900.0,
               "hitImpulseY": 600.0
             },
             "retreatType": "ByHitDirection",
@@ -130,7 +130,7 @@
       },
       "AtkL03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -141,7 +141,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 5.0
         },
         "attackInfo": {
@@ -162,7 +162,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 900.0,
+              "IDBIEBFJKNL": 900.0,
               "hitImpulseY": 600.0
             },
             "hitHaltTimeScale": 0.009999999776482582
@@ -177,7 +177,7 @@
       },
       "AtkL04": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -188,7 +188,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 180.0,
+          "KEKBKGCEMOH": 180.0,
           "radius": 6.0
         },
         "attackInfo": {
@@ -209,7 +209,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 1000.0,
+              "IDBIEBFJKNL": 1000.0,
               "hitImpulseY": 600.0
             },
             "hitHaltTimeScale": 0.009999999776482582
@@ -495,7 +495,7 @@
             "Standby_BS": []
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["DoSkill", "ToShaderState1"]
         },
         "Standby_AS": {
@@ -505,7 +505,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["DoSkill", "ToShaderState1"]
         },
         "StandbyFree": {
@@ -515,7 +515,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["DoSkill", "ToShaderState1"]
         },
         "BeHit": {
@@ -543,7 +543,7 @@
             "Die": ["Monster_Effigy_Wind_Die", "Audio_Effigy_Wind_Die"],
             "SwimDie": ["Monster_Effigy_Wind_Die"]
           },
-          "AAEKKGMOKFK": true
+          "EBKFBAFIBPF": true
         },
         "Dying": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -554,7 +554,7 @@
             ],
             "Dying": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["DyingState"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "DyingState"]
         },
@@ -563,7 +563,7 @@
           "animatorStates": {
             "Dying_AS": ["Monster_Effigy_Wind_DyingAS"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["DyingState"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "DyingState"]
         },
@@ -580,7 +580,7 @@
             "RushAway_BS": []
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RushAway_AS": {
@@ -590,7 +590,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -615,7 +615,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -642,7 +642,7 @@
               "Audio_Effigy_Wind_CoreOut_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -657,7 +657,7 @@
             "Vortex_Rush": ["Monster_Effigy_Wind_Rush"]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -681,7 +681,7 @@
               "Audio_Effigy_Wind_CoreOut_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -704,7 +704,7 @@
               "Audio_Effigy_Wind_CoreOut_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "RushAwayTrigger"],
           "BHEPAJIOBDN": true
         },
@@ -717,7 +717,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "SingleAtk_RushStop"],
           "BHEPAJIOBDN": true
         },
@@ -736,7 +736,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -751,7 +751,7 @@
             "MultiAtk_Rush": ["Monster_Effigy_Wind_Rush"]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "MultiAtk_RushStop"],
           "BHEPAJIOBDN": true
         },
@@ -777,7 +777,7 @@
               "Monster_Effigy_Wind_RandomMoveRandomed"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -806,7 +806,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -828,7 +828,7 @@
               "Audio_Effigy_Wind_AirGun_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -848,7 +848,7 @@
             "ReturnToBorn_AS": []
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WindButterfly": {
@@ -873,7 +873,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -895,7 +895,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHitByFallingAtk"],
           "resetAnimatorTriggerOnExit": [
             "BeHit",
@@ -913,7 +913,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -936,7 +936,7 @@
               "Audio_Effigy_Wind_CoreOut_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": [
             "BeHit",
             "DoSkill",
@@ -985,8 +985,8 @@
     "offset": {
       "y": 1.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -1597,11 +1597,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "AIPJBCHAEPE": "None",
-    "LHHNPKNFGMD": true
+    "NPIIMMNHGIM": "None",
+    "GLHELMHJCDA": true
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

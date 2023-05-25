@@ -11,9 +11,9 @@
     "useGrassDisplacement": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "FCDMCPDGFCL": [
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -47,17 +47,17 @@
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
       "useRagDoll": true,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AtkNo": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -67,7 +67,7 @@
               "z": -0.5
             }
           },
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 1.5
         },
         "attackInfo": {
@@ -90,7 +90,7 @@
       },
       "AtkNormal": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -100,7 +100,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 1.75
         },
         "attackInfo": {
@@ -124,7 +124,7 @@
       },
       "AtkNormal_Fire": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -134,7 +134,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 1.75
         },
         "attackInfo": {
@@ -169,7 +169,7 @@
       },
       "FireRush_Rush1": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -205,7 +205,7 @@
       },
       "FireRush_Rush2": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -241,7 +241,7 @@
       },
       "FireRush_Rush_Fire1": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -283,7 +283,7 @@
       },
       "FireRush_Rush_Fire2": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -325,7 +325,7 @@
       },
       "FireRush_AS": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -335,7 +335,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 1.75
         },
         "attackInfo": {
@@ -369,7 +369,7 @@
       },
       "FireRush_AS_Fire": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -379,7 +379,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 1.75
         },
         "attackInfo": {
@@ -414,9 +414,9 @@
       },
       "FireRush_HitScene": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
-          "MJLCPIAKNCP": "OnlyHitScene",
+          "NLBIEJFCKKN": "OnlyHitScene",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -425,7 +425,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 45.0,
+          "KEKBKGCEMOH": 45.0,
           "radius": 1.25
         },
         "attackInfo": {
@@ -453,7 +453,7 @@
       "abilityID": "Alert",
       "abilityName": "Hili_None_Alert",
       "abilityOverride": "",
-      "KCBHAAMMIGC": true
+      "GJPOCNIHALI": true
     },
     {
       "abilityID": "FireRush",
@@ -564,7 +564,7 @@
             "Die2": ["Monster_Hili_None_Die", "Audio_Hili_Die2"],
             "AirDie": ["Monster_Hili_None_Die", "Audio_Hili_Die1"]
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Struggle": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -590,8 +590,8 @@
           "animatorStates": {
             "FireRush_BS1": ["Audio_Hili_FireRush_BS"]
           },
-          "BFDKJHMDDML": 0.6000000238418579,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.6000000238418579,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "FireRush_BS2": {
@@ -602,8 +602,8 @@
               "Monster_Hili_Fire_FireRush_BS_Fire"
             ]
           },
-          "BFDKJHMDDML": 0.6000000238418579,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.6000000238418579,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "FireRush_Rush_Loop1": {
@@ -614,8 +614,8 @@
               "Audio_Hili_FireRush_Push_Loop"
             ]
           },
-          "BFDKJHMDDML": 0.6000000238418579,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.6000000238418579,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "FireRush_Rush_Loop2": {
@@ -626,8 +626,8 @@
               "Audio_Hili_FireRush_Push_Loop"
             ]
           },
-          "BFDKJHMDDML": 0.6000000238418579,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.6000000238418579,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "FireRush_AS": {
@@ -638,8 +638,8 @@
               "Audio_Hili_FireRush_AS"
             ]
           },
-          "BFDKJHMDDML": 0.6000000238418579,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.6000000238418579,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "NextSkillTrigger"]
         },
         "FireRush_StandUp": {
@@ -647,7 +647,7 @@
           "animatorStates": {
             "FireRush_StandUp": []
           },
-          "BDFLEJHPFBG": 0.6000000238418579,
+          "DGDPBBPPGGA": 0.6000000238418579,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "FireRush_Crash": {
@@ -692,7 +692,7 @@
           "animatorStates": {
             "FireUp": ["Monster_Hili_Fire_Torch_FireUp", "Audio_Hili_FireUp"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ExtinguishAlert": {
@@ -735,7 +735,7 @@
       "x": -0.05000000074505806
     },
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.25,
+    "ILBGGMJLJNG": 0.25,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -1087,8 +1087,8 @@
           "left": 0.5,
           "right": 0.5
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -1131,7 +1131,7 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StoopType"
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StoopType"
   }
 }

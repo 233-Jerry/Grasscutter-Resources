@@ -12,17 +12,16 @@
     "checkInSurface": true,
     "scale": 1.100000023841858,
     "useGrassDisplacement": true,
-    "hasAfterImage": true,
     "clearAIOnSetLightDeactive": true,
-    "KJCBJDCKPND": true,
-    "NCCLLKFLJGL": true
+    "KJDCLBDPAAK": true,
+    "PDBFEDBCJCA": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 20.0,
-    "FJOGFHEFPHN": 5.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 20.0,
+    "NOLJNGPPCHB": 5.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -59,17 +58,17 @@
       "dieDisappearEffect": "",
       "dieShaderData": "EremiteSandDie",
       "dieShaderEnableDurationTime": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk01": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -107,7 +106,7 @@
       },
       "NormalAtk02": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -145,7 +144,7 @@
       },
       "NormalAtk03_01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -180,7 +179,7 @@
       },
       "NormalAtk03_02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -191,7 +190,7 @@
             }
           },
           "height": 2.200000047683716,
-          "fanAngle": 180.0,
+          "KEKBKGCEMOH": 180.0,
           "radius": 2.0
         },
         "attackInfo": {
@@ -216,7 +215,7 @@
       },
       "BlinkAttack01": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -258,8 +257,8 @@
         {
           "summonTag": 25110401,
           "name": "Chrysopelea_Eremite_Grass_01",
-          "DAKPGBBDGKK": true,
-          "KOKLMCBCHDP": true
+          "GMCBKCPPPAM": true,
+          "OPCBBFKNJGC": true
         }
       ]
     }
@@ -414,7 +413,7 @@
             "Swing": []
           },
           "canDoSkill": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
         "NormalMove": {
@@ -473,7 +472,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "BeHit"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "AirDie"
             }
@@ -488,7 +487,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "BeHit"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "AirDie",
               "normalizeEnd": 0.6200000047683716
@@ -535,8 +534,8 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_Alert"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BKLKHCBEHNL": true
         },
@@ -548,8 +547,8 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_SheathWeapon"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["SheathWeaponTrigger"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "SheathWeaponTrigger"]
         },
@@ -561,8 +560,8 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_Improve"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["ForceImprove"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ForceImprove"]
         },
@@ -576,8 +575,8 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_Weak_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["Weak"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Weak", "Recover"]
         },
@@ -590,7 +589,7 @@
             ]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.10000000149011612,
+          "ONHHCMFDHJG": 0.10000000149011612,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -603,7 +602,7 @@
             ]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.10000000149011612,
+          "ONHHCMFDHJG": 0.10000000149011612,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -616,7 +615,7 @@
             ]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.10000000149011612,
+          "ONHHCMFDHJG": 0.10000000149011612,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -629,7 +628,7 @@
             ]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -641,7 +640,7 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_RangeAttac01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -653,7 +652,7 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_ComboAttack01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": ["ComboTrigger"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -665,7 +664,7 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_Blink"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -677,7 +676,7 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_Blink"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -690,7 +689,7 @@
             ]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -702,7 +701,7 @@
               "Audio_Monster_Eremite_Female_Standard_Dancer_Grass_RangeAttac01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -714,7 +713,7 @@
             ]
           },
           "canDoSkill": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -727,7 +726,7 @@
             ]
           },
           "canDoSkill": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         }
@@ -1048,7 +1047,7 @@
         "publicCDGroup": "",
         "ignoreGCD": true,
         "triggerGCD": false,
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["Improve"],
         "skillQueryingTime": 3.0,
         "flagTargetReachable": "11",
@@ -1155,8 +1154,8 @@
           "left": 3.0,
           "right": 3.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       },
       "specification": {
         "201": {
@@ -1172,8 +1171,8 @@
             "left": 2.0,
             "right": 2.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         },
         "102": {
           "rangeMin": 0.0,
@@ -1188,8 +1187,8 @@
             "left": 2.0,
             "right": 2.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         }
       }
     }
@@ -1238,8 +1237,8 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StoopType",
-    "MGFACNKNOFC": true
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StoopType",
+    "LIIPFJFJPCP": true
   }
 }

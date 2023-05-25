@@ -13,7 +13,7 @@
     "useGrassDisplacement": true,
     "clearAnimatorOnSetLightDeactive": true,
     "clearAIOnSetLightDeactive": true,
-    "NCCLLKFLJGL": true,
+    "PDBFEDBCJCA": true,
     "useFinalIK": true
   },
   "model": {
@@ -46,17 +46,17 @@
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
       "useRagDoll": true,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -306,7 +306,7 @@
             }
           ],
           "BHEPAJIOBDN": true,
-          "EAPMAKKDOBD": "BlendMove"
+          "MEKNIEJNAOE": "BlendMove"
         },
         "NormalFly": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -328,7 +328,7 @@
             }
           ],
           "BHEPAJIOBDN": true,
-          "EAPMAKKDOBD": "BlendMove"
+          "MEKNIEJNAOE": "BlendMove"
         },
         "Turn_BS": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -363,7 +363,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "Die": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -381,7 +381,7 @@
             "Die_Ragdoll": [],
             "Die_Weak_Ragdoll": []
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -502,7 +502,7 @@
               "Audio_Monster_Gargoyle_Airborne_Alert_Machinery"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         }
@@ -512,23 +512,23 @@
   "partControl": {
     "parts": [
       {
-        "$type": "MCALMCGAIPO",
+        "$type": "PHONHEBNKAM",
         "angularSpeed": 360.0,
-        "NCHJLODGJLP": "Neck",
-        "IBAKAENOANA": "Parent",
-        "IJAGAGEGOJO": {
+        "MPMJINCGNKM": "Neck",
+        "GANGCJEALCK": "Parent",
+        "LNDDDLPHJHP": {
           "y": -90.0
         },
-        "LLEBKOAINMG": "RotateToForward",
-        "AGAOMJIIDOI": "",
-        "CJBHHMJAEJF": 60.0,
-        "HFCEMLCNHGD": 30.0,
-        "GLLFMAALOOH": false,
-        "FMENFCPIPOI": "Neck",
-        "KGMPMIFJAAH": {
+        "FFHIFCIOILC": "RotateToForward",
+        "NHFJENBBICJ": "",
+        "CLOJKGCOOGD": 60.0,
+        "CBBPMEDMBLF": 30.0,
+        "LNDNCHNGCGM": false,
+        "GAIOECAEEEI": "Neck",
+        "PHNPNAODAHC": {
           "x": 3.0
         },
-        "ADJNKBJAEAO": 15.0
+        "HGNLAABHOCB": 15.0
       }
     ]
   },
@@ -538,8 +538,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "showDistance": 48.0,
     "ANGKJBLILKJ": true,
     "size": "Grand"
@@ -691,10 +691,10 @@
           "maxTargetAngleXZ": 150.0,
           "pickRangeMax": 7.5,
           "pickRangeYMax": 1.0,
-          "COFIIBMDHPI": "RangeXZ_Y",
-          "OMINIPADGDH": {
-            "FNLHKKJOOKK": 5.0,
-            "MKPFFCKKLBH": 0.5
+          "LKCOGNBIGIH": "RangeXZ_Y",
+          "JDGNIMEBDLD": {
+            "BKHONOMKJMJ": 5.0,
+            "MMOHBOEIICG": 0.5
           }
         },
         "cd": 8.0,
@@ -717,11 +717,11 @@
           "pose": [201],
           "pickRangeMin": 5.0,
           "pickRangeMax": 12.5,
-          "COFIIBMDHPI": "RangeXZ_Y",
-          "OMINIPADGDH": {
-            "JENNAMANCLO": 5.0,
-            "FNLHKKJOOKK": 12.5,
-            "PEPBINGOIBP": 0.5
+          "LKCOGNBIGIH": "RangeXZ_Y",
+          "JDGNIMEBDLD": {
+            "EOIFGMJLBHO": 5.0,
+            "BKHONOMKJMJ": 12.5,
+            "LBMDICDCDNE": 0.5
           }
         },
         "cd": 7.5,
@@ -766,9 +766,9 @@
         "castCondition": {
           "pose": [201],
           "pickRangeMax": 10.5,
-          "COFIIBMDHPI": "RangeXZ_Y",
-          "OMINIPADGDH": {
-            "FNLHKKJOOKK": 10.5
+          "LKCOGNBIGIH": "RangeXZ_Y",
+          "JDGNIMEBDLD": {
+            "BKHONOMKJMJ": 10.5
           }
         },
         "cd": 8.0,
@@ -791,10 +791,10 @@
           "pose": [201],
           "pickRangeMin": 10.5,
           "pickRangeMax": 17.5,
-          "COFIIBMDHPI": "RangeXZ_Y",
-          "OMINIPADGDH": {
-            "JENNAMANCLO": 10.5,
-            "FNLHKKJOOKK": 17.5
+          "LKCOGNBIGIH": "RangeXZ_Y",
+          "JDGNIMEBDLD": {
+            "EOIFGMJLBHO": 10.5,
+            "BKHONOMKJMJ": 17.5
           }
         },
         "cd": 5.0,
@@ -821,7 +821,7 @@
         "initialCD": 1.0,
         "initialCDUpperRange": 1.0,
         "publicCDGroup": "Gargoyle_ElementAtk",
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["ElementAtk"],
         "skillQueryingTime": 3.0,
         "flagTargetReachable": "11",
@@ -834,7 +834,7 @@
     "returnToBornTactic": {
       "enable": true,
       "defaultSetting": {
-        "spacial": true
+        "CCIEIGCKFIO": "Spacial"
       }
     },
     "spacialChaseTactic": {
@@ -874,34 +874,34 @@
         "yHigh": 1.0
       }
     },
-    "IOPMNAMBKJN": {
+    "DNFAFEMECKP": {
       "enable": true,
       "condition": {
         "pose": [201]
       },
       "defaultSetting": {
-        "BCMOLECEGAC": 1.0,
+        "PJKLIPPELJL": 1.0,
         "restTimeMin": 5.0,
         "restTimeMax": 7.5,
         "facingMoveTurnInterval": 1.0,
         "obstacleDetectRange": 3.0,
-        "MBDHFFEKDDN": 3.0,
-        "LNFJFMMNJKF": {
+        "CHGPNGPHFIN": 3.0,
+        "IFINIMKOIFH": {
           "forward": 0.0,
-          "GJFGHJKDAPJ": 0.20000000298023224,
-          "ODPHDCELKPL": 0.0,
-          "JODAOPJNCID": 0.0,
-          "DMGLMJOLAGC": 5.0,
-          "GECECDMBMMG": 12.0,
-          "PHHIMBKGJIK": 5.0,
-          "FHDKGIDOGKM": 12.0,
-          "PLLPIFKALOK": 5.0,
-          "FALMGAKBBLI": 12.0,
-          "JAEDKDLIHNB": 4.0,
-          "NDKKEKLMOOG": 4.0,
-          "PEHGJHOLKHN": 0.5,
-          "IECHGDJBFCG": 0.0,
-          "FMOPDHCEBLP": 2.0
+          "PGHIEPJHAHE": 0.20000000298023224,
+          "FLHMKNHBCIH": 0.0,
+          "MINAAFAKOOP": 0.0,
+          "MHMJDGLCIEK": 5.0,
+          "ENABDNJFDOM": 12.0,
+          "PNINCGOBEMP": 5.0,
+          "NDKIFCHBGDO": 12.0,
+          "PEAPGJPHGFD": 5.0,
+          "GABPNFOOFJD": 12.0,
+          "BMFLJECLPPD": 4.0,
+          "HOHDGIECBNC": 4.0,
+          "GMALMHFBCLG": 0.5,
+          "JBKPJCHNIEB": 0.0,
+          "HMIEEIDDIFD": 2.0
         }
       }
     }
@@ -938,14 +938,14 @@
     "EINCMKOBBEG": {
       "excludeForces": ["RetreatAirType", "WindZoneType", "AirflowType"]
     },
-    "AOFJJIKKGME": true,
-    "BCBPBHLKCPB": "AirBlend",
-    "CNPDANKMFNL": "AirBlend",
-    "NGNIGPNNLAI": "SlimeType",
-    "OOFDCONLBHL": 2.0
+    "JBMEJFICKCK": true,
+    "NDDNHKDJBIJ": "AirBlend",
+    "KPMKGBPGNFA": "AirBlend",
+    "NDLFNFNMEGN": "SlimeType",
+    "DOAOLLAIJDF": 2.0
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

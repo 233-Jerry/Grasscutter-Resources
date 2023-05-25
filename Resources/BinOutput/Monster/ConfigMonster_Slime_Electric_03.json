@@ -36,17 +36,17 @@
       "dieEndTime": 2.0,
       "dieForceDisappearTime": 8.0,
       "dieDisappearEffect": "",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -56,7 +56,7 @@
               "z": 0.5
             }
           },
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 1.5
         },
         "attackInfo": {
@@ -80,7 +80,7 @@
       },
       "NormalAtk_Electric": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -90,7 +90,7 @@
               "z": 0.5
             }
           },
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 1.5
         },
         "attackInfo": {
@@ -157,7 +157,7 @@
       "abilityID": "TestTool_Discharge",
       "abilityName": "Slime_Electric_TestTool_Discharge",
       "abilityOverride": "",
-      "KCBHAAMMIGC": true
+      "GJPOCNIHALI": true
     },
     {
       "abilityID": "ElecMuteHurt",
@@ -256,7 +256,7 @@
           "animatorStates": {
             "Charge": ["Monster_Slime_Electric_03_Charge"]
           },
-          "BFDKJHMDDML": 0.4000000059604645,
+          "ONHHCMFDHJG": 0.4000000059604645,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "TestTool_Discharge": {
@@ -284,9 +284,9 @@
               "Audio_Slime_03_JumpAtk_H"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.4000000059604645,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.4000000059604645,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -302,13 +302,13 @@
   "partControl": {
     "parts": [
       {
-        "$type": "FMMCPGCNMJF",
+        "$type": "LMGPLBHAAOO",
         "angularSpeed": 180.0,
-        "NCHJLODGJLP": "AntennaControl",
-        "LLEBKOAINMG": "RotateToForward",
-        "AGAOMJIIDOI": "",
-        "CJBHHMJAEJF": 360.0,
-        "HFCEMLCNHGD": 0.0
+        "MPMJINCGNKM": "AntennaControl",
+        "FFHIFCIOILC": "RotateToForward",
+        "NHFJENBBICJ": "",
+        "CLOJKGCOOGD": 360.0,
+        "CBBPMEDMBLF": 0.0
       }
     ]
   },
@@ -316,7 +316,7 @@
     "$type": "NCBABGPMMPL",
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 1.0,
+    "ILBGGMJLJNG": 1.0,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -655,14 +655,14 @@
         }
       }
     },
-    "DNAHDMGDMCH": {
+    "BGOENHJHGED": {
       "enable": true,
       "defaultSetting": {
         "triggerDistance": 4.0,
         "fleeAngle": 75.0,
         "fleeDistanceMin": 3.0,
         "fleeDistanceMax": 5.0,
-        "PPIBDEEBFPN": 0.5
+        "GOFKNBLHIGH": 0.5
       }
     }
   },
@@ -700,10 +700,10 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "NGNIGPNNLAI": "SlimeType"
+    "NDLFNFNMEGN": "SlimeType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionOut": [
         {
@@ -718,14 +718,14 @@
   "field": {
     "concernType": "CombatExcludeGWGO",
     "shape": "CircleR15",
-    "BHAJLFBHFMD": true,
-    "DEOHMEELJDM": "",
+    "DKJMOEABJLP": true,
+    "KKBCOCOOIIB": "",
     "triggerInfinite": true,
     "lifeInfinite": true,
     "checkInterval": 0.5,
     "overwriteCampType": true,
     "campType": "SelfCamp",
-    "INKADPFABPA": "",
-    "AAHHPDHLLLH": ""
+    "FHBPIKLIAIG": "",
+    "GHAAFPOJIKL": ""
   }
 }

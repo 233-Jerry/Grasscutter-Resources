@@ -17,11 +17,11 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 20.0,
-    "FJOGFHEFPHN": 5.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 20.0,
+    "NOLJNGPPCHB": 5.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -54,19 +54,19 @@
       "dieShaderData": "AvatarDie",
       "useRagDoll": true,
       "ragDollDieEndTimeDelay": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "MeleeAtk": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -102,9 +102,9 @@
       },
       "PunchRushAttack": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -328,7 +328,7 @@
           "animatorStates": {
             "AirDie": []
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -357,8 +357,8 @@
           "animatorStates": {
             "Improve": ["Audio_Monster_Strong_Gloves_Wind_Improve"]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "DefendSheild_BS": {
@@ -369,8 +369,8 @@
               "Audio_Monster_Strong_Gloves_Wind_Block_BS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["ReachTarget", "NearTarget"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
@@ -380,8 +380,8 @@
           "animatorStates": {
             "Block_Loop": []
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -390,8 +390,8 @@
           "animatorStates": {
             "Block_AS": ["Audio_Monster_Strong_Gloves_Wind_Block_AS"]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "BlockIsOver"],
           "BHEPAJIOBDN": true
         },
@@ -407,8 +407,8 @@
               "Audio_Monster_Strong_Gloves_Wind_Punch_BS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -424,8 +424,8 @@
               "Audio_Monster_Strong_Gloves_Wind_Punch_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToAttackEnemy"],
           "BHEPAJIOBDN": true
         },
@@ -441,8 +441,8 @@
               "Audio_Monster_Strong_Gloves_Wind_Block_Punch"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "BlockIsOver", "BeAttacked"],
           "BHEPAJIOBDN": true
         },
@@ -461,8 +461,8 @@
               "Audio_Monster_Strong_Gloves_Wind_SecondWind"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ReachTarget"],
           "BHEPAJIOBDN": true
         },
@@ -471,8 +471,8 @@
           "animatorStates": {
             "RushBuddyPrepare": []
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "BlockRushToAlliance": {
@@ -483,8 +483,8 @@
               "Audio_Monster_Strong_Gloves_Wind_Block_RushBuddy"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToAttackEnemy"]
         },
         "Weak": {
@@ -494,8 +494,8 @@
             "Weak_Loop": [],
             "Weak_AS": ["Audio_Monster_Strong_Gloves_Wind_Weak_AS"]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["WeakStart"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -531,7 +531,7 @@
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
     "ANGKJBLILKJ": true,
-    "HLGCEAGHFGH": 50.0,
+    "PKFOOIINBMM": 50.0,
     "size": "Big"
   },
   "initialPoses": {
@@ -905,8 +905,8 @@
           "left": 2.0,
           "right": 2.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       },
       "specification": {
         "201": {
@@ -921,8 +921,8 @@
             "left": 3.0,
             "right": 3.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         },
         "301": {
           "rangeMin": 1.0,
@@ -936,8 +936,8 @@
             "left": 4.0,
             "right": 4.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         }
       }
     }
@@ -976,11 +976,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StoopType"
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StoopType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

@@ -11,7 +11,7 @@
     "useGrassDisplacement": true,
     "clearAnimatorOnSetLightDeactive": true,
     "clearAIOnSetLightDeactive": true,
-    "NCCLLKFLJGL": true
+    "PDBFEDBCJCA": true
   },
   "specialPoint": {
     "elementAbsorb": "RootNode",
@@ -43,17 +43,17 @@
       "hasAnimatorDie": true,
       "dieForceDisappearTime": 2.0,
       "dieDisappearEffect": "Eff_Death_Common_Animal",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AtkNo": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -63,7 +63,7 @@
               "z": -0.5
             }
           },
-          "fanAngle": 60.0,
+          "KEKBKGCEMOH": 60.0,
           "radius": 1.5
         },
         "attackInfo": {
@@ -86,9 +86,9 @@
       },
       "Megamoth_HitScene": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
-          "MJLCPIAKNCP": "OnlyHitScene",
+          "NLBIEJFCKKN": "OnlyHitScene",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -97,7 +97,7 @@
               "z": 1.0
             }
           },
-          "fanAngle": 45.0,
+          "KEKBKGCEMOH": 45.0,
           "radius": 3.5
         },
         "attackInfo": {
@@ -242,7 +242,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "SurroundTurn": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -252,7 +252,7 @@
           "resetAnimatorTriggerOnEnter": ["SurroundBigTurn"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "SurroundBigTurn"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "BeHit": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -460,7 +460,7 @@
           },
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "Attack01_AS_HitScence": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -475,7 +475,7 @@
             "Attack02_BS": ["Audio_Monster_Megamoth_Attack02_BS_S"]
           },
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "Attack02_Turn_L": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -572,7 +572,7 @@
       "z": 0.6000000238418579
     },
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.25,
+    "ILBGGMJLJNG": 0.25,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -962,7 +962,7 @@
     }
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {
@@ -1012,11 +1012,11 @@
       ]
     }
   },
-  "BDLIOEHFPCH": {
-    "EIHGOIGAPAL": 1.0,
-    "BMBDAOENPLI": 0.5,
-    "MFIHAJOOALH": 4.5,
-    "ADHAFKCCFKK": 2.0,
-    "CGCPKLDHJPD": 6.0
+  "KGGBMEKANBA": {
+    "GLPLLADBDHN": 1.0,
+    "IPIHIFKCPPD": 0.5,
+    "NNALELBFBBC": 4.5,
+    "NBDFGFLGKNC": 2.0,
+    "KGKEMFCINHJ": 6.0
   }
 }

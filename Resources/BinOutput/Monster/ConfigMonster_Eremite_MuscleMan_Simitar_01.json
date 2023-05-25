@@ -14,14 +14,14 @@
     "useGrassDisplacement": true,
     "clearAnimatorOnSetLightDeactive": true,
     "clearAIOnSetLightDeactive": true,
-    "NCCLLKFLJGL": true
+    "PDBFEDBCJCA": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 60.0,
-    "FJOGFHEFPHN": 30.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 60.0,
+    "NOLJNGPPCHB": 30.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -60,17 +60,17 @@
       "dieShaderEnableDurationTime": 1.0,
       "useRagDoll": true,
       "ragDollDieEndTimeDelay": 8.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AE_Slash01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -81,7 +81,7 @@
             }
           },
           "height": 1.7999999523162842,
-          "fanAngle": 310.0,
+          "KEKBKGCEMOH": 310.0,
           "radius": 1.600000023841858
         },
         "attackInfo": {
@@ -103,7 +103,7 @@
       },
       "AE_Slash02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -114,7 +114,7 @@
             }
           },
           "height": 1.7999999523162842,
-          "fanAngle": 310.0,
+          "KEKBKGCEMOH": 310.0,
           "radius": 1.5399999618530273
         },
         "attackInfo": {
@@ -137,7 +137,7 @@
       },
       "AE_Simitar_Feint_Detection": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -148,7 +148,7 @@
             }
           },
           "height": 1.5,
-          "fanAngle": 200.0,
+          "KEKBKGCEMOH": 200.0,
           "radius": 1.5499999523162842
         },
         "attackInfo": {
@@ -303,7 +303,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "BeHit"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "AirDie"
             }
@@ -318,7 +318,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit", "HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "BeHit"],
-          "CIFLOMFPGND": [
+          "NFNAJLODALF": [
             {
               "name": "AirDie",
               "normalizeEnd": 0.46000000834465027
@@ -354,7 +354,7 @@
           "animatorStates": {
             "AirDie": ["Monster_Eremite_AirDie"]
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -365,7 +365,7 @@
               "Audio_Eremite_MuscleMan_Simitar_01_alert"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Crossleg_Alert": {
@@ -377,7 +377,7 @@
               "Audio_Eremite_MuscleMan_Simitar_01_crosslegalert"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "SheathWeapon": {
@@ -470,7 +470,7 @@
               "Audio_Eremite_MuscleMan_Simitar_01_feint_loop"
             ]
           },
-          "BFDKJHMDDML": 0.4000000059604645,
+          "ONHHCMFDHJG": 0.4000000059604645,
           "resetAnimatorTriggerOnEnter": ["FeintEndTrigger", "FeintHitTrigger"],
           "resetAnimatorTriggerOnExit": ["BeHit"]
         },
@@ -600,7 +600,7 @@
       "x": -0.05000000074505806
     },
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.25,
+    "ILBGGMJLJNG": 0.25,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -1048,8 +1048,8 @@
           "left": 1.5,
           "right": 1.5
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -1087,11 +1087,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StoopType"
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StoopType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

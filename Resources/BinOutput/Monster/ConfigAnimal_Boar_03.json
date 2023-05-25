@@ -67,7 +67,7 @@
       },
       "MeleeAttack": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -105,7 +105,7 @@
       },
       "JumpAttack": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -140,9 +140,9 @@
       },
       "RushAtk_HitScene": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "MJLCPIAKNCP": "OnlyHitScene",
+          "NLBIEJFCKKN": "OnlyHitScene",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -218,7 +218,7 @@
             "Born": []
           },
           "canDoSkill": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
         "NormalIdle": {
@@ -228,7 +228,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
         "NormalMove": {
@@ -240,7 +240,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -252,7 +252,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
           "BKLKHCBEHNL": true
@@ -280,7 +280,7 @@
             "Alert": ["Animal_Boar_03_Alert"]
           },
           "canDoSkill": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RushAtk_BS": {
@@ -299,7 +299,7 @@
               "Audio_Boar_03_RushAtk1_BS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "CrashTrigger", "ReachTarget"],
           "BHEPAJIOBDN": true
         },
@@ -313,7 +313,7 @@
             "RushAtk2": ["Audio_Boar_03_RushAtk1"],
             "RushAtk3": ["Audio_Boar_03_RushAtk1"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -324,7 +324,7 @@
             "Crash_Loop": ["Animal_Boar_03_RushHitScene"],
             "Crash_AS": ["Audio_Boar_03_Crash_AS"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "CrashTrigger", "ReachTarget"],
           "BHEPAJIOBDN": true
         },
@@ -344,7 +344,7 @@
               "Audio_Boar_03_RushAtk1_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "CrashTrigger", "ReachTarget"],
           "BHEPAJIOBDN": true
         },
@@ -353,7 +353,7 @@
           "animatorStates": {
             "MeleeAttackTurn": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -365,7 +365,7 @@
               "Audio_Boar_03_MelwwAttack"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -374,7 +374,7 @@
           "animatorStates": {
             "Summon": ["Animal_Boar_03_SummonEffect", "Audio_Boar_03_Summon"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -386,7 +386,7 @@
               "Audio_Boar_03_ThrowSnowBall"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -398,7 +398,7 @@
               "Audio_Boar_03_AngrySnowDrop"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -407,7 +407,7 @@
           "animatorStates": {
             "AngryState": ["Audio_Boar_03_AngryState"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "AngryTrigger"]
         }
       }

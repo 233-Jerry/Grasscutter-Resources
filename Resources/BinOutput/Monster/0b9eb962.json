@@ -31,8 +31,8 @@
       "LockPoint05",
       "LockPoint09"
     ],
-    "BFDKBAEPAGA": true,
-    "HFJOMFCOAJI": 5.0
+    "MMJALAAAMCG": true,
+    "LHJDKANACGH": 5.0
   },
   "model": {
     "bornEffect": "",
@@ -48,18 +48,18 @@
       "hitBloodEffect": "",
       "hitAutoRedirect": false,
       "blendShake": {
-        "$type": "IIGJGFPICFL",
-        "CEDOPNOMIKP": [
+        "$type": "ECCJKPNALNE",
+        "CKBABCNHCCK": [
           {
-            "CNAAGCGFKDA": 0.33000001311302185,
+            "OLDDMKLGEEO": 0.33000001311302185,
             "hitBoxNames": ["HitBox_01", "HitBox_02"]
           },
           {
-            "CNAAGCGFKDA": 0.6600000262260437,
+            "OLDDMKLGEEO": 0.6600000262260437,
             "hitBoxNames": ["HitBox_03", "HitBox_04", "HitBox_05"]
           },
           {
-            "CNAAGCGFKDA": 1.0,
+            "OLDDMKLGEEO": 1.0,
             "hitBoxNames": ["HitBox_06", "HitBox_07"]
           }
         ]
@@ -78,12 +78,12 @@
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
       "dieModelFadeDelay": 0.5,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     }
   },
   "abilities": [
@@ -253,7 +253,7 @@
           "animatorStates": {
             "ToSkill01": ["Audio_Monster_Planelurker_ToSkill01"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -265,7 +265,7 @@
               "Audio_Monster_Planelurker_Alert"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -315,7 +315,7 @@
           "animatorStates": {
             "OnGroundCharge_BS": ["Audio_Monster_Planelurker_ToSkill01"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -327,10 +327,10 @@
               "Audio_Monster_Planelurker_OnGroundCharge"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "RockBreath": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -397,7 +397,7 @@
               "Audio_Monster_Planelurker_ElementalBurst_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ReturnToBorn": {
@@ -446,8 +446,8 @@
     "offset": {
       "y": 2.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -654,7 +654,7 @@
         "cd": 999999.0,
         "initialCD": 3.0,
         "publicCDGroup": "",
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["SummonHoundBS", "SummonHound"],
         "skillQueryingTime": 4.0,
         "flagTargetReachable": "10",
@@ -832,7 +832,7 @@
         "castCondition": {
           "pose": [101, 301],
           "needReInitCD": true,
-          "GLGHHKAGENB": 23.5
+          "HEPALKLMIGG": 23.5
         },
         "cd": 55.0,
         "cdUpperRange": 10.0,
@@ -851,7 +851,7 @@
         "priority": 2,
         "castCondition": {
           "pose": [101, 301],
-          "GLGHHKAGENB": 25.0
+          "HEPALKLMIGG": 25.0
         },
         "cd": 5.0,
         "cdUpperRange": 5.0,
@@ -961,29 +961,29 @@
     "EINCMKOBBEG": {
       "includeForces": ["FixedRushMoveType", "RushMoveType"]
     },
-    "AOFJJIKKGME": true,
-    "DMJNLOIEHNP": false,
-    "LHHNPKNFGMD": true
+    "JBMEJFICKCK": true,
+    "NPDGPNFCOPI": false,
+    "GLHELMHJCDA": true
   },
   "cameraAdjust": {
     "default": {
-      "$type": "DHCOKBEICGK",
+      "$type": "LEACENCFDHG",
       "priority": 1.0,
-      "OPKMFLHBCEL": 10.0,
-      "HLJEJHJHEBG": 65.0,
-      "MOINKIAMCKG": 1.0,
-      "EBDAIBLODLB": 52.5,
-      "LGLGNMPNADH": 8.0,
-      "EIHIEHJLINB": -5.0,
-      "ELCNGKOAJFN": false,
-      "KONIGEOBEPA": 30.0,
-      "IKNIHFEDDIJ": 20.0,
-      "LJGAGFHBAPE": 25.0,
-      "FDEEGAFACDO": 30.0,
-      "AOEIECPJILN": 55.0,
-      "JLKGEFGDOEO": 60.0,
-      "EJLANJKCDJO": "CircleR10",
-      "AINPPNDKHBG": "CircleR65"
+      "LHHABPAOPNK": 10.0,
+      "JJGKEGBHGJL": 65.0,
+      "BBBIJABMHLH": 1.0,
+      "NANMFGHBACH": 52.5,
+      "FMLELPIHIPP": 8.0,
+      "PNHBKGDJCNJ": -5.0,
+      "JFIDJKPKEBP": false,
+      "NAOGLDNJPDH": 30.0,
+      "IHCMGDDAOFJ": 20.0,
+      "FNNDCOJEGEB": 25.0,
+      "AECBNPJEMGK": 30.0,
+      "DKPAJDPNFAL": 55.0,
+      "OPLKFDAMLCP": 60.0,
+      "BEEPGHCGFAN": "CircleR10",
+      "GFKCBMBABDO": "CircleR65"
     }
   }
 }

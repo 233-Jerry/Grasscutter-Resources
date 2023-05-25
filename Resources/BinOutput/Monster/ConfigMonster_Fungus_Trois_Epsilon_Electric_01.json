@@ -11,7 +11,7 @@
     "useGrassDisplacement": true,
     "clearAnimatorOnSetLightDeactive": true,
     "clearAIOnSetLightDeactive": true,
-    "NCCLLKFLJGL": true
+    "PDBFEDBCJCA": true
   },
   "model": {
     "bornEffect": "",
@@ -39,17 +39,17 @@
       "dieForceDisappearTime": 1.5,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "MeleeAttackNormal": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -60,7 +60,7 @@
             }
           },
           "height": 1.2999999523162842,
-          "fanAngle": 45.0,
+          "KEKBKGCEMOH": 45.0,
           "radius": 2.0
         },
         "attackInfo": {
@@ -83,7 +83,7 @@
       },
       "MeleeAttackDecay": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -94,7 +94,7 @@
             }
           },
           "height": 1.5,
-          "fanAngle": 90.0,
+          "KEKBKGCEMOH": 90.0,
           "radius": 2.0
         },
         "attackInfo": {
@@ -117,7 +117,7 @@
       },
       "ChargeAttackNormal": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -127,7 +127,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 90.0,
+          "KEKBKGCEMOH": 90.0,
           "radius": 1.5
         },
         "attackInfo": {
@@ -152,7 +152,7 @@
       },
       "ChargeAttackDecay": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -162,7 +162,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 120.0,
+          "KEKBKGCEMOH": 120.0,
           "radius": 1.7000000476837158
         },
         "attackInfo": {
@@ -275,7 +275,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "BeHitThrow": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -324,7 +324,7 @@
           },
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "Dance": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -568,7 +568,7 @@
               "Audio_Monster_Fungus_Trois_ReturnToBorn_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -580,8 +580,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -886,8 +886,8 @@
     "returnToBornTactic": {
       "enable": true,
       "defaultSetting": {
-        "spacial": true,
-        "KLHLJGGBMEL": 2.319999933242798
+        "CCIEIGCKFIO": "Spacial",
+        "PENDEAKLPGI": 2.319999933242798
       }
     },
     "wanderTactic": {
@@ -948,8 +948,8 @@
           "left": 0.5,
           "right": 0.5
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       },
       "specification": {
         "321": {
@@ -961,8 +961,8 @@
             "left": 0.0,
             "right": 0.0
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         }
       }
     },
@@ -1045,12 +1045,12 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "CNPDANKMFNL": "AirBlend3D",
-    "NGNIGPNNLAI": "SlimeType"
+    "NDDNHKDJBIJ": "FourDirection",
+    "KPMKGBPGNFA": "AirBlend3D",
+    "NDLFNFNMEGN": "SlimeType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

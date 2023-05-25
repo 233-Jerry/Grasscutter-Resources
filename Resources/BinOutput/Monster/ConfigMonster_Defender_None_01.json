@@ -50,17 +50,17 @@
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
       "useRagDoll": true,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "StampAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -101,7 +101,7 @@
       },
       "SwipeAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -138,7 +138,7 @@
       },
       "WhirlAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -486,7 +486,7 @@
             "Die": ["Audio_Defender_Die"],
             "WeakDie": ["Audio_Defender_WeakDie"]
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "PowerOff_WakeUp": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -496,7 +496,7 @@
               "Audio_Defender_WeakUp"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "LevelEnterBattle"]
         },
@@ -505,7 +505,7 @@
           "animatorStates": {
             "PowerOff_Warning": ["Audio_Defender_Weak_End"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
@@ -514,7 +514,7 @@
           "animatorStates": {
             "PowerOff_WarningAS": ["Audio_Defender_Weak_End"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
@@ -578,7 +578,7 @@
               "Audio_Defender_Laser_BS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Laser_Aim": {
@@ -589,7 +589,7 @@
               "Audio_Defender_Laser_BS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Laser_Shoot": {
@@ -597,7 +597,7 @@
           "animatorStates": {
             "Laser_Shoot": ["Audio_Defender_Laser_BS"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RemoveShield": {
@@ -612,7 +612,7 @@
           "animatorStates": {
             "Alert_Machinery": ["Monster_Defender_None_Alert_Machinery"]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         }
@@ -622,12 +622,12 @@
   "partControl": {
     "parts": [
       {
-        "$type": "FMMCPGCNMJF",
+        "$type": "LMGPLBHAAOO",
         "angularSpeed": 60.0,
-        "NCHJLODGJLP": "LaserControl",
-        "AGAOMJIIDOI": "",
-        "CJBHHMJAEJF": 50.0,
-        "HFCEMLCNHGD": 70.0
+        "MPMJINCGNKM": "LaserControl",
+        "NHFJENBBICJ": "",
+        "CLOJKGCOOGD": 50.0,
+        "CBBPMEDMBLF": 70.0
       }
     ]
   },
@@ -635,8 +635,8 @@
     "$type": "NCBABGPMMPL",
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "showDistance": 48.0,
     "ANGKJBLILKJ": true,
     "size": "Grand"
@@ -1066,7 +1066,7 @@
         "pose": [100]
       }
     },
-    "APPJMEDOGGE": {
+    "MKBGHBIKGBL": {
       "enable": true,
       "condition": {
         "pose": [100]
@@ -1120,10 +1120,10 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "ForwardBackward"
+    "NDDNHKDJBIJ": "ForwardBackward"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

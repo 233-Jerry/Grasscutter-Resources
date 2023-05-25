@@ -34,17 +34,17 @@
       "dieForceDisappearTime": 4.0,
       "dieDisappearEffect": "",
       "dieDisappearEffectDelay": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "AtkL01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -55,7 +55,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 7.0
         },
         "attackInfo": {
@@ -86,7 +86,7 @@
       },
       "AtkL02": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -120,7 +120,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 900.0,
+              "IDBIEBFJKNL": 900.0,
               "hitImpulseY": 600.0
             },
             "retreatType": "ByHitDirection",
@@ -130,7 +130,7 @@
       },
       "AtkL03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -141,7 +141,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 5.0
         },
         "attackInfo": {
@@ -162,7 +162,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 900.0,
+              "IDBIEBFJKNL": 900.0,
               "hitImpulseY": 600.0
             },
             "hitHaltTimeScale": 0.009999999776482582
@@ -177,7 +177,7 @@
       },
       "AtkL04": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -188,7 +188,7 @@
             }
           },
           "height": 3.0,
-          "fanAngle": 180.0,
+          "KEKBKGCEMOH": 180.0,
           "radius": 6.0
         },
         "attackInfo": {
@@ -209,7 +209,7 @@
             "hitImpulseType": "",
             "overrideHitImpulse": {
               "hitLevel": "Air",
-              "IPHCEFBMJAJ": 900.0,
+              "IDBIEBFJKNL": 900.0,
               "hitImpulseY": 600.0
             },
             "hitHaltTimeScale": 0.009999999776482582
@@ -520,7 +520,7 @@
             "Standby_BS": []
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["RandomBlinkrigger"],
           "resetAnimatorTriggerOnExit": ["DoSkill", "ToShaderState1"]
         },
@@ -531,7 +531,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["DoSkill", "ToShaderState1"]
         },
         "StandbyFree": {
@@ -584,7 +584,7 @@
               "Audio_Effigy_Rock_SingleAtk_Blink"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "RebornState"]
         },
         "Warning": {
@@ -613,7 +613,7 @@
               "Audio_Effigy_Rock_ChargeAtk_CoreOutAS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "Spike": {
@@ -640,7 +640,7 @@
               "Audio_Effigy_Rock_ChargeAtk_CoreOutAS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "StonePillar": {
@@ -667,7 +667,7 @@
               "Audio_Effigy_Rock_StoneStorm_CoreOutAS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "SingleAtk": {
@@ -689,7 +689,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["HitAir2HitDrop"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -712,7 +712,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"],
           "BHEPAJIOBDN": true
         },
@@ -731,7 +731,7 @@
               "Audio_Effigy_Rock_RockFall_AS2"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "Blink_BS": {
@@ -740,7 +740,7 @@
             "Blink_BS": ["Monster_Effigy_Rock_BlinkOnPillarBS"]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "RandomBlinkrigger"]
         },
         "Blink_AS": {
@@ -753,7 +753,7 @@
           },
           "canDoSkill": true,
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RockWave": {
@@ -769,7 +769,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2", "RockWaveBlink"]
         },
         "StoneBall": {
@@ -792,7 +792,7 @@
               "Audio_Effigy_Rock_StoneBall_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"],
           "BHEPAJIOBDN": true
         },
@@ -810,7 +810,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnEnter": ["WeakState"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
@@ -822,7 +822,7 @@
             "ReturnToBorn_AS": []
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "KillPillar": {
@@ -857,7 +857,7 @@
             "StoneStorm_WeakBS": [],
             "StoneStorm_WeakLoop": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "EliteStoneBall": {
@@ -873,7 +873,7 @@
               "Audio_Effigy_Rock_EliteStoneBall_AS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"],
           "BHEPAJIOBDN": true
         },
@@ -896,7 +896,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "EliteDestroyPillar": {
@@ -911,7 +911,7 @@
               "Monster_Effigy_Rock_SingleAtk_CoreOutAS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "EliteDestroyPillarBlink": {
@@ -924,7 +924,7 @@
               "Monster_Effigy_Rock_Elite_DestroyPillarBlink"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"]
         },
         "EliteSpike": {
@@ -945,7 +945,7 @@
               "Audio_Effigy_Rock_ChargeAtk_CoreOutAS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ToShaderState2"],
           "BHEPAJIOBDN": true
         }
@@ -958,8 +958,8 @@
     "offset": {
       "y": 2.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -1645,11 +1645,11 @@
     "EINCMKOBBEG": {
       "muteAll": true
     },
-    "AIPJBCHAEPE": "None",
-    "LHHNPKNFGMD": true
+    "NPIIMMNHGIM": "None",
+    "GLHELMHJCDA": true
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

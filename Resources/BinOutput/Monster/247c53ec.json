@@ -13,9 +13,9 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "FCDMCPDGFCL": ["NormalIdle", "NormalMove/WalkL", "NormalMove/WalkR"]
+    "DOKDABBOIFA": ["NormalIdle", "NormalMove/WalkL", "NormalMove/WalkR"]
   },
   "dither": {
     "normalBetweenCamera": {}
@@ -38,17 +38,17 @@
       "dieEndTime": 4.0,
       "dieForceDisappearTime": 6.0,
       "dieDisappearEffect": "",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "LaSignora_MeleeAtk03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -89,7 +89,7 @@
       },
       "LaSignora_RangeAtk03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -245,7 +245,7 @@
           "animatorStates": {
             "Born": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["DoSkill"]
         },
         "NormalIdle": {
@@ -281,7 +281,7 @@
           "animatorStates": {
             "Alert": ["Monster_LaSignora_Alert", "Audio_LaSignora_alert"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "MeleeAtk01": {
@@ -292,7 +292,7 @@
               "Audio_LaSignora_MeleeAtk01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "MeleeAtk02": {
@@ -303,7 +303,7 @@
               "Audio_LaSignora_MeleeAtk02"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "MeleeAtk03": {
@@ -314,7 +314,7 @@
               "Audio_LaSignora_MeleeAtk03"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk01BS": {
@@ -322,7 +322,7 @@
           "animatorStates": {
             "RangeAtk01BS": ["Audio_LaSignora_RangeAtk01BS"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk01L": {
@@ -333,7 +333,7 @@
               "Audio_LaSignora_RangeAtk01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk01R": {
@@ -344,7 +344,7 @@
               "Audio_LaSignora_RangeAtk01"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk01AS": {
@@ -352,7 +352,7 @@
           "animatorStates": {
             "RangeAtk01AS": ["Audio_LaSignora_RangeAtk01AS"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk02": {
@@ -363,7 +363,7 @@
               "Audio_LaSignora_RangeAtk02"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk03": {
@@ -374,7 +374,7 @@
               "Audio_LaSignora_RangeAtk03"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk03AS": {
@@ -382,7 +382,7 @@
           "animatorStates": {
             "RangeAtk03AS": ["Monster_LaSignora_RangeAtk03AS"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WrapAtk": {
@@ -390,8 +390,8 @@
           "animatorStates": {
             "WrapAtk": ["Monster_LaSignora_WrapAtk", "Audio_LaSignora_wrapAtk"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "BlinkBS": {
@@ -399,8 +399,8 @@
           "animatorStates": {
             "BlinkBS": ["Monster_LaSignora_BlinkBS", "Audio_LaSignora_BlinkBS"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Blink": {
@@ -408,8 +408,8 @@
           "animatorStates": {
             "Blink": ["Monster_LaSignora_Blink"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "BlinkAS": {
@@ -417,8 +417,8 @@
           "animatorStates": {
             "BlinkAS": ["Monster_LaSignora_BlinkAS"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "BlinkAtk": {
@@ -429,8 +429,8 @@
               "Audio_LaSignora_RangeAtk03"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "BlinkAtkAS": {
@@ -438,8 +438,8 @@
           "animatorStates": {
             "BlinkAtkAS": ["Monster_LaSignora_BlinkAtkAS"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ShieldBroken": {
@@ -450,8 +450,8 @@
               "Audio_LaSignora_ShieldBroken"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "CocoonBaneChisel": {
@@ -459,8 +459,8 @@
           "animatorStates": {
             "CocoonBaneChisel": ["Monster_LaSignora_CocoonBaneChisel"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -470,7 +470,7 @@
     "$type": "NCBABGPMMPL",
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.3499999940395355,
+    "ILBGGMJLJNG": 0.3499999940395355,
     "showDistance": 0.0,
     "ANGKJBLILKJ": true
   },
@@ -709,7 +709,7 @@
         "priority": 1,
         "castCondition": {
           "pose": [101, 111, 121, 131, 201, 211, 221, 231],
-          "GLGHHKAGENB": 15.5
+          "HEPALKLMIGG": 15.5
         },
         "publicCDGroup": "",
         "triggerGCD": false,
@@ -781,8 +781,8 @@
           "forward": 0.0,
           "back": 0.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -843,8 +843,8 @@
         "AirflowType"
       ]
     },
-    "BCBPBHLKCPB": "LeftRight",
-    "AIPJBCHAEPE": "Walk",
-    "LHHNPKNFGMD": true
+    "NDDNHKDJBIJ": "LeftRight",
+    "NPIIMMNHGIM": "Walk",
+    "GLHELMHJCDA": true
   }
 }

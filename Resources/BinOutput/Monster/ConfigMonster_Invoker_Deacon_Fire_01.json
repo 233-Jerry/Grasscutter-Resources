@@ -15,11 +15,11 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 10.0,
-    "FJOGFHEFPHN": 5.0,
-    "FCDMCPDGFCL": ["NormalIdle/standby", "NormalMove/Walk"]
+    "FENNMBOFDEC": 10.0,
+    "NOLJNGPPCHB": 5.0,
+    "DOKDABBOIFA": ["NormalIdle/standby", "NormalMove/Walk"]
   },
   "model": {
     "bornEffect": "Eff_Monster_Invoker_Born",
@@ -46,19 +46,19 @@
       "dieForceDisappearTime": 5.0,
       "dieDisappearEffect": "Eff_Death_Avatar_Common",
       "dieShaderData": "AvatarDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "TransformAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
-          "EDLHKEAJOOL": 0.25,
+          "HGLDAKONGHC": 0.25,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -237,7 +237,7 @@
               "Audio_Monster_Invoker_Deacon_Fire_Alert"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Tarnsfrom": {
@@ -248,7 +248,7 @@
               "Audio_Monster_Invoker_Deacon_Fire_Transform"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -278,7 +278,7 @@
               "Audio_Monster_Invoker_Deacon_Fire_MeleeAtk"
             ]
           },
-          "BFDKJHMDDML": 0.800000011920929,
+          "ONHHCMFDHJG": 0.800000011920929,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "BurnAtk": {
@@ -293,7 +293,7 @@
               "Audio_Monster_Invoker_Deacon_Fire_BurnAtk"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "RangeAtk": {
@@ -359,7 +359,7 @@
               "Audio_Monster_Invoker_Deacon_Fire_Blink_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -620,12 +620,12 @@
     "EINCMKOBBEG": {
       "excludeForces": ["RetreatAirType"]
     },
-    "KCNKFNLDDOD": true,
-    "NGNIGPNNLAI": "StoopType",
-    "AIPJBCHAEPE": "Walk"
+    "AOKNEHKHDNL": true,
+    "NDLFNFNMEGN": "StoopType",
+    "NPIIMMNHGIM": "Walk"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

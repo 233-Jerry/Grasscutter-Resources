@@ -13,9 +13,9 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "FJOGFHEFPHN": 45.0
+    "NOLJNGPPCHB": 45.0
   },
   "model": {
     "bornEffect": "",
@@ -42,12 +42,12 @@
       "dieForceDisappearTime": 1.0,
       "dieDisappearEffect": "",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     }
   },
   "abilities": [
@@ -207,7 +207,7 @@
             }
           ],
           "BHEPAJIOBDN": true,
-          "EAPMAKKDOBD": "BlendMove"
+          "MEKNIEJNAOE": "BlendMove"
         },
         "HitThrow": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -216,8 +216,8 @@
           },
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
-          "KCFDJAALIHK": true,
-          "KHLKKBPCMBA": true
+          "CJDFBFFLADE": true,
+          "BNGBGDEHCHH": true
         },
         "HitThrowDrop": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -225,8 +225,8 @@
             "HitThrowDrop": []
           },
           "canSyncMove": true,
-          "KCFDJAALIHK": true,
-          "KHLKKBPCMBA": true
+          "CJDFBFFLADE": true,
+          "BNGBGDEHCHH": true
         },
         "HitThrowToGround": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -235,8 +235,8 @@
           },
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KCFDJAALIHK": true,
-          "KHLKKBPCMBA": true
+          "CJDFBFFLADE": true,
+          "BNGBGDEHCHH": true
         },
         "Struggle": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -254,7 +254,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["DoSkill"],
-          "KHLKKBPCMBA": true
+          "BNGBGDEHCHH": true
         },
         "Die": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -397,8 +397,8 @@
     "offset": {
       "y": 0.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -560,7 +560,7 @@
     "returnToBornTactic": {
       "enable": true,
       "defaultSetting": {
-        "spacial": true
+        "CCIEIGCKFIO": "Spacial"
       }
     },
     "spacialChaseTactic": {
@@ -597,7 +597,7 @@
         "distanceFromBorn": 12.0,
         "distanceFromCurrentMin": 4.0,
         "distanceFromCurrentMax": 7.5,
-        "PDNEPDCIFIA": true
+        "FIPBHLFMHIL": true
       }
     },
     "spacialAdjustTactic": {
@@ -617,32 +617,32 @@
         }
       }
     },
-    "IOPMNAMBKJN": {
+    "DNFAFEMECKP": {
       "enable": true,
       "condition": {
         "pose": [201]
       },
       "defaultSetting": {
         "speedLevel": 2,
-        "BCMOLECEGAC": 3.0,
+        "PJKLIPPELJL": 3.0,
         "restTimeMin": 3.0,
         "restTimeMax": 6.5,
         "facingMoveTurnInterval": 1.0,
         "obstacleDetectRange": 1.5,
-        "MBDHFFEKDDN": 3.0,
-        "LNFJFMMNJKF": {
+        "CHGPNGPHFIN": 3.0,
+        "IFINIMKOIFH": {
           "stop": 0.0,
           "forward": 0.20000000298023224,
-          "ODPHDCELKPL": 0.4000000059604645,
-          "DMGLMJOLAGC": 2.0,
-          "GECECDMBMMG": 4.0,
-          "PHHIMBKGJIK": 2.0,
-          "FHDKGIDOGKM": 4.0,
-          "PLLPIFKALOK": 2.0,
-          "FALMGAKBBLI": 4.0,
-          "PEHGJHOLKHN": 1.0,
-          "IECHGDJBFCG": 0.5,
-          "FMOPDHCEBLP": 2.0
+          "FLHMKNHBCIH": 0.4000000059604645,
+          "MHMJDGLCIEK": 2.0,
+          "ENABDNJFDOM": 4.0,
+          "PNINCGOBEMP": 2.0,
+          "NDKIFCHBGDO": 4.0,
+          "PEAPGJPHGFD": 2.0,
+          "GABPNFOOFJD": 4.0,
+          "GMALMHFBCLG": 1.0,
+          "JBKPJCHNIEB": 0.5,
+          "HMIEEIDDIFD": 2.0
         }
       }
     }
@@ -694,15 +694,15 @@
     "EINCMKOBBEG": {
       "excludeForces": ["RetreatAirType"]
     },
-    "AOFJJIKKGME": true,
-    "KCNKFNLDDOD": true,
-    "BCBPBHLKCPB": "AirBlend",
-    "CNPDANKMFNL": "AirBlend",
-    "NGNIGPNNLAI": "SlimeType",
-    "OOFDCONLBHL": 2.0
+    "JBMEJFICKCK": true,
+    "AOKNEHKHDNL": true,
+    "NDDNHKDJBIJ": "AirBlend",
+    "KPMKGBPGNFA": "AirBlend",
+    "NDLFNFNMEGN": "SlimeType",
+    "DOAOLLAIJDF": 2.0
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

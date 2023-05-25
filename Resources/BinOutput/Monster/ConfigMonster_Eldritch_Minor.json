@@ -10,11 +10,11 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 360.0,
-    "FJOGFHEFPHN": 360.0,
-    "FCDMCPDGFCL": ["NormalIdle/Standby"]
+    "FENNMBOFDEC": 360.0,
+    "NOLJNGPPCHB": 360.0,
+    "DOKDABBOIFA": ["NormalIdle/Standby"]
   },
   "specialPoint": {
     "elementAbsorb": "RootNode",
@@ -60,10 +60,10 @@
     "beHit": {
       "hitBloodEffect": "",
       "blendShake": {
-        "$type": "IIGJGFPICFL",
-        "CEDOPNOMIKP": [
+        "$type": "ECCJKPNALNE",
+        "CKBABCNHCCK": [
           {
-            "CNAAGCGFKDA": 0.33000001311302185,
+            "OLDDMKLGEEO": 0.33000001311302185,
             "hitBoxNames": [
               "BodyBox01",
               "BodyBox02",
@@ -77,11 +77,11 @@
             ]
           },
           {
-            "CNAAGCGFKDA": 0.6600000262260437,
+            "OLDDMKLGEEO": 0.6600000262260437,
             "hitBoxNames": ["BodyBox09", "BodyBox10", "BodyBox11"]
           },
           {
-            "CNAAGCGFKDA": 1.0,
+            "OLDDMKLGEEO": 1.0,
             "hitBoxNames": ["BodyBox12", "HeadBox"]
           }
         ]
@@ -97,12 +97,12 @@
       "dieForceDisappearTime": 4.0,
       "dieDisappearEffect": "",
       "dieDisappearEffectDelay": 4.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     }
   },
   "abilities": [
@@ -222,7 +222,7 @@
             "AlertR": ["Monster_Eldritch_Minor_AlertR"],
             "AlertUnderWater": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "DiveIn": {
@@ -233,7 +233,7 @@
               "Audio_Monster_Eldritch_Minor_DiveIn"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "DiveOut": {
@@ -244,7 +244,7 @@
               "Audio_Monster_Eldritch_Minor_DiveOut"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "SkillDiveIn": {
@@ -256,7 +256,7 @@
             ],
             "SkillDiveInAS": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "SkillDiveOut": {
@@ -267,7 +267,7 @@
               "Audio_Monster_Eldritch_Minor_DiveOut"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "SkillStandby": {
@@ -275,7 +275,7 @@
           "animatorStates": {
             "SkillStandby": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Gnaw": {
@@ -298,7 +298,7 @@
             "Gnaw_AS": ["Audio_Monster_Eldritch_Minor_DiveIn"],
             "Gnaw_UnderWater": []
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WaterJet": {
@@ -311,10 +311,10 @@
             "WaterJet_UnderWater": []
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "WaterImpulse": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -324,7 +324,7 @@
               "Audio_Monster_Eldritch_Minor_Gnaw_WaterImpulse"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WaterBall": {
@@ -335,7 +335,7 @@
               "Audio_Monster_Eldritch_Minor_Gnaw_WaterBall"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -347,8 +347,8 @@
     "offset": {
       "y": 1.5
     },
-    "OELDMANLPDM": 1.0,
-    "KLIMPNOBGLK": true,
+    "ILBGGMJLJNG": 1.0,
+    "OBLIKCAAFNK": true,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -630,33 +630,33 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "KCNKFNLDDOD": true,
-    "AEPIEGNIOGP": 20.770000457763672,
-    "AIPJBCHAEPE": "None",
-    "LHHNPKNFGMD": true
+    "AOKNEHKHDNL": true,
+    "HDGMOMPKBFD": 20.770000457763672,
+    "NPIIMMNHGIM": "None",
+    "GLHELMHJCDA": true
   },
   "audio": {
-    "NCOGLLMIJGO": ""
+    "KEMKOHPPGKB": ""
   },
   "cameraAdjust": {
     "default": {
-      "$type": "DHCOKBEICGK",
+      "$type": "LEACENCFDHG",
       "priority": 1.0,
-      "OPKMFLHBCEL": 150.0,
-      "HLJEJHJHEBG": 150.0,
-      "MOINKIAMCKG": 0.5,
-      "EBDAIBLODLB": 48.5,
-      "LGLGNMPNADH": 10.0,
-      "EIHIEHJLINB": 10.0,
-      "ELCNGKOAJFN": false,
-      "KONIGEOBEPA": 30.0,
-      "IKNIHFEDDIJ": 45.0,
-      "LJGAGFHBAPE": 50.0,
-      "FDEEGAFACDO": 40.0,
-      "AOEIECPJILN": 100.0,
-      "JLKGEFGDOEO": 145.0,
-      "EJLANJKCDJO": "CircleR150",
-      "AINPPNDKHBG": "CircleR150"
+      "LHHABPAOPNK": 150.0,
+      "JJGKEGBHGJL": 150.0,
+      "BBBIJABMHLH": 0.5,
+      "NANMFGHBACH": 48.5,
+      "FMLELPIHIPP": 10.0,
+      "PNHBKGDJCNJ": 10.0,
+      "JFIDJKPKEBP": false,
+      "NAOGLDNJPDH": 30.0,
+      "IHCMGDDAOFJ": 45.0,
+      "FNNDCOJEGEB": 50.0,
+      "AECBNPJEMGK": 40.0,
+      "DKPAJDPNFAL": 100.0,
+      "OPLKFDAMLCP": 145.0,
+      "BEEPGHCGFAN": "CircleR150",
+      "GFKCBMBABDO": "CircleR150"
     }
   }
 }

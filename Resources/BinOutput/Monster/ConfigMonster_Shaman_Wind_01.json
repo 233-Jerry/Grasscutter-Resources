@@ -11,7 +11,7 @@
     "useGrassDisplacement": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM"
+    "$type": "CCPANGHECMF"
   },
   "model": {
     "bornEffect": "Eff_Monster_Common_Born",
@@ -36,17 +36,17 @@
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
       "useRagDoll": true,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "Shaman_Wind_MeleeAttack": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -56,7 +56,7 @@
               "z": 0.0
             }
           },
-          "fanAngle": 150.0,
+          "KEKBKGCEMOH": 150.0,
           "radius": 3.0
         },
         "attackInfo": {
@@ -140,13 +140,13 @@
       "abilityID": "Shaman_SpecialsState",
       "abilityName": "Shaman_SpecialsState",
       "abilityOverride": "",
-      "KCBHAAMMIGC": true
+      "GJPOCNIHALI": true
     },
     {
       "abilityID": "Hili_None_Alert",
       "abilityName": "Hili_None_Alert",
       "abilityOverride": "",
-      "KCBHAAMMIGC": true
+      "GJPOCNIHALI": true
     }
   ],
   "stateLayers": {
@@ -231,7 +231,7 @@
             "Die": ["Monster_Shaman_Die"],
             "AirDie": ["Monster_Shaman_Die"]
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Dance": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -263,7 +263,7 @@
               "Audio_Shaman_Wind_MeleeAttack_Vo"
             ]
           },
-          "BFDKJHMDDML": 0.4000000059604645,
+          "ONHHCMFDHJG": 0.4000000059604645,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "NormalAttack_AS": {
@@ -271,7 +271,7 @@
           "animatorStates": {
             "NormalAttack_AS": ["Audio_Shaman_Wind_NormalAttack_AS_Vo"]
           },
-          "BFDKJHMDDML": 0.5,
+          "ONHHCMFDHJG": 0.5,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "NormalAttack_BS": {
@@ -282,7 +282,7 @@
               "Monster_Shaman_Wind_NormalAttack"
             ]
           },
-          "BFDKJHMDDML": 0.5,
+          "ONHHCMFDHJG": 0.5,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -323,7 +323,7 @@
       "y": -0.10000000149011612
     },
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.3199999928474426,
+    "ILBGGMJLJNG": 0.3199999928474426,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -577,10 +577,10 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "NGNIGPNNLAI": "StoopType"
+    "NDLFNFNMEGN": "StoopType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

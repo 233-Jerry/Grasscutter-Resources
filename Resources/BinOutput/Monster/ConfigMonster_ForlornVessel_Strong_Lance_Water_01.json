@@ -41,17 +41,17 @@
       "dieDisappearEffect": "Eff_Death_Abyss_Common",
       "dieShaderData": "MonsterDie",
       "useRagDoll": true,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk01": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -89,7 +89,7 @@
       },
       "NormalAtk02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -125,9 +125,9 @@
       },
       "ChargeAtk_Route": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "MJLCPIAKNCP": "Both",
+          "NLBIEJFCKKN": "Both",
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -164,7 +164,7 @@
       },
       "ChargeAtk_Final": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -173,9 +173,9 @@
               "y": 1.850000023841858,
               "z": -0.6000000238418579
             },
-            "HOPPHMEKHLG": {
-              "$type": "JADOBJDPOLJ",
-              "NHGDOBINMBK": {
+            "FACALEEMIKJ": {
+              "$type": "NJPCBGIJLLM",
+              "JMADJAJODCO": {
                 "x": -15.0,
                 "y": 0.0,
                 "z": 0.0
@@ -377,7 +377,7 @@
           "animatorStates": {
             "SwimDie_Ragdoll": []
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -476,7 +476,7 @@
     "$type": "NCBABGPMMPL",
     "EBBHBMFMOGD": "BillboardAttach",
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": -0.20000000298023224,
+    "ILBGGMJLJNG": -0.20000000298023224,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -537,10 +537,10 @@
     "neurons": {
       "DefaultSetting": ["HIT", "HIT_BUDDY"]
     },
-    "GPBJCBNEECM": {
-      "OJOEDBGGAOP": {
-        "EAGPCINPAFA": "Alliance",
-        "HJLPMNJAHPE": 3.0
+    "LCIOOLDKEPG": {
+      "NBFBHHLHBJL": {
+        "CFMPDGBAGFJ": "Alliance",
+        "FNNIJFIBOMK": 3.0
       }
     },
     "threat": {
@@ -732,17 +732,17 @@
         "flagSelfInZone": "10",
         "flagTargetInZone": "11",
         "nerveTrigger": ["HIT_BUDDY"],
-        "HEOCJDKEIKC": {
+        "KOOPKHLOAOI": {
           "enable": true,
-          "KOFMLLHILDM": "TriggerResponser",
-          "JDKCODGNDDA": true
+          "MEBKKAHJNJI": "TriggerResponser",
+          "LCLACGDLNGM": true
         }
       }
     },
     "skillGCD": 0.5,
     "target": {
-      "IEJMCKOJJPM": ["NERVE_TARGET", "THREAT"],
-      "JLEAMKLGFPJ": {
+      "EOBHJPNDEFI": ["NERVE_TARGET", "THREAT"],
+      "MDFEAEFOPLP": {
         "101": ["MASTER", "THREAT"]
       }
     },
@@ -788,8 +788,8 @@
         "facingMoveWeight": {
           "back": 0.20000000298023224
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -817,13 +817,13 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "AEPIEGNIOGP": 1.0,
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StoopType",
-    "AIPJBCHAEPE": "Walk"
+    "HDGMOMPKBFD": 1.0,
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StoopType",
+    "NPIIMMNHGIM": "Walk"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {},
     "disableEvent": {
       "text": ""

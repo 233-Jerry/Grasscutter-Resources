@@ -13,15 +13,14 @@
     "disableTickDistance": 100000.0,
     "shouldPauseAnimatorBeforeReady": true,
     "useGrassDisplacement": true,
-    "clearAnimatorOnSetLightDeactive": true,
-    "clearAIOnSetLightDeactive": true
+    "KJDCLBDPAAK": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 10.0,
-    "FJOGFHEFPHN": 20.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 10.0,
+    "NOLJNGPPCHB": 20.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -40,8 +39,8 @@
     "elementDrop": "RootNode",
     "bulletAim": "RootNode",
     "selectedPoints": ["LockPoint"],
-    "BFDKBAEPAGA": true,
-    "HFJOMFCOAJI": 2.5
+    "MMJALAAAMCG": true,
+    "LHJDKANACGH": 2.5
   },
   "dither": {
     "showDitherDuration": 2.0
@@ -64,17 +63,17 @@
       "dieForceDisappearTime": 2.5,
       "dieDisappearEffect": "Eff_Death_Common",
       "dieShaderData": "MonsterDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "RushAtk": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -110,7 +109,7 @@
       },
       "NormalAtk01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -121,7 +120,7 @@
             }
           },
           "height": 4.0,
-          "fanAngle": 270.0,
+          "KEKBKGCEMOH": 270.0,
           "radius": 4.0
         },
         "attackInfo": {
@@ -143,7 +142,7 @@
       },
       "NormalAtk02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -154,7 +153,7 @@
             }
           },
           "height": 4.0,
-          "fanAngle": 270.0,
+          "KEKBKGCEMOH": 270.0,
           "radius": 5.0
         },
         "attackInfo": {
@@ -176,7 +175,7 @@
       },
       "NormalAtk03": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -217,7 +216,7 @@
       },
       "TailMeleeAttack": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -250,7 +249,7 @@
       },
       "JumpAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -301,22 +300,42 @@
     },
     {
       "abilityID": "",
-      "abilityName": "Monster_Drake_DeepSea_JumpWall_Timer",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_Boss_JumpWall_StartJumpPos_Ice",
       "abilityOverride": ""
     },
     {
       "abilityID": "",
-      "abilityName": "Monster_Drake_DeepSea_Boss_ToSwimPose",
+      "abilityName": "Monster_Drake_PushCollider_Switch",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Monster_Drake_DeepSea_JumpUpToWall",
       "abilityOverride": ""
     },
     {
       "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_JumpWall_Weak",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Monster_Drake_DeepSea_JumpWall_Timer",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Monster_Drake_DeepSea_Ice_JumpWall_FireMagicBall",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Monster_Drake_DeepSea_Boss_JumpToWall_HidePushCollider",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Monster_Drake_DeepSea_Boss_ToSwimPose",
       "abilityOverride": ""
     },
     {
@@ -351,11 +370,6 @@
     },
     {
       "abilityID": "",
-      "abilityName": "Monster_Drake_PushCollider_Switch",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_FitAttack_JumpToStartPos_Ice",
       "abilityOverride": ""
     },
@@ -367,11 +381,6 @@
     {
       "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_JumpToAlertPos_Ice",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "",
-      "abilityName": "Monster_Drake_DeepSea_Ice_JumpWall_FireMagicBall",
       "abilityOverride": ""
     },
     {
@@ -391,17 +400,7 @@
     },
     {
       "abilityID": "",
-      "abilityName": "Monster_Drake_DeepSea_JumpWallBack",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_JumpBrokenRock",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "",
-      "abilityName": "Monster_Drake_DeepSea_Boss_JumpToWall_HidePushCollider",
       "abilityOverride": ""
     },
     {
@@ -417,11 +416,6 @@
     {
       "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_FitCharge_Ice",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "",
-      "abilityName": "Monster_Drake_DeepSea_JumpUpToWall",
       "abilityOverride": ""
     },
     {
@@ -446,11 +440,6 @@
     },
     {
       "abilityID": "",
-      "abilityName": "Monster_Drake_DeepSea_Boss_JumpWallBackSetPos",
-      "abilityOverride": ""
-    },
-    {
-      "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_Ice_AddElectricSpear",
       "abilityOverride": ""
     },
@@ -467,6 +456,11 @@
     {
       "abilityID": "",
       "abilityName": "Monster_Drake_DeepSea_EatBlackBall",
+      "abilityOverride": ""
+    },
+    {
+      "abilityID": "",
+      "abilityName": "Monster_Drake_DeepSea_ElementBurst_JumpToStartPos_Ice",
       "abilityOverride": ""
     }
   ],
@@ -611,7 +605,7 @@
               "Audio_Monster_Drake_Deepsea_Common_Alert_Jump"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Alert": {
@@ -692,11 +686,11 @@
           "$type": "ConfigMonsterStateIDInfo",
           "animatorStates": {
             "JumpWall_JumpToStart_BS": [
-              "Monster_Drake_DeepSea_Boss_JumpWall_StartJumpPos_Ice",
               "Audio_Monster_Drake_Deepsea_Common_JumpToFit_BS"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -704,9 +698,11 @@
           "$type": "ConfigMonsterStateIDInfo",
           "animatorStates": {
             "JumpWall_JumpToStart_AS": [
+              "Monster_Drake_DeepSea_Boss_JumpWall_StartJumpPos_Ice",
               "Audio_Monster_Drake_Deepsea_Common_JumpToFit_During"
             ]
           },
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -718,15 +714,16 @@
               "Audio_Monster_Drake_Deepsea_Common_JumpWall_BS"
             ]
           },
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
         "JumpWall_Idle": {
           "$type": "ConfigMonsterStateIDInfo",
           "animatorStates": {
-            "JumpWall_Idle": []
+            "JumpWall_Idle": ["Monster_Drake_DeepSea_JumpWallAtk_Loop"]
           },
-          "canDoSkill": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "JumpWall_Attack": {
@@ -737,6 +734,7 @@
               "Audio_Monster_Drake_Deepsea_Common_JumpWall_Attack"
             ]
           },
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "JumpWall_WeakBS": {
@@ -781,7 +779,7 @@
               "Audio_Monster_Drake_Deepsea_Common_JumpWall_WeakBackToGroundDuring"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -812,7 +810,7 @@
               "Audio_Monster_Drake_Deepsea_Common_JumpToFit_During"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -833,7 +831,7 @@
             ]
           },
           "canSyncMove": true,
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "FitAttack_Loop": {
@@ -841,7 +839,7 @@
           "animatorStates": {
             "FitAttack_Loop": ["Monster_Drake_DeepSea_Boss_Fit_Sync"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "FitAttack_AS": {
@@ -849,7 +847,7 @@
           "animatorStates": {
             "FitAttack_AS": ["Audio_Monster_Drake_Deepsea_Ice_FitAttack_AS"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "JumpToLaser_BS": {
@@ -870,7 +868,7 @@
               "Audio_Monster_Drake_Deepsea_Common_JumpToFit_During"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -893,7 +891,7 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "LaserAttack_Promove": {
@@ -904,8 +902,8 @@
             ]
           },
           "canSyncMove": true,
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "LaserAttack_FireLaser": {
@@ -917,15 +915,17 @@
               "Audio_Monster_Drake_Deepsea_25Ice_LaserAttack_FireLaser_VO"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "LaserAttack_AS": {
           "$type": "ConfigMonsterStateIDInfo",
           "animatorStates": {
-            "LaserAttack_AS": []
+            "LaserAttack_AS": [
+              "Audio_Monster_Drake_Deepsea_Common_FitAttack_AS"
+            ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ChargeAttack_BS": {
@@ -986,7 +986,7 @@
               "Audio_Monster_Drake_Deepsea_Common_JumpToFit_During"
             ]
           },
-          "AAEKKGMOKFK": true,
+          "EBKFBAFIBPF": true,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -1054,6 +1054,54 @@
             "BackToLife": ["Audio_Monster_Drake_Deepsea_Common_BackToLife"]
           },
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "JumpToElementBurst_BS": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "JumpToElementBurst_BS": [
+              "Audio_Monster_Drake_Deepsea_Common_JumpToFit_BS"
+            ]
+          },
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
+          "BHEPAJIOBDN": true
+        },
+        "JumpToElementBurst_During": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "JumpToElementBurst_During": [
+              "Monster_Drake_DeepSea_ElementBurst_JumpToPos_Ice",
+              "Audio_Monster_Drake_Deepsea_Common_JumpToFit_During"
+            ]
+          },
+          "EBKFBAFIBPF": true,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
+          "BHEPAJIOBDN": true
+        },
+        "ElementBurst": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ElementBurst_BS": [
+              "Monster_Drake_DeepSea_Ice_ElementBurstBS",
+              "Audio_Monster_Drake_Deepsea_Ice_ElementAttack_BS"
+            ],
+            "ElementBurst_Loop": [
+              "Monster_Drake_DeepSea_Boss_Fit_Sync",
+              "Audio_Monster_Drake_Deepsea_Common_ChargeAttack_Loop"
+            ],
+            "ElementBurst_AS": [
+              "Audio_Monster_Drake_Deepsea_Common_ChargeAttack_AS"
+            ]
+          },
+          "ONHHCMFDHJG": 0.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
+        },
+        "ElementBurst_AS": {
+          "$type": "ConfigMonsterStateIDInfo",
+          "animatorStates": {
+            "ElementBurst_Recover": []
+          },
+          "ONHHCMFDHJG": 0.0,
+          "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
     }
@@ -1066,7 +1114,7 @@
       "z": 0.5
     },
     "BFOMIIKCOGI": "Character",
-    "OELDMANLPDM": 0.6000000238418579,
+    "ILBGGMJLJNG": 0.6000000238418579,
     "size": "Grand"
   },
   "initialPoses": {
@@ -1101,7 +1149,8 @@
       "clearThreatTargetDistance": 100.0,
       "clearThreatEdgeDistance": 100.0,
       "clearThreatByTargetOutOfZone": true,
-      "resistTauntLevel": "Monster_TauntLevel_5"
+      "resistTauntLevel": "Monster_TauntLevel_5",
+      "GOPCAFADAHL": true
     },
     "defendArea": {
       "defendRange": 100.0
@@ -1112,8 +1161,9 @@
     },
     "skillSetting": {
       "skillEliteSet": {
-        "3": [701],
-        "4": [701]
+        "3": [101, 201, 701],
+        "4": [101, 201, 701],
+        "5": [102, 202, 401, 502, 602, 901]
       }
     },
     "skills": {
@@ -1147,9 +1197,25 @@
         "flagSelfInZone": "10",
         "flagTargetInZone": "11"
       },
+      "102": {
+        "name": "Blink",
+        "castCondition": {
+          "pose": [101, 102, 103],
+          "needReInitCD": true,
+          "pickRangeMax": 8.5
+        },
+        "cd": 5.0,
+        "cdUpperRange": 5.0,
+        "publicCDGroup": "",
+        "stateIDs": ["NormalAtk01", "NormalAtk02", "NormalAtk03"],
+        "flagTargetReachable": "10",
+        "flagSelfOnTemplateCollider": "01",
+        "flagSelfInZone": "10",
+        "flagTargetInZone": "11"
+      },
       "201": {
         "name": "Blink",
-        "priority": 3,
+        "priority": 4,
         "castCondition": {
           "pose": [101, 102, 103],
           "needReInitCD": true,
@@ -1166,9 +1232,28 @@
         "flagSelfInZone": "10",
         "flagTargetInZone": "11"
       },
+      "202": {
+        "name": "Blink",
+        "priority": 4,
+        "castCondition": {
+          "pose": [101, 102, 103],
+          "needReInitCD": true,
+          "pickRangeMin": 5.0,
+          "pickRangeMax": 12.5
+        },
+        "cd": 10.0,
+        "cdUpperRange": 5.0,
+        "initialCD": 3.0,
+        "publicCDGroup": "",
+        "stateIDs": ["TailAttack"],
+        "flagTargetReachable": "10",
+        "flagSelfOnTemplateCollider": "01",
+        "flagSelfInZone": "10",
+        "flagTargetInZone": "11"
+      },
       "301": {
         "name": "MagicBallAttack",
-        "priority": 1,
+        "priority": 2,
         "castCondition": {
           "pose": [101, 102],
           "needReInitCD": true,
@@ -1183,9 +1268,42 @@
         "flagSelfInZone": "11",
         "flagTargetInZone": "11"
       },
+      "401": {
+        "name": "JumpWallAttack",
+        "priority": 1,
+        "castCondition": {
+          "pose": [101],
+          "needReInitCD": true,
+          "globalValues": ["_ICEPILLAR_FLAG_", "_DRAKEELECTRICDYING_FLAG_"]
+        },
+        "cd": 30.0,
+        "initialCD": 1.0,
+        "publicCDGroup": "",
+        "ignoreGCD": true,
+        "triggerGCD": false,
+        "HOMLKLFDOKH": false,
+        "stateIDs": [
+          "JumpWall_JumpToStart_BS",
+          "JumpWall_JumpToStart_AS",
+          "JumpWall_BS",
+          "JumpWall_Idle",
+          "JumpWall_Attack",
+          "JumpWall_Turn",
+          "JumpWall_WeakBS",
+          "JumpWall_WeakLoop",
+          "JumpWall_WeakAS",
+          "JumpWall_WeakBackToGroundBS",
+          "JumpWall_WeakBackToGroundDuring",
+          "JumpWall_WeakBackToGroundAS"
+        ],
+        "flagTargetReachable": "11",
+        "flagSelfOnTemplateCollider": "11",
+        "flagSelfInZone": "11",
+        "flagTargetInZone": "11"
+      },
       "501": {
         "name": "Fit",
-        "priority": 2,
+        "priority": 3,
         "castCondition": {
           "pose": [101],
           "needReInitCD": true,
@@ -1209,9 +1327,35 @@
         "flagSelfInZone": "11",
         "flagTargetInZone": "11"
       },
+      "502": {
+        "name": "Fit",
+        "priority": 3,
+        "castCondition": {
+          "pose": [101],
+          "needReInitCD": true,
+          "globalValues": ["_DRAKE_NO_WEAK"]
+        },
+        "cd": 70.0,
+        "cdUpperRange": 2.5,
+        "initialCD": 10.0,
+        "publicCDGroup": "",
+        "ignoreGCD": true,
+        "stateIDs": [
+          "JumpToFit_BS",
+          "JumpToFit_During",
+          "JumpToFit_AS",
+          "FitAttack_BS",
+          "FitAttack_Loop",
+          "FitAttack_AS"
+        ],
+        "flagTargetReachable": "11",
+        "flagSelfOnTemplateCollider": "01",
+        "flagSelfInZone": "11",
+        "flagTargetInZone": "11"
+      },
       "601": {
         "name": "Blink",
-        "priority": 2,
+        "priority": 3,
         "castCondition": {
           "pose": [101],
           "needReInitCD": true,
@@ -1235,9 +1379,36 @@
         "flagSelfInZone": "11",
         "flagTargetInZone": "11"
       },
+      "602": {
+        "name": "Blink",
+        "priority": 3,
+        "castCondition": {
+          "pose": [101],
+          "needReInitCD": true,
+          "globalValues": ["_DRAKE_NO_WEAK"]
+        },
+        "cd": 70.0,
+        "cdUpperRange": 5.0,
+        "initialCD": 75.0,
+        "publicCDGroup": "",
+        "ignoreGCD": true,
+        "stateIDs": [
+          "JumpToLaser_BS",
+          "JumpToLaser_During",
+          "JumpToLaser_AS",
+          "LaserAttack_Animove",
+          "LaserAttack_Promove",
+          "LaserAttack_FireLaser",
+          "LaserAttack_AS"
+        ],
+        "flagTargetReachable": "11",
+        "flagSelfOnTemplateCollider": "01",
+        "flagSelfInZone": "11",
+        "flagTargetInZone": "11"
+      },
       "701": {
         "name": "ChargeAttack",
-        "priority": 1,
+        "priority": 2,
         "castCondition": {
           "pose": [101, 102],
           "needReInitCD": true,
@@ -1255,7 +1426,7 @@
       },
       "801": {
         "name": "TailRangeAttack",
-        "priority": 2,
+        "priority": 3,
         "castCondition": {
           "pose": [102],
           "needReInitCD": true,
@@ -1267,6 +1438,30 @@
         "initialCD": 3.0,
         "publicCDGroup": "",
         "stateIDs": ["TailRangeAttack"],
+        "flagTargetReachable": "11",
+        "flagSelfOnTemplateCollider": "01",
+        "flagSelfInZone": "11",
+        "flagTargetInZone": "11"
+      },
+      "901": {
+        "name": "ElementBurst",
+        "priority": 3,
+        "castCondition": {
+          "pose": [101],
+          "needReInitCD": true,
+          "globalValues": ["_DRAKE_NO_WEAK"]
+        },
+        "cd": 70.0,
+        "cdUpperRange": 7.5,
+        "initialCD": 37.5,
+        "publicCDGroup": "",
+        "ignoreGCD": true,
+        "stateIDs": [
+          "JumpToElementBurst_BS",
+          "JumpToElementBurst_During",
+          "ElementBurst",
+          "ElementBurst_AS"
+        ],
         "flagTargetReachable": "11",
         "flagSelfOnTemplateCollider": "01",
         "flagSelfInZone": "11",
@@ -1378,12 +1573,12 @@
     "EINCMKOBBEG": {
       "excludeForces": ["WindZoneType"]
     },
-    "KCNKFNLDDOD": true,
-    "BCBPBHLKCPB": "FourDirection",
-    "LHHNPKNFGMD": true
+    "AOKNEHKHDNL": true,
+    "NDDNHKDJBIJ": "FourDirection",
+    "GLHELMHJCDA": true
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {
@@ -1405,23 +1600,23 @@
   },
   "cameraAdjust": {
     "default": {
-      "$type": "DHCOKBEICGK",
+      "$type": "LEACENCFDHG",
       "priority": 1.0,
-      "OPKMFLHBCEL": 30.0,
-      "HLJEJHJHEBG": 50.0,
-      "MOINKIAMCKG": 1.0,
-      "EBDAIBLODLB": 47.5,
-      "LGLGNMPNADH": 10.0,
-      "EIHIEHJLINB": 10.0,
-      "ELCNGKOAJFN": false,
-      "KONIGEOBEPA": 50.0,
-      "IKNIHFEDDIJ": 50.0,
-      "LJGAGFHBAPE": 50.0,
-      "FDEEGAFACDO": 40.0,
-      "AOEIECPJILN": 100.0,
-      "JLKGEFGDOEO": 145.0,
-      "EJLANJKCDJO": "CircleR30",
-      "AINPPNDKHBG": "CircleR50"
+      "LHHABPAOPNK": 30.0,
+      "JJGKEGBHGJL": 50.0,
+      "BBBIJABMHLH": 1.0,
+      "NANMFGHBACH": 47.5,
+      "FMLELPIHIPP": 10.0,
+      "PNHBKGDJCNJ": 10.0,
+      "JFIDJKPKEBP": false,
+      "NAOGLDNJPDH": 50.0,
+      "IHCMGDDAOFJ": 50.0,
+      "FNNDCOJEGEB": 50.0,
+      "AECBNPJEMGK": 40.0,
+      "DKPAJDPNFAL": 100.0,
+      "OPLKFDAMLCP": 145.0,
+      "BEEPGHCGFAN": "CircleR30",
+      "GFKCBMBABDO": "CircleR50"
     }
   }
 }

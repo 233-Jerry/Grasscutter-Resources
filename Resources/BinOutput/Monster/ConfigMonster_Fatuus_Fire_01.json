@@ -14,11 +14,11 @@
     "hasAfterImage": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 45.0,
-    "FJOGFHEFPHN": 30.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 45.0,
+    "NOLJNGPPCHB": 30.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -54,17 +54,17 @@
       "dieShaderData": "AvatarDie",
       "useRagDoll": true,
       "ragDollDieEndTimeDelay": 0.5,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -106,9 +106,9 @@
       },
       "DashingStrike": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -154,7 +154,7 @@
       },
       "DashingStrikeLast": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -197,9 +197,9 @@
       },
       "BackStab": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -245,9 +245,9 @@
       },
       "FlashStrike_Hit": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -291,7 +291,7 @@
       },
       "FlashStrike_LastHit": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -558,7 +558,7 @@
           "animatorStates": {
             "AirDie": ["Monster_Fatuus_Fire_01_Die"]
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -575,8 +575,8 @@
               "Audio_Fatuus_Fire_NormalAtk"
             ]
           },
-          "BFDKJHMDDML": 0.800000011920929,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.800000011920929,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "StabAttack": {
@@ -587,11 +587,11 @@
               "Audio_Fatuus_Fire_StabAttack"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.6000000238418579,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.6000000238418579,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         },
         "DashingStrike": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -601,11 +601,11 @@
               "Audio_Fatuus_Fire_DashingStrike"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.6000000238418579,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.6000000238418579,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         },
         "IntoShadow": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -613,12 +613,12 @@
             "IntoShadowNearBS": [],
             "IntoShadowForward": ["Audio_Fatuus_Fire_IntoShadowForward"]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "IntoShadowSteer1": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -628,8 +628,8 @@
               "Audio_Fatuus_Fire_IntoShadow1"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -641,8 +641,8 @@
               "Audio_Fatuus_Fire_IntoShadow2"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -654,11 +654,11 @@
               "Audio_Fatuus_Fire_BackStab"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.800000011920929,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.800000011920929,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         },
         "FlashStrike": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -672,11 +672,11 @@
               "Audio_Fatuus_Fire_FlashStrike"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
-          "OHBBKPNFOFG": true
+          "FMDFEKGEPAH": true
         },
         "FlashStrike_Last": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -687,9 +687,9 @@
             ],
             "Test_FlashStrike": ["Monster_Fatuus_Fire_01_FlashStrike_Test"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -702,7 +702,7 @@
       "x": -0.07999999821186066,
       "y": 0.30000001192092896
     },
-    "OELDMANLPDM": 0.20000000298023224,
+    "ILBGGMJLJNG": 0.20000000298023224,
     "ANGKJBLILKJ": true,
     "size": "Big"
   },
@@ -923,7 +923,7 @@
         },
         "cd": 9999.0,
         "publicCDGroup": "",
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["IntoShadow", "IntoShadowSteer1", "IntoShadowSteer2"],
         "flagTargetReachable": "10",
         "flagSelfOnTemplateCollider": "01",
@@ -1010,8 +1010,8 @@
           "left": 2.0,
           "right": 2.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     },
     "findBackTactic": {
@@ -1066,11 +1066,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "ForwardBackward",
-    "NGNIGPNNLAI": "StrongHumanoidType"
+    "NDDNHKDJBIJ": "ForwardBackward",
+    "NDLFNFNMEGN": "StrongHumanoidType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

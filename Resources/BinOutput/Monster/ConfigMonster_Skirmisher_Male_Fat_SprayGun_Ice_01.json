@@ -14,11 +14,11 @@
     "clearAnimatorOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 20.0,
-    "FJOGFHEFPHN": 5.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 20.0,
+    "NOLJNGPPCHB": 5.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -56,19 +56,19 @@
       "dieShaderData": "AvatarDie",
       "useRagDoll": true,
       "ragDollDieEndTimeDelay": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "MeleeAtk": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
-          "JGCLJPCGHMC": true,
+          "MJJCGNFGCIH": true,
           "born": {
             "$type": "ConfigBornBySelf",
             "offset": {
@@ -291,7 +291,7 @@
           "animatorStates": {
             "AirDie": ["Audio_Monster_SprayGun_Ice_Hit_H"]
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -324,8 +324,8 @@
               "Audio_Monster_SprayGun_Ice_Improve"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["ForceImprove"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "ForceImprove"]
         },
@@ -337,8 +337,8 @@
               "Audio_Monster_SprayGun_Ice_RocketJump"
             ]
           },
-          "BFDKJHMDDML": 0.0,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -350,7 +350,7 @@
               "Audio_Monster_SprayGun_Ice_MeleeAtk"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -373,7 +373,7 @@
               "Audio_Monster_SprayGun_Ice_ImprovedIceSpray_BS"
             ]
           },
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -385,7 +385,7 @@
             ]
           },
           "canSyncMove": true,
-          "BDFLEJHPFBG": 20.0,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -410,8 +410,8 @@
             "WeakLoop": [],
             "Weak_AS": ["Audio_Monster_SprayGun_Ice_Weak_AS"]
           },
-          "BFDKJHMDDML": 0.009999999776482582,
-          "BDFLEJHPFBG": 20.0,
+          "ONHHCMFDHJG": 0.009999999776482582,
+          "DGDPBBPPGGA": 20.0,
           "resetAnimatorTriggerOnEnter": ["WeakStart"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "Recover", "WeakStart"]
         },
@@ -952,8 +952,8 @@
           "forward": 0.0,
           "back": 0.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       }
     }
   },
@@ -996,11 +996,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "StrongHumanoidType"
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "StrongHumanoidType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionIn": [
         {

@@ -15,11 +15,11 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 10.0,
-    "FJOGFHEFPHN": 5.0,
-    "FCDMCPDGFCL": ["NormalIdle/Standby", "NormalMove/Walk"]
+    "FENNMBOFDEC": 10.0,
+    "NOLJNGPPCHB": 5.0,
+    "DOKDABBOIFA": ["NormalIdle/Standby", "NormalMove/Walk"]
   },
   "model": {
     "bornEffect": "Eff_Monster_Invoker_Born",
@@ -46,17 +46,17 @@
       "dieForceDisappearTime": 5.0,
       "dieDisappearEffect": "Eff_Death_Avatar_Common",
       "dieShaderData": "AvatarDie",
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "NormalAtk01_01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -67,7 +67,7 @@
             }
           },
           "height": 2.5,
-          "fanAngle": 180.0,
+          "KEKBKGCEMOH": 180.0,
           "radius": 2.299999952316284
         },
         "attackInfo": {
@@ -90,7 +90,7 @@
       },
       "NormalAtk01_02": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -126,7 +126,7 @@
       },
       "NormalAtk02": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -162,7 +162,7 @@
       },
       "NormalAtk03_01": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -171,9 +171,9 @@
               "y": 0.0,
               "z": 1.5
             },
-            "HOPPHMEKHLG": {
-              "$type": "IOPNFLFHGID",
-              "NHGDOBINMBK": {
+            "FACALEEMIKJ": {
+              "$type": "FFCGNDPOEGG",
+              "JMADJAJODCO": {
                 "x": 0.0,
                 "y": -30.0,
                 "z": 0.0
@@ -181,7 +181,7 @@
             }
           },
           "height": 2.0,
-          "fanAngle": 240.0,
+          "KEKBKGCEMOH": 240.0,
           "radius": 2.299999952316284
         },
         "attackInfo": {
@@ -204,7 +204,7 @@
       },
       "NormalAtk03_02": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -237,7 +237,7 @@
       },
       "WhirlWind": {
         "attackPattern": {
-          "$type": "NAMPOMPBMHC",
+          "$type": "CCFPHKOOMAK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -273,7 +273,7 @@
       },
       "TransformAtk": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -565,7 +565,7 @@
           "animatorStates": {
             "ChargeAtk01BS": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ChargeAtk01": {
@@ -582,7 +582,7 @@
               "Audio_Monster_Invoker_Herald_Water_ChargeAtk01_VO_Plus"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ChargeAtk01AS": {
@@ -597,7 +597,7 @@
           "animatorStates": {
             "ChargeAtk02BS": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ChargeAtk02": {
@@ -608,7 +608,7 @@
               "Audio_Monster_Invoker_Herald_Water_ChargeAtk02"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "ChargeAtk02AS": {
@@ -668,14 +668,14 @@
           },
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "TransformBS": {
           "$type": "ConfigMonsterStateIDInfo",
           "animatorStates": {
             "TransformBS": ["Monster_Invoker_Herald_Water_TransformBS"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "Transform": {
@@ -686,7 +686,7 @@
               "Audio_Monster_Invoker_Herald_Water_Transform"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": ["BeHit"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -695,7 +695,7 @@
           "animatorStates": {
             "TransformAS": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WhirlWindBS": {
@@ -712,7 +712,7 @@
               "Audio_Monster_Invoker_Herald_Water_WhirlWind_VO_Plus"
             ]
           },
-          "BFDKJHMDDML": 0.800000011920929,
+          "ONHHCMFDHJG": 0.800000011920929,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WhirlWind": {
@@ -721,7 +721,7 @@
             "WhirlWind": [],
             "WhirlWind_Plus": []
           },
-          "BFDKJHMDDML": 0.800000011920929,
+          "ONHHCMFDHJG": 0.800000011920929,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WhirlWindLoopBS": {
@@ -732,7 +732,7 @@
               "Monster_Invoker_Herald_Water_WhirlWindLoopBS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WhirlWindLoop": {
@@ -750,7 +750,7 @@
               "Monster_Invoker_Herald_Water_WhirlWindLoopAS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WhirlWindAS": {
@@ -762,7 +762,7 @@
             ],
             "WhirlWindAS_Plus": ["Monster_Invoker_Herald_Water_WhirlWindAS"]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WhirlWindOver": {
@@ -1226,8 +1226,8 @@
     "EINCMKOBBEG": {
       "excludeForces": ["RetreatAirType"]
     },
-    "KCNKFNLDDOD": true,
-    "NGNIGPNNLAI": "StoopType",
-    "AIPJBCHAEPE": "Walk"
+    "AOKNEHKHDNL": true,
+    "NDLFNFNMEGN": "StoopType",
+    "NPIIMMNHGIM": "Walk"
   }
 }

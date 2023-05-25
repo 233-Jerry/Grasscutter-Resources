@@ -16,10 +16,10 @@
     "clearAIOnSetLightDeactive": true
   },
   "headControl": {
-    "$type": "GAAIKCFIJMM",
+    "$type": "CCPANGHECMF",
     "useHeadControl": true,
-    "KBBNEKBLPFA": 60.0,
-    "FCDMCPDGFCL": [
+    "FENNMBOFDEC": 60.0,
+    "DOKDABBOIFA": [
       "NormalIdle/Standby",
       "NormalMove/WalkForward",
       "NormalMove/WalkBack",
@@ -54,17 +54,17 @@
       "dieDisappearEffect": "Eff_Death_Avatar_Common",
       "dieShaderData": "AvatarDie",
       "ragDollDieEndTimeDelay": 1.0,
-      "OCGODEHJPME": true,
-      "MFJBKFECLNJ": true,
-      "IMEEBMBJPGJ": true,
-      "ICHFPLMNCLC": true,
-      "MBHMAGEPJFH": true,
-      "CFHPDHFKMEP": true
+      "PPBCINBCJBA": true,
+      "IBLGJHDEEMI": true,
+      "MPPPPECBCJL": true,
+      "JFGNMBLBJEO": true,
+      "NMDIGLHJOIH": true,
+      "HOFJPBPLDIJ": true
     },
     "animEvents": {
       "CounterAttack": {
         "attackPattern": {
-          "$type": "ConfigAttackCircle",
+          "$type": "FJDNOOLGCFK",
           "triggerType": "TriggerNoRepeat",
           "born": {
             "$type": "ConfigBornBySelf",
@@ -211,7 +211,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "TurnRight": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -221,7 +221,7 @@
           "canSyncMove": true,
           "resetAnimatorTriggerOnExit": ["DoSkill"],
           "BHEPAJIOBDN": true,
-          "ECGKJECEAII": true
+          "PEFFCEELOEC": true
         },
         "BeHit": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -273,7 +273,7 @@
               "Audio_Fatuus_Maiden_Water_AirDie"
             ]
           },
-          "HCCMMNBMCMA": true
+          "MACDNPGMPNJ": true
         },
         "Life_Alert": {
           "$type": "ConfigMonsterStateIDInfo",
@@ -299,7 +299,7 @@
             ],
             "WaterSpear_TwoCombo": []
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill", "SummonTrigger"],
           "BHEPAJIOBDN": true
         },
@@ -317,7 +317,7 @@
               "Audio_Fatuus_Maiden_Water_CounterDetect"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -329,7 +329,7 @@
               "Audio_Fatuus_Maiden_Water_CounterAtk"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -345,8 +345,8 @@
               "Audio_Fatuus_Maiden_Water_Walk"
             ]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -356,8 +356,8 @@
             "Blink_AS": ["Audio_Fatuus_Maiden_Water_Walk"],
             "CounterBlink_AS": ["Audio_Fatuus_Maiden_Water_Walk"]
           },
-          "AAEKKGMOKFK": true,
-          "BFDKJHMDDML": 0.0,
+          "EBKFBAFIBPF": true,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"],
           "BHEPAJIOBDN": true
         },
@@ -369,7 +369,7 @@
               "Audio_Fatuus_Maiden_Water_FieldOpen"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnEnter": ["DoSkill"],
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
@@ -396,7 +396,7 @@
               "Audio_Fatuus_Maiden_Water_Capture"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         },
         "WaterTomb": {
@@ -409,7 +409,7 @@
               "Audio_Fatuus_Maiden_Water_WaterTomb_AS"
             ]
           },
-          "BFDKJHMDDML": 0.0,
+          "ONHHCMFDHJG": 0.0,
           "resetAnimatorTriggerOnExit": ["BeHit", "DoSkill"]
         }
       }
@@ -421,7 +421,7 @@
     "offset": {
       "y": 0.3499999940395355
     },
-    "OELDMANLPDM": 0.20000000298023224,
+    "ILBGGMJLJNG": 0.20000000298023224,
     "ANGKJBLILKJ": true
   },
   "initialPoses": {
@@ -683,7 +683,7 @@
         "publicCDGroup": "",
         "ignoreGCD": true,
         "triggerGCD": false,
-        "DDLBHDNIIMM": false,
+        "HOMLKLFDOKH": false,
         "stateIDs": ["FieldOpen"],
         "flagTargetReachable": "11",
         "flagSelfOnTemplateCollider": "01",
@@ -713,7 +713,7 @@
         "priority": 2,
         "castCondition": {
           "pose": [101, 201],
-          "GLGHHKAGENB": 25.0
+          "HEPALKLMIGG": 25.0
         },
         "publicCDGroup": "",
         "skillGroupCDID": 0,
@@ -776,8 +776,8 @@
           "left": 0.0,
           "right": 0.0
         },
-        "PDOKGBAJNEP": "1111",
-        "NGLJBMGMGKF": "1111"
+        "EPEIFIFAKFH": "1111",
+        "PIHLHALNJIO": "1111"
       },
       "specification": {
         "201": {
@@ -793,8 +793,8 @@
             "left": 1.5,
             "right": 1.5
           },
-          "PDOKGBAJNEP": "1111",
-          "NGLJBMGMGKF": "1111"
+          "EPEIFIFAKFH": "1111",
+          "PIHLHALNJIO": "1111"
         }
       }
     }
@@ -863,11 +863,11 @@
   ],
   "move": {
     "$type": "PLMNMICDOHN",
-    "BCBPBHLKCPB": "FourDirection",
-    "NGNIGPNNLAI": "NormalHumanoidType"
+    "NDDNHKDJBIJ": "FourDirection",
+    "NDLFNFNMEGN": "NormalHumanoidType"
   },
   "audio": {
-    "NCOGLLMIJGO": "",
+    "KEMKOHPPGKB": "",
     "animAudio": {
       "onTransitionOut": [
         {
