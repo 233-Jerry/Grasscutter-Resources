@@ -9,10 +9,12 @@
   ],
   "subQuests": [
     {
-      "mainId": 70518,
       "subId": 7051801,
+      "mainId": 70518,
       "order": 1,
-      "descTextMapHash": 2415258836,
+      "failParent": 2415258836,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -22,27 +24,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q7051801_N30234",
-          "25"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 70518,
       "subId": 7051802,
+      "mainId": 70518,
       "order": 3,
-      "descTextMapHash": 174401708,
+      "failParent": 174401708,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -52,26 +47,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "30235"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 70518,
       "subId": 7051803,
+      "mainId": 70518,
       "order": 5,
-      "descTextMapHash": 2186619020,
+      "failParent": 2186619020,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -81,27 +70,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q7051803_N1008",
-          "20"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 70518,
       "subId": 7051804,
+      "mainId": 70518,
       "order": 2,
-      "descTextMapHash": 946458556,
+      "failParent": 946458556,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -111,27 +93,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30274"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 70518,
       "subId": 7051805,
+      "mainId": 70518,
       "order": 4,
-      "descTextMapHash": 2019583180,
+      "failParent": 2019583180,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -141,20 +116,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "30235"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ],
   "talks": [

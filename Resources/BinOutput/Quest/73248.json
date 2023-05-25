@@ -6,10 +6,12 @@
   "luaPath": "Actor/Quest/WQ73248",
   "subQuests": [
     {
-      "mainId": 73248,
       "subId": 7324801,
+      "mainId": 73248,
       "order": 1,
-      "descTextMapHash": 3355602908,
+      "failParent": 3355602908,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -19,22 +21,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q7308101_N20656",
-          "25",
-          "11",
-          "38"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ]
 }

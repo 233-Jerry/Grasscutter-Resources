@@ -14,10 +14,12 @@
   "chapterId": 10121,
   "subQuests": [
     {
-      "mainId": 73238,
       "subId": 7323801,
+      "mainId": 73238,
       "order": 4,
-      "descTextMapHash": 2236262108,
+      "failParent": 2236262108,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -27,26 +29,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "4019"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323803,
+      "mainId": 73238,
       "order": 5,
-      "descTextMapHash": 1421708524,
+      "failParent": 1421708524,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -56,27 +52,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "guide_Q7323803",
-          "25"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323804,
+      "mainId": 73238,
       "order": 7,
-      "descTextMapHash": 2369250460,
+      "failParent": 2369250460,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -86,26 +75,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20927"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323806,
+      "mainId": 73238,
       "order": 10,
-      "descTextMapHash": 2185685476,
+      "failParent": 2185685476,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -115,28 +98,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_GADGET",
-        "param": [
-          "133316017",
-          "17005",
-          "-50.01544:215.637:6194.336"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323807,
+      "mainId": 73238,
       "order": 12,
-      "descTextMapHash": 2175241892,
+      "failParent": 2175241892,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -146,27 +121,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "guide_Q7323807",
-          "30"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323808,
+      "mainId": 73238,
       "order": 14,
-      "descTextMapHash": 3897543164,
+      "failParent": 3897543164,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -176,28 +144,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_GADGET",
-        "param": [
-          "133320001",
-          "1001",
-          "181.4503:206.0767:6121.313"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323809,
+      "mainId": 73238,
       "order": 16,
-      "descTextMapHash": 945710404,
+      "failParent": 945710404,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -207,27 +167,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "guide_Q7323809",
-          "30"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323816,
+      "mainId": 73238,
       "order": 17,
-      "descTextMapHash": 2574787260,
+      "failParent": 2574787260,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -237,27 +190,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "guide_Q7323816",
-          "20"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323817,
+      "mainId": 73238,
       "order": 18,
-      "descTextMapHash": 1787084500,
+      "failParent": 1787084500,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -267,26 +213,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "4283"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323820,
+      "mainId": 73238,
       "order": 19,
-      "descTextMapHash": 2367864316,
+      "failParent": 2367864316,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -296,27 +236,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_DISABLE",
-        "param": [
-          "guide_Q7323820"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323821,
+      "mainId": 73238,
       "order": 20,
-      "descTextMapHash": 206120636,
+      "failParent": 206120636,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -326,26 +259,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "4283"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323822,
+      "mainId": 73238,
       "order": 21,
-      "descTextMapHash": 242263020,
+      "failParent": 242263020,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -355,27 +282,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_DISABLE",
-        "param": [
-          "guide_Q7323822"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323823,
+      "mainId": 73238,
       "order": 24,
-      "descTextMapHash": 4134959020,
+      "failParent": 4134959020,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -385,28 +305,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20987"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI",
-        "HAKCBAEEHGD": 1001,
-        "LHEFHHHJNAJ": 10010020
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323824,
+      "mainId": 73238,
       "order": 25,
-      "descTextMapHash": 2753481692,
+      "failParent": 2753481692,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -416,30 +328,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_DISABLE",
-        "param": [
-          "guide_Q7323824"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE",
-        "HAKCBAEEHGD": 1001,
-        "LHEFHHHJNAJ": 10010019
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323825,
+      "mainId": 73238,
       "order": 100,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 3991163132,
+      "failParent": 3991163132,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -449,26 +351,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1005"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323826,
+      "mainId": 73238,
       "order": 26,
-      "descTextMapHash": 191411868,
+      "failParent": 191411868,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -478,28 +374,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "guide_Q7323826",
-          "15"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323827,
+      "mainId": 73238,
       "order": 27,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 928178404,
+      "failParent": 928178404,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -509,26 +397,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20987"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323829,
+      "mainId": 73238,
       "order": 29,
-      "descTextMapHash": 22320100,
+      "failParent": 22320100,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -538,26 +420,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "4284"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323830,
+      "mainId": 73238,
       "order": 13,
-      "descTextMapHash": 799333236,
+      "failParent": 799333236,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -567,26 +443,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20987"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323831,
+      "mainId": 73238,
       "order": 15,
-      "descTextMapHash": 211806060,
+      "failParent": 211806060,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -596,27 +466,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20987"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323832,
+      "mainId": 73238,
       "order": 99,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 2844165492,
+      "failParent": 2844165492,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -626,21 +489,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "guideScene": 3,
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323833,
+      "mainId": 73238,
       "order": 6,
-      "descTextMapHash": 2645289452,
+      "failParent": 2645289452,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -650,27 +512,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "guide_Q7323833",
-          "25"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323834,
+      "mainId": 73238,
       "order": 101,
-      "descTextMapHash": 3309550636,
+      "failParent": 3309550636,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -680,28 +535,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_GADGET",
-        "param": [
-          "133316017",
-          "17005",
-          "33.07615:238.6084:6153.48"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323835,
+      "mainId": 73238,
       "order": 22,
-      "descTextMapHash": 3617757964,
+      "failParent": 3617757964,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -711,30 +558,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "guide_Q7323835",
-          "20"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI",
-        "HAKCBAEEHGD": 1001,
-        "LHEFHHHJNAJ": 10010020
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323836,
+      "mainId": 73238,
       "order": 23,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 714639060,
+      "failParent": 714639060,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -744,18 +581,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323837,
+      "mainId": 73238,
       "order": 9,
-      "descTextMapHash": 3565746516,
+      "failParent": 3565746516,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -765,108 +604,89 @@
           ]
         }
       ],
-      "finishCond": [],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20927"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
-      "finishExec": [],
-      "failExec": [],
-      "beginExec": []
-    },
-    {
-      "mainId": 73238,
-      "subId": 7323838,
-      "order": 8,
-      "descTextMapHash": 1397407812,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
-        }
-      ],
-      "finishCond": [],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "[3_4026:-54.100,215.458,6195.649]",
-          "30"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
-      "finishExec": [],
-      "failExec": [],
-      "beginExec": []
-    },
-    {
-      "mainId": 73238,
-      "subId": 7323839,
-      "order": 28,
-      "descTextMapHash": 874317924,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
-        }
-      ],
-      "finishCond": [],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q7323839_guide",
-          "15"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
-      "finishExec": [],
-      "failExec": [],
-      "beginExec": []
-    },
-    {
-      "mainId": 73238,
-      "subId": 7323840,
-      "order": 1,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 2611409492,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
-        }
-      ],
-      "finishCond": [],
-      "failCond": [],
       "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
+      "subId": 7323838,
       "mainId": 73238,
+      "order": 8,
+      "failParent": 1397407812,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_UNKNOWN",
+          "param": [
+            0,
+            0
+          ]
+        }
+      ],
+      "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
+      "finishExec": [],
+      "failExec": []
+    },
+    {
+      "subId": 7323839,
+      "mainId": 73238,
+      "order": 28,
+      "failParent": 874317924,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_UNKNOWN",
+          "param": [
+            0,
+            0
+          ]
+        }
+      ],
+      "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
+      "finishExec": [],
+      "failExec": []
+    },
+    {
+      "subId": 7323840,
+      "mainId": 73238,
+      "order": 1,
+      "failParent": 2611409492,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_UNKNOWN",
+          "param": [
+            0,
+            0
+          ]
+        }
+      ],
+      "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
+      "finishExec": [],
+      "failExec": []
+    },
+    {
       "subId": 7323841,
+      "mainId": 73238,
       "order": 3,
-      "descTextMapHash": 4068370004,
+      "failParent": 4068370004,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -876,27 +696,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "[3_4035:-322.209,132.150,5968.691,0.000,71.544,0.000]",
-          "25"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73238,
       "subId": 7323842,
+      "mainId": 73238,
       "order": 2,
-      "descTextMapHash": 2353999356,
+      "failParent": 2353999356,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -906,21 +719,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "[3_4034:-323.124,131.716,5968.516]",
-          "25"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_UI"
-      },
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ],
   "talks": [

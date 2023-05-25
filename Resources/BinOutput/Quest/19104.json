@@ -930,12 +930,7 @@
           "count": 1
         }
       ],
-      "guide": {
-        "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [],
-        "guideScene": 3,
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "finishExec": [],
       "failExec": [
@@ -990,12 +985,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [],
-        "guideScene": 3,
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "finishExec": [
         {
@@ -1073,11 +1063,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": [],
-        "guideScene": 3,
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
+      "guide": {},
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",

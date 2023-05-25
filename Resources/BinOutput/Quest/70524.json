@@ -7,10 +7,13 @@
   "showType": "QUEST_HIDDEN",
   "subQuests": [
     {
-      "mainId": 70524,
       "subId": 7052401,
+      "mainId": 70524,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
+      "failParent": 1544061316,
+      "acceptCondComb": "LOGIC_NONE",
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -20,12 +23,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ],
   "talks": [

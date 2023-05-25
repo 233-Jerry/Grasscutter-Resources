@@ -10,10 +10,12 @@
   "chapterId": 10105,
   "subQuests": [
     {
-      "mainId": 40086,
       "subId": 4008601,
+      "mainId": 40086,
       "order": 2,
-      "descTextMapHash": 3425758924,
+      "failParent": 3425758924,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -23,102 +25,82 @@
           ]
         }
       ],
-      "finishCond": [],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4008601_guide"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
-      "finishExec": [],
-      "failExec": [],
-      "beginExec": []
-    },
-    {
-      "mainId": 40086,
-      "subId": 4008602,
-      "order": 3,
-      "descTextMapHash": 2940847316,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
-        }
-      ],
-      "finishCond": [],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4008602_guide"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
-      "finishExec": [],
-      "failExec": [],
-      "beginExec": []
-    },
-    {
-      "mainId": 40086,
-      "subId": 4008603,
-      "order": 4,
-      "descTextMapHash": 3083073564,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
-        }
-      ],
-      "finishCond": [],
-      "failCond": [],
-      "guide": {
-        "type": "QUEST_GUIDE_LOCATION",
-        "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4008603_guide"
-        ],
-        "guideScene": 3,
-        "guideStyle": "QUEST_GUIDE_STYLE_POINT",
-        "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
-      },
-      "finishExec": [],
-      "failExec": [],
-      "beginExec": []
-    },
-    {
-      "mainId": 40086,
-      "subId": 4008604,
-      "order": 1,
-      "descTextMapHash": 3890741828,
-      "acceptCond": [
-        {
-          "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
-        }
-      ],
-      "finishCond": [],
-      "failCond": [],
       "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
+    },
+    {
+      "subId": 4008602,
+      "mainId": 40086,
+      "order": 3,
+      "failParent": 2940847316,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_UNKNOWN",
+          "param": [
+            0,
+            0
+          ]
+        }
+      ],
+      "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
+      "finishExec": [],
+      "failExec": []
+    },
+    {
+      "subId": 4008603,
+      "mainId": 40086,
+      "order": 4,
+      "failParent": 3083073564,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_UNKNOWN",
+          "param": [
+            0,
+            0
+          ]
+        }
+      ],
+      "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
+      "finishExec": [],
+      "failExec": []
+    },
+    {
+      "subId": 4008604,
+      "mainId": 40086,
+      "order": 1,
+      "failParent": 3890741828,
+      "acceptCondComb": "LOGIC_NONE",
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
+      "finishCondComb": "LOGIC_NONE",
+      "acceptCond": [
+        {
+          "type": "QUEST_COND_UNKNOWN",
+          "param": [
+            0,
+            0
+          ]
+        }
+      ],
+      "guide": {},
+      "finishCond": [],
+      "failCond": [],
+      "beginExec": [],
+      "finishExec": [],
+      "failExec": []
     }
   ],
   "talks": [

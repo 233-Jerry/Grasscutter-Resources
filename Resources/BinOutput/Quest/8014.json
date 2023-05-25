@@ -8,10 +8,13 @@
   "chapterId": 1308,
   "subQuests": [
     {
-      "mainId": 8014,
       "subId": 801401,
+      "mainId": 8014,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
+      "failParent": 1397074996,
+      "acceptCondComb": "LOGIC_NONE",
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -21,12 +24,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ]
 }

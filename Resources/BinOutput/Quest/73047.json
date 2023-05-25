@@ -12,10 +12,12 @@
   "chapterId": 10076,
   "subQuests": [
     {
-      "mainId": 73047,
       "subId": 7304701,
+      "mainId": 73047,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
+      "failParent": 2311379092,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -25,12 +27,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ],
   "talks": [

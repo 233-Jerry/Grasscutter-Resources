@@ -40,9 +40,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "isRewind": true,
       "finishExec": [],
       "failExec": [],
@@ -77,9 +75,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "finishExec": [],
       "failExec": [],
       "beginExec": []
@@ -167,9 +163,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "failParentShow": "QUEST_HIDDEN",
       "isRewind": true,
       "finishExec": [],
@@ -206,9 +200,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "failParentShow": "QUEST_HIDDEN",
       "finishExec": [],
       "failExec": [],
@@ -244,9 +236,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "failParentShow": "QUEST_HIDDEN",
       "finishExec": [],
       "failExec": [],
@@ -281,9 +271,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "finishExec": [],
       "failExec": [],
       "beginExec": []
@@ -362,9 +350,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "failParentShow": "QUEST_HIDDEN",
       "finishExec": [],
       "failExec": [],
@@ -399,9 +385,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "finishExec": [],
       "failExec": [],
       "beginExec": []
@@ -480,9 +464,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "finishExec": [],
       "failExec": [],
       "beginExec": []
@@ -516,9 +498,7 @@
         }
       ],
       "failCond": [],
-      "guide": {
-        "param": []
-      },
+      "guide": {},
       "finishExec": [],
       "failExec": [],
       "beginExec": []
@@ -630,12 +610,21 @@
       "id": 7165403,
       "beginWay": "TALK_BEGIN_AUTO",
       "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "7165403",
             "2"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "0"
           ],
           "param_str": ""
         }
@@ -656,12 +645,21 @@
       "id": 7165404,
       "beginWay": "TALK_BEGIN_AUTO",
       "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "7165408",
             "2"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "0"
           ],
           "param_str": ""
         }
@@ -682,12 +680,21 @@
       "id": 7165405,
       "beginWay": "TALK_BEGIN_AUTO",
       "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
             "7165411",
             "2"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "0"
           ],
           "param_str": ""
         }
@@ -708,8 +715,16 @@
       "id": 7165406,
       "beginWay": "TALK_BEGIN_AUTO",
       "activeMode": "PLAY_MODE_HOST",
-      "beginCondComb": "LOGIC_OR",
+      "beginCondComb": "LOGIC_A_AND_ETCOR",
       "beginCond": [
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "0"
+          ],
+          "param_str": ""
+        },
         {
           "type": "QUEST_COND_STATE_EQUAL",
           "param": [
@@ -730,6 +745,154 @@
       "priority": 7,
       "initDialog": 716540301,
       "performCfg": "QuestDialogue/WQ/Homeworld_71654/Q7165403",
+      "heroTalk": "TALK_HERO_MAIN",
+      "loadType": "TALK_GADGET",
+      "questId": 71654,
+      "extraLoadMarkId": [
+        1001,
+        999999900
+      ],
+      "prePerformCfg": ""
+    },
+    {
+      "id": 7165407,
+      "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            "7165403",
+            "2"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "1"
+          ],
+          "param_str": ""
+        }
+      ],
+      "priority": 7,
+      "initDialog": 716540701,
+      "performCfg": "QuestDialogue/WQ/Homeworld_71654/Q7165407",
+      "heroTalk": "TALK_HERO_MAIN",
+      "loadType": "TALK_GADGET",
+      "questId": 71654,
+      "extraLoadMarkId": [
+        1001,
+        999999900
+      ],
+      "prePerformCfg": ""
+    },
+    {
+      "id": 7165408,
+      "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            "7165408",
+            "2"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "1"
+          ],
+          "param_str": ""
+        }
+      ],
+      "priority": 7,
+      "initDialog": 716540701,
+      "performCfg": "QuestDialogue/WQ/Homeworld_71654/Q7165407",
+      "heroTalk": "TALK_HERO_MAIN",
+      "loadType": "TALK_GADGET",
+      "questId": 71654,
+      "extraLoadMarkId": [
+        1001,
+        999999900
+      ],
+      "prePerformCfg": ""
+    },
+    {
+      "id": 7165409,
+      "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_AND",
+      "beginCond": [
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            "7165411",
+            "2"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "1"
+          ],
+          "param_str": ""
+        }
+      ],
+      "priority": 7,
+      "initDialog": 716540701,
+      "performCfg": "QuestDialogue/WQ/Homeworld_71654/Q7165407",
+      "heroTalk": "TALK_HERO_MAIN",
+      "loadType": "TALK_GADGET",
+      "questId": 71654,
+      "extraLoadMarkId": [
+        1001,
+        999999900
+      ],
+      "prePerformCfg": ""
+    },
+    {
+      "id": 7165410,
+      "beginWay": "TALK_BEGIN_AUTO",
+      "activeMode": "PLAY_MODE_HOST",
+      "beginCondComb": "LOGIC_A_AND_ETCOR",
+      "beginCond": [
+        {
+          "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [
+            "7067201",
+            "1"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            "7165414",
+            "2"
+          ],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_COND_STATE_EQUAL",
+          "param": [
+            "7165417",
+            "2"
+          ],
+          "param_str": ""
+        }
+      ],
+      "priority": 7,
+      "initDialog": 716540701,
+      "performCfg": "QuestDialogue/WQ/Homeworld_71654/Q7165407",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_GADGET",
       "questId": 71654,

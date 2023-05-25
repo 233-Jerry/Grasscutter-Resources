@@ -10,11 +10,13 @@
   ],
   "subQuests": [
     {
-      "mainId": 73075,
       "subId": 7307501,
+      "mainId": 73075,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 3632729108,
+      "failParent": 3632729108,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "failParentShow": "QUEST_HIDDEN",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -24,19 +26,21 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73075,
       "subId": 7307502,
+      "mainId": 73075,
       "order": 3,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 3849582532,
+      "failParent": 3849582532,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "failParentShow": "QUEST_HIDDEN",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -46,19 +50,21 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73075,
       "subId": 7307503,
+      "mainId": 73075,
       "order": 2,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 2347871052,
+      "failParent": 2347871052,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "failParentShow": "QUEST_HIDDEN",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -68,12 +74,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ],
   "talks": [

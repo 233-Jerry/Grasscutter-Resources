@@ -8,11 +8,13 @@
   "chapterId": 1302,
   "subQuests": [
     {
-      "mainId": 3015,
       "subId": 301501,
+      "mainId": 3015,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 833183364,
+      "failParent": 833183364,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "failParentShow": "QUEST_HIDDEN",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -22,19 +24,21 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 3015,
       "subId": 301502,
+      "mainId": 3015,
       "order": 2,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 2463080724,
+      "failParent": 2463080724,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "failParentShow": "QUEST_HIDDEN",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -44,19 +48,21 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 3015,
       "subId": 301503,
+      "mainId": 3015,
       "order": 3,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 4132977164,
+      "failParent": 4132977164,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
+      "failParentShow": "QUEST_HIDDEN",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -66,12 +72,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ]
 }

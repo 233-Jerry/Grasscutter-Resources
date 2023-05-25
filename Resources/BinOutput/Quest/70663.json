@@ -10,10 +10,13 @@
   ],
   "subQuests": [
     {
-      "mainId": 70663,
       "subId": 7066301,
+      "mainId": 70663,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
+      "failParent": 556097052,
+      "acceptCondComb": "LOGIC_NONE",
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -23,12 +26,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ]
 }

@@ -11,11 +11,13 @@
   ],
   "subQuests": [
     {
-      "mainId": 73272,
       "subId": 7327201,
+      "mainId": 73272,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 2246166828,
+      "failParent": 2246166828,
+      "acceptCondComb": "LOGIC_NONE",
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -25,18 +27,20 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73272,
       "subId": 7327202,
+      "mainId": 73272,
       "order": 2,
-      "showType": "QUEST_HIDDEN",
+      "failParent": 2553136716,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -46,12 +50,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ]
 }

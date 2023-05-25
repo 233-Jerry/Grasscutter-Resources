@@ -7,11 +7,12 @@
   "chapterId": 10083,
   "subQuests": [
     {
-      "mainId": 73045,
       "subId": 7304501,
+      "mainId": 73045,
       "order": 1,
-      "showType": "QUEST_HIDDEN",
-      "descTextMapHash": 3153324852,
+      "failParent": 3153324852,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -21,18 +22,21 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73045,
       "subId": 7304502,
+      "mainId": 73045,
       "order": 2,
-      "descTextMapHash": 1140929812,
+      "subIdSet": 1,
+      "failParent": 1140929812,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -42,18 +46,21 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73045,
       "subId": 7304503,
+      "mainId": 73045,
       "order": 3,
-      "descTextMapHash": 4158062684,
+      "subIdSet": 1,
+      "failParent": 4158062684,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -63,18 +70,21 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     },
     {
-      "mainId": 73045,
       "subId": 7304504,
+      "mainId": 73045,
       "order": 4,
-      "descTextMapHash": 895217644,
+      "subIdSet": 1,
+      "failParent": 895217644,
+      "acceptCondComb": "LOGIC_NONE",
+      "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
@@ -84,12 +94,12 @@
           ]
         }
       ],
+      "guide": {},
       "finishCond": [],
       "failCond": [],
-      "guide": {},
+      "beginExec": [],
       "finishExec": [],
-      "failExec": [],
-      "beginExec": []
+      "failExec": []
     }
   ]
 }

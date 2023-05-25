@@ -234,13 +234,78 @@ for (const mainQuestData of mainQuest_data) {
         // Check if the quest is new.
         if (isNewQuest) {
             // Add the unknown accept condition.
-            subQuestData.acceptCond.push(unknownCondition);
-            subQuest.acceptCond.push(unknownCondition);
+            if (subQuestData.acceptCond == undefined) {
+              subQuestData.acceptCond = [unknownCondition];
+              // Create an unknownCondition if acceptCond is undefined
+            } else {
+              subQuestData.acceptCond.push(unknownCondition);
+            }
+            if (subQuest.acceptCond == undefined) {
+              subQuest.acceptCond = [unknownCondition];
+            } else {
+              subQuest.acceptCond.push(unknownCondition);
+            }
+        }
+
+        // fix (Expected a string but was BEGIN_OBJECT)
+        if (typeof subQuestData.acceptCondComb === 'object') {
+            subQuestData.acceptCondComb = "LOGIC_NONE"; // ???
+        }
+        if (typeof subQuest.acceptCondComb === 'object') {
+            subQuest.acceptCondComb = "LOGIC_NONE"; // ???
+        }
+
+        if (typeof subQuestData.finishCondComb === 'object') {
+            subQuestData.finishCondComb = "LOGIC_NONE"; // ???
+        }
+        if (typeof subQuest.finishCondComb === 'object') {
+            subQuest.finishCondComb = "LOGIC_NONE"; // ???
+        }
+
+        if (typeof subQuestData.failCondComb === 'object') {
+            subQuestData.failCondComb = "LOGIC_NONE"; // ???
+        }
+        if (typeof subQuest.failCondComb === 'object') {
+            subQuest.failCondComb = "LOGIC_NONE"; // ???
+        }
+
+        // fix null
+        if (subQuestData.finishCond == null) {
+            subQuestData.finishCond = [] // ???
+        }
+        if (subQuest.finishCond == null) {
+            subQuest.finishCond = [] // ???
+        }
+        if (subQuestData.failCond == null) {
+            subQuestData.failCond = [] // ???
+        }
+        if (subQuest.failCond == null) {
+            subQuest.failCond = [] // ???
+        }
+
+        if (subQuestData.beginExec == null) {
+            subQuestData.beginExec = [] // ???
+        }
+        if (subQuest.beginExec == null) {
+            subQuest.beginExec = [] // ???
+        }
+        if (subQuestData.finishExec == null) {
+            subQuestData.finishExec = [] // ???
+        }
+        if (subQuest.finishExec == null) {
+            subQuest.finishExec = [] // ???
+        }
+        if (subQuestData.failExec == null) {
+            subQuestData.failExec = [] // ???
+        }
+        if (subQuest.failExec == null) {
+            subQuest.failExec = [] // ???
         }
 
         // Validate the quest guide.
         const { guide } = subQuestData;
-        if (guide.type !== null) {
+        //  || guide.type !== null
+        if (guide !== undefined && guide.type !== undefined) {
             subQuest.guide = cleanGuide(guide);
         } else subQuest.guide = {};
 
