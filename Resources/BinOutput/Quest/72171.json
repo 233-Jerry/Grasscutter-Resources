@@ -4,9 +4,7 @@
   "titleTextMapHash": 622627831,
   "descTextMapHash": 1422575630,
   "luaPath": "Actor/Quest/WQ72171",
-  "rewardIdList": [
-    172171
-  ],
+  "rewardIdList": [172171],
   "subQuests": [
     {
       "subId": 7217101,
@@ -16,23 +14,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7216804,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7216804, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "13322021501",
           "count": 1
         }
@@ -40,10 +29,7 @@
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "WQ_72171_ThunderSakuraTree",
-          "0"
-        ],
+        "param": ["WQ_72171_ThunderSakuraTree", "0"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -53,9 +39,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220215"
-          ],
+          "param": ["133220215"],
           "param_str": ""
         }
       ],
@@ -63,10 +47,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": [
-            "3",
-            "133220215"
-          ],
+          "param": ["3", "133220215"],
           "param_str": ""
         }
       ]
@@ -79,23 +60,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "13322021101",
           "count": 1
         }
@@ -114,23 +86,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7217103,
-            0
-          ],
+          "param": [7217103, 0],
           "param_str": ""
         }
       ],

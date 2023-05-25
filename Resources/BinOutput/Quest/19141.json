@@ -5,11 +5,7 @@
   "titleTextMapHash": 3110602455,
   "descTextMapHash": 3870742934,
   "luaPath": "Actor/Quest/LQ19141",
-  "suggestTrackMainQuestList": [
-    19142,
-    19143,
-    19144
-  ],
+  "suggestTrackMainQuestList": [19142, 19143, 19144],
   "chapterId": 106501,
   "subQuests": [
     {
@@ -20,33 +16,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_MAIN_COOP_START",
-          "param": [
-            106501,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [106501, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191410101
-          ],
+          "param": [106501, 191410101],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q1914101_C1914101_guide",
-          "30"
-        ],
+        "param": ["Q1914101_C1914101_guide", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -57,20 +41,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": [
-            "3",
-            "133221078"
-          ],
+          "param": ["3", "133221078"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        1049,
-        12276,
-        12277,
-        12278,
-        3020
-      ],
+      "exclusiveNpcList": [1049, 12276, 12277, 12278, 3020],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -81,13 +56,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191410101,
-            0,
-            0,
-            0
-          ],
+          "param": [106501, 191410101, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -95,35 +64,24 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191410201
-          ],
+          "param": [106501, 191410201],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191410202
-          ],
+          "param": [106501, 191410202],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            106501,
-            191410203
-          ],
+          "param": [106501, 191410203],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "510"
-        ],
+        "param": ["510"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -135,19 +93,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP_ONLY",
-          "param": [
-            "133221078"
-          ],
+          "param": ["133221078"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        1049,
-        12276,
-        12277,
-        12278,
-        3020
-      ],
+      "exclusiveNpcList": [1049, 12276, 12277, 12278, 3020],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -159,18 +109,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1914102",
-            "2"
-          ],
+          "param": ["1914102", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 191410701,
-      "npcId": [
-        3020
-      ],
+      "npcId": [3020],
       "performCfg": "QuestDialogue/COOP/CoopShinobu/Q1914107",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 19141,

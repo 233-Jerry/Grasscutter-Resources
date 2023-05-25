@@ -11,47 +11,41 @@
       "subId": 1915901,
       "mainId": 19159,
       "order": 1,
-      "failParent": 1221865420,
+      "descTextMapHash": 1221865420,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 1915902,
       "mainId": 19159,
       "order": 2,
-      "failParent": 637877820,
+      "descTextMapHash": 637877820,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -63,26 +57,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1915901",
-            "2"
-          ],
+          "param": ["1915901", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1915902",
-            "2"
-          ],
+          "param": ["1915902", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 191590801,
-      "npcId": [
-        12910
-      ],
+      "npcId": [12910],
       "performCfg": "QuestDialogue/COOP/CoopLayla/Q1915908",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 19159,

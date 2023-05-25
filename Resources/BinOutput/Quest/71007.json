@@ -15,32 +15,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7100612,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7100612, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7100701,
-            0
-          ],
+          "param": [7100701, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "2409"
-        ],
+        "param": ["2409"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -59,18 +48,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7100701",
-            "2"
-          ],
+          "param": ["7100701", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 710070101,
-      "npcId": [
-        2409
-      ],
+      "npcId": [2409],
       "performCfg": "",
       "questId": 71007,
       "dontBlockDaily": true,

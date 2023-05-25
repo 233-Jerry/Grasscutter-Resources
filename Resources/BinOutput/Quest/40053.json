@@ -4,9 +4,7 @@
   "titleTextMapHash": 167935415,
   "descTextMapHash": 2079467806,
   "luaPath": "Actor/Quest/EQ40053",
-  "suggestTrackMainQuestList": [
-    72106
-  ],
+  "suggestTrackMainQuestList": [72106],
   "subQuests": [
     {
       "subId": 4005301,
@@ -17,46 +15,22 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            5055011,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [5055011, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201310,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201310, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7210601,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7210601, 2, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7210602,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7210602, 2, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -64,26 +38,17 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7210601,
-            0
-          ],
+          "param": [7210601, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7210602,
-            0
-          ],
+          "param": [7210602, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7210604,
-            0
-          ],
+          "param": [7210604, 0],
           "param_str": ""
         }
       ],
@@ -91,9 +56,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q4005301_guide"
-        ],
+        "param": ["Q4005301_guide"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"

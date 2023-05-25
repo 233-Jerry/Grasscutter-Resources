@@ -10,24 +10,22 @@
       "subId": 7327701,
       "mainId": 73277,
       "order": 1,
-      "failParent": 567901676,
+      "descTextMapHash": 567901676,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -38,18 +36,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7303709",
-            "3"
-          ],
+          "param": ["7303709", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 732770101,
-      "npcId": [
-        20791
-      ],
+      "npcId": [20791],
       "performCfg": "",
       "questId": 73277,
       "prePerformCfg": ""

@@ -4,9 +4,7 @@
   "titleTextMapHash": 461972623,
   "descTextMapHash": 278000198,
   "luaPath": "Actor/Quest/WQ72168",
-  "rewardIdList": [
-    172168
-  ],
+  "rewardIdList": [172168],
   "subQuests": [
     {
       "subId": 7216801,
@@ -17,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_COMPLETE_TALK",
-          "param": [
-            7216801,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [7216801, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7216801,
-            0
-          ],
+          "param": [7216801, 0],
           "param_str": ""
         }
       ],
@@ -52,23 +41,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7216801,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7216801, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            101517,
-            0
-          ],
+          "param": [101517, 0],
           "param_str": "",
           "count": 1
         }
@@ -76,10 +56,7 @@
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "WQ72168_LeiYingHuaBan",
-          "0"
-        ],
+        "param": ["WQ72168_LeiYingHuaBan", "0"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -88,20 +65,13 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133220211,2"
-          ],
+          "param": ["3", "133220211,2"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        20268,
-        20269,
-        20270
-      ],
+      "exclusiveNpcList": [20268, 20269, 20270],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -112,32 +82,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7216802,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7216802, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7216802,
-            0
-          ],
+          "param": [7216802, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20268"
-        ],
+        "param": ["20268"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -146,27 +105,18 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
-          "param": [
-            "101517"
-          ],
+          "param": ["101517"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133220448"
-          ],
+          "param": ["3", "133220448"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        20268,
-        20269,
-        20270
-      ],
+      "exclusiveNpcList": [20268, 20269, 20270],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -177,32 +127,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7216803,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7216803, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7216803,
-            0
-          ],
+          "param": [7216803, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20268"
-        ],
+        "param": ["20268"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_FINISH",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -212,28 +151,18 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "72168",
-            "1"
-          ],
+          "param": ["72168", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133220448,2"
-          ],
+          "param": ["3", "133220448,2"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        20268,
-        20269,
-        20270
-      ],
+      "exclusiveNpcList": [20268, 20269, 20270],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -245,18 +174,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7216803",
-            "2"
-          ],
+          "param": ["7216803", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721680201,
-      "npcId": [
-        20268
-      ],
+      "npcId": [20268],
       "performCfg": "QuestDialogue/WQ/Inazuma_72168/Q7216802",
       "questId": 72168,
       "prePerformCfg": ""
@@ -268,18 +192,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7216804",
-            "2"
-          ],
+          "param": ["7216804", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721680301,
-      "npcId": [
-        20268
-      ],
+      "npcId": [20268],
       "performCfg": "",
       "questId": 72168,
       "prePerformCfg": ""
@@ -291,20 +210,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7216802",
-            "2"
-          ],
+          "param": ["7216802", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721680401,
-      "npcId": [
-        20268,
-        20270,
-        20269
-      ],
+      "npcId": [20268, 20270, 20269],
       "performCfg": "QuestDialogue/WQ/Inazuma_72168/Q7216804",
       "questId": 72168,
       "prePerformCfg": ""
@@ -316,18 +228,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "99902",
-            "3"
-          ],
+          "param": ["99902", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721680501,
-      "npcId": [
-        20270
-      ],
+      "npcId": [20270],
       "performCfg": "",
       "questId": 72168,
       "prePerformCfg": ""
@@ -339,18 +246,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "99902",
-            "3"
-          ],
+          "param": ["99902", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721680601,
-      "npcId": [
-        20269
-      ],
+      "npcId": [20269],
       "performCfg": "",
       "questId": 72168,
       "prePerformCfg": ""
@@ -362,18 +264,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7216804",
-            "2"
-          ],
+          "param": ["7216804", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721680701,
-      "npcId": [
-        20270
-      ],
+      "npcId": [20270],
       "performCfg": "",
       "questId": 72168,
       "prePerformCfg": ""
@@ -385,18 +282,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7216804",
-            "2"
-          ],
+          "param": ["7216804", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721680801,
-      "npcId": [
-        20269
-      ],
+      "npcId": [20269],
       "performCfg": "",
       "questId": 72168,
       "prePerformCfg": ""

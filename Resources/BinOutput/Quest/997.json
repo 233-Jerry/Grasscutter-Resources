@@ -13,21 +13,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0
-          ],
+          "param": [99902, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            99701,
-            0
-          ],
+          "param": [99701, 0],
           "param_str": ""
         }
       ],
@@ -47,18 +40,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "99701",
-            "2"
-          ],
+          "param": ["99701", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 9970201,
-      "npcId": [
-        1587
-      ],
+      "npcId": [1587],
       "performCfg": "",
       "questId": 997,
       "prePerformCfg": "",

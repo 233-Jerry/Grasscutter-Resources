@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1202618,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1202618, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1202701,
-            0
-          ],
+          "param": [1202701, 0],
           "param_str": ""
         }
       ],
@@ -51,23 +42,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1202701,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1202701, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "0,24"
         }
       ],
@@ -89,18 +71,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1202701",
-            "2"
-          ],
+          "param": ["1202701", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 120261901,
-      "npcId": [
-        12201
-      ],
+      "npcId": [12201],
       "performCfg": "QuestDialogue/LQ/Itto1_12026/Q1202619",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 12027,

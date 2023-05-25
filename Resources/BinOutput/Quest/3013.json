@@ -4,56 +4,48 @@
   "titleTextMapHash": 929335511,
   "descTextMapHash": 565559678,
   "luaPath": "Actor/Quest/AQ3013",
-  "rewardIdList": [
-    103013
-  ],
+  "rewardIdList": [103013],
   "chapterId": 1306,
   "subQuests": [
     {
       "subId": 301301,
       "mainId": 3013,
       "order": 2,
-      "failParent": 1891765036,
+      "descTextMapHash": 1891765036,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 301302,
       "mainId": 3013,
       "order": 1,
-      "failParent": 1111020964,
+      "descTextMapHash": 1111020964,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -64,18 +56,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "301301",
-            "2"
-          ],
+          "param": ["301301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 30130101,
-      "npcId": [
-        12913
-      ],
+      "npcId": [12913],
       "performCfg": "QuestDialogue/AQ/Sumeru1_3013/Q301301",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 3013,
@@ -88,18 +75,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "301301",
-            "2"
-          ],
+          "param": ["301301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 30130201,
-      "npcId": [
-        12555
-      ],
+      "npcId": [12555],
       "performCfg": "QuestDialogue/AQ/Sumeru1_3013/Q301302",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 3013,
@@ -113,18 +95,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "99902",
-            "3"
-          ],
+          "param": ["99902", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 30130301,
-      "npcId": [
-        4019
-      ],
+      "npcId": [4019],
       "performCfg": "QuestDialogue/AQ/Sumeru1_3013/Q301303",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 3013,
@@ -137,18 +114,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "301302",
-            "2"
-          ],
+          "param": ["301302", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 30130401,
-      "npcId": [
-        12913
-      ],
+      "npcId": [12913],
       "performCfg": "QuestDialogue/AQ/Sumeru1_3013/Q301304",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 3013,

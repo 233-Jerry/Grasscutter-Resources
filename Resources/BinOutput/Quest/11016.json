@@ -16,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1101505,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1101505, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
-          "param": [
-            3,
-            150
-          ],
+          "param": [3, 150],
           "param_str": "Q11015ShenheFin"
         }
       ],
@@ -45,18 +36,12 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_SCENE_TAG",
-          "param": [
-            "3",
-            "133"
-          ],
+          "param": ["3", "133"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_ADD_SCENE_TAG",
-          "param": [
-            "3",
-            "102"
-          ],
+          "param": ["3", "102"],
           "param_str": ""
         }
       ],

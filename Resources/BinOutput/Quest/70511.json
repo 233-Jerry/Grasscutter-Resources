@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_END",
-          "param": [
-            5062001,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [5062001, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LEAVE_SCENE",
-          "param": [
-            1068,
-            0
-          ],
+          "param": [1068, 0],
           "param_str": ""
         }
       ],
@@ -44,10 +35,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "1068",
-            "201068003,1;201068004,1;201068005,1;201068006,1"
-          ],
+          "param": ["1068", "201068003,1;201068004,1;201068005,1;201068006,1"],
           "param_str": ""
         }
       ]

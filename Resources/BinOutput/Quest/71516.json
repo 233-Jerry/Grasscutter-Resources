@@ -4,32 +4,27 @@
   "titleTextMapHash": 2943465183,
   "descTextMapHash": 2823907286,
   "luaPath": "Actor/Quest/WQ71516",
-  "rewardIdList": [
-    171516
-  ],
+  "rewardIdList": [171516],
   "subQuests": [
     {
       "subId": 7151601,
       "mainId": 71516,
       "order": 1,
-      "failParent": 92216620,
+      "descTextMapHash": 92216620,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -40,18 +35,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7151601",
-            "2"
-          ],
+          "param": ["7151601", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 715160101,
-      "npcId": [
-        30306
-      ],
+      "npcId": [30306],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71516,

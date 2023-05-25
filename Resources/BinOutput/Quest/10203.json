@@ -16,11 +16,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1020201,
-            3,
-            0
-          ],
+          "param": [1020201, 3, 0],
           "param_str": ""
         }
       ],
@@ -28,26 +24,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1020301,
-            0
-          ],
+          "param": [1020301, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3
-          ],
+          "param": [3],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1006"
-        ],
+        "param": ["1006"],
         "guideScene": 1004,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -56,15 +45,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1006,
-        10090,
-        10092
-      ],
+      "exclusiveNpcList": [1006, 10090, 10092],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        1012001
-      ]
+      "exclusivePlaceList": [1012001]
     },
     {
       "subId": 1020302,
@@ -75,11 +58,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1020204,
-            3,
-            0
-          ],
+          "param": [1020204, 3, 0],
           "param_str": ""
         }
       ],
@@ -87,26 +66,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1020302,
-            0
-          ],
+          "param": [1020302, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3
-          ],
+          "param": [3],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "10092"
-        ],
+        "param": ["10092"],
         "guideScene": 1004,
         "guideStyle": "QUEST_GUIDE_STYLE_FINISH",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -116,15 +88,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1006,
-        10090,
-        10092
-      ],
+      "exclusiveNpcList": [1006, 10090, 10092],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        1012001
-      ]
+      "exclusivePlaceList": [1012001]
     }
   ],
   "talks": [
@@ -135,18 +101,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1020301",
-            "2"
-          ],
+          "param": ["1020301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 102030101,
-      "npcId": [
-        1006
-      ],
+      "npcId": [1006],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 10203,
@@ -159,18 +120,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1020302",
-            "2"
-          ],
+          "param": ["1020302", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 102030201,
-      "npcId": [
-        10092
-      ],
+      "npcId": [10092],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 10203,
@@ -183,18 +139,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1020301",
-            "3"
-          ],
+          "param": ["1020301", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 102030301,
-      "npcId": [
-        1006
-      ],
+      "npcId": [1006],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 10203,

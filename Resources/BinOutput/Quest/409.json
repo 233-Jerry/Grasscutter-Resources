@@ -14,30 +14,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            35724,
-            4,
-            0
-          ],
+          "param": [35724, 4, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            40907,
-            0
-          ],
+          "param": [40907, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1117"
-        ]
+        "param": ["1117"]
       },
       "isRewind": true,
       "finishExec": [],
@@ -53,38 +44,27 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40901,
-            3,
-            0
-          ],
+          "param": [40901, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            40902,
-            0
-          ],
+          "param": [40902, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            40902
-          ],
+          "param": [40902],
           "param_str": ""
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1117"
-        ]
+        "param": ["1117"]
       },
       "finishExec": [],
       "failExec": [],
@@ -98,30 +78,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40902,
-            4,
-            0
-          ],
+          "param": [40902, 4, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            40905,
-            0
-          ],
+          "param": [40905, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1117"
-        ]
+        "param": ["1117"]
       },
       "finishExec": [],
       "failExec": [],
@@ -135,30 +106,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40902,
-            3,
-            0
-          ],
+          "param": [40902, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            40906,
-            0
-          ],
+          "param": [40906, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1117"
-        ]
+        "param": ["1117"]
       },
       "finishParent": true,
       "isRewind": true,
@@ -175,30 +137,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40903,
-            3,
-            0
-          ],
+          "param": [40903, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            40905,
-            0
-          ],
+          "param": [40905, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            40905
-          ],
+          "param": [40905],
           "param_str": ""
         }
       ],
@@ -207,9 +160,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "40901"
-          ],
+          "param": ["40901"],
           "param_str": ""
         }
       ],

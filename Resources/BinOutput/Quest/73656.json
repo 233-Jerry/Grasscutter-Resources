@@ -9,47 +9,41 @@
       "subId": 7365601,
       "mainId": 73656,
       "order": 1,
-      "failParent": 2975843540,
+      "descTextMapHash": 2975843540,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7365602,
       "mainId": 73656,
       "order": 2,
-      "failParent": 3524034188,
+      "descTextMapHash": 3524034188,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -60,25 +54,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7365601",
-            "2"
-          ],
+          "param": ["7365601", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "7365601"
-          ],
+          "param": ["7365601"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 736560101,
-      "npcId": [
-        4007
-      ],
+      "npcId": [4007],
       "performCfg": "",
       "questId": 73656,
       "dontBlockDaily": true,
@@ -91,18 +78,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7365602",
-            "2"
-          ],
+          "param": ["7365602", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 736560201,
-      "npcId": [
-        4007
-      ],
+      "npcId": [4007],
       "performCfg": "",
       "questId": 73656,
       "prePerformCfg": ""

@@ -16,34 +16,19 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            5033035,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [5033035, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            41610,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [41610, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "finish7901701",
           "count": 1
         }
@@ -56,10 +41,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "4",
-            "144004134,2"
-          ],
+          "param": ["4", "144004134,2"],
           "param_str": ""
         }
       ],
@@ -67,10 +49,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "4",
-            "144004134,3"
-          ],
+          "param": ["4", "144004134,3"],
           "param_str": ""
         }
       ]

@@ -16,21 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            10011,
-            1,
-            0
-          ],
+          "param": [10011, 1, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4000601,
-            0
-          ],
+          "param": [4000601, 0],
           "param_str": ""
         }
       ],
@@ -41,18 +34,12 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133107011,1"
-          ],
+          "param": ["3", "133107011,1"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133107018,1"
-          ],
+          "param": ["3", "133107018,1"],
           "param_str": ""
         }
       ],
@@ -60,18 +47,12 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133107011,2"
-          ],
+          "param": ["3", "133107011,2"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133107018,2"
-          ],
+          "param": ["3", "133107018,2"],
           "param_str": ""
         }
       ]

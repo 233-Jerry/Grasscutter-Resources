@@ -10,47 +10,41 @@
       "subId": 7326601,
       "mainId": 73266,
       "order": 99,
-      "failParent": 2708497724,
+      "descTextMapHash": 2708497724,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7326602,
       "mainId": 73266,
       "order": 100,
-      "failParent": 611889620,
+      "descTextMapHash": 611889620,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -61,19 +55,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7326601",
-            "2"
-          ],
+          "param": ["7326601", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 732660101,
-      "npcId": [
-        4284,
-        20883
-      ],
+      "npcId": [4284, 20883],
       "performCfg": "QuestDialogue/WQ/Sumeru_73266/Q7326601",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73266,
@@ -86,18 +74,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7326602",
-            "2"
-          ],
+          "param": ["7326602", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 732660201,
-      "npcId": [
-        4019
-      ],
+      "npcId": [4019],
       "performCfg": "QuestDialogue/WQ/Sumeru_73266/Q7326602",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73266,

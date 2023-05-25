@@ -5,10 +5,7 @@
   "titleTextMapHash": 515042999,
   "descTextMapHash": 3111080510,
   "luaPath": "Actor/Quest/LQ19113",
-  "suggestTrackMainQuestList": [
-    19114,
-    19115
-  ],
+  "suggestTrackMainQuestList": [19114, 19115],
   "chapterId": 105001,
   "subQuests": [
     {
@@ -19,13 +16,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105001,
-            1911301,
-            0,
-            0,
-            0
-          ],
+          "param": [105001, 1911301, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -33,18 +24,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105001,
-            1911401
-          ],
+          "param": [105001, 1911401],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105001,
-            1911501
-          ],
+          "param": [105001, 1911501],
           "param_str": ""
         }
       ],
@@ -52,9 +37,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "503"
-        ],
+        "param": ["503"],
         "guideScene": 1060,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -66,16 +49,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "1060",
-            "201060002,3"
-          ],
+          "param": ["1060", "201060002,3"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        1033
-      ],
+      "exclusiveNpcList": [1033],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -87,23 +65,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105001,
-            1911301,
-            0,
-            0,
-            0
-          ],
+          "param": [105001, 1911301, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1911302,
-            0
-          ],
+          "param": [1911302, 0],
           "param_str": ""
         }
       ],
@@ -112,10 +81,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "1060",
-            "201060002,4"
-          ],
+          "param": ["1060", "201060002,4"],
           "param_str": ""
         }
       ],

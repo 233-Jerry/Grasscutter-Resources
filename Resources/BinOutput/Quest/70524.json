@@ -10,25 +10,23 @@
       "subId": 7052401,
       "mainId": 70524,
       "order": 1,
-      "failParent": 1544061316,
+      "descTextMapHash": 1544061316,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -39,19 +37,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7052401",
-            "2"
-          ],
+          "param": ["7052401", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 705240101,
-      "npcId": [
-        10011,
-        1019
-      ],
+      "npcId": [10011, 1019],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 70524,

@@ -6,33 +6,29 @@
   "descTextMapHash": 2313011054,
   "luaPath": "Actor/Quest/WQ73048",
   "showType": "QUEST_HIDDEN",
-  "suggestTrackMainQuestList": [
-    73032
-  ],
+  "suggestTrackMainQuestList": [73032],
   "chapterId": 10076,
   "subQuests": [
     {
       "subId": 7304801,
       "mainId": 73048,
       "order": 1,
-      "failParent": 147542052,
+      "descTextMapHash": 147542052,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -43,19 +39,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7304801",
-            "2"
-          ],
+          "param": ["7304801", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 730480101,
-      "npcId": [
-        20711,
-        1005
-      ],
+      "npcId": [20711, 1005],
       "performCfg": "QuestDialogue/WQ/Sumeru_73048/Q7304801",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73048,

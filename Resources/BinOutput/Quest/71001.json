@@ -15,21 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0
-          ],
+          "param": [99902, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7100101,
-            0
-          ],
+          "param": [7100101, 0],
           "param_str": ""
         }
       ],
@@ -39,10 +32,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133103015"
-          ],
+          "param": ["3", "133103015"],
           "param_str": ""
         }
       ],
@@ -57,21 +47,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0
-          ],
+          "param": [99902, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "133103015_finish",
           "count": 1
         }
@@ -91,21 +74,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0
-          ],
+          "param": [99902, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7100101,
-            0
-          ],
+          "param": [7100101, 0],
           "param_str": ""
         }
       ],
@@ -123,21 +99,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0
-          ],
+          "param": [99902, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "133103015_progress",
           "count": 3
         }
@@ -147,10 +116,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133103015"
-          ],
+          "param": ["3", "133103015"],
           "param_str": ""
         }
       ],

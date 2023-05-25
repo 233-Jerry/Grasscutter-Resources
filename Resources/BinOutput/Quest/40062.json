@@ -5,9 +5,7 @@
   "descTextMapHash": 2943075086,
   "luaPath": "Actor/Quest/EQ40062",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    140062
-  ],
+  "rewardIdList": [140062],
   "subQuests": [
     {
       "subId": 4006201,
@@ -18,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            4004712,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [4004712, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            4004713,
-            0
-          ],
+          "param": [4004713, 0],
           "param_str": ""
         }
       ],

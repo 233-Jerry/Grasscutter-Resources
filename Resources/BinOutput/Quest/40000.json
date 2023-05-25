@@ -14,23 +14,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            2002108,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [2002108, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4000001,
-            0
-          ],
+          "param": [4000001, 0],
           "param_str": ""
         }
       ],
@@ -41,10 +32,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_LOCK_POINT",
-          "param": [
-            "3",
-            "260"
-          ],
+          "param": ["3", "260"],
           "param_str": ""
         }
       ]
@@ -57,13 +45,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            4000001,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [4000001, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -71,35 +53,24 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            4000002,
-            0
-          ],
+          "param": [4000002, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4000002,
-            0
-          ],
+          "param": [4000002, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [
-            7000,
-            260
-          ],
+          "param": [7000, 260],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "30043"
-        ],
+        "param": ["30043"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
@@ -116,32 +87,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            4000002,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [4000002, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_DUNGEON",
-          "param": [
-            7000,
-            0
-          ],
+          "param": [7000, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "30043"
-        ],
+        "param": ["30043"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET"
       },
@@ -160,18 +120,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4000002",
-            "2"
-          ],
+          "param": ["4000002", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400000201,
-      "npcId": [
-        30043
-      ],
+      "npcId": [30043],
       "performCfg": "QuestDialogue/EQ/Sealamp2_41314/Q4000001",
       "questId": 40000,
       "prePerformCfg": ""
@@ -183,18 +138,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4000003",
-            "2"
-          ],
+          "param": ["4000003", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400000213,
-      "npcId": [
-        30043
-      ],
+      "npcId": [30043],
       "performCfg": "QuestDialogue/EQ/Sealamp2_41314/Q4000002",
       "questId": 40000,
       "prePerformCfg": ""

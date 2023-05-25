@@ -4,55 +4,47 @@
   "titleTextMapHash": 3231777087,
   "descTextMapHash": 410403566,
   "luaPath": "Actor/Quest/WQ73514",
-  "rewardIdList": [
-    173514
-  ],
+  "rewardIdList": [173514],
   "subQuests": [
     {
       "subId": 7351401,
       "mainId": 73514,
       "order": 2,
-      "failParent": 3558441356,
+      "descTextMapHash": 3558441356,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7351402,
       "mainId": 73514,
       "order": 1,
-      "failParent": 4210537236,
+      "descTextMapHash": 4210537236,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -63,19 +55,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7351401",
-            "2"
-          ],
+          "param": ["7351401", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 735140101,
-      "npcId": [
-        30343,
-        30342
-      ],
+      "npcId": [30343, 30342],
       "performCfg": "QuestDialogue/WQ/V3.6SandSworm/Q7351401",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73514,

@@ -16,10 +16,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            31801,
-            0
-          ],
+          "param": [31801, 0],
           "param_str": "",
           "count": 1
         }
@@ -40,21 +37,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            31801,
-            3,
-            0
-          ],
+          "param": [31801, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            31802,
-            0
-          ],
+          "param": [31802, 0],
           "param_str": ""
         }
       ],
@@ -75,17 +65,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "31802",
-            "2"
-          ],
+          "param": ["31802", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 3180201,
-      "npcId": [
-        10092
-      ],
+      "npcId": [10092],
       "performCfg": "QuestDialogue/Q318/InterContainer_Q31802",
       "questId": 318,
       "prePerformCfg": ""

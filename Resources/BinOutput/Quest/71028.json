@@ -15,32 +15,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7102801,
-            0
-          ],
+          "param": [7102801, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "2039"
-        ],
+        "param": ["2039"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -49,9 +38,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        2039
-      ]
+      "exclusiveNpcList": [2039]
     }
   ],
   "talks": [
@@ -62,42 +49,28 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7102502",
-            "3"
-          ],
+          "param": ["7102502", "3"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7102602",
-            "3"
-          ],
+          "param": ["7102602", "3"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7102702",
-            "3"
-          ],
+          "param": ["7102702", "3"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7102801",
-            "2"
-          ],
+          "param": ["7102801", "2"],
           "param_str": ""
         }
       ],
       "priority": 10,
       "initDialog": 710280101,
-      "npcId": [
-        2039
-      ],
+      "npcId": [2039],
       "performCfg": "",
       "questId": 71028,
       "prePerformCfg": ""

@@ -16,34 +16,19 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7266304,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7266304, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            5041010,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [5041010, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "7266801",
           "count": 1
         }
@@ -64,23 +49,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7266801,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7266801, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7266801,
-            0
-          ],
+          "param": [7266801, 0],
           "param_str": ""
         }
       ],
@@ -100,18 +76,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7266802",
-            "2"
-          ],
+          "param": ["7266802", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 726680101,
-      "npcId": [
-        1005
-      ],
+      "npcId": [1005],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72668,

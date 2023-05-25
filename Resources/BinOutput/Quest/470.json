@@ -4,9 +4,7 @@
   "titleTextMapHash": 323429985,
   "descTextMapHash": 1791754591,
   "luaPath": "Actor/Quest/IQ470",
-  "rewardIdList": [
-    100470
-  ],
+  "rewardIdList": [100470],
   "subQuests": [
     {
       "subId": 47001,
@@ -17,21 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            35901,
-            3,
-            0
-          ],
+          "param": [35901, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1106,
-            0
-          ],
+          "param": [1106, 0],
           "param_str": ""
         }
       ],
@@ -50,21 +41,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            47001,
-            3,
-            0
-          ],
+          "param": [47001, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            47001,
-            0
-          ],
+          "param": [47001, 0],
           "param_str": ""
         }
       ],
@@ -82,30 +66,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            47002,
-            3,
-            0
-          ],
+          "param": [47002, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            108002,
-            0
-          ],
+          "param": [108002, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1419"
-        ],
+        "param": ["1419"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -124,21 +99,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            47003,
-            3,
-            0
-          ],
+          "param": [47003, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            47002,
-            0
-          ],
+          "param": [47002, 0],
           "param_str": ""
         }
       ],
@@ -159,17 +127,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "47002",
-            "2"
-          ],
+          "param": ["47002", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 4700101,
-      "npcId": [
-        1005
-      ],
+      "npcId": [1005],
       "performCfg": "QuestDialogue/WQ/Mengde_470/Q47001",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 470,
@@ -182,17 +145,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "47004",
-            "2"
-          ],
+          "param": ["47004", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 4700201,
-      "npcId": [
-        1005
-      ],
+      "npcId": [1005],
       "performCfg": "QuestDialogue/WQ/Mengde_470/Q47002",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 470,

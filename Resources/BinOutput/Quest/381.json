@@ -4,14 +4,8 @@
   "titleTextMapHash": 396979777,
   "descTextMapHash": 3173561207,
   "luaPath": "Actor/Quest/MQ381",
-  "suggestTrackMainQuestList": [
-    380,
-    382,
-    383
-  ],
-  "rewardIdList": [
-    100381
-  ],
+  "suggestTrackMainQuestList": [380, 382, 383],
+  "rewardIdList": [100381],
   "chapterId": 1002,
   "subQuests": [
     {
@@ -22,40 +16,28 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            37904,
-            3,
-            0
-          ],
+          "param": [37904, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            38101,
-            0
-          ],
+          "param": [38101, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q381DragonTill"
-        ],
+        "param": ["Q381DragonTill"],
         "guideScene": 3
       },
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_PACK_ITEM",
-          "param": [
-            "100160",
-            "1"
-          ],
+          "param": ["100160", "1"],
           "param_str": ""
         }
       ],
@@ -71,30 +53,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            38101,
-            3,
-            0
-          ],
+          "param": [38101, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_DUNGEON",
-          "param": [
-            10,
-            40
-          ],
+          "param": [10, 40],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q381DragonTill"
-        ],
+        "param": ["Q381DragonTill"],
         "guideScene": 3
       },
       "isRewind": true,
@@ -111,21 +84,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            38102,
-            3,
-            0
-          ],
+          "param": [38102, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "DragonTear",
           "count": 1
         }
@@ -133,17 +99,13 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [
-            10
-          ],
+          "param": [10],
           "param_str": ""
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "DUMMY_POS 1006001"
-        ],
+        "param": ["DUMMY_POS 1006001"],
         "guideScene": 1006
       },
       "isRewind": true,
@@ -151,9 +113,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "38101"
-          ],
+          "param": ["38101"],
           "param_str": ""
         }
       ],
@@ -168,38 +128,27 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            38103,
-            3,
-            0
-          ],
+          "param": [38103, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            100160,
-            0
-          ],
+          "param": [100160, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [
-            10
-          ],
+          "param": [10],
           "param_str": ""
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "DUMMY_POS 1006002"
-        ],
+        "param": ["DUMMY_POS 1006002"],
         "guideScene": 1006
       },
       "isRewind": true,
@@ -207,9 +156,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "38101"
-          ],
+          "param": ["38101"],
           "param_str": ""
         }
       ],
@@ -225,30 +172,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            38104,
-            3,
-            0
-          ],
+          "param": [38104, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            38105,
-            0
-          ],
+          "param": [38105, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_FAIL_DUNGEON",
-          "param": [
-            10
-          ],
+          "param": [10],
           "param_str": ""
         }
       ],
@@ -259,9 +197,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "38101"
-          ],
+          "param": ["38101"],
           "param_str": ""
         }
       ],
@@ -276,17 +212,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "38105",
-            "2"
-          ],
+          "param": ["38105", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 3800113,
-      "npcId": [
-        1006
-      ],
+      "npcId": [1006],
       "performCfg": "QuestDialogue/AQ/Mengde2_380/Q38001",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 381,

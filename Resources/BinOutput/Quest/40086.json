@@ -4,103 +4,89 @@
   "titleTextMapHash": 469178175,
   "descTextMapHash": 3054161406,
   "luaPath": "Actor/Quest/EQ40086",
-  "rewardIdList": [
-    140086
-  ],
+  "rewardIdList": [140086],
   "chapterId": 10105,
   "subQuests": [
     {
       "subId": 4008601,
       "mainId": 40086,
       "order": 2,
-      "failParent": 3425758924,
+      "descTextMapHash": 3425758924,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4008602,
       "mainId": 40086,
       "order": 3,
-      "failParent": 2940847316,
+      "descTextMapHash": 2940847316,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4008603,
       "mainId": 40086,
       "order": 4,
-      "failParent": 3083073564,
+      "descTextMapHash": 3083073564,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4008604,
       "mainId": 40086,
       "order": 1,
-      "failParent": 3890741828,
+      "descTextMapHash": 3890741828,
       "acceptCondComb": "LOGIC_NONE",
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -111,18 +97,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4008601",
-            "2"
-          ],
+          "param": ["4008601", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400860101,
-      "npcId": [
-        1063
-      ],
+      "npcId": [1063],
       "performCfg": "QuestDialogue/EQ/V3.2FungusFighter_40086/Q4008601",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40086,
@@ -135,18 +116,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4008602",
-            "2"
-          ],
+          "param": ["4008602", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400860201,
-      "npcId": [
-        1034
-      ],
+      "npcId": [1034],
       "performCfg": "QuestDialogue/EQ/V3.2FungusFighter_40086/Q4008602",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40086,
@@ -159,19 +135,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4008603",
-            "2"
-          ],
+          "param": ["4008603", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400860301,
-      "npcId": [
-        12855,
-        1063
-      ],
+      "npcId": [12855, 1063],
       "performCfg": "QuestDialogue/EQ/V3.2FungusFighter_40086/Q4008603",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40086,

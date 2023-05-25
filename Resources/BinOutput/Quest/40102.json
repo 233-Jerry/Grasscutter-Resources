@@ -5,174 +5,149 @@
   "titleTextMapHash": 1614928759,
   "descTextMapHash": 111913326,
   "luaPath": "Actor/Quest/EQ40102",
-  "suggestTrackMainQuestList": [
-    40103
-  ],
-  "rewardIdList": [
-    140102
-  ],
+  "suggestTrackMainQuestList": [40103],
+  "rewardIdList": [140102],
   "chapterId": 10140,
   "subQuests": [
     {
       "subId": 4010201,
       "mainId": 40102,
       "order": 1,
-      "failParent": 1669811796,
+      "descTextMapHash": 1669811796,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4010202,
       "mainId": 40102,
       "order": 3,
-      "failParent": 4149744932,
+      "descTextMapHash": 4149744932,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4010203,
       "mainId": 40102,
       "order": 4,
-      "failParent": 2095338156,
+      "descTextMapHash": 2095338156,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4010204,
       "mainId": 40102,
       "order": 5,
-      "failParent": 3669098156,
+      "descTextMapHash": 3669098156,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4010205,
       "mainId": 40102,
       "order": 7,
-      "failParent": 2034964972,
+      "descTextMapHash": 2034964972,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4010206,
       "mainId": 40102,
       "order": 6,
-      "failParent": 1789968260,
+      "descTextMapHash": 1789968260,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4010207,
       "mainId": 40102,
       "order": 2,
-      "failParent": 3884622076,
+      "descTextMapHash": 3884622076,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -183,18 +158,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010201",
-            "2"
-          ],
+          "param": ["4010201", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401020101,
-      "npcId": [
-        13161
-      ],
+      "npcId": [13161],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010201",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -208,18 +178,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010202",
-            "2"
-          ],
+          "param": ["4010202", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401020201,
-      "npcId": [
-        13091
-      ],
+      "npcId": [13091],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010202",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -233,18 +198,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010203",
-            "2"
-          ],
+          "param": ["4010203", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401020301,
-      "npcId": [
-        13161
-      ],
+      "npcId": [13161],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010203",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -257,18 +217,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010204",
-            "2"
-          ],
+          "param": ["4010204", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401020401,
-      "npcId": [
-        13259
-      ],
+      "npcId": [13259],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010204",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -281,18 +236,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010205",
-            "2"
-          ],
+          "param": ["4010205", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401020501,
-      "npcId": [
-        13161
-      ],
+      "npcId": [13161],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010205",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -305,19 +255,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010206",
-            "2"
-          ],
+          "param": ["4010206", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401020601,
-      "npcId": [
-        13161,
-        1064
-      ],
+      "npcId": [13161, 1064],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010206",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -331,59 +275,38 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010202",
-            "2"
-          ],
+          "param": ["4010202", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010203",
-            "2"
-          ],
+          "param": ["4010203", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010204",
-            "2"
-          ],
+          "param": ["4010204", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010206",
-            "2"
-          ],
+          "param": ["4010206", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010205",
-            "2"
-          ],
+          "param": ["4010205", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010207",
-            "2"
-          ],
+          "param": ["4010207", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401025001,
-      "npcId": [
-        1052,
-        1059
-      ],
+      "npcId": [1052, 1059],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010250",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -396,18 +319,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010203",
-            "2"
-          ],
+          "param": ["4010203", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401025101,
-      "npcId": [
-        13091
-      ],
+      "npcId": [13091],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010251",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -420,18 +338,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010205",
-            "2"
-          ],
+          "param": ["4010205", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401025301,
-      "npcId": [
-        1064
-      ],
+      "npcId": [1064],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010253",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,
@@ -445,34 +358,23 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010204",
-            "2"
-          ],
+          "param": ["4010204", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010206",
-            "2"
-          ],
+          "param": ["4010206", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4010205",
-            "2"
-          ],
+          "param": ["4010205", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401025401,
-      "npcId": [
-        1054
-      ],
+      "npcId": [1054],
       "performCfg": "QuestDialogue/EQ/AkaFes_40102/Q4010254",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 40102,

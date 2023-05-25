@@ -14,21 +14,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0
-          ],
+          "param": [99902, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_ROOM",
-          "param": [
-            1015,
-            0
-          ],
+          "param": [1015, 0],
           "param_str": ""
         }
       ],
@@ -46,21 +39,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            42501,
-            3,
-            0
-          ],
+          "param": [42501, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            42503,
-            0
-          ],
+          "param": [42503, 0],
           "param_str": ""
         }
       ],
@@ -79,21 +65,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            42502,
-            3,
-            0
-          ],
+          "param": [42502, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            42503,
-            0
-          ],
+          "param": [42503, 0],
           "param_str": ""
         }
       ],
@@ -112,21 +91,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            42503,
-            3,
-            0
-          ],
+          "param": [42503, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            42506,
-            0
-          ],
+          "param": [42506, 0],
           "param_str": ""
         }
       ],
@@ -146,21 +118,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "42502",
-            "2"
-          ],
+          "param": ["42502", "2"],
           "param_str": ""
         }
       ],
-      "nextTalks": [
-        42503,
-        42504
-      ],
+      "nextTalks": [42503, 42504],
       "initDialog": 4250201,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "",
       "questId": 425,
       "prePerformCfg": ""
@@ -169,9 +133,7 @@
       "id": 42503,
       "activeMode": "PLAY_MODE_SINGLE",
       "initDialog": 4250202,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "",
       "questId": 425,
       "prePerformCfg": ""
@@ -180,9 +142,7 @@
       "id": 42504,
       "activeMode": "PLAY_MODE_SINGLE",
       "initDialog": 4250203,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "",
       "questId": 425,
       "prePerformCfg": ""
@@ -194,21 +154,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "42504",
-            "2"
-          ],
+          "param": ["42504", "2"],
           "param_str": ""
         }
       ],
-      "nextTalks": [
-        42506,
-        42507
-      ],
+      "nextTalks": [42506, 42507],
       "initDialog": 4250301,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "",
       "questId": 425,
       "prePerformCfg": ""
@@ -217,9 +169,7 @@
       "id": 42506,
       "activeMode": "PLAY_MODE_SINGLE",
       "initDialog": 4250302,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "",
       "questId": 425,
       "prePerformCfg": ""
@@ -228,9 +178,7 @@
       "id": 42507,
       "activeMode": "PLAY_MODE_SINGLE",
       "initDialog": 4250303,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "",
       "questId": 425,
       "prePerformCfg": ""

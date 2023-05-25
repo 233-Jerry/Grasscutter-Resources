@@ -4,55 +4,47 @@
   "titleTextMapHash": 2202833311,
   "descTextMapHash": 3823068038,
   "luaPath": "Actor/Quest/WQ73678",
-  "rewardIdList": [
-    173678
-  ],
+  "rewardIdList": [173678],
   "subQuests": [
     {
       "subId": 7367801,
       "mainId": 73678,
       "order": 1,
-      "failParent": 3246938156,
+      "descTextMapHash": 3246938156,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7367802,
       "mainId": 73678,
       "order": 2,
-      "failParent": 2514775268,
+      "descTextMapHash": 2514775268,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -64,27 +56,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7367801",
-            "2"
-          ],
+          "param": ["7367801", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2016",
-            "2016016",
-            "1"
-          ],
+          "param": ["2016", "2016016", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 736780101,
-      "npcId": [
-        30246
-      ],
+      "npcId": [30246],
       "performCfg": "QuestDialogue/WQ/Mengde_73678/Q7367801",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73678,

@@ -11,70 +11,64 @@
       "subId": 7273601,
       "mainId": 72736,
       "order": 1,
-      "failParent": 3912779820,
+      "descTextMapHash": 3912779820,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7273602,
       "mainId": 72736,
       "order": 2,
-      "failParent": 3609220140,
+      "descTextMapHash": 3609220140,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7273603,
       "mainId": 72736,
       "order": 3,
-      "failParent": 3521149164,
+      "descTextMapHash": 3521149164,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -85,18 +79,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7273601",
-            "2"
-          ],
+          "param": ["7273601", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 727360101,
-      "npcId": [
-        13019
-      ],
+      "npcId": [13019],
       "performCfg": "QuestDialogue/WQ/Daoqi_72736/Q7273601",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72736,
@@ -109,18 +98,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7273603",
-            "2"
-          ],
+          "param": ["7273603", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 727360201,
-      "npcId": [
-        13019
-      ],
+      "npcId": [13019],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72736,

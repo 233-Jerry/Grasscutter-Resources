@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7014203,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7014203, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7014201,
-            0
-          ],
+          "param": [7014201, 0],
           "param_str": ""
         }
       ],
@@ -52,23 +43,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7014201,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7014201, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7014201,
-            0
-          ],
+          "param": [7014201, 0],
           "param_str": ""
         }
       ],
@@ -90,23 +72,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7014122,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7014122, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "13300859601",
           "count": 1
         }
@@ -120,10 +93,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133008596,2"
-          ],
+          "param": ["3", "133008596,2"],
           "param_str": ""
         }
       ]
@@ -136,18 +106,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7014202",
-            "2"
-          ],
+          "param": ["7014202", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 701420101,
-      "npcId": [
-        1005
-      ],
+      "npcId": [1005],
       "performCfg": "",
       "questId": 70142,
       "prePerformCfg": "",

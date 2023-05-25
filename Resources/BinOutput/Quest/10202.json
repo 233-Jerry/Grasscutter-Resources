@@ -5,9 +5,7 @@
   "titleTextMapHash": 3168828697,
   "descTextMapHash": 1226092263,
   "luaPath": "Actor/Quest/LQ10202",
-  "rewardIdList": [
-    110202
-  ],
+  "rewardIdList": [110202],
   "chapterId": 2009,
   "subQuests": [
     {
@@ -18,30 +16,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1020111,
-            3,
-            0
-          ],
+          "param": [1020111, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1020201,
-            0
-          ],
+          "param": [1020201, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1006"
-        ],
+        "param": ["1006"],
         "guideScene": 1004,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -50,15 +39,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1006,
-        10090,
-        10092
-      ],
+      "exclusiveNpcList": [1006, 10090, 10092],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        1012001
-      ]
+      "exclusivePlaceList": [1012001]
     },
     {
       "subId": 1020202,
@@ -69,45 +52,30 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1020111,
-            3,
-            0
-          ],
+          "param": [1020111, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_ROOM",
-          "param": [
-            1004,
-            0
-          ],
+          "param": [1004, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "QuestKnighthood"
-        ],
+        "param": ["QuestKnighthood"],
         "guideScene": 3
       },
       "isRewind": true,
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1006,
-        10090,
-        10092
-      ],
+      "exclusiveNpcList": [1006, 10090, 10092],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        1012001
-      ]
+      "exclusivePlaceList": [1012001]
     },
     {
       "subId": 1020203,
@@ -118,21 +86,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1020202,
-            3,
-            0
-          ],
+          "param": [1020202, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1020201,
-            0
-          ],
+          "param": [1020201, 0],
           "param_str": ""
         }
       ],
@@ -142,15 +103,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1006,
-        10090,
-        10092
-      ],
+      "exclusiveNpcList": [1006, 10090, 10092],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        1012001
-      ]
+      "exclusivePlaceList": [1012001]
     },
     {
       "subId": 1020204,
@@ -160,30 +115,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1020201,
-            3,
-            0
-          ],
+          "param": [1020201, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1020204,
-            0
-          ],
+          "param": [1020204, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q10202Door"
-        ],
+        "param": ["Q10202Door"],
         "guideScene": 1004,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -193,23 +139,15 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "20009",
-            "1"
-          ],
+          "param": ["20009", "1"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        10090,
-        10092
-      ],
+      "exclusiveNpcList": [10090, 10092],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        1012001
-      ]
+      "exclusivePlaceList": [1012001]
     }
   ],
   "talks": [
@@ -220,18 +158,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1020201",
-            "2"
-          ],
+          "param": ["1020201", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 102020101,
-      "npcId": [
-        1006
-      ],
+      "npcId": [1006],
       "performCfg": "QuestDialogue/LQ/Klee1_10202/Q1020201",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 10202,
@@ -244,18 +177,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1020204",
-            "2"
-          ],
+          "param": ["1020204", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 102020401,
-      "npcId": [
-        10092
-      ],
+      "npcId": [10092],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 10202,

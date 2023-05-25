@@ -4,9 +4,7 @@
   "titleTextMapHash": 2822337335,
   "descTextMapHash": 2026450582,
   "luaPath": "Actor/Quest/WQ72650",
-  "rewardIdList": [
-    172650
-  ],
+  "rewardIdList": [172650],
   "subQuests": [
     {
       "subId": 7265001,
@@ -16,33 +14,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            5034001,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [5034001, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7265001,
-            0
-          ],
+          "param": [7265001, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "30054",
-          "SELECT_NPC_NONE"
-        ],
+        "param": ["30054", "SELECT_NPC_NONE"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -52,9 +38,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        30054
-      ],
+      "exclusiveNpcList": [30054],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -66,18 +50,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7265001",
-            "2"
-          ],
+          "param": ["7265001", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 726500101,
-      "npcId": [
-        30054
-      ],
+      "npcId": [30054],
       "performCfg": "QuestDialogue/WQ/Daoqi_72650/Q7265001",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72650,

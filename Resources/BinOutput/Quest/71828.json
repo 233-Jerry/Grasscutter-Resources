@@ -5,9 +5,7 @@
   "descTextMapHash": 1340670214,
   "luaPath": "",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    171828
-  ],
+  "rewardIdList": [171828],
   "subQuests": [
     {
       "subId": 7182801,
@@ -18,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7181511,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7181511, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7181512,
-            0
-          ],
+          "param": [7181512, 0],
           "param_str": ""
         }
       ],

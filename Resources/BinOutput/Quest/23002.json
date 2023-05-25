@@ -4,149 +4,128 @@
   "titleTextMapHash": 3771243791,
   "descTextMapHash": 2895056166,
   "luaPath": "Actor/Quest/IQ23002",
-  "rewardIdList": [
-    0,
-    500155
-  ],
+  "rewardIdList": [0, 500155],
   "subQuests": [
     {
       "subId": 2300201,
       "mainId": 23002,
       "order": 1,
-      "failParent": 738582476,
+      "descTextMapHash": 738582476,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2300202,
       "mainId": 23002,
       "order": 2,
-      "failParent": 1277062172,
+      "descTextMapHash": 1277062172,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2300203,
       "mainId": 23002,
       "order": 3,
       "subIdSet": 1,
-      "failParent": 2937208204,
+      "descTextMapHash": 2937208204,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2300204,
       "mainId": 23002,
       "order": 4,
-      "failParent": 2219238060,
+      "descTextMapHash": 2219238060,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2300205,
       "mainId": 23002,
       "order": 6,
-      "failParent": 4198835228,
+      "descTextMapHash": 4198835228,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2300206,
       "mainId": 23002,
       "order": 5,
-      "failParent": 2279992180,
+      "descTextMapHash": 2279992180,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -158,26 +137,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2300201",
-            "2"
-          ],
+          "param": ["2300201", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            "23002",
-            "0"
-          ],
+          "param": ["23002", "0"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230020101,
-      "npcId": [
-        4024
-      ],
+      "npcId": [4024],
       "performCfg": "QuestDialogue/IQ/Xumi_23002/Q2300201",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23002,
@@ -185,10 +156,7 @@
       "finishExec": [
         {
           "type": "TALK_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "23002",
-            "1"
-          ],
+          "param": ["23002", "1"],
           "param_str": ""
         }
       ]
@@ -201,41 +169,28 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "2300201"
-          ],
+          "param": ["2300201"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2300202",
-            "2"
-          ],
+          "param": ["2300202", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2300203",
-            "2"
-          ],
+          "param": ["2300203", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2300204",
-            "2"
-          ],
+          "param": ["2300204", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230020201,
-      "npcId": [
-        4024
-      ],
+      "npcId": [4024],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23002,
@@ -249,26 +204,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2300205",
-            "2"
-          ],
+          "param": ["2300205", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ITEM_NUM_LESS_THAN",
-          "param": [
-            "101955",
-            "1"
-          ],
+          "param": ["101955", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230020301,
-      "npcId": [
-        4024
-      ],
+      "npcId": [4024],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23002,
@@ -282,34 +229,23 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2300206",
-            "2"
-          ],
+          "param": ["2300206", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_PACK_HAVE_ITEM",
-          "param": [
-            "101955",
-            "1"
-          ],
+          "param": ["101955", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_PACK_HAVE_ITEM",
-          "param": [
-            "101955",
-            "2"
-          ],
+          "param": ["101955", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230020401,
-      "npcId": [
-        4024
-      ],
+      "npcId": [4024],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23002,
@@ -323,26 +259,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2300201",
-            "2"
-          ],
+          "param": ["2300201", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            "23002",
-            "1"
-          ],
+          "param": ["23002", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230020501,
-      "npcId": [
-        4024
-      ],
+      "npcId": [4024],
       "performCfg": "QuestDialogue/IQ/Xumi_23002/Q2300205",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23002,

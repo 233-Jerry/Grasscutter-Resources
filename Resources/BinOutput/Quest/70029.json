@@ -4,9 +4,7 @@
   "titleTextMapHash": 1445670327,
   "descTextMapHash": 1485314318,
   "luaPath": "Actor/Quest/WQ70029",
-  "rewardIdList": [
-    170029
-  ],
+  "rewardIdList": [170029],
   "subQuests": [
     {
       "subId": 7002901,
@@ -16,23 +14,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            50490501,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [50490501, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7002901,
-            0
-          ],
+          "param": [7002901, 0],
           "param_str": ""
         }
       ],
@@ -40,9 +29,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30068"
-        ],
+        "param": ["30068"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -52,9 +39,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        30068
-      ],
+      "exclusiveNpcList": [30068],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -66,18 +51,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7002901",
-            "2"
-          ],
+          "param": ["7002901", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 700290101,
-      "npcId": [
-        30068
-      ],
+      "npcId": [30068],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 70029,

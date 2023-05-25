@@ -4,9 +4,7 @@
   "titleTextMapHash": 2771515823,
   "descTextMapHash": 939094334,
   "luaPath": "Actor/Quest/WQ72657",
-  "rewardIdList": [
-    172657
-  ],
+  "rewardIdList": [172657],
   "subQuests": [
     {
       "subId": 7265701,
@@ -17,43 +15,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_PLAYER_LEVEL_EQUAL_GREATER",
-          "param": [
-            25,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [25, 0, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            200710,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [200710, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7265701,
-            0
-          ],
+          "param": [7265701, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "3098"
-        ],
+        "param": ["3098"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START"
       },
@@ -61,9 +42,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        3098
-      ],
+      "exclusiveNpcList": [3098],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -75,41 +54,28 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7265701,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7265701, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7265702,
-            0
-          ],
+          "param": [7265702, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "3098"
-        ],
+        "param": ["3098"],
         "guideScene": 3
       },
       "finishParent": true,
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        3098
-      ],
+      "exclusiveNpcList": [3098],
       "exclusiveNpcPriority": 1100
     }
   ]

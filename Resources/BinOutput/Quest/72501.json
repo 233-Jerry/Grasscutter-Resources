@@ -4,55 +4,47 @@
   "titleTextMapHash": 1272381551,
   "descTextMapHash": 3696807094,
   "luaPath": "Actor/Quest/WQ72501",
-  "rewardIdList": [
-    172501
-  ],
+  "rewardIdList": [172501],
   "subQuests": [
     {
       "subId": 7250101,
       "mainId": 72501,
       "order": 1,
-      "failParent": 3745744292,
+      "descTextMapHash": 3745744292,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7250102,
       "mainId": 72501,
       "order": 2,
-      "failParent": 931860956,
+      "descTextMapHash": 931860956,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -63,18 +55,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7250102",
-            "2"
-          ],
+          "param": ["7250102", "2"],
           "param_str": ""
         }
       ],
       "priority": 10,
       "initDialog": 725010201,
-      "npcId": [
-        30160
-      ],
+      "npcId": [30160],
       "performCfg": "QuestDialogue/WQ/Inazuma_72501/Q7250102",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72501,

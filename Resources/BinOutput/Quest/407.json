@@ -14,30 +14,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            35724,
-            4,
-            0
-          ],
+          "param": [35724, 4, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            40702,
-            0
-          ],
+          "param": [40702, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1105"
-        ]
+        "param": ["1105"]
       },
       "isRewind": true,
       "finishExec": [],
@@ -52,11 +43,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40701,
-            3,
-            0
-          ],
+          "param": [40701, 3, 0],
           "param_str": ""
         }
       ],
@@ -64,35 +51,25 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_MATERIAL_WITH_SUBTYPE",
-          "param": [
-            9,
-            0
-          ],
+          "param": [9, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            40702,
-            0
-          ],
+          "param": [40702, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            40702
-          ],
+          "param": [40702],
           "param_str": ""
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1105"
-        ]
+        "param": ["1105"]
       },
       "finishExec": [],
       "failExec": [],
@@ -106,30 +83,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40702,
-            4,
-            0
-          ],
+          "param": [40702, 4, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            40704,
-            0
-          ],
+          "param": [40704, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1105"
-        ]
+        "param": ["1105"]
       },
       "finishExec": [],
       "failExec": [],
@@ -143,30 +111,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40702,
-            3,
-            0
-          ],
+          "param": [40702, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            40705,
-            0
-          ],
+          "param": [40705, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1105"
-        ]
+        "param": ["1105"]
       },
       "finishParent": true,
       "isRewind": true,
@@ -183,30 +142,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            40703,
-            3,
-            0
-          ],
+          "param": [40703, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            40705,
-            0
-          ],
+          "param": [40705, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            40705
-          ],
+          "param": [40705],
           "param_str": ""
         }
       ],
@@ -215,9 +165,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "40701"
-          ],
+          "param": ["40701"],
           "param_str": ""
         }
       ],

@@ -16,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            202102,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [202102, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            202401,
-            0
-          ],
+          "param": [202401, 0],
           "param_str": ""
         }
       ],
@@ -53,17 +44,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "202401",
-            "2"
-          ],
+          "param": ["202401", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 20240101,
-      "npcId": [
-        1034
-      ],
+      "npcId": [1034],
       "performCfg": "QuestDialogue/AQ/Inazuma2_2024/Q202401",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2024,

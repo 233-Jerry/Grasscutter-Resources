@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7105909,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7105909, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TIME_VAR_PASS_DAY",
-          "param": [
-            71059,
-            0
-          ],
+          "param": [71059, 0],
           "param_str": "1"
         }
       ],
@@ -41,18 +32,12 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "6",
-            "166001099,1"
-          ],
+          "param": ["6", "166001099,1"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "6",
-            "166001133,2"
-          ],
+          "param": ["6", "166001133,2"],
           "param_str": ""
         }
       ],
@@ -68,23 +53,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7106001,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7106001, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7106001,
-            0
-          ],
+          "param": [7106001, 0],
           "param_str": ""
         }
       ],
@@ -94,17 +70,12 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "6",
-            "166001133"
-          ],
+          "param": ["6", "166001133"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_INIT_TIME_VAR",
-          "param": [
-            "0"
-          ],
+          "param": ["0"],
           "param_str": ""
         }
       ],
@@ -112,10 +83,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": [
-            "6",
-            "166001529"
-          ],
+          "param": ["6", "166001529"],
           "param_str": ""
         }
       ]
@@ -129,23 +97,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7106002,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7106002, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TIME_VAR_GT_EQ",
-          "param": [
-            71060,
-            0
-          ],
+          "param": [71060, 0],
           "param_str": "2"
         }
       ],
@@ -156,10 +115,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "6",
-            "166001133,1"
-          ],
+          "param": ["6", "166001133,1"],
           "param_str": ""
         }
       ],
@@ -176,26 +132,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7106001",
-            "2"
-          ],
+          "param": ["7106001", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7226618",
-            "3"
-          ],
+          "param": ["7226618", "3"],
           "param_str": ""
         }
       ],
       "priority": 6,
       "initDialog": 710591101,
-      "npcId": [
-        20535
-      ],
+      "npcId": [20535],
       "performCfg": "QuestDialogue/WQ/Liyue_71059/Q7105911",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71060,
@@ -210,34 +158,23 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7106001",
-            "2"
-          ],
+          "param": ["7106001", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7226618",
-            "2"
-          ],
+          "param": ["7226618", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
-          "param": [
-            "7226618",
-            "1"
-          ],
+          "param": ["7226618", "1"],
           "param_str": ""
         }
       ],
       "priority": 6,
       "initDialog": 710591201,
-      "npcId": [
-        20535
-      ],
+      "npcId": [20535],
       "performCfg": "QuestDialogue/WQ/Liyue_71059/Q7105912",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71060,

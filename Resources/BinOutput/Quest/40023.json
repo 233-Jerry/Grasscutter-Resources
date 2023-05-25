@@ -4,9 +4,7 @@
   "titleTextMapHash": 2136626751,
   "descTextMapHash": 454140278,
   "luaPath": "Actor/Quest/EQ40023",
-  "rewardIdList": [
-    140023
-  ],
+  "rewardIdList": [140023],
   "chapterId": 10041,
   "subQuests": [
     {
@@ -17,32 +15,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            2008004,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [2008004, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            4002301,
-            0
-          ],
+          "param": [4002301, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "30067"
-        ],
+        "param": ["30067"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -52,18 +39,13 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "40023",
-            "1"
-          ],
+          "param": ["40023", "1"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        30067
-      ],
+      "exclusiveNpcList": [30067],
       "exclusiveNpcPriority": 1050
     },
     {
@@ -75,13 +57,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -102,18 +78,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4002301",
-            "2"
-          ],
+          "param": ["4002301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400230101,
-      "npcId": [
-        30067
-      ],
+      "npcId": [30067],
       "performCfg": "QuestDialogue/EQ/OnmyoMaze_40023/Q4002301",
       "questId": 40023,
       "prePerformCfg": ""

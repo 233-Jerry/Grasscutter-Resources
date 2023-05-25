@@ -6,55 +6,49 @@
   "descTextMapHash": 3652505414,
   "luaPath": "Actor/Quest/WQ73224",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    173224
-  ],
+  "rewardIdList": [173224],
   "subQuests": [
     {
       "subId": 7322401,
       "mainId": 73224,
       "order": 1,
-      "failParent": 1246699100,
+      "descTextMapHash": 1246699100,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7322402,
       "mainId": 73224,
       "order": 2,
-      "failParent": 3727877716,
+      "descTextMapHash": 3727877716,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ]
 }

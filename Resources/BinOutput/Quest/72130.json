@@ -4,9 +4,7 @@
   "titleTextMapHash": 3334183007,
   "descTextMapHash": 744646318,
   "luaPath": "Actor/Quest/WQ72130",
-  "rewardIdList": [
-    172130
-  ],
+  "rewardIdList": [172130],
   "chapterId": 10037,
   "subQuests": [
     {
@@ -18,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            10007,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [10007, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7213301,
-            0
-          ],
+          "param": [7213301, 0],
           "param_str": ""
         }
       ],
@@ -53,44 +42,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7213004,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7213004, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7212911,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7212911, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7213002,
-            0
-          ],
+          "param": [7213002, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "20235",
-          "SELECT_NPC_NONE"
-        ]
+        "param": ["20235", "SELECT_NPC_NONE"]
       },
       "isRewind": true,
       "finishExec": [],
@@ -105,23 +76,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7213005,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7213005, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [
-            7213006,
-            0
-          ],
+          "param": [7213006, 0],
           "param_str": ""
         }
       ],
@@ -129,9 +91,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "20235"
-        ],
+        "param": ["20235"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -141,42 +101,27 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133212034"
-          ],
+          "param": ["3", "133212034"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3009",
-            "0"
-          ],
+          "param": ["3009", "0"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3136",
-            "0"
-          ],
+          "param": ["3136", "0"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3141",
-            "0"
-          ],
+          "param": ["3141", "0"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_SET_WEATHER_GADGET",
-          "param": [
-            "3181",
-            "0"
-          ],
+          "param": ["3181", "0"],
           "param_str": ""
         }
       ],
@@ -184,9 +129,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
-          "param": [
-            "7213006"
-          ],
+          "param": ["7213006"],
           "param_str": ""
         }
       ]
@@ -200,13 +143,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7213005,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7213005, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -218,10 +155,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133212135"
-          ],
+          "param": ["3", "133212135"],
           "param_str": ""
         }
       ]
@@ -235,13 +169,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7213005,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7213005, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -253,10 +181,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133212292"
-          ],
+          "param": ["3", "133212292"],
           "param_str": ""
         }
       ]
@@ -270,23 +195,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7213005,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7213005, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7213009,
-            0
-          ],
+          "param": [7213009, 0],
           "param_str": ""
         }
       ],
@@ -295,10 +211,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133212034"
-          ],
+          "param": ["3", "133212034"],
           "param_str": ""
         }
       ],
@@ -313,18 +226,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213004",
-            "2"
-          ],
+          "param": ["7213004", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721300101,
-      "npcId": [
-        20253
-      ],
+      "npcId": [20253],
       "performCfg": "QuestDialogue/WQ/Daoqi_72130/Q7213001",
       "questId": 72130,
       "prePerformCfg": "",
@@ -336,18 +244,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213005",
-            "2"
-          ],
+          "param": ["7213005", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721300201,
-      "npcId": [
-        20235
-      ],
+      "npcId": [20235],
       "performCfg": "QuestDialogue/WQ/Daoqi_72130/Q7213002",
       "questId": 72130,
       "prePerformCfg": "",
@@ -359,18 +262,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "99902",
-            "3"
-          ],
+          "param": ["99902", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721300301,
-      "npcId": [
-        20235
-      ],
+      "npcId": [20235],
       "performCfg": "",
       "questId": 72130,
       "prePerformCfg": "",
@@ -383,25 +281,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "7213006"
-          ],
+          "param": ["7213006"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213006",
-            "2"
-          ],
+          "param": ["7213006", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721300401,
-      "npcId": [
-        20256
-      ],
+      "npcId": [20256],
       "performCfg": "",
       "questId": 72130,
       "prePerformCfg": "",

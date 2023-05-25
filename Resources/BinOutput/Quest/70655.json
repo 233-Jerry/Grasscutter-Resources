@@ -4,9 +4,7 @@
   "titleTextMapHash": 3593042879,
   "descTextMapHash": 1508105134,
   "luaPath": "Actor/Quest/WQ70655",
-  "rewardIdList": [
-    170655
-  ],
+  "rewardIdList": [170655],
   "subQuests": [
     {
       "subId": 7065501,
@@ -17,33 +15,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            5019008,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [5019008, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7065501,
-            0
-          ],
+          "param": [7065501, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            7065501,
-            0
-          ],
+          "param": [7065501, 0],
           "param_str": ""
         }
       ],
@@ -60,13 +46,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7065501,
-            4,
-            0,
-            0,
-            0
-          ],
+          "param": [7065501, 4, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -74,28 +54,20 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            7065502,
-            0
-          ],
+          "param": [7065502, 0],
           "param_str": "",
           "count": 1
         },
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7065502,
-            0
-          ],
+          "param": [7065502, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1563"
-        ],
+        "param": ["1563"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -114,43 +86,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7065501,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7065501, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7065502,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7065502, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7065501,
-            0
-          ],
+          "param": [7065501, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1563"
-        ],
+        "param": ["1563"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"

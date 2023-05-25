@@ -5,12 +5,8 @@
   "titleTextMapHash": 1200452703,
   "descTextMapHash": 2313028750,
   "luaPath": "Actor/Quest/LQ11020",
-  "suggestTrackMainQuestList": [
-    11021
-  ],
-  "rewardIdList": [
-    111020
-  ],
+  "suggestTrackMainQuestList": [11021],
+  "rewardIdList": [111020],
   "chapterId": 2014,
   "subQuests": [
     {
@@ -22,44 +18,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            10006,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [10006, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_PERSONAL_LINE_UNLOCK",
-          "param": [
-            6,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [6, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1102001,
-            0
-          ],
+          "param": [1102001, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q11020ZL1",
-          "25"
-        ],
+        "param": ["Q11020ZL1", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -68,13 +46,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        10308,
-        10309,
-        10302,
-        10303,
-        10232
-      ],
+      "exclusiveNpcList": [10308, 10309, 10302, 10303, 10232],
       "exclusiveNpcPriority": 1010
     },
     {
@@ -85,32 +57,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1102001,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1102001, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1102002,
-            0
-          ],
+          "param": [1102002, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "10232"
-        ],
+        "param": ["10232"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -119,13 +80,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        10308,
-        10309,
-        10302,
-        10303,
-        10232
-      ],
+      "exclusiveNpcList": [10308, 10309, 10302, 10303, 10232],
       "exclusiveNpcPriority": 1010
     },
     {
@@ -136,32 +91,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1102002,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1102002, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1102003,
-            0
-          ],
+          "param": [1102003, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "10303"
-        ],
+        "param": ["10303"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -171,13 +115,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        10308,
-        10309,
-        10302,
-        10303,
-        10232
-      ],
+      "exclusiveNpcList": [10308, 10309, 10302, 10303, 10232],
       "exclusiveNpcPriority": 1010
     }
   ],
@@ -189,17 +127,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1102002",
-            "2"
-          ],
+          "param": ["1102002", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 110200201,
-      "npcId": [
-        10232
-      ],
+      "npcId": [10232],
       "performCfg": "QuestDialogue/LQ/Zhongli1_11020/Q1102002",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 11020,
@@ -212,17 +145,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1102003",
-            "2"
-          ],
+          "param": ["1102003", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 110200301,
-      "npcId": [
-        10303
-      ],
+      "npcId": [10303],
       "performCfg": "QuestDialogue/LQ/Zhongli1_11020/Q1102003",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 11020,
@@ -235,17 +163,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1102003",
-            "2"
-          ],
+          "param": ["1102003", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 110200251,
-      "npcId": [
-        10309
-      ],
+      "npcId": [10309],
       "performCfg": "QuestDialogue/LQ/Zhongli1_11020/Q1102004",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 11020,
@@ -258,17 +181,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1102003",
-            "2"
-          ],
+          "param": ["1102003", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 110200251,
-      "npcId": [
-        10308
-      ],
+      "npcId": [10308],
       "performCfg": "QuestDialogue/LQ/Zhongli1_11020/Q1102004",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 11020,

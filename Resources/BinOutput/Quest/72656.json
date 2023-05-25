@@ -14,24 +14,12 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            50370101,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [50370101, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201310,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201310, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -39,18 +27,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7265601,
-            0
-          ],
+          "param": [7265601, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7265601,
-            0
-          ],
+          "param": [7265601, 0],
           "param_str": ""
         }
       ],
@@ -58,10 +40,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30064",
-          "SELECT_NPC_NONE"
-        ],
+        "param": ["30064", "SELECT_NPC_NONE"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -70,9 +49,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        30064
-      ],
+      "exclusiveNpcList": [30064],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -83,23 +60,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7265601,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7265601, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_DUNGEON",
-          "param": [
-            7400,
-            0
-          ],
+          "param": [7400, 0],
           "param_str": ""
         }
       ],
@@ -107,10 +75,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30064",
-          "SELECT_NPC_NONE"
-        ],
+        "param": ["30064", "SELECT_NPC_NONE"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -120,9 +85,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        30064
-      ],
+      "exclusiveNpcList": [30064],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -135,26 +98,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7265601",
-            "2"
-          ],
+          "param": ["7265601", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7265602",
-            "2"
-          ],
+          "param": ["7265602", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 726560101,
-      "npcId": [
-        30064
-      ],
+      "npcId": [30064],
       "performCfg": "QuestDialogue/WQ/Jiguanqitan_72656/Q7265601",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72656,

@@ -4,55 +4,47 @@
   "titleTextMapHash": 2491826087,
   "descTextMapHash": 791246030,
   "luaPath": "Actor/Quest/WQ73229",
-  "rewardIdList": [
-    173229
-  ],
+  "rewardIdList": [173229],
   "subQuests": [
     {
       "subId": 7322901,
       "mainId": 73229,
       "order": 1,
-      "failParent": 61016108,
+      "descTextMapHash": 61016108,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7322902,
       "mainId": 73229,
       "order": 2,
-      "failParent": 3844860772,
+      "descTextMapHash": 3844860772,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ]
 }

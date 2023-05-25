@@ -5,9 +5,7 @@
   "descTextMapHash": 213008543,
   "luaPath": "",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    100399
-  ],
+  "rewardIdList": [100399],
   "chapterId": 1003,
   "subQuests": [
     {
@@ -19,39 +17,28 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            39812,
-            3,
-            0
-          ],
+          "param": [39812, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            39811,
-            0
-          ],
+          "param": [39811, 0],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            398151
-          ],
+          "param": [398151],
           "param_str": "",
           "count": 1
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1483"
-        ],
+        "param": ["1483"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"

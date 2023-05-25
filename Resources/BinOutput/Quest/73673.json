@@ -4,56 +4,48 @@
   "titleTextMapHash": 643681247,
   "descTextMapHash": 4073812534,
   "luaPath": "Actor/Quest/WQ73673",
-  "rewardIdList": [
-    173673
-  ],
+  "rewardIdList": [173673],
   "subQuests": [
     {
       "subId": 7367301,
       "mainId": 73673,
       "order": 1,
-      "failParent": 97835636,
+      "descTextMapHash": 97835636,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7367302,
       "mainId": 73673,
       "order": 2,
-      "failParent": 3351159756,
+      "descTextMapHash": 3351159756,
       "banType": "BAN_GROUP_TRANSPORT_MAP",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -64,18 +56,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7367301",
-            "2"
-          ],
+          "param": ["7367301", "2"],
           "param_str": ""
         }
       ],
       "priority": 8,
       "initDialog": 736730101,
-      "npcId": [
-        4070
-      ],
+      "npcId": [4070],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73673,
@@ -88,18 +75,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7367302",
-            "2"
-          ],
+          "param": ["7367302", "2"],
           "param_str": ""
         }
       ],
       "priority": 8,
       "initDialog": 736730201,
-      "npcId": [
-        4070
-      ],
+      "npcId": [4070],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 73673,

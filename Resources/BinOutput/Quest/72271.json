@@ -5,9 +5,7 @@
   "descTextMapHash": 2110525118,
   "luaPath": "Actor/Quest/WQ72271",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    172271
-  ],
+  "rewardIdList": [172271],
   "subQuests": [
     {
       "subId": 7227101,
@@ -18,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7223918,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7223918, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7227101,
-            0
-          ],
+          "param": [7227101, 0],
           "param_str": ""
         }
       ],
@@ -42,18 +31,12 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7224301,
-            3
-          ],
+          "param": [7224301, 3],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7227201,
-            3
-          ],
+          "param": [7227201, 3],
           "param_str": ""
         }
       ],
@@ -62,9 +45,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_ALL_SPECIFIC_PACK_ITEM",
-          "param": [
-            "100945"
-          ],
+          "param": ["100945"],
           "param_str": ""
         }
       ],
@@ -80,27 +61,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7227101",
-            "2"
-          ],
+          "param": ["7227101", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": [
-            "1",
-            "0",
-            "72271"
-          ],
+          "param": ["1", "0", "72271"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 722710102,
-      "npcId": [
-        2023
-      ],
+      "npcId": [2023],
       "performCfg": "",
       "questId": 72271,
       "dontBlockDaily": true,
@@ -113,27 +85,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7227101",
-            "2"
-          ],
+          "param": ["7227101", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_VAR_EQUAL",
-          "param": [
-            "1",
-            "1",
-            "72271"
-          ],
+          "param": ["1", "1", "72271"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 722710201,
-      "npcId": [
-        2023
-      ],
+      "npcId": [2023],
       "performCfg": "",
       "questId": 72271,
       "dontBlockDaily": true,

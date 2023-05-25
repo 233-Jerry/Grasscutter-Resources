@@ -17,23 +17,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1201812,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1201812, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1201901,
-            0
-          ],
+          "param": [1201901, 0],
           "param_str": ""
         }
       ],
@@ -53,18 +44,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1201901",
-            "2"
-          ],
+          "param": ["1201901", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 120190101,
-      "npcId": [
-        1034
-      ],
+      "npcId": [1034],
       "performCfg": "QuestDialogue/LQ/Shougun1_12019/Q1201901",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 12019,

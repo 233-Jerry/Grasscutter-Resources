@@ -4,9 +4,7 @@
   "titleTextMapHash": 4155151279,
   "descTextMapHash": 3266313670,
   "luaPath": "Actor/Quest/WQ72133",
-  "rewardIdList": [
-    172133
-  ],
+  "rewardIdList": [172133],
   "chapterId": 10037,
   "subQuests": [
     {
@@ -18,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            10007,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [10007, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7213301,
-            0
-          ],
+          "param": [7213301, 0],
           "param_str": ""
         }
       ],
@@ -47,9 +36,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        20248
-      ],
+      "exclusiveNpcList": [20248],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -60,18 +47,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7213301",
-            "2"
-          ],
+          "param": ["7213301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 721330101,
-      "npcId": [
-        20248
-      ],
+      "npcId": [20248],
       "performCfg": "",
       "questId": 72133,
       "prePerformCfg": "",

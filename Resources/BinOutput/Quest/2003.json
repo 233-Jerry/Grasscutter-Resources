@@ -4,12 +4,8 @@
   "titleTextMapHash": 55039543,
   "descTextMapHash": 2497040806,
   "luaPath": "Actor/Quest/AQ2003",
-  "suggestTrackMainQuestList": [
-    2004
-  ],
-  "rewardIdList": [
-    102003
-  ],
+  "suggestTrackMainQuestList": [2004],
+  "rewardIdList": [102003],
   "chapterId": 1202,
   "subQuests": [
     {
@@ -20,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            200305,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [200305, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            200301,
-            0
-          ],
+          "param": [200301, 0],
           "param_str": ""
         }
       ],
@@ -44,9 +31,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q2003tuoma"
-        ],
+        "param": ["Q2003tuoma"],
         "guideScene": 1060,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -55,11 +40,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1033,
-        3009,
-        3010
-      ],
+      "exclusiveNpcList": [1033, 3009, 3010],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -70,23 +51,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            200301,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [200301, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            200302,
-            0
-          ],
+          "param": [200302, 0],
           "param_str": ""
         }
       ],
@@ -94,9 +66,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q200302paimon"
-        ],
+        "param": ["Q200302paimon"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -105,9 +75,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1033
-      ],
+      "exclusiveNpcList": [1033],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -118,23 +86,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            200303,
-            0
-          ],
+          "param": [200303, 0],
           "param_str": ""
         }
       ],
@@ -142,9 +101,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "12021"
-        ],
+        "param": ["12021"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -153,9 +110,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        12021
-      ],
+      "exclusiveNpcList": [12021],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -166,23 +121,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            200302,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [200302, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            200304,
-            0
-          ],
+          "param": [200304, 0],
           "param_str": ""
         }
       ],
@@ -190,9 +136,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q2004tuoma"
-        ],
+        "param": ["Q2004tuoma"],
         "guideScene": 1061,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -202,9 +146,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1013
-      ],
+      "exclusiveNpcList": [1013],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -215,23 +157,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201310,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201310, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            200305,
-            0
-          ],
+          "param": [200305, 0],
           "param_str": ""
         }
       ],
@@ -239,9 +172,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "3010"
-        ],
+        "param": ["3010"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -250,9 +181,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        3010
-      ],
+      "exclusiveNpcList": [3010],
       "exclusiveNpcPriority": 1000
     }
   ],
@@ -264,19 +193,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200301",
-            "2"
-          ],
+          "param": ["200301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20030101,
-      "npcId": [
-        1005,
-        1033
-      ],
+      "npcId": [1005, 1033],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2003/Q200301",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2003,
@@ -289,18 +212,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200302",
-            "2"
-          ],
+          "param": ["200302", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20030201,
-      "npcId": [
-        1033
-      ],
+      "npcId": [1033],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2003/Q200302",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2003,
@@ -313,18 +231,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200303",
-            "2"
-          ],
+          "param": ["200303", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20030301,
-      "npcId": [
-        12021
-      ],
+      "npcId": [12021],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2003/Q200303",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2003,
@@ -337,18 +250,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200304",
-            "2"
-          ],
+          "param": ["200304", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20030401,
-      "npcId": [
-        1013
-      ],
+      "npcId": [1013],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2003/Q200304",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2003,
@@ -361,19 +269,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200305",
-            "2"
-          ],
+          "param": ["200305", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20030501,
-      "npcId": [
-        3010,
-        1005
-      ],
+      "npcId": [3010, 1005],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2003/Q200305",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2003,
@@ -387,18 +289,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200304",
-            "3"
-          ],
+          "param": ["200304", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20030601,
-      "npcId": [
-        1033
-      ],
+      "npcId": [1033],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2003/Q200306",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2003,
@@ -414,26 +311,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200305",
-            "3"
-          ],
+          "param": ["200305", "3"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "200301",
-            "2"
-          ],
+          "param": ["200301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20030701,
-      "npcId": [
-        3010
-      ],
+      "npcId": [3010],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2003/Q200307",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2003,
@@ -446,35 +335,23 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003002",
-            "1"
-          ],
+          "param": ["2003", "2003002", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4141211",
-            "2"
-          ],
+          "param": ["4141211", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
-          "param": [
-            "4141211",
-            "1"
-          ],
+          "param": ["4141211", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414143201,
-      "npcId": [
-        1607
-      ],
+      "npcId": [1607],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -487,35 +364,23 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003002",
-            "1"
-          ],
+          "param": ["2003", "2003002", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4141211",
-            "2"
-          ],
+          "param": ["4141211", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
-          "param": [
-            "4141211",
-            "1"
-          ],
+          "param": ["4141211", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414143301,
-      "npcId": [
-        1602
-      ],
+      "npcId": [1602],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -528,35 +393,23 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003002",
-            "1"
-          ],
+          "param": ["2003", "2003002", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4141211",
-            "2"
-          ],
+          "param": ["4141211", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_QUEST_NOT_RECEIVE",
-          "param": [
-            "4141211",
-            "1"
-          ],
+          "param": ["4141211", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414143401,
-      "npcId": [
-        1605
-      ],
+      "npcId": [1605],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -568,19 +421,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414143501,
-      "npcId": [
-        30047
-      ],
+      "npcId": [30047],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -592,19 +439,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414143601,
-      "npcId": [
-        30047
-      ],
+      "npcId": [30047],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -616,19 +457,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414143701,
-      "npcId": [
-        30047
-      ],
+      "npcId": [30047],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -641,24 +476,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141437,
-        4141436,
-        4141435
-      ],
+      "nextTalks": [4141437, 4141436, 4141435],
       "initDialog": 414143801,
-      "npcId": [
-        30047
-      ],
+      "npcId": [30047],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -670,19 +495,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414143901,
-      "npcId": [
-        30046
-      ],
+      "npcId": [30046],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -694,19 +513,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414144001,
-      "npcId": [
-        30046
-      ],
+      "npcId": [30046],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -719,23 +532,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141440,
-        4141439
-      ],
+      "nextTalks": [4141440, 4141439],
       "initDialog": 414144101,
-      "npcId": [
-        30046
-      ],
+      "npcId": [30046],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -748,22 +552,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7092601
-      ],
+      "nextTalks": [7092601],
       "initDialog": 414144201,
-      "npcId": [
-        1553
-      ],
+      "npcId": [1553],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -776,19 +572,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414144301,
-      "npcId": [
-        1591
-      ],
+      "npcId": [1591],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -801,22 +591,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        6158902
-      ],
+      "nextTalks": [6158902],
       "initDialog": 414144401,
-      "npcId": [
-        1589
-      ],
+      "npcId": [1589],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -828,19 +610,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414144501,
-      "npcId": [
-        1555
-      ],
+      "npcId": [1555],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -852,19 +628,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414144601,
-      "npcId": [
-        1555
-      ],
+      "npcId": [1555],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -876,19 +646,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414144701,
-      "npcId": [
-        1555
-      ],
+      "npcId": [1555],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -901,25 +665,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141447,
-        4141446,
-        6155502,
-        4141445
-      ],
+      "nextTalks": [4141447, 4141446, 6155502, 4141445],
       "initDialog": 414144801,
-      "npcId": [
-        1555
-      ],
+      "npcId": [1555],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -932,19 +685,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414144901,
-      "npcId": [
-        1653
-      ],
+      "npcId": [1653],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -958,29 +705,19 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        6154502
-      ],
+      "nextTalks": [6154502],
       "initDialog": 414145001,
-      "npcId": [
-        1545
-      ],
+      "npcId": [1545],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -992,19 +729,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414145101,
-      "npcId": [
-        1539
-      ],
+      "npcId": [1539],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1016,19 +747,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414145201,
-      "npcId": [
-        1539
-      ],
+      "npcId": [1539],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1041,24 +766,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141452,
-        6153902,
-        4141451
-      ],
+      "nextTalks": [4141452, 6153902, 4141451],
       "initDialog": 414145301,
-      "npcId": [
-        1539
-      ],
+      "npcId": [1539],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1071,22 +786,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        6152302
-      ],
+      "nextTalks": [6152302],
       "initDialog": 414145401,
-      "npcId": [
-        1523
-      ],
+      "npcId": [1523],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1099,22 +806,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7070101
-      ],
+      "nextTalks": [7070101],
       "initDialog": 414145501,
-      "npcId": [
-        1521
-      ],
+      "npcId": [1521],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1126,19 +825,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414145601,
-      "npcId": [
-        1602
-      ],
+      "npcId": [1602],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1150,19 +843,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414145701,
-      "npcId": [
-        1602
-      ],
+      "npcId": [1602],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1174,19 +861,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414145801,
-      "npcId": [
-        1602
-      ],
+      "npcId": [1602],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1199,25 +880,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 4,
-      "nextTalks": [
-        4141433,
-        4141458,
-        4141457,
-        4141456
-      ],
+      "nextTalks": [4141433, 4141458, 4141457, 4141456],
       "initDialog": 414145901,
-      "npcId": [
-        1602
-      ],
+      "npcId": [1602],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1229,19 +899,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146001,
-      "npcId": [
-        1431
-      ],
+      "npcId": [1431],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1253,19 +917,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146101,
-      "npcId": [
-        1431
-      ],
+      "npcId": [1431],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1278,24 +936,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141461,
-        6143107,
-        4141460
-      ],
+      "nextTalks": [4141461, 6143107, 4141460],
       "initDialog": 414146201,
-      "npcId": [
-        1431
-      ],
+      "npcId": [1431],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1309,27 +957,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "0"
-          ],
+          "param": ["0"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146301,
-      "npcId": [
-        1609,
-        1610
-      ],
+      "npcId": [1609, 1610],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1342,26 +981,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146401,
-      "npcId": [
-        1607
-      ],
+      "npcId": [1607],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1374,26 +1005,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146501,
-      "npcId": [
-        1607
-      ],
+      "npcId": [1607],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1407,31 +1030,19 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 4,
-      "nextTalks": [
-        4141432,
-        4141465,
-        4141464
-      ],
+      "nextTalks": [4141432, 4141465, 4141464],
       "initDialog": 414146601,
-      "npcId": [
-        1607
-      ],
+      "npcId": [1607],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1443,19 +1054,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146701,
-      "npcId": [
-        1519
-      ],
+      "npcId": [1519],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1467,19 +1072,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146801,
-      "npcId": [
-        1519
-      ],
+      "npcId": [1519],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1491,19 +1090,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414146901,
-      "npcId": [
-        1519
-      ],
+      "npcId": [1519],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1516,24 +1109,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141469,
-        4141468,
-        4141467
-      ],
+      "nextTalks": [4141469, 4141468, 4141467],
       "initDialog": 414147001,
-      "npcId": [
-        1519
-      ],
+      "npcId": [1519],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1546,23 +1129,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        6142901,
-        6143001
-      ],
+      "nextTalks": [6142901, 6143001],
       "initDialog": 414147101,
-      "npcId": [
-        1430
-      ],
+      "npcId": [1430],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1575,23 +1149,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        6142901,
-        6143001
-      ],
+      "nextTalks": [6142901, 6143001],
       "initDialog": 414147201,
-      "npcId": [
-        1429
-      ],
+      "npcId": [1429],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1604,26 +1169,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414147301,
-      "npcId": [
-        1409
-      ],
+      "npcId": [1409],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1636,26 +1193,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414147401,
-      "npcId": [
-        1409
-      ],
+      "npcId": [1409],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1668,26 +1217,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414147501,
-      "npcId": [
-        1409
-      ],
+      "npcId": [1409],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1701,32 +1242,19 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141475,
-        4141474,
-        40215,
-        4141473
-      ],
+      "nextTalks": [4141475, 4141474, 40215, 4141473],
       "initDialog": 414147601,
-      "npcId": [
-        1409
-      ],
+      "npcId": [1409],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1738,19 +1266,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414147701,
-      "npcId": [
-        1439
-      ],
+      "npcId": [1439],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1762,19 +1284,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414147801,
-      "npcId": [
-        1439
-      ],
+      "npcId": [1439],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1787,23 +1303,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141478,
-        4141477
-      ],
+      "nextTalks": [4141478, 4141477],
       "initDialog": 414147901,
-      "npcId": [
-        1439
-      ],
+      "npcId": [1439],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1815,19 +1322,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148001,
-      "npcId": [
-        1606
-      ],
+      "npcId": [1606],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1839,19 +1340,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148101,
-      "npcId": [
-        1606
-      ],
+      "npcId": [1606],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1864,23 +1359,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141481,
-        4141480
-      ],
+      "nextTalks": [4141481, 4141480],
       "initDialog": 414148201,
-      "npcId": [
-        1606
-      ],
+      "npcId": [1606],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1893,26 +1379,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148301,
-      "npcId": [
-        1603
-      ],
+      "npcId": [1603],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1925,26 +1403,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148401,
-      "npcId": [
-        1603
-      ],
+      "npcId": [1603],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1958,30 +1428,19 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141484,
-        4141483
-      ],
+      "nextTalks": [4141484, 4141483],
       "initDialog": 414148501,
-      "npcId": [
-        1603
-      ],
+      "npcId": [1603],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -1994,19 +1453,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148601,
-      "npcId": [
-        1427
-      ],
+      "npcId": [1427],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2018,19 +1471,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148701,
-      "npcId": [
-        1425
-      ],
+      "npcId": [1425],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2042,19 +1489,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148801,
-      "npcId": [
-        1425
-      ],
+      "npcId": [1425],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2066,19 +1507,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414148901,
-      "npcId": [
-        1425
-      ],
+      "npcId": [1425],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2091,34 +1526,17 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "nextTalks": [
-        1010061,
-        46410,
-        2074004,
-        2074005,
-        2074006,
-        2074007,
-        7081008,
-        7081011,
-        7081012,
-        4141489,
-        4141488,
-        41710,
-        4141487
+        1010061, 46410, 2074004, 2074005, 2074006, 2074007, 7081008, 7081011,
+        7081012, 4141489, 4141488, 41710, 4141487
       ],
       "initDialog": 414149001,
-      "npcId": [
-        1425
-      ],
+      "npcId": [1425],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2130,19 +1548,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414149101,
-      "npcId": [
-        1638
-      ],
+      "npcId": [1638],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2154,19 +1566,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414149201,
-      "npcId": [
-        1638
-      ],
+      "npcId": [1638],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2178,19 +1584,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414149301,
-      "npcId": [
-        1638
-      ],
+      "npcId": [1638],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2203,24 +1603,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        4141493,
-        4141492,
-        4141491
-      ],
+      "nextTalks": [4141493, 4141492, 4141491],
       "initDialog": 414149401,
-      "npcId": [
-        1638
-      ],
+      "npcId": [1638],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2233,26 +1623,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "0"
-          ],
+          "param": ["0"],
           "param_str": ""
         }
       ],
       "priority": 1,
       "initDialog": 414149501,
-      "npcId": [
-        1404
-      ],
+      "npcId": [1404],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2265,26 +1647,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "0"
-          ],
+          "param": ["0"],
           "param_str": ""
         }
       ],
       "priority": 1,
       "initDialog": 414149601,
-      "npcId": [
-        1404
-      ],
+      "npcId": [1404],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2297,26 +1671,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "0"
-          ],
+          "param": ["0"],
           "param_str": ""
         }
       ],
       "priority": 1,
       "initDialog": 414149701,
-      "npcId": [
-        1404
-      ],
+      "npcId": [1404],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2330,31 +1696,19 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "0"
-          ],
+          "param": ["0"],
           "param_str": ""
         }
       ],
       "priority": 4,
-      "nextTalks": [
-        4141497,
-        4141496,
-        4141495
-      ],
+      "nextTalks": [4141497, 4141496, 4141495],
       "initDialog": 414149801,
-      "npcId": [
-        1404
-      ],
+      "npcId": [1404],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,
@@ -2368,27 +1722,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2003",
-            "2003000",
-            "1"
-          ],
+          "param": ["2003", "2003000", "1"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_IS_DAYTIME",
-          "param": [
-            "1"
-          ],
+          "param": ["1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 414149901,
-      "npcId": [
-        1401,
-        1403
-      ],
+      "npcId": [1401, 1403],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2003,

@@ -15,24 +15,12 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            200808,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [200808, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_END",
-          "param": [
-            2012001,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [2012001, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -40,10 +28,7 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_ANY_TALK",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "202201,202202,202203,202204"
         }
       ],
@@ -51,27 +36,18 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            202201,
-            0
-          ],
+          "param": [202201, 0],
           "param_str": "",
           "count": 1
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            202101,
-            3
-          ],
+          "param": [202101, 3],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            202102,
-            3
-          ],
+          "param": [202102, 3],
           "param_str": ""
         }
       ],
@@ -81,20 +57,8 @@
       "failExec": [],
       "beginExec": [],
       "exclusiveNpcList": [
-        12091,
-        12092,
-        12093,
-        12094,
-        20457,
-        20458,
-        20459,
-        20460,
-        20469,
-        20470,
-        20471,
-        20472,
-        20473,
-        20474
+        12091, 12092, 12093, 12094, 20457, 20458, 20459, 20460, 20469, 20470,
+        20471, 20472, 20473, 20474
       ],
       "exclusiveNpcPriority": 1000
     },
@@ -107,23 +71,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            202201,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [202201, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            202202,
-            0
-          ],
+          "param": [202202, 0],
           "param_str": ""
         }
       ],
@@ -133,9 +88,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "202201"
-          ],
+          "param": ["202201"],
           "param_str": ""
         }
       ],
@@ -151,23 +104,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            202201,
-            4,
-            0,
-            0,
-            0
-          ],
+          "param": [202201, 4, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            202203,
-            0
-          ],
+          "param": [202203, 0],
           "param_str": ""
         }
       ],
@@ -188,22 +132,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "202201",
-            "2"
-          ],
+          "param": ["202201", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20220101,
-      "npcId": [
-        12091,
-        20457,
-        20458,
-        20459,
-        20460
-      ],
+      "npcId": [12091, 20457, 20458, 20459, 20460],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2022,
@@ -216,21 +151,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "202201",
-            "2"
-          ],
+          "param": ["202201", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20220201,
-      "npcId": [
-        12093,
-        20469,
-        20470,
-        20471
-      ],
+      "npcId": [12093, 20469, 20470, 20471],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2022,
@@ -243,21 +170,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "202201",
-            "2"
-          ],
+          "param": ["202201", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20220301,
-      "npcId": [
-        12092,
-        20472,
-        20473,
-        20474
-      ],
+      "npcId": [12092, 20472, 20473, 20474],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2022,
@@ -270,18 +189,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "202201",
-            "2"
-          ],
+          "param": ["202201", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20220401,
-      "npcId": [
-        12094
-      ],
+      "npcId": [12094],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2022,
@@ -295,28 +209,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4011104",
-            "2"
-          ],
+          "param": ["4011104", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022004",
-            "1"
-          ],
+          "param": ["2022", "2022004", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401114101,
-      "npcId": [
-        30369,
-        30370
-      ],
+      "npcId": [30369, 30370],
       "performCfg": "QuestDialogue/EQ/V3.7KaPaiXunYou_40111/Q4011141",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -332,28 +236,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4011104",
-            "2"
-          ],
+          "param": ["4011104", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022004",
-            "1"
-          ],
+          "param": ["2022", "2022004", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401114201,
-      "npcId": [
-        30371,
-        30372
-      ],
+      "npcId": [30371, 30372],
       "performCfg": "QuestDialogue/EQ/V3.7KaPaiXunYou_40111/Q4011142",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -369,27 +263,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4011104",
-            "2"
-          ],
+          "param": ["4011104", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022004",
-            "1"
-          ],
+          "param": ["2022", "2022004", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401114301,
-      "npcId": [
-        30373
-      ],
+      "npcId": [30373],
       "performCfg": "QuestDialogue/EQ/V3.7KaPaiXunYou_40111/Q4011143",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -405,27 +290,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4011104",
-            "2"
-          ],
+          "param": ["4011104", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022004",
-            "1"
-          ],
+          "param": ["2022", "2022004", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401114401,
-      "npcId": [
-        30374
-      ],
+      "npcId": [30374],
       "performCfg": "QuestDialogue/EQ/V3.7KaPaiXunYou_40111/Q4011144",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -440,19 +316,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022001",
-            "1"
-          ],
+          "param": ["2022", "2022001", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401116101,
-      "npcId": [
-        30403
-      ],
+      "npcId": [30403],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -467,19 +337,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022002",
-            "1"
-          ],
+          "param": ["2022", "2022002", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401116201,
-      "npcId": [
-        30408
-      ],
+      "npcId": [30408],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -494,19 +358,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022003",
-            "1"
-          ],
+          "param": ["2022", "2022003", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401116301,
-      "npcId": [
-        30409
-      ],
+      "npcId": [30409],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -521,19 +379,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_CLIENT_COND",
-          "param": [
-            "2022",
-            "2022004",
-            "1"
-          ],
+          "param": ["2022", "2022004", "1"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 401116401,
-      "npcId": [
-        30410
-      ],
+      "npcId": [30410],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "loadType": "TALK_ACTIVITY",
@@ -548,18 +400,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7053101",
-            "3"
-          ],
+          "param": ["7053101", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 705310201,
-      "npcId": [
-        30380
-      ],
+      "npcId": [30380],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -572,23 +419,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7053201",
-            "3"
-          ],
+          "param": ["7053201", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053203,
-        7053208,
-        7053204
-      ],
+      "nextTalks": [7053203, 7053208, 7053204],
       "initDialog": 705320201,
-      "npcId": [
-        30381
-      ],
+      "npcId": [30381],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -600,21 +438,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1001",
-            "2"
-          ],
+          "param": ["1001", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053205
-      ],
+      "nextTalks": [7053205],
       "initDialog": 705320301,
-      "npcId": [
-        30381
-      ],
+      "npcId": [30381],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -625,9 +456,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705320401,
-      "npcId": [
-        30381
-      ],
+      "npcId": [30381],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -638,9 +467,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705320501,
-      "npcId": [
-        30381
-      ],
+      "npcId": [30381],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053205",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -651,9 +478,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705320601,
-      "npcId": [
-        30381
-      ],
+      "npcId": [30381],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053206",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -664,9 +489,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705320701,
-      "npcId": [
-        30381
-      ],
+      "npcId": [30381],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053207",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -678,21 +501,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1001",
-            "3"
-          ],
+          "param": ["1001", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053205
-      ],
+      "nextTalks": [7053205],
       "initDialog": 705320801,
-      "npcId": [
-        30381
-      ],
+      "npcId": [30381],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -703,16 +519,9 @@
       "beginWay": "TALK_BEGIN_MANUAL",
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
-      "nextTalks": [
-        7053213,
-        7053218,
-        7053214,
-        7053219
-      ],
+      "nextTalks": [7053213, 7053218, 7053214, 7053219],
       "initDialog": 705321201,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -724,21 +533,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1002",
-            "2"
-          ],
+          "param": ["1002", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053215
-      ],
+      "nextTalks": [7053215],
       "initDialog": 705321301,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -749,9 +551,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705321401,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -762,9 +562,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705321501,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053215",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -775,9 +573,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705321601,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053216",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -788,9 +584,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705321701,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053217",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -802,21 +596,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1002",
-            "3"
-          ],
+          "param": ["1002", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053215
-      ],
+      "nextTalks": [7053215],
       "initDialog": 705321801,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -827,9 +614,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705321901,
-      "npcId": [
-        30382
-      ],
+      "npcId": [30382],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -840,16 +625,9 @@
       "beginWay": "TALK_BEGIN_MANUAL",
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
-      "nextTalks": [
-        7053223,
-        7053228,
-        7053224,
-        7053229
-      ],
+      "nextTalks": [7053223, 7053228, 7053224, 7053229],
       "initDialog": 705322201,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -861,21 +639,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1003",
-            "2"
-          ],
+          "param": ["1003", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053225
-      ],
+      "nextTalks": [7053225],
       "initDialog": 705322301,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -886,9 +657,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705322401,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -899,9 +668,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705322501,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053225",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -912,9 +679,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705322601,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053226",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -925,9 +690,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705322701,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053227",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -939,21 +702,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1003",
-            "3"
-          ],
+          "param": ["1003", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053225
-      ],
+      "nextTalks": [7053225],
       "initDialog": 705322801,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -964,9 +720,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705322901,
-      "npcId": [
-        30383
-      ],
+      "npcId": [30383],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -977,16 +731,9 @@
       "beginWay": "TALK_BEGIN_MANUAL",
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
-      "nextTalks": [
-        7053233,
-        7053238,
-        7053234,
-        7053244
-      ],
+      "nextTalks": [7053233, 7053238, 7053234, 7053244],
       "initDialog": 705323201,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -998,21 +745,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1004",
-            "2"
-          ],
+          "param": ["1004", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053235
-      ],
+      "nextTalks": [7053235],
       "initDialog": 705323301,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1023,9 +763,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705323401,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1036,9 +774,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705323501,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053235",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1049,9 +785,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705323601,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053236",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1062,9 +796,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705323701,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053237",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1076,21 +808,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1004",
-            "3"
-          ],
+          "param": ["1004", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053235
-      ],
+      "nextTalks": [7053235],
       "initDialog": 705323801,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1102,21 +827,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1005",
-            "2"
-          ],
+          "param": ["1005", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053241
-      ],
+      "nextTalks": [7053241],
       "initDialog": 705323901,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1128,21 +846,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ACTIVITY_JOURNEY_GCG_PICK_STAGE_STATE_EQ",
-          "param": [
-            "1005",
-            "3"
-          ],
+          "param": ["1005", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        7053241
-      ],
+      "nextTalks": [7053241],
       "initDialog": 705324001,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1153,9 +864,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705324101,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053241",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1166,9 +875,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705324201,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053242",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1179,9 +886,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705324301,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "QuestDialogue/WQ/V3.7_GCGActivity/Q7053243",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1192,9 +897,7 @@
       "activeMode": "PLAY_MODE_SINGLE",
       "priority": 5,
       "initDialog": 705324401,
-      "npcId": [
-        30384
-      ],
+      "npcId": [30384],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1207,18 +910,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7053301",
-            "3"
-          ],
+          "param": ["7053301", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 705330201,
-      "npcId": [
-        30217
-      ],
+      "npcId": [30217],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,
@@ -1231,18 +929,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7053401",
-            "3"
-          ],
+          "param": ["7053401", "3"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 705340201,
-      "npcId": [
-        30379
-      ],
+      "npcId": [30379],
       "performCfg": "",
       "loadType": "TALK_ACTIVITY",
       "questId": 2022,

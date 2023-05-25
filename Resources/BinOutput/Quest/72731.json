@@ -5,101 +5,87 @@
   "titleTextMapHash": 2746427679,
   "descTextMapHash": 1102256302,
   "luaPath": "Actor/Quest/WQ72731",
-  "rewardIdList": [
-    172731
-  ],
+  "rewardIdList": [172731],
   "subQuests": [
     {
       "subId": 7273101,
       "mainId": 72731,
       "order": 2,
-      "failParent": 3400111636,
+      "descTextMapHash": 3400111636,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7273102,
       "mainId": 72731,
       "order": 4,
-      "failParent": 2689993292,
+      "descTextMapHash": 2689993292,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7273103,
       "mainId": 72731,
       "order": 1,
-      "failParent": 737317932,
+      "descTextMapHash": 737317932,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 7273104,
       "mainId": 72731,
       "order": 3,
-      "failParent": 3043270484,
+      "descTextMapHash": 3043270484,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -110,19 +96,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7273102",
-            "2"
-          ],
+          "param": ["7273102", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 727310201,
-      "npcId": [
-        13019,
-        1044
-      ],
+      "npcId": [13019, 1044],
       "performCfg": "QuestDialogue/WQ/Daoqi_72731/Q7273102",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72731,
@@ -136,27 +116,18 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7273101",
-            "2"
-          ],
+          "param": ["7273101", "2"],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7273104",
-            "2"
-          ],
+          "param": ["7273104", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 727310701,
-      "npcId": [
-        13019,
-        1044
-      ],
+      "npcId": [13019, 1044],
       "performCfg": "QuestDialogue/WQ/Daoqi_72731/Q7273107",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72731,

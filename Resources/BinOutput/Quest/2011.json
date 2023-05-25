@@ -3,12 +3,8 @@
   "titleTextMapHash": 3126017879,
   "descTextMapHash": 3197847918,
   "luaPath": "Actor/Quest/AQ2011",
-  "suggestTrackMainQuestList": [
-    2012
-  ],
-  "rewardIdList": [
-    102011
-  ],
+  "suggestTrackMainQuestList": [2012],
+  "rewardIdList": [102011],
   "chapterId": 1202,
   "subQuests": [
     {
@@ -19,32 +15,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            200212,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [200212, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            201101,
-            0
-          ],
+          "param": [201101, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "2078"
-        ],
+        "param": ["2078"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -53,10 +38,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        2078,
-        2440
-      ],
+      "exclusiveNpcList": [2078, 2440],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -67,32 +49,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201101,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201101, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            201102,
-            0
-          ],
+          "param": [201102, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1031"
-        ],
+        "param": ["1031"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -101,9 +72,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1031
-      ],
+      "exclusiveNpcList": [1031],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -115,32 +84,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201102,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201102, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            201103,
-            0
-          ],
+          "param": [201103, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1031"
-        ],
+        "param": ["1031"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -149,9 +107,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1031
-      ],
+      "exclusiveNpcList": [1031],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -163,23 +119,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201103,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201103, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            201104,
-            0
-          ],
+          "param": [201104, 0],
           "param_str": ""
         }
       ],
@@ -191,15 +138,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_SET_GAME_TIME",
-          "param": [
-            "9"
-          ],
+          "param": ["9"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        1031
-      ],
+      "exclusiveNpcList": [1031],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -211,23 +154,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201104,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201104, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            201105,
-            0
-          ],
+          "param": [201105, 0],
           "param_str": ""
         }
       ],
@@ -237,9 +171,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1031
-      ],
+      "exclusiveNpcList": [1031],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -251,23 +183,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201105,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201105, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            201106,
-            0
-          ],
+          "param": [201106, 0],
           "param_str": ""
         }
       ],
@@ -277,18 +200,13 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNLOCK_POINT",
-          "param": [
-            "3",
-            "241"
-          ],
+          "param": ["3", "241"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1031
-      ],
+      "exclusiveNpcList": [1031],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -299,32 +217,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            201106,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [201106, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            201107,
-            0
-          ],
+          "param": [201107, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1033"
-        ],
+        "param": ["1033"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -336,16 +243,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_SET_GAME_TIME",
-          "param": [
-            "17"
-          ],
+          "param": ["17"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        1031,
-        1033
-      ],
+      "exclusiveNpcList": [1031, 1033],
       "exclusiveNpcPriority": 1000
     }
   ],
@@ -357,18 +259,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "201101",
-            "2"
-          ],
+          "param": ["201101", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20110101,
-      "npcId": [
-        2078
-      ],
+      "npcId": [2078],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2011/Q201101",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2011,
@@ -381,18 +278,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "201103",
-            "2"
-          ],
+          "param": ["201103", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20110301,
-      "npcId": [
-        1031
-      ],
+      "npcId": [1031],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2011/Q201103",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2011,
@@ -405,18 +297,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "201107",
-            "2"
-          ],
+          "param": ["201107", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 20110701,
-      "npcId": [
-        1033
-      ],
+      "npcId": [1033],
       "performCfg": "QuestDialogue/AQ/Inazuma1_2011/Q201107",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 2011,

@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            1201801,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [1201801, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            1204209,
-            3
-          ],
+          "param": [1204209, 3],
           "param_str": ""
         }
       ],
@@ -42,10 +33,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ADD_SCENE_TAG",
-          "param": [
-            "3",
-            "149"
-          ],
+          "param": ["3", "149"],
           "param_str": ""
         }
       ],

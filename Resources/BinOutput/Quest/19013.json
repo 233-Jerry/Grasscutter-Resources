@@ -16,44 +16,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1901001,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1901001, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19010011,
-            0,
-            0,
-            0
-          ],
+          "param": [105301, 19010011, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1901301,
-            0
-          ],
+          "param": [1901301, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q19013_Eat_Pos",
-          "20"
-        ],
+        "param": ["Q19013_Eat_Pos", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -62,15 +44,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        3106,
-        1040,
-        3044
-      ],
+      "exclusiveNpcList": [3106, 1040, 3044],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        19013
-      ]
+      "exclusivePlaceList": [19013]
     },
     {
       "subId": 1901302,
@@ -80,13 +56,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1901301,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1901301, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -94,27 +64,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19013021
-          ],
+          "param": [105301, 19013021],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19013022
-          ],
+          "param": [105301, 19013022],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q19013_Eat_Pos"
-        ],
+        "param": ["Q19013_Eat_Pos"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -123,16 +85,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        12170,
-        3106,
-        1040,
-        3044
-      ],
+      "exclusiveNpcList": [12170, 3106, 1040, 3044],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        19013
-      ]
+      "exclusivePlaceList": [19013]
     },
     {
       "subId": 1901304,
@@ -143,23 +98,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1901309,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1901309, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "133220646",
           "count": 1
         }
@@ -168,35 +114,23 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_TEAM_DEAD",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_NOT_FINISH_PLOT",
-          "param": [
-            1901304,
-            0
-          ],
+          "param": [1901304, 0],
           "param_str": ""
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q19013_Sayu2_Pos",
-          "25"
-        ],
+        "param": ["Q19013_Sayu2_Pos", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -204,60 +138,42 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220646"
-          ],
+          "param": ["133220646"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "502"
-          ],
+          "param": ["502"],
           "param_str": ""
         }
       ],
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1901309"
-          ],
+          "param": ["1901309"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220646"
-          ],
+          "param": ["133220646"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_REMOVE_TRIAL_AVATAR",
-          "param": [
-            "502"
-          ],
+          "param": ["502"],
           "param_str": ""
         }
       ],
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": [
-            "3",
-            "133220646"
-          ],
+          "param": ["3", "133220646"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        3106,
-        1040
-      ],
+      "exclusiveNpcList": [3106, 1040],
       "exclusiveNpcPriority": 1100,
-      "trialAvatarList": [
-        502
-      ]
+      "trialAvatarList": [502]
     },
     {
       "subId": 1901305,
@@ -268,32 +184,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1901304,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1901304, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            1901305
-          ],
+          "param": [105301, 1901305],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q19013_Sayu2_Pos"
-        ],
+        "param": ["Q19013_Sayu2_Pos"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -302,12 +207,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        12170,
-        3106,
-        1040,
-        12282
-      ],
+      "exclusiveNpcList": [12170, 3106, 1040, 12282],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -318,32 +218,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1901305,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1901305, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            1901306
-          ],
+          "param": [105301, 1901306],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q19013_Player3_Pos"
-        ],
+        "param": ["Q19013_Player3_Pos"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -353,11 +242,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        12170,
-        3106,
-        1040
-      ],
+      "exclusiveNpcList": [12170, 3106, 1040],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -369,43 +254,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1901302,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1901302, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19013021,
-            0,
-            0,
-            0
-          ],
+          "param": [105301, 19013021, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            1901307
-          ],
+          "param": [105301, 1901307],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q19013_Sayu1_Pos"
-        ],
+        "param": ["Q19013_Sayu1_Pos"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -415,16 +283,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        12170,
-        3106,
-        1040,
-        3044
-      ],
+      "exclusiveNpcList": [12170, 3106, 1040, 3044],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        19013
-      ]
+      "exclusivePlaceList": [19013]
     },
     {
       "subId": 1901309,
@@ -435,44 +296,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1901302,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1901302, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105301,
-            19013022,
-            0,
-            0,
-            0
-          ],
+          "param": [105301, 19013022, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            1901311,
-            0
-          ],
+          "param": [1901311, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q19013_Sayu2_Pos",
-          "25"
-        ],
+        "param": ["Q19013_Sayu2_Pos", "25"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -481,9 +324,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_GRANT_TRIAL_AVATAR",
-          "param": [
-            "502"
-          ],
+          "param": ["502"],
           "param_str": ""
         }
       ],
@@ -491,25 +332,13 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133220646"
-          ],
+          "param": ["133220646"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        12170,
-        3106,
-        1040,
-        3044,
-        12281,
-        12282,
-        12283
-      ],
+      "exclusiveNpcList": [12170, 3106, 1040, 3044, 12281, 12282, 12283],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        19013
-      ]
+      "exclusivePlaceList": [19013]
     }
   ],
   "talks": [
@@ -520,18 +349,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1901309",
-            "2"
-          ],
+          "param": ["1901309", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 190130901,
-      "npcId": [
-        3044
-      ],
+      "npcId": [3044],
       "performCfg": "QuestDialogue/COOP/CoopSayu/Q1901309",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 19013,
@@ -544,18 +368,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1901307",
-            "2"
-          ],
+          "param": ["1901307", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 190131001,
-      "npcId": [
-        3044
-      ],
+      "npcId": [3044],
       "performCfg": "QuestDialogue/COOP/CoopSayu/Q1901310",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 19013,
@@ -568,18 +387,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1901309",
-            "2"
-          ],
+          "param": ["1901309", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 190130401,
-      "npcId": [
-        12170
-      ],
+      "npcId": [12170],
       "performCfg": "QuestDialogue/COOP/CoopSayu/Q1901311",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 19013,

@@ -5,9 +5,7 @@
   "titleTextMapHash": 524409519,
   "descTextMapHash": 3184854174,
   "luaPath": "Actor/Quest/WQ79028",
-  "rewardIdList": [
-    179028
-  ],
+  "rewardIdList": [179028],
   "chapterId": 10071,
   "subQuests": [
     {
@@ -18,13 +16,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7902001,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7902001, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -32,18 +24,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7902801,
-            0
-          ],
+          "param": [7902801, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            101770,
-            0
-          ],
+          "param": [101770, 0],
           "param_str": "",
           "count": 1
         }
@@ -52,10 +38,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7902801_guide",
-          "30"
-        ],
+        "param": ["Q7902801_guide", "30"],
         "guideScene": 9,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -73,23 +56,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7902801,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7902801, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_OBTAIN_ITEM",
-          "param": [
-            101770,
-            0
-          ],
+          "param": [101770, 0],
           "param_str": "",
           "count": 1
         }
@@ -98,10 +72,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7902801_guide",
-          "30"
-        ],
+        "param": ["Q7902801_guide", "30"],
         "guideScene": 9,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -111,10 +82,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "9",
-            "199001097"
-          ],
+          "param": ["9", "199001097"],
           "param_str": ""
         }
       ],
@@ -122,9 +90,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP_ONLY",
-          "param": [
-            "199001097"
-          ],
+          "param": ["199001097"],
           "param_str": ""
         }
       ]

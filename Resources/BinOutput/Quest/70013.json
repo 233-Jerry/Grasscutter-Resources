@@ -4,9 +4,7 @@
   "titleTextMapHash": 1108186639,
   "descTextMapHash": 1682880526,
   "luaPath": "Actor/Quest/WQ70013",
-  "rewardIdList": [
-    170013
-  ],
+  "rewardIdList": [170013],
   "subQuests": [
     {
       "subId": 7001301,
@@ -16,23 +14,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            5024011,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [5024011, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7001301,
-            0
-          ],
+          "param": [7001301, 0],
           "param_str": ""
         }
       ],
@@ -40,10 +29,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q70013guild",
-          "75"
-        ],
+        "param": ["Q70013guild", "75"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -54,18 +40,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": [
-            "3",
-            "133001600"
-          ],
+          "param": ["3", "133001600"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        11007,
-        11008,
-        1565
-      ],
+      "exclusiveNpcList": [11007, 11008, 1565],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -76,23 +55,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7001301,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7001301, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "133001605"
         }
       ],
@@ -100,10 +70,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q7001301guild",
-          "30"
-        ],
+        "param": ["Q7001301guild", "30"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -114,18 +81,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": [
-            "3",
-            "133001605"
-          ],
+          "param": ["3", "133001605"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        11007,
-        11008,
-        1565
-      ],
+      "exclusiveNpcList": [11007, 11008, 1565],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -136,23 +96,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7001302,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7001302, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7001302,
-            0
-          ],
+          "param": [7001302, 0],
           "param_str": ""
         }
       ],
@@ -160,10 +111,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "11008",
-          "SELECT_NPC_NONE"
-        ],
+        "param": ["11008", "SELECT_NPC_NONE"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -173,26 +121,18 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133001600"
-          ],
+          "param": ["133001600"],
           "param_str": ""
         },
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133001605"
-          ],
+          "param": ["133001605"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        11007,
-        11008,
-        1565
-      ],
+      "exclusiveNpcList": [11007, 11008, 1565],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -204,20 +144,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7001301",
-            "2"
-          ],
+          "param": ["7001301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 700130101,
-      "npcId": [
-        11008,
-        156501,
-        1005
-      ],
+      "npcId": [11008, 156501, 1005],
       "performCfg": "QuestDialogue/WQ/MimiTomo_70024/Q7001301",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 70013,
@@ -230,19 +163,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7001303",
-            "2"
-          ],
+          "param": ["7001303", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 700130201,
-      "npcId": [
-        11008,
-        1005
-      ],
+      "npcId": [11008, 1005],
       "performCfg": "QuestDialogue/WQ/MimiTomo_70024/Q7001302",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 70013,
@@ -255,18 +182,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7001302",
-            "2"
-          ],
+          "param": ["7001302", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 700130301,
-      "npcId": [
-        11008
-      ],
+      "npcId": [11008],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 70013,

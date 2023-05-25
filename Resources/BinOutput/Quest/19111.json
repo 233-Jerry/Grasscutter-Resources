@@ -5,10 +5,7 @@
   "titleTextMapHash": 2115451719,
   "descTextMapHash": 3319478950,
   "luaPath": "Actor/Quest/LQ19111",
-  "suggestTrackMainQuestList": [
-    19112,
-    19121
-  ],
+  "suggestTrackMainQuestList": [19112, 19121],
   "chapterId": 105001,
   "subQuests": [
     {
@@ -19,13 +16,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_MAIN_COOP_START",
-          "param": [
-            105001,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [105001, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -33,18 +24,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105001,
-            1911201
-          ],
+          "param": [105001, 1911201],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            105001,
-            1912101
-          ],
+          "param": [105001, 1912101],
           "param_str": ""
         }
       ],
@@ -52,10 +37,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "Q1911101mass2",
-          "20"
-        ],
+        "param": ["Q1911101mass2", "20"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -65,16 +47,9 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        12148,
-        12149,
-        3102,
-        1033
-      ],
+      "exclusiveNpcList": [12148, 12149, 3102, 1033],
       "exclusiveNpcPriority": 1100,
-      "exclusivePlaceList": [
-        1911101
-      ]
+      "exclusivePlaceList": [1911101]
     }
   ]
 }

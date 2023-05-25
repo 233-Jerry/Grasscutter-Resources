@@ -4,12 +4,8 @@
   "titleTextMapHash": 1478804457,
   "descTextMapHash": 1869466943,
   "luaPath": "Actor/Quest/AQ360",
-  "suggestTrackMainQuestList": [
-    356
-  ],
-  "rewardIdList": [
-    100360
-  ],
+  "suggestTrackMainQuestList": [356],
+  "rewardIdList": [100360],
   "chapterId": 1001,
   "subQuests": [
     {
@@ -20,21 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            35403,
-            3,
-            0
-          ],
+          "param": [35403, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "133003435",
           "count": 1
         }
@@ -42,10 +31,7 @@
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q360qq1",
-          "15"
-        ],
+        "param": ["Q360qq1", "15"],
         "guideScene": 3
       },
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
@@ -53,10 +39,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133003435,2"
-          ],
+          "param": ["3", "133003435,2"],
           "param_str": ""
         }
       ],
@@ -64,10 +47,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133003435,1"
-          ],
+          "param": ["3", "133003435,1"],
           "param_str": ""
         }
       ]
@@ -80,21 +60,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            36001,
-            3,
-            0
-          ],
+          "param": [36001, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "133003136",
           "count": 1
         }
@@ -102,9 +75,7 @@
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q360qq2"
-        ],
+        "param": ["Q360qq2"],
         "guideScene": 3
       },
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
@@ -114,10 +85,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133003136,1"
-          ],
+          "param": ["3", "133003136,1"],
           "param_str": ""
         }
       ]
@@ -130,39 +98,27 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            36003,
-            3,
-            0
-          ],
+          "param": [36003, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            36001,
-            0
-          ],
+          "param": [36001, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1002"
-        ]
+        "param": ["1002"]
       },
       "isRewind": true,
       "finishExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "3",
-            "133003136,2"
-          ],
+          "param": ["3", "133003136,2"],
           "param_str": ""
         }
       ],
@@ -177,30 +133,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            36004,
-            3,
-            0
-          ],
+          "param": [36004, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1024,
-            0
-          ],
+          "param": [1024, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q354Gate"
-        ],
+        "param": ["Q354Gate"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT"
       },
@@ -209,9 +156,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_IS_WEATHER_LOCKED",
-          "param": [
-            "0"
-          ],
+          "param": ["0"],
           "param_str": ""
         }
       ],
@@ -227,18 +172,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "36004",
-            "2"
-          ],
+          "param": ["36004", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 3600101,
-      "npcId": [
-        1002
-      ],
+      "npcId": [1002],
       "performCfg": "QuestDialogue/AQ/Mengde1_360/Q36001",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 360,

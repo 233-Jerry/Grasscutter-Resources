@@ -4,171 +4,147 @@
   "titleTextMapHash": 3415473871,
   "descTextMapHash": 3618979486,
   "luaPath": "Actor/Quest/IQ23024",
-  "rewardIdList": [
-    0,
-    500165
-  ],
+  "rewardIdList": [0, 500165],
   "subQuests": [
     {
       "subId": 2302401,
       "mainId": 23024,
       "order": 1,
-      "failParent": 161276060,
+      "descTextMapHash": 161276060,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2302402,
       "mainId": 23024,
       "order": 2,
-      "failParent": 3871516948,
+      "descTextMapHash": 3871516948,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2302403,
       "mainId": 23024,
       "order": 4,
-      "failParent": 1790052436,
+      "descTextMapHash": 1790052436,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2302404,
       "mainId": 23024,
       "order": 5,
-      "failParent": 435663524,
+      "descTextMapHash": 435663524,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2302405,
       "mainId": 23024,
       "order": 3,
-      "failParent": 3803488580,
+      "descTextMapHash": 3803488580,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2302406,
       "mainId": 23024,
       "order": 6,
-      "failParent": 3318070196,
+      "descTextMapHash": 3318070196,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 2302407,
       "mainId": 23024,
       "order": 7,
-      "failParent": 2190158828,
+      "descTextMapHash": 2190158828,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -178,24 +154,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2302401",
-            "2"
-          ],
+          "param": ["2302401", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "nextTalks": [
-        2302402,
-        2302405
-      ],
+      "nextTalks": [2302402, 2302405],
       "initDialog": 230240101,
-      "npcId": [
-        4079,
-        4080,
-        1005
-      ],
+      "npcId": [4079, 4080, 1005],
       "performCfg": "QuestDialogue/IQ/Xumi_23024/Q2302401",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23024,
@@ -207,20 +173,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2302402",
-            "2"
-          ],
+          "param": ["2302402", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230240201,
-      "npcId": [
-        4080,
-        1005,
-        4079
-      ],
+      "npcId": [4080, 1005, 4079],
       "performCfg": "QuestDialogue/IQ/Xumi_23024/Q2302402",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23024,
@@ -232,19 +191,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2302404",
-            "2"
-          ],
+          "param": ["2302404", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230240401,
-      "npcId": [
-        4079,
-        4080
-      ],
+      "npcId": [4079, 4080],
       "performCfg": "QuestDialogue/Q2302404",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23024,
@@ -256,20 +209,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2302405",
-            "2"
-          ],
+          "param": ["2302405", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230240501,
-      "npcId": [
-        4080,
-        1005,
-        4079
-      ],
+      "npcId": [4080, 1005, 4079],
       "performCfg": "QuestDialogue/Q2302405",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23024,
@@ -281,19 +227,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2302407",
-            "2"
-          ],
+          "param": ["2302407", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230240701,
-      "npcId": [
-        4079,
-        4080
-      ],
+      "npcId": [4079, 4080],
       "performCfg": "QuestDialogue/Q2302407",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23024,
@@ -305,19 +245,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2302403",
-            "2"
-          ],
+          "param": ["2302403", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230240801,
-      "npcId": [
-        4079,
-        4080
-      ],
+      "npcId": [4079, 4080],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23024,
@@ -329,19 +263,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2302406",
-            "2"
-          ],
+          "param": ["2302406", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 230240901,
-      "npcId": [
-        4079,
-        4080
-      ],
+      "npcId": [4079, 4080],
       "performCfg": "",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 23024,

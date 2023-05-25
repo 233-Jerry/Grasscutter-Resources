@@ -16,11 +16,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            100006,
-            3,
-            0
-          ],
+          "param": [100006, 3, 0],
           "param_str": ""
         }
       ],
@@ -28,27 +24,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            100101,
-            0
-          ],
+          "param": [100101, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            100102
-          ],
+          "param": [100102],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_ADD_QUEST_PROGRESS",
-          "param": [
-            100101,
-            0
-          ],
+          "param": [100101, 0],
           "param_str": "",
           "count": 1
         }
@@ -68,21 +56,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            100101,
-            3,
-            0
-          ],
+          "param": [100101, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            100102,
-            0
-          ],
+          "param": [100102, 0],
           "param_str": ""
         }
       ],
@@ -92,9 +73,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "100101"
-          ],
+          "param": ["100101"],
           "param_str": ""
         }
       ],
@@ -110,21 +89,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            100101,
-            4,
-            0
-          ],
+          "param": [100101, 4, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            100103,
-            0
-          ],
+          "param": [100103, 0],
           "param_str": ""
         }
       ],

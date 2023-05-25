@@ -14,45 +14,24 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7227501,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7227501, 2, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            2011002,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [2011002, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7217749,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7217749, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            4006101,
-            0
-          ],
+          "param": [4006101, 0],
           "param_str": ""
         }
       ],
@@ -60,9 +39,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "3193"
-        ],
+        "param": ["3193"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -72,9 +49,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        3193
-      ],
+      "exclusiveNpcList": [3193],
       "exclusiveNpcPriority": 1050
     },
     {
@@ -86,24 +61,12 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7227501,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7227501, 2, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            4006101,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [4006101, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -111,28 +74,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4006102,
-            0
-          ],
+          "param": [4006102, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7227501,
-            3
-          ],
+          "param": [7227501, 3],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q7227501_N20341",
-          "30"
-        ],
+        "param": ["Q7227501_N20341", "30"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -152,24 +106,12 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7227501,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7227501, 2, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            4006102,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [4006102, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -177,27 +119,19 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7227501,
-            0
-          ],
+          "param": [7227501, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7227501,
-            3
-          ],
+          "param": [7227501, 3],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q4006103_guide"
-        ],
+        "param": ["Q4006103_guide"],
         "guideScene": 5,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -219,35 +153,17 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            2011002,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [2011002, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7217749,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7217749, 3, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7227501,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7227501, 2, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -255,18 +171,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7227501,
-            0
-          ],
+          "param": [7227501, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7227501,
-            3
-          ],
+          "param": [7227501, 3],
           "param_str": ""
         }
       ],
@@ -287,19 +197,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4006101",
-            "2"
-          ],
+          "param": ["4006101", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400610101,
-      "npcId": [
-        3193,
-        1005
-      ],
+      "npcId": [3193, 1005],
       "performCfg": "QuestDialogue/EQ/Inazuma_40061/Q4006101",
       "questId": 40061,
       "prePerformCfg": ""

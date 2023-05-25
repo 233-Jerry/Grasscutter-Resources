@@ -5,32 +5,28 @@
   "descTextMapHash": 3829717318,
   "luaPath": "Actor/Quest/WQ73088",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    173088
-  ],
+  "rewardIdList": [173088],
   "subQuests": [
     {
       "subId": 7308801,
       "mainId": 73088,
       "order": 1,
-      "failParent": 4234759724,
+      "descTextMapHash": 4234759724,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ]
 }

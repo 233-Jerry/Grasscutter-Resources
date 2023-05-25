@@ -4,9 +4,7 @@
   "titleTextMapHash": 1263284583,
   "descTextMapHash": 2797847126,
   "luaPath": "Actor/Quest/WQ70107",
-  "rewardIdList": [
-    170107
-  ],
+  "rewardIdList": [170107],
   "subQuests": [
     {
       "subId": 7010701,
@@ -17,34 +15,19 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_CUR_CLIMATE",
-          "param": [
-            1,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [1, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_COMPLETE_TALK",
-          "param": [
-            7010701,
-            0,
-            0,
-            0,
-            0
-          ],
+          "param": [7010701, 0, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7010701,
-            0
-          ],
+          "param": [7010701, 0],
           "param_str": ""
         }
       ],
@@ -52,9 +35,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "1665"
-        ],
+        "param": ["1665"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -63,9 +44,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1665
-      ]
+      "exclusiveNpcList": [1665]
     },
     {
       "subId": 7010702,
@@ -76,13 +55,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],

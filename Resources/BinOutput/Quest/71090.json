@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7103903,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7103903, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TIME_VAR_PASS_DAY",
-          "param": [
-            71039,
-            0
-          ],
+          "param": [71039, 0],
           "param_str": "1"
         }
       ],
@@ -41,10 +32,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "7103901",
-            "2"
-          ],
+          "param": ["7103901", "2"],
           "param_str": ""
         }
       ],

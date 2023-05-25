@@ -4,12 +4,8 @@
   "titleTextMapHash": 2546023913,
   "descTextMapHash": 3232682647,
   "luaPath": "Actor/Quest/MQ372",
-  "suggestTrackMainQuestList": [
-    373
-  ],
-  "rewardIdList": [
-    100372
-  ],
+  "suggestTrackMainQuestList": [373],
+  "rewardIdList": [100372],
   "chapterId": 1002,
   "subQuests": [
     {
@@ -21,30 +17,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            37113,
-            3,
-            0
-          ],
+          "param": [37113, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            37201,
-            0
-          ],
+          "param": [37201, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1160"
-        ],
+        "param": ["1160"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_UI"
@@ -53,9 +40,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1001
-      ],
+      "exclusiveNpcList": [1001],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -67,30 +52,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            37201,
-            3,
-            0
-          ],
+          "param": [37201, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            37202,
-            0
-          ],
+          "param": [37202, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1160"
-        ],
+        "param": ["1160"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -99,9 +75,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1001
-      ],
+      "exclusiveNpcList": [1001],
       "exclusiveNpcPriority": 1000
     },
     {
@@ -113,30 +87,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            37202,
-            3,
-            0
-          ],
+          "param": [37202, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            3720301,
-            0
-          ],
+          "param": [3720301, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1160"
-        ],
+        "param": ["1160"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -146,18 +111,13 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_DEL_PACK_ITEM",
-          "param": [
-            "100135",
-            "1"
-          ],
+          "param": ["100135", "1"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1001
-      ],
+      "exclusiveNpcList": [1001],
       "exclusiveNpcPriority": 1000
     }
   ],
@@ -169,19 +129,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "37203",
-            "2"
-          ],
+          "param": ["37203", "2"],
           "param_str": ""
         }
       ],
-      "nextTalks": [
-        37203
-      ],
-      "npcId": [
-        1160
-      ],
+      "nextTalks": [37203],
+      "npcId": [1160],
       "performCfg": "QuestDialogue/AQ/Mengde2_372/Q37201pre",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 372,
@@ -192,20 +145,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "37203",
-            "2"
-          ],
+          "param": ["37203", "2"],
           "param_str": ""
         }
       ],
-      "nextTalks": [
-        3720301
-      ],
+      "nextTalks": [3720301],
       "initDialog": 3720101,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "QuestDialogue/AQ/Mengde2_372/Q37201",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 372,
@@ -216,17 +162,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "37203",
-            "2"
-          ],
+          "param": ["37203", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 3720101,
-      "npcId": [
-        1160
-      ],
+      "npcId": [1160],
       "performCfg": "QuestDialogue/AQ/Mengde2_372/Q37205",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 372,

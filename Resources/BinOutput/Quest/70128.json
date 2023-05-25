@@ -5,9 +5,7 @@
   "descTextMapHash": 3677782446,
   "luaPath": "",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    170128
-  ],
+  "rewardIdList": [170128],
   "subQuests": [
     {
       "subId": 7012801,
@@ -18,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_QUEST_GLOBAL_VAR_EQUAL",
-          "param": [
-            10001,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [10001, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7012801,
-            0
-          ],
+          "param": [7012801, 0],
           "param_str": ""
         }
       ],
@@ -45,10 +34,7 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133008599"
-          ],
+          "param": ["3", "133008599"],
           "param_str": ""
         }
       ],
@@ -61,9 +47,7 @@
       "id": 7012801,
       "beginWay": "TALK_BEGIN_MANUAL",
       "initDialog": 701280101,
-      "npcId": [
-        20216
-      ],
+      "npcId": [20216],
       "performCfg": "",
       "questId": 70128,
       "prePerformCfg": "",

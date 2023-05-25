@@ -5,11 +5,7 @@
   "titleTextMapHash": 2885876271,
   "descTextMapHash": 996105742,
   "luaPath": "Actor/Quest/LQ19138",
-  "suggestTrackMainQuestList": [
-    19135,
-    19136,
-    19137
-  ],
+  "suggestTrackMainQuestList": [19135, 19136, 19137],
   "chapterId": 102701,
   "subQuests": [
     {
@@ -20,13 +16,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1913803,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1913803, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -34,44 +24,30 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            102701,
-            10301
-          ],
+          "param": [102701, 10301],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            102701,
-            10302
-          ],
+          "param": [102701, 10302],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            102701,
-            10303
-          ],
+          "param": [102701, 10303],
           "param_str": ""
         }
       ],
       "failCond": [
         {
           "type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": ""
         }
       ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q1913201Ningguang03"
-        ],
+        "param": ["Q1913201Ningguang03"],
         "guideScene": 1057,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -81,19 +57,12 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "1913803"
-          ],
+          "param": ["1913803"],
           "param_str": ""
         }
       ],
       "beginExec": [],
-      "exclusiveNpcList": [
-        10211,
-        2140,
-        2142,
-        2143
-      ],
+      "exclusiveNpcList": [10211, 2140, 2142, 2143],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -104,23 +73,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            102701,
-            103,
-            0,
-            0,
-            0
-          ],
+          "param": [102701, 103, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_GAME_TIME_TICK",
-          "param": [
-            1,
-            0
-          ],
+          "param": [1, 0],
           "param_str": "7,8"
         }
       ],
@@ -133,19 +93,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "1913101",
-            "1"
-          ],
+          "param": ["1913101", "1"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        10211,
-        2140,
-        2142,
-        2143
-      ],
+      "exclusiveNpcList": [10211, 2140, 2142, 2143],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -156,23 +108,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1913802,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1913802, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "201057004",
           "count": 1
         }
@@ -180,9 +123,7 @@
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
-        "param": [
-          "Q1913201Ningguang03"
-        ],
+        "param": ["Q1913201Ningguang03"],
         "guideScene": 1057,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -193,19 +134,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
-          "param": [
-            "1057",
-            "201057004,2"
-          ],
+          "param": ["1057", "201057004,2"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        10211,
-        2140,
-        2142,
-        2143
-      ],
+      "exclusiveNpcList": [10211, 2140, 2142, 2143],
       "exclusiveNpcPriority": 1100
     }
   ]

@@ -5,79 +5,68 @@
   "titleTextMapHash": 2376344271,
   "descTextMapHash": 891967110,
   "luaPath": "Actor/Quest/LQ13003",
-  "rewardIdList": [
-    113003
-  ],
+  "rewardIdList": [113003],
   "chapterId": 2030,
   "subQuests": [
     {
       "subId": 1300301,
       "mainId": 13003,
       "order": 1,
-      "failParent": 3368444500,
+      "descTextMapHash": 3368444500,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 1300302,
       "mainId": 13003,
       "order": 2,
-      "failParent": 2158784492,
+      "descTextMapHash": 2158784492,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 1300303,
       "mainId": 13003,
       "order": 3,
-      "failParent": 2409885156,
+      "descTextMapHash": 2409885156,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -88,18 +77,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1300301",
-            "2"
-          ],
+          "param": ["1300301", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 130030101,
-      "npcId": [
-        4019
-      ],
+      "npcId": [4019],
       "performCfg": "QuestDialogue/LQ/Tighnari1_13003/Q1300301",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 13003,
@@ -112,19 +96,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1300303",
-            "2"
-          ],
+          "param": ["1300303", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 130030301,
-      "npcId": [
-        1050,
-        12686
-      ],
+      "npcId": [1050, 12686],
       "performCfg": "QuestDialogue/LQ/Tighnari1_13003/Q1300303",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 13003,
@@ -137,18 +115,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1300303",
-            "2"
-          ],
+          "param": ["1300303", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 130030401,
-      "npcId": [
-        12747
-      ],
+      "npcId": [12747],
       "performCfg": "QuestDialogue/LQ/Tighnari1_13003/Q1300304",
       "questId": 13003,
       "prePerformCfg": ""
@@ -160,18 +133,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "1300303",
-            "2"
-          ],
+          "param": ["1300303", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 130030501,
-      "npcId": [
-        12748
-      ],
+      "npcId": [12748],
       "performCfg": "QuestDialogue/LQ/Tighnari1_13003/Q1300305",
       "questId": 13003,
       "prePerformCfg": ""

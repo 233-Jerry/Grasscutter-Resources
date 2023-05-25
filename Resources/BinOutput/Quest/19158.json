@@ -5,81 +5,70 @@
   "titleTextMapHash": 3709374343,
   "descTextMapHash": 2049534254,
   "luaPath": "Actor/Quest/LQ19158",
-  "suggestTrackMainQuestList": [
-    19159,
-    19160
-  ],
+  "suggestTrackMainQuestList": [19159, 19160],
   "chapterId": 107401,
   "subQuests": [
     {
       "subId": 1915801,
       "mainId": 19158,
       "order": 1,
-      "failParent": 3322055140,
+      "descTextMapHash": 3322055140,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 1915802,
       "mainId": 19158,
       "order": 2,
-      "failParent": 3772869372,
+      "descTextMapHash": 3772869372,
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 1915803,
       "mainId": 19158,
       "order": 3,
-      "failParent": 2485439852,
+      "descTextMapHash": 2485439852,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
-      "failParentShow": "QUEST_HIDDEN",
+      "descTextMapHashShow": "QUEST_HIDDEN",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ]
 }

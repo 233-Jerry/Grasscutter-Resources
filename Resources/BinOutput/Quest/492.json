@@ -17,30 +17,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            48602,
-            3,
-            0
-          ],
+          "param": [48602, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            49010,
-            0
-          ],
+          "param": [49010, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1008"
-        ],
+        "param": ["1008"],
         "guideScene": 1008
       },
       "finishParent": true,

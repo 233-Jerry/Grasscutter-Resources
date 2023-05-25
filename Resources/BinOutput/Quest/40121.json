@@ -10,93 +10,85 @@
       "subId": 4012101,
       "mainId": 40121,
       "order": 1,
-      "failParent": 3040012172,
+      "descTextMapHash": 3040012172,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4012102,
       "mainId": 40121,
       "order": 2,
-      "failParent": 3004820012,
+      "descTextMapHash": 3004820012,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4012103,
       "mainId": 40121,
       "order": 3,
-      "failParent": 4173137956,
+      "descTextMapHash": 4173137956,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     },
     {
       "subId": 4012104,
       "mainId": 40121,
       "order": 4,
-      "failParent": 2874944884,
+      "descTextMapHash": 2874944884,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -107,17 +99,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4012101",
-            "2"
-          ],
+          "param": ["4012101", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "npcId": [
-        30375
-      ],
+      "npcId": [30375],
       "performCfg": "QuestDialogue/EQ/AkaFes_40121/Q4012101",
       "questId": 40121,
       "prePerformCfg": ""
@@ -129,17 +116,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4012102",
-            "2"
-          ],
+          "param": ["4012102", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "npcId": [
-        30375
-      ],
+      "npcId": [30375],
       "performCfg": "QuestDialogue/EQ/AkaFes_40121/Q4012102",
       "questId": 40121,
       "prePerformCfg": ""
@@ -151,17 +133,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4012103",
-            "2"
-          ],
+          "param": ["4012103", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "npcId": [
-        30375
-      ],
+      "npcId": [30375],
       "performCfg": "QuestDialogue/EQ/AkaFes_40121/Q4012103",
       "questId": 40121,
       "prePerformCfg": ""
@@ -173,17 +150,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4012104",
-            "2"
-          ],
+          "param": ["4012104", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
-      "npcId": [
-        30375
-      ],
+      "npcId": [30375],
       "performCfg": "QuestDialogue/EQ/AkaFes_40121/Q4012104",
       "questId": 40121,
       "prePerformCfg": ""

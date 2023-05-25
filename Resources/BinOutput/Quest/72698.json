@@ -14,43 +14,26 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            2012013,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [2012013, 1, 0, 0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7268601,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7268601, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7269801,
-            0
-          ],
+          "param": [7269801, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "30168"
-        ],
+        "param": ["30168"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -60,9 +43,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        30168
-      ],
+      "exclusiveNpcList": [30168],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -74,18 +55,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7269801",
-            "2"
-          ],
+          "param": ["7269801", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 726980101,
-      "npcId": [
-        30168
-      ],
+      "npcId": [30168],
       "performCfg": "QuestDialogue/WQ/Inazuma_72698/Q7269801",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72698,

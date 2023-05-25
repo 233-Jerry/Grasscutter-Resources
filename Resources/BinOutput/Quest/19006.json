@@ -5,10 +5,7 @@
   "titleTextMapHash": 294392055,
   "descTextMapHash": 25764606,
   "luaPath": "Actor/Quest/LQ19006",
-  "suggestTrackMainQuestList": [
-    19007,
-    19008
-  ],
+  "suggestTrackMainQuestList": [19007, 19008],
   "chapterId": 101401,
   "subQuests": [
     {
@@ -19,13 +16,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1900308,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1900308, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -33,18 +24,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            1900601,
-            0
-          ],
+          "param": [1900601, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "1330044381",
           "count": 1
         }
@@ -53,10 +38,7 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "COOP101401_Play_Pos_04",
-          "50"
-        ],
+        "param": ["COOP101401_Play_Pos_04", "50"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -67,10 +49,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_REGISTER_DYNAMIC_GROUP",
-          "param": [
-            "3",
-            "133004438"
-          ],
+          "param": ["3", "133004438"],
           "param_str": ""
         }
       ],
@@ -84,23 +63,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1900601,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1900601, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_LUA_NOTIFY",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": "1330044381",
           "count": 1
         }
@@ -109,19 +79,14 @@
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "COOP101401Babala10",
-          "25"
-        ],
+        "param": ["COOP101401Babala10", "25"],
         "guideScene": 3,
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
       "finishExec": [
         {
           "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
-          "param": [
-            "133004438"
-          ],
+          "param": ["133004438"],
           "param_str": ""
         }
       ],
@@ -129,10 +94,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "3",
-            "133004438"
-          ],
+          "param": ["3", "133004438"],
           "param_str": ""
         }
       ],
@@ -146,13 +108,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            1900602,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [1900602, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -160,18 +116,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            101401,
-            60101
-          ],
+          "param": [101401, 60101],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
-          "param": [
-            101401,
-            60102
-          ],
+          "param": [101401, 60102],
           "param_str": ""
         }
       ],
@@ -179,9 +129,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "501"
-        ],
+        "param": ["501"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_POINT",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -191,10 +139,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        501,
-        1008
-      ],
+      "exclusiveNpcList": [501, 1008],
       "exclusiveNpcPriority": 1100
     }
   ]

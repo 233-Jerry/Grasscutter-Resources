@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            4002906,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [4002906, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4004501,
-            0
-          ],
+          "param": [4004501, 0],
           "param_str": ""
         }
       ],
@@ -51,9 +42,7 @@
       "beginWay": "TALK_BEGIN_MANUAL",
       "activeMode": "PLAY_MODE_SINGLE",
       "initDialog": 400290501,
-      "npcId": [
-        1018
-      ],
+      "npcId": [1018],
       "performCfg": "QuestDialogue/EQ/WinterCamp_40045/Q4004501",
       "questId": 40045,
       "prePerformCfg": "",

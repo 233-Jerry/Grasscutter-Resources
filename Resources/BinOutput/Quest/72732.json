@@ -11,24 +11,22 @@
       "subId": 7273201,
       "mainId": 72732,
       "order": 1,
-      "failParent": 2466108652,
+      "descTextMapHash": 2466108652,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ],
   "talks": [
@@ -39,18 +37,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7273201",
-            "2"
-          ],
+          "param": ["7273201", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 727320101,
-      "npcId": [
-        13087
-      ],
+      "npcId": [13087],
       "performCfg": "QuestDialogue/WQ/Daoqi_72732/Q7273201",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 72732,

@@ -16,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            4003507,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [4003507, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            4003801,
-            0
-          ],
+          "param": [4003801, 0],
           "param_str": ""
         }
       ],
@@ -54,18 +45,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "4003801",
-            "2"
-          ],
+          "param": ["4003801", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 400380101,
-      "npcId": [
-        10232
-      ],
+      "npcId": [10232],
       "performCfg": "QuestDialogue/EQ/Ver2.4Sealamp_40038/Q4003801",
       "questId": 40038,
       "prePerformCfg": "",

@@ -17,21 +17,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            46613,
-            3,
-            0
-          ],
+          "param": [46613, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_TRIGGER_FIRE",
-          "param": [
-            1171,
-            0
-          ],
+          "param": [1171, 0],
           "param_str": ""
         }
       ],
@@ -41,18 +34,13 @@
       "finishExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "49102"
-          ],
+          "param": ["49102"],
           "param_str": ""
         }
       ],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1009,
-        1218
-      ],
+      "exclusiveNpcList": [1009, 1218],
       "exclusiveNpcPriority": 1100
     },
     {
@@ -64,21 +52,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            46618,
-            3,
-            0
-          ],
+          "param": [46618, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_ENTER_MY_WORLD",
-          "param": [
-            3,
-            0
-          ],
+          "param": [3, 0],
           "param_str": ""
         }
       ],

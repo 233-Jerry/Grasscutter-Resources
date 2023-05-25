@@ -4,9 +4,7 @@
   "titleTextMapHash": 2065376391,
   "descTextMapHash": 3910593158,
   "luaPath": "Actor/Quest/WQ70651",
-  "rewardIdList": [
-    170651
-  ],
+  "rewardIdList": [170651],
   "subQuests": [
     {
       "subId": 7065101,
@@ -16,13 +14,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_OPEN_STATE_EQUAL",
-          "param": [
-            1404,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [1404, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -30,35 +22,24 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7065102,
-            0
-          ],
+          "param": [7065102, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7065103,
-            0
-          ],
+          "param": [7065103, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7065104,
-            0
-          ],
+          "param": [7065104, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1417"
-        ],
+        "param": ["1417"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -68,9 +49,7 @@
       "finishExec": [],
       "failExec": [],
       "beginExec": [],
-      "exclusiveNpcList": [
-        1417
-      ]
+      "exclusiveNpcList": [1417]
     }
   ],
   "talks": [
@@ -81,23 +60,14 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7065101",
-            "2"
-          ],
+          "param": ["7065101", "2"],
           "param_str": ""
         }
       ],
       "priority": 6,
-      "nextTalks": [
-        7065102,
-        7065103,
-        7065104
-      ],
+      "nextTalks": [7065102, 7065103, 7065104],
       "initDialog": 706510101,
-      "npcId": [
-        1417
-      ],
+      "npcId": [1417],
       "performCfg": "",
       "questId": 70651,
       "prePerformCfg": ""
@@ -114,18 +84,13 @@
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7065101",
-            "2"
-          ],
+          "param": ["7065101", "2"],
           "param_str": ""
         }
       ],
       "priority": 6,
       "initDialog": 706510201,
-      "npcId": [
-        1417
-      ],
+      "npcId": [1417],
       "performCfg": "",
       "questId": 70651,
       "prePerformCfg": ""
@@ -142,18 +107,13 @@
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7065101",
-            "2"
-          ],
+          "param": ["7065101", "2"],
           "param_str": ""
         }
       ],
       "priority": 6,
       "initDialog": 706510301,
-      "npcId": [
-        1417
-      ],
+      "npcId": [1417],
       "performCfg": "",
       "loadType": "TALK_BLOSSOM",
       "questId": 70651,
@@ -171,18 +131,13 @@
         },
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7065101",
-            "2"
-          ],
+          "param": ["7065101", "2"],
           "param_str": ""
         }
       ],
       "priority": 6,
       "initDialog": 706510401,
-      "npcId": [
-        1417
-      ],
+      "npcId": [1417],
       "performCfg": "",
       "loadType": "TALK_BLOSSOM",
       "questId": 70651,

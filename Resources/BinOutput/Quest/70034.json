@@ -15,23 +15,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            50500103,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [50500103, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7003401,
-            0
-          ],
+          "param": [7003401, 0],
           "param_str": ""
         }
       ],
@@ -39,9 +30,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30071"
-        ],
+        "param": ["30071"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -62,18 +51,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7003401",
-            "2"
-          ],
+          "param": ["7003401", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 700340101,
-      "npcId": [
-        30071
-      ],
+      "npcId": [30071],
       "performCfg": "QuestDialogue/WQ/Inazuma_70034/Q7003401",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 70034,

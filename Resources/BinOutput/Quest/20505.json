@@ -13,30 +13,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_PLAYER_LEVEL_EQUAL_GREATER",
-          "param": [
-            14,
-            0,
-            0
-          ],
+          "param": [14, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            2050501,
-            0
-          ],
+          "param": [2050501, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1512"
-        ],
+        "param": ["1512"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_START"
       },
@@ -54,21 +45,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            2050501,
-            3,
-            0
-          ],
+          "param": [2050501, 3, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            2050502,
-            0
-          ],
+          "param": [2050502, 0],
           "param_str": ""
         }
       ],
@@ -88,18 +72,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2050501",
-            "2"
-          ],
+          "param": ["2050501", "2"],
           "param_str": ""
         }
       ],
       "priority": 8,
       "initDialog": 205050101,
-      "npcId": [
-        1512
-      ],
+      "npcId": [1512],
       "performCfg": "",
       "questId": 20505,
       "prePerformCfg": ""
@@ -111,18 +90,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "2050502",
-            "2"
-          ],
+          "param": ["2050502", "2"],
           "param_str": ""
         }
       ],
       "priority": 8,
       "initDialog": 205050201,
-      "npcId": [
-        1512
-      ],
+      "npcId": [1512],
       "performCfg": "",
       "questId": 20505,
       "prePerformCfg": ""

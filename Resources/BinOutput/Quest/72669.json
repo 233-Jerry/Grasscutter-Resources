@@ -5,9 +5,7 @@
   "descTextMapHash": 761035678,
   "luaPath": "Actor/Quest/WQ72669",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    172667
-  ],
+  "rewardIdList": [172667],
   "subQuests": [
     {
       "subId": 7266901,
@@ -19,13 +17,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -45,13 +37,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -70,13 +56,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -94,18 +74,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7266902",
-            "2"
-          ],
+          "param": ["7266902", "2"],
           "param_str": ""
         }
       ],
       "priority": 5,
       "initDialog": 726670102,
-      "npcId": [
-        3200
-      ],
+      "npcId": [3200],
       "performCfg": "",
       "questId": 72669,
       "prePerformCfg": ""

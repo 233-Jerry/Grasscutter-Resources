@@ -13,23 +13,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_ACTIVITY_COND",
-          "param": [
-            5079015,
-            1,
-            0,
-            0,
-            0
-          ],
+          "param": [5079015, 1, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7151001,
-            0
-          ],
+          "param": [7151001, 0],
           "param_str": ""
         }
       ],
@@ -37,9 +28,7 @@
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
-        "param": [
-          "30181"
-        ],
+        "param": ["30181"],
         "guideScene": 6,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -51,16 +40,11 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": [
-            "7151001",
-            "1"
-          ],
+          "param": ["7151001", "1"],
           "param_str": ""
         }
       ],
-      "exclusiveNpcList": [
-        30181
-      ],
+      "exclusiveNpcList": [30181],
       "exclusiveNpcPriority": 1100
     }
   ],
@@ -72,18 +56,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7151001",
-            "2"
-          ],
+          "param": ["7151001", "2"],
           "param_str": ""
         }
       ],
       "priority": 15,
       "initDialog": 715100101,
-      "npcId": [
-        30181
-      ],
+      "npcId": [30181],
       "performCfg": "QuestDialogue/WQ/TheChasmChallenge/Q7151001",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71510,

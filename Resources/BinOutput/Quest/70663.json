@@ -5,33 +5,29 @@
   "descTextMapHash": 1790249950,
   "luaPath": "Actor/Quest/WQ70663",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    170663
-  ],
+  "rewardIdList": [170663],
   "subQuests": [
     {
       "subId": 7066301,
       "mainId": 70663,
       "order": 1,
-      "failParent": 556097052,
+      "descTextMapHash": 556097052,
+      "failCondComb": "QUEST_HIDDEN",
       "acceptCondComb": "LOGIC_NONE",
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "finishCondComb": "LOGIC_NONE",
       "acceptCond": [
         {
           "type": "QUEST_COND_UNKNOWN",
-          "param": [
-            0,
-            0
-          ]
+          "param": [0, 0]
         }
       ],
-      "guide": {},
       "finishCond": [],
       "failCond": [],
       "beginExec": [],
       "finishExec": [],
-      "failExec": []
+      "failExec": [],
+      "guide": {}
     }
   ]
 }

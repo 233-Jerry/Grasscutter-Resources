@@ -14,32 +14,21 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            99902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [99902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            9000101,
-            0
-          ],
+          "param": [9000101, 0],
           "param_str": ""
         }
       ],
       "failCond": [],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
-        "param": [
-          "1479"
-        ],
+        "param": ["1479"],
         "guideScene": 3,
         "guideStyle": "QUEST_GUIDE_STYLE_TARGET",
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
@@ -55,9 +44,7 @@
       "beginWay": "TALK_BEGIN_MANUAL",
       "activeMode": "PLAY_MODE_SINGLE",
       "initDialog": 900010101,
-      "npcId": [
-        1479
-      ],
+      "npcId": [1479],
       "performCfg": "",
       "questId": 90001,
       "prePerformCfg": ""
@@ -69,17 +56,12 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "9000101",
-            "2"
-          ],
+          "param": ["9000101", "2"],
           "param_str": ""
         }
       ],
       "initDialog": 900010201,
-      "npcId": [
-        1005
-      ],
+      "npcId": [1005],
       "performCfg": "QuestDialogue/IQ/TestQuest_90001/Q9000102",
       "questId": 90001,
       "prePerformCfg": ""

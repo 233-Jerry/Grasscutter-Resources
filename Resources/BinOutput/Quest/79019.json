@@ -15,13 +15,7 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7901301,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7901301, 2, 0, 0, 0],
           "param_str": ""
         }
       ],
@@ -29,18 +23,12 @@
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7901307,
-            3
-          ],
+          "param": [7901307, 3],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7901315,
-            3
-          ],
+          "param": [7901315, 3],
           "param_str": ""
         }
       ],
@@ -62,23 +50,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7901901,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7901901, 2, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7901902,
-            0
-          ],
+          "param": [7901902, 0],
           "param_str": ""
         }
       ],
@@ -91,10 +70,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "9",
-            "199003022"
-          ],
+          "param": ["9", "199003022"],
           "param_str": ""
         }
       ]
@@ -108,23 +84,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7901902,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7901902, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7901307,
-            3
-          ],
+          "param": [7901307, 3],
           "param_str": ""
         }
       ],
@@ -132,18 +99,12 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_SCENE_LEVEL_TAG_EQ",
-          "param": [
-            21,
-            0
-          ],
+          "param": [21, 0],
           "param_str": ""
         }
       ],
@@ -155,9 +116,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7901902"
-          ],
+          "param": ["7901902"],
           "param_str": ""
         }
       ],
@@ -172,23 +131,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7901901,
-            2,
-            0,
-            0,
-            0
-          ],
+          "param": [7901901, 2, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7901904,
-            0
-          ],
+          "param": [7901904, 0],
           "param_str": ""
         }
       ],
@@ -200,10 +150,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "9",
-            "199003008"
-          ],
+          "param": ["9", "199003008"],
           "param_str": ""
         }
       ]
@@ -217,23 +164,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7901904,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7901904, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
-          "param": [
-            7901315,
-            3
-          ],
+          "param": [7901315, 3],
           "param_str": ""
         }
       ],
@@ -241,18 +179,12 @@
       "failCond": [
         {
           "type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
-          "param": [
-            0,
-            0
-          ],
+          "param": [0, 0],
           "param_str": ""
         },
         {
           "type": "QUEST_CONTENT_SCENE_LEVEL_TAG_EQ",
-          "param": [
-            21,
-            0
-          ],
+          "param": [21, 0],
           "param_str": ""
         }
       ],
@@ -262,9 +194,7 @@
       "failExec": [
         {
           "type": "QUEST_EXEC_ROLLBACK_QUEST",
-          "param": [
-            "7901904"
-          ],
+          "param": ["7901904"],
           "param_str": ""
         }
       ],
@@ -279,23 +209,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7901903,
-            4,
-            0,
-            0,
-            0
-          ],
+          "param": [7901903, 4, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7901906,
-            0
-          ],
+          "param": [7901906, 0],
           "param_str": ""
         }
       ],
@@ -307,10 +228,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "9",
-            "199003022"
-          ],
+          "param": ["9", "199003022"],
           "param_str": ""
         }
       ]
@@ -324,23 +242,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7901905,
-            4,
-            0,
-            0,
-            0
-          ],
+          "param": [7901905, 4, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_PLOT",
-          "param": [
-            7901906,
-            0
-          ],
+          "param": [7901906, 0],
           "param_str": ""
         }
       ],
@@ -352,10 +261,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
-          "param": [
-            "9",
-            "199003008"
-          ],
+          "param": ["9", "199003008"],
           "param_str": ""
         }
       ]

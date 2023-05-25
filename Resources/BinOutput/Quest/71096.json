@@ -5,9 +5,7 @@
   "descTextMapHash": 3985757966,
   "luaPath": "Actor/Quest/WQ71096",
   "showType": "QUEST_HIDDEN",
-  "rewardIdList": [
-    171096
-  ],
+  "rewardIdList": [171096],
   "subQuests": [
     {
       "subId": 7109601,
@@ -18,23 +16,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7107403,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7107403, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_FINISH_ITEM_GIVING",
-          "param": [
-            7107402,
-            0
-          ],
+          "param": [7107402, 0],
           "param_str": ""
         }
       ],
@@ -47,9 +36,7 @@
       "beginExec": [
         {
           "type": "QUEST_EXEC_ACTIVE_ITEM_GIVING",
-          "param": [
-            "7107402"
-          ],
+          "param": ["7107402"],
           "param_str": ""
         }
       ]
@@ -63,23 +50,14 @@
       "acceptCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            7109601,
-            3,
-            0,
-            0,
-            0
-          ],
+          "param": [7109601, 3, 0, 0, 0],
           "param_str": ""
         }
       ],
       "finishCond": [
         {
           "type": "QUEST_CONTENT_COMPLETE_TALK",
-          "param": [
-            7109602,
-            0
-          ],
+          "param": [7109602, 0],
           "param_str": ""
         }
       ],
@@ -101,17 +79,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_ITEM_GIVING_ACTIVED",
-          "param": [
-            "7107402"
-          ],
+          "param": ["7107402"],
           "param_str": ""
         }
       ],
       "priority": 6,
       "initDialog": 710960101,
-      "npcId": [
-        2061
-      ],
+      "npcId": [2061],
       "performCfg": "QuestDialogue/WQ/Liyue_71096/Q7109601",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71096,
@@ -125,19 +99,13 @@
       "beginCond": [
         {
           "type": "QUEST_COND_STATE_EQUAL",
-          "param": [
-            "7109602",
-            "2"
-          ],
+          "param": ["7109602", "2"],
           "param_str": ""
         }
       ],
       "priority": 6,
       "initDialog": 710960201,
-      "npcId": [
-        2061,
-        1005
-      ],
+      "npcId": [2061, 1005],
       "performCfg": "QuestDialogue/WQ/Liyue_71096/Q7109602",
       "heroTalk": "TALK_HERO_MAIN",
       "questId": 71096,
