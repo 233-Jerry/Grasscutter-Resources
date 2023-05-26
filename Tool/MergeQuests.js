@@ -175,25 +175,39 @@ const talks_data = JSON.parse(talks);
 // Merge the data.
 const quests = [];
 const newQuests = [];
+const newQuestsNoFound = [];
 for (const mainQuestData of mainQuest_data) {
     const mainQuestId = mainQuestData.id;
+    const binfile = `${binOutput}/${mainQuestId}.json`;
+
     console.log(`Scanning main quest ${mainQuestId}...`);
 
     // Find all sub-quests for the main quest.
     let isNewQuest = false;
-    let subQuests = rel3_2_data.filter((quest) =>
-        quest.mainId === mainQuestId);
+    let SaveBin = true;
+    let subQuests = rel3_2_data.filter((quest) => quest.mainId === mainQuestId);
     if (subQuests.length === 0) {
-        isNewQuest = true;
-        subQuests = latest_data.filter((quest) =>
-            quest.mainId === mainQuestId);
-
+      isNewQuest = true;
+      subQuests = latest_data.filter((quest) => quest.mainId === mainQuestId); // if not found config new quest, just check bin?
+      if (subQuests.length === 0) {
+        console.log(`find sub quest in ${binfile}`);
+        const binsub_r = fs.readFileSync(binfile);
+        const binsub_d = JSON.parse(binsub_r);
+        let subQuestBin = binsub_d.subQuests;
+        if (subQuestBin !== undefined) {
+          subQuests = subQuestBin; // just copy it?
+          SaveBin = false; // just update QuestExcelConfigData?
+        }
+      }
+      if (subQuests.length !== 0) {
         newQuests.push(mainQuestId);
+      } else {
+        newQuestsNoFound.push(mainQuestId);
+      }
     }
 
     // Find all talks for the main quest.
-    const talks = talks_data.filter((talk) =>
-        talk.questId === mainQuestId);
+    const talks = talks_data.filter((talk) => talk.questId === mainQuestId);
 
     console.log("=====================================")
     console.log(`Performing merge on main quest ${mainQuestId}.`);
@@ -441,10 +455,9 @@ for (const mainQuestData of mainQuest_data) {
     }
 
     // Create the main quest file.
-    fs.writeFileSync(
-        `${binOutput}/${mainQuestId}.json`,
-        JSON.stringify(quest, null, 2)
-    );
+    if (SaveBin) {
+        fs.writeFileSync(binfile, JSON.stringify(quest, null, 2));
+    }
 }
 
 // Write the new quest data.

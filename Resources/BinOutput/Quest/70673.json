@@ -1,7 +1,8 @@
 {
   "id": 70673,
   "type": "WQ",
-  "activeMode": "PLAY_MODE_ALL",
+  "titleTextMapHash": 2162172783,
+  "descTextMapHash": 4108841134,
   "luaPath": "Actor/Quest/WQ70673",
   "showType": "QUEST_HIDDEN",
   "subQuests": [
@@ -10,27 +11,24 @@
       "mainId": 70673,
       "order": 1,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [
+      "finishCond": [],
+      "guide": {},
+      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
+      "acceptCondComb": "LOGIC_NONE",
+      "finishParent": true,
+      "isRewind": true,
+      "finishExec": [],
+      "versionBegin": "",
+      "versionEnd": "",
+      "acceptCond": [
         {
-          "type": "QUEST_CONTENT_GAME_TIME_TICK",
+          "type": "QUEST_COND_UNKNOWN",
           "param": [0, 0]
         }
       ],
-      "guide": {},
-      "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
-      "acceptCondComb": {
-        "GLJGFFMODKF": ""
-      },
-      "finishParent": true,
-      "isRewind": true,
-      "finishExec": [
-        {
-          "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
-          "param": ["7165401", "1"]
-        }
-      ],
-      "versionBegin": "",
-      "versionEnd": ""
+      "failCond": [],
+      "beginExec": [],
+      "failExec": []
     }
   ]
 }
