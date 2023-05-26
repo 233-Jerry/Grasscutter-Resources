@@ -1,6 +1,12 @@
+# file skip
 scene_grid.json
-/Tool/*.json
+
+# folder
+Tool/*.json
+Tool/AllExcel/*
+Tool/FoundExcel/*
+Tool/Patches/
 .idea/
-AllExcel
-FoundExcel
+
+# file
 !ExcelGC.json

@@ -8,6 +8,14 @@ if (!fs.existsSync(questData3_2)) {
     return;
 }
 
+const questPatchesDir = "Patches/Quest";
+if (!fs.existsSync(questPatchesDir)) {
+    console.log("Place a copy of the patches directory from the custom resources repository in the same directory as this script.");
+    console.log("Ensure the custom resources has a 'Quest' directory.")
+    return;
+}
+// btw use `npx prettier --write .` in folder scene after patch
+
 // Define constants.
 const unknownCondition = {
     type: "QUEST_COND_UNKNOWN",
@@ -41,6 +49,43 @@ const patches = {
         ]
     }
 };
+
+/*
+ * These are main quest patches which should be applied.
+ * These are (basically) applied last.
+ * Format is: { mainId: { (patches) } }
+ */
+const mainPatches = {
+
+};
+
+// Load quest patches from the patches directory.
+const questPatches = fs.readdirSync(questPatchesDir);
+for (const questPatch of questPatches) {
+    const patchData = JSON.parse(fs.readFileSync(
+        path.join(questPatchesDir, questPatch), "utf-8"));
+    const mainQuestId = patchData.id;
+
+    // Check if the patch has sub-quests.
+    if (patchData.subQuests) {
+        for (const quest of patchData.subQuests) {
+            const { subId } = quest;
+
+            // Clean the quest data.
+            delete quest.subId;
+            delete quest.mainId;
+
+            // Apply the patch.
+            patches[subId] = quest;
+        }
+    }
+
+    delete patchData.id;
+    delete patchData.subQuests;
+    if (Object.keys(patchData).length > 0) {
+        mainPatches[mainQuestId] = patchData;
+    }
+}
 
 /**
  * Returns a cleaned version of a condition/execution.
@@ -389,6 +434,11 @@ for (const mainQuestData of mainQuest_data) {
 
     // Remove un-used fields.
     removeFields(quest);
+
+    // Check if the main quest has any patches.
+    if (mainPatches[quest.id]) {
+        Object.assign(quest, mainPatches[quest.id]);
+    }
 
     // Create the main quest file.
     fs.writeFileSync(
