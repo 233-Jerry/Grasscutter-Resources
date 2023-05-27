@@ -11,7 +11,18 @@
       "mainId": 70672,
       "order": 1,
       "descTextMapHash": 633208644,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [7067201, 0],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_ENTER_ROOM",
+          "param": [1076, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["13276"],
@@ -21,7 +32,13 @@
       },
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
+          "param": ["1076", "201076001"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -39,7 +56,18 @@
       "mainId": 70672,
       "order": 2,
       "descTextMapHash": 3472037988,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [7067201, 0],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
+          "param": [7067204, 3],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["13276"],
@@ -49,7 +77,18 @@
       },
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
+          "param": ["7067201", "1"],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
+          "param": ["1076", "201076001"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -67,8 +106,25 @@
       "mainId": 70672,
       "order": 4,
       "descTextMapHash": 1811991676,
-      "finishCond": [],
-      "failCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [7067202, 0],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
+          "param": [7067205, 3],
+          "param_str": ""
+        }
+      ],
+      "failCond": [
+        {
+          "type": "QUEST_CONTENT_QUEST_GLOBAL_VAR_EQUAL",
+          "param": [7165401, 1],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["13276"],
@@ -78,8 +134,25 @@
       },
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
-      "failExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
+          "param": ["7067201", "1"],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_EXEC_NOTIFY_GROUP_LUA",
+          "param": ["1076", "201076001"],
+          "param_str": ""
+        }
+      ],
+      "failExec": [
+        {
+          "type": "QUEST_EXEC_ROLLBACK_QUEST",
+          "param": ["7067201"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -95,11 +168,23 @@
       "mainId": 70672,
       "order": 3,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [7067204, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "acceptCondComb": "LOGIC_NONE",
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
+          "param": ["1076", "201076001,2"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -117,11 +202,23 @@
       "mainId": 70672,
       "order": 5,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [7067205, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "acceptCondComb": "LOGIC_NONE",
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_REFRESH_GROUP_SUITE",
+          "param": ["1076", "201076001,2"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -139,7 +236,13 @@
       "mainId": 70672,
       "order": 6,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [7067206, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "acceptCondComb": "LOGIC_NONE",

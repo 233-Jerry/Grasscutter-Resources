@@ -13,7 +13,13 @@
       "mainId": 19059,
       "order": 1,
       "descTextMapHash": 2150508388,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190590101],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["13235"],
@@ -41,7 +47,13 @@
       "mainId": 19059,
       "order": 2,
       "descTextMapHash": 2767763620,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [1905902, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -73,7 +85,13 @@
       "mainId": 19059,
       "order": 3,
       "descTextMapHash": 3280377700,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190590301],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "param": [
@@ -104,7 +122,18 @@
       "mainId": 19059,
       "order": 4,
       "descTextMapHash": 495445012,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190590401],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190590402],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["13277"],

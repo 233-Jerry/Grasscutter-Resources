@@ -198,16 +198,19 @@ for (const mainQuestData of mainQuest_data) {
   let SaveBin = true;
   let subQuests = rel3_2_data.filter((quest) => quest.mainId === mainQuestId);
   if (subQuests.length === 0) {
+    // This will be considered a new quest if no quest configuration is found in version 3.2. based on mainQuestData file data
     isNewQuest = true;
-    subQuests = latest_data.filter((quest) => quest.mainId === mainQuestId); // if not found config new quest, just check bin?
+
+    // since not all new quests are in `QuestExcelConfigData` we have to look again in `Quest bin folder` so both should be there. and sometimes the `Quest Bin Folder` doesn't have new quest data so we have to look in `quest main` or `quest config` in `Excel folder`
+    subQuests = latest_data.filter((quest) => quest.mainId === mainQuestId);
     if (subQuests.length === 0) {
-      console.log(`find sub quest in ${binfile}`);
+      console.log(`Looking for alternatives quest sub ${binfile}`);
       const binsub_r = fs.readFileSync(binfile);
       const binsub_d = JSON.parse(binsub_r);
       let subQuestBin = binsub_d.subQuests;
       if (subQuestBin !== undefined) {
-        subQuests = subQuestBin; // just copy it?
-        SaveBin = false; // just update QuestExcelConfigData?
+        subQuests = subQuestBin; // copy `subquest bin` to `subquest config`
+        SaveBin = false; // meanwhile don't save quest data bin because data we use data bin so should be same unless is patched?.
       }
     }
     if (subQuests.length !== 0) {
@@ -265,17 +268,17 @@ for (const mainQuestData of mainQuest_data) {
 
     if (acceptCond) {
       subQuest.acceptCond = acceptCond
-        .filter((cond) => cond._type != null)
+        .filter((cond) => cond._type !== null || cond.type !== null)
         .map(clean);
     }
     if (finishCond) {
       subQuest.finishCond = finishCond
-        .filter((cond) => cond._type != null)
+        .filter((cond) => cond._type !== null || cond.type !== null)
         .map(clean);
     }
     if (failCond) {
       subQuest.failCond = failCond
-        .filter((cond) => cond._type != null)
+        .filter((cond) => cond._type !== null || cond.type !== null)
         .map(clean);
     }
 
@@ -288,17 +291,17 @@ for (const mainQuestData of mainQuest_data) {
 
     if (beginExec) {
       subQuest.beginExec = beginExec
-        .filter((cond) => cond._type != null)
+        .filter((cond) => cond._type !== null || cond.type !== null)
         .map(clean);
     }
     if (finishExec) {
       subQuest.finishExec = finishExec
-        .filter((cond) => cond._type != null)
+        .filter((cond) => cond._type !== null || cond.type !== null)
         .map(clean);
     }
     if (failExec) {
       subQuest.failExec = failExec
-        .filter((cond) => cond._type != null)
+        .filter((cond) => cond._type !== null || cond.type !== null)
         .map(clean);
     }
 
@@ -459,9 +462,7 @@ for (const mainQuestData of mainQuest_data) {
   }
 
   // Create the main quest file.
-  if (SaveBin) {
-    fs.writeFileSync(binfile, JSON.stringify(quest, null, 2));
-  }
+  fs.writeFileSync(binfile, JSON.stringify(quest, null, 2));
 }
 
 // Write the new quest data.
@@ -470,6 +471,7 @@ fs.writeFileSync(fileOutput, JSON.stringify(quests, null, 2));
 console.log("=====================================");
 console.log(`There are ${quests.length} quests.`);
 console.log(`There are ${newQuests.length} new quests.`);
+console.log(`There are ${newQuestsNoFound.length} quests not found.`);
 
 for (let i = 0; i < newQuests.length; i += 9) {
   const newQuestsSlice = newQuests.slice(i, i + 9);

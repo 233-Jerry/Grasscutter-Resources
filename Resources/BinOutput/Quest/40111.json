@@ -13,11 +13,28 @@
       "order": 1,
       "descTextMapHash": 2589605612,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
+          "param": [3, 200],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
+          "param": [4010802, 3],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_QUEST_VAR",
+          "param": ["1", "1", "4011101"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -36,11 +53,28 @@
       "order": 2,
       "descTextMapHash": 3362689684,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
+          "param": [3, 200],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
+          "param": [4010902, 3],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_QUEST_VAR",
+          "param": ["2", "1", "4011102"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -59,11 +93,33 @@
       "order": 3,
       "descTextMapHash": 107628244,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [4011103, 0],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_ANY_MANUAL_TRANSPORT",
+          "param": [0, 0],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
+          "param": [4011002, 3],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_QUEST_VAR",
+          "param": ["3", "1", "4011103"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -82,7 +138,13 @@
       "order": 4,
       "descTextMapHash": 2567488924,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
+          "param": [4011105, 3],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
@@ -105,7 +167,13 @@
       "order": 5,
       "descTextMapHash": 3114313772,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [4011105, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
@@ -128,7 +196,13 @@
       "order": 6,
       "descTextMapHash": 49605468,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_QUEST_STATE_EQUAL",
+          "param": [4011105, 3],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "finishParent": true,

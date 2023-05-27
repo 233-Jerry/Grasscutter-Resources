@@ -12,7 +12,13 @@
       "order": 1,
       "descTextMapHash": 1773600484,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [7004301, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,

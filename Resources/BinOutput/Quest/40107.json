@@ -14,7 +14,13 @@
       "mainId": 40107,
       "order": 2,
       "descTextMapHash": 417964516,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010701, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -43,7 +49,13 @@
       "mainId": 40107,
       "order": 3,
       "descTextMapHash": 178457804,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010702, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -54,7 +66,13 @@
       },
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_GAME_TIME",
+          "param": ["8"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -72,7 +90,13 @@
       "mainId": 40107,
       "order": 4,
       "descTextMapHash": 2416735460,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010703, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -101,7 +125,13 @@
       "mainId": 40107,
       "order": 5,
       "descTextMapHash": 1873024628,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010704, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -112,7 +142,13 @@
       },
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
+          "param": ["4010702", "1"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -130,7 +166,13 @@
       "mainId": 40107,
       "order": 6,
       "descTextMapHash": 2355115868,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [4010705, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -159,7 +201,13 @@
       "mainId": 40107,
       "order": 7,
       "descTextMapHash": 1738489068,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010706, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -188,7 +236,13 @@
       "mainId": 40107,
       "order": 8,
       "descTextMapHash": 2325948244,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [4010707, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -217,7 +271,13 @@
       "mainId": 40107,
       "order": 9,
       "descTextMapHash": 2351291972,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010708, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -246,7 +306,13 @@
       "mainId": 40107,
       "order": 13,
       "descTextMapHash": 911158436,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010709, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -275,7 +341,13 @@
       "mainId": 40107,
       "order": 10,
       "descTextMapHash": 536701268,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010712, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -304,7 +376,13 @@
       "mainId": 40107,
       "order": 11,
       "descTextMapHash": 2882403212,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010713, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -333,7 +411,13 @@
       "mainId": 40107,
       "order": 12,
       "descTextMapHash": 211070220,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010714, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -362,8 +446,20 @@
       "mainId": 40107,
       "order": 14,
       "descTextMapHash": 3412447316,
-      "finishCond": [],
-      "failCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_CLEAR_GROUP_MONSTER",
+          "param": [133004135, 0],
+          "param_str": ""
+        }
+      ],
+      "failCond": [
+        {
+          "type": "QUEST_CONTENT_LEAVE_SCENE_RANGE",
+          "param": [3, 100],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -375,8 +471,25 @@
         "guideLayer": "QUEST_GUIDE_LAYER_SCENE"
       },
       "acceptCondComb": "LOGIC_NONE",
-      "finishExec": [],
-      "failExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
+          "param": ["133004135"],
+          "param_str": ""
+        }
+      ],
+      "failExec": [
+        {
+          "type": "QUEST_EXEC_ROLLBACK_QUEST",
+          "param": ["4010709"],
+          "param_str": ""
+        },
+        {
+          "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
+          "param": ["133004135"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -392,7 +505,13 @@
       "mainId": 40107,
       "order": 15,
       "descTextMapHash": 2140705340,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010716, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -421,7 +540,13 @@
       "mainId": 40107,
       "order": 16,
       "descTextMapHash": 794357108,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [4010717, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -450,7 +575,13 @@
       "mainId": 40107,
       "order": 17,
       "descTextMapHash": 3022863252,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [4010718, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
@@ -462,7 +593,13 @@
       "acceptCondComb": "LOGIC_NONE",
       "finishParent": true,
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_SET_QUEST_GLOBAL_VAR",
+          "param": ["4010701", "1"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -481,7 +618,13 @@
       "order": 1,
       "descTextMapHash": 3959626628,
       "showType": "QUEST_HIDDEN",
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_FINISH_PLOT",
+          "param": [4010719, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "showGuide": "QUEST_GUIDE_ITEM_DISABLE",
       "acceptCondComb": "LOGIC_NONE",

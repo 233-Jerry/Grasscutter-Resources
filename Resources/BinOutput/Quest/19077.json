@@ -12,7 +12,13 @@
       "mainId": 19077,
       "order": 1,
       "descTextMapHash": 956221404,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190770101],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "param": [
@@ -43,7 +49,13 @@
       "mainId": 19077,
       "order": 2,
       "descTextMapHash": 2276474748,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190770201],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "param": [
@@ -74,7 +86,13 @@
       "mainId": 19077,
       "order": 5,
       "descTextMapHash": 2847137444,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190770301],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["1050"],
@@ -85,7 +103,13 @@
       "acceptCondComb": "LOGIC_NONE",
       "finishParent": true,
       "isRewind": true,
-      "finishExec": [],
+      "finishExec": [
+        {
+          "type": "QUEST_EXEC_UNREGISTER_DYNAMIC_GROUP",
+          "param": ["133303670", "0"],
+          "param_str": ""
+        }
+      ],
       "versionBegin": "",
       "versionEnd": "",
       "acceptCond": [
@@ -103,7 +127,13 @@
       "mainId": 19077,
       "order": 3,
       "descTextMapHash": 2815116884,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190770401],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_LOCATION",
         "param": [
@@ -134,7 +164,13 @@
       "mainId": 19077,
       "order": 4,
       "descTextMapHash": 471768068,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_GAME_TIME_TICK",
+          "param": [1, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {},
       "acceptCondComb": "LOGIC_NONE",
       "isRewind": true,

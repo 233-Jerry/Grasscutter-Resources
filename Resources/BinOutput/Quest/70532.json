@@ -11,7 +11,13 @@
       "mainId": 70532,
       "order": 1,
       "descTextMapHash": 2650574748,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_COMPLETE_TALK",
+          "param": [7053201, 0],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["30381"],

@@ -13,7 +13,13 @@
       "mainId": 19072,
       "order": 1,
       "descTextMapHash": 1474290852,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190720101],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "param": ["1055"],
@@ -41,7 +47,13 @@
       "mainId": 19072,
       "order": 2,
       "descTextMapHash": 2696390764,
-      "finishCond": [],
+      "finishCond": [
+        {
+          "type": "QUEST_CONTENT_MAIN_COOP_ENTER_SAVE_POINT",
+          "param": [108101, 190720201],
+          "param_str": ""
+        }
+      ],
       "guide": {
         "type": "QUEST_GUIDE_NPC",
         "autoGuide": "QUEST_GUIDE_AUTO_ENABLE",
